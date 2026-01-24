@@ -115,25 +115,28 @@ p {
 
 .projects li {
   margin-bottom: 1rem;
+}
+
+.project-card {
+  display: block;
   padding: 1rem;
   border: var(--border);
   border-radius: var(--radius);
   background: var(--secondary);
-  transition: transform 0.1s ease;
+  text-decoration: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.projects li:hover {
+.project-card:hover {
   transform: translate(-2px, -2px);
   box-shadow: 4px 4px 0 var(--dark);
+  background: var(--secondary);
 }
 
-.projects a {
+.project-title {
+  display: block;
   font-weight: 600;
-  text-decoration: none;
-}
-
-.projects a:hover {
-  background: var(--primary);
+  color: var(--dark);
 }
 
 .project-desc {

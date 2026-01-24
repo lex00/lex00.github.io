@@ -15,8 +15,10 @@ I work across the stack with a preference for systems that are simple, composabl
 
 <ul>
 <li>
-  <a href="https://lex00.github.io/wetwire/">wetwire</a>
-  <span class="project-desc">Infrastructure graph visualization and analysis</span>
+  <a href="https://lex00.github.io/wetwire/" class="project-card">
+    <span class="project-title">wetwire</span>
+    <span class="project-desc">Infrastructure graph visualization and analysis</span>
+  </a>
 </li>
 </ul>
 
