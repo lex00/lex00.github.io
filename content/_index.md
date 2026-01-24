@@ -2,12 +2,6 @@
 title: "lex00"
 ---
 
-<div class="intro">
-
-Intentional infrastructure. Composable tooling.
-
-</div>
-
 <div class="projects">
 
 ## Projects
