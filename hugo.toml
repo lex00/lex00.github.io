@@ -1,0 +1,9 @@
+baseURL = 'https://lex00.github.io/'
+languageCode = 'en-us'
+title = 'lex00'
+theme = 'brite'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
