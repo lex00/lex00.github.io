@@ -1,18 +1,18 @@
 /* Brite Theme - Neobrutalist */
 :root {
   --primary: #a2e436;
-  --secondary: #fff;
+  --secondary: #0d1117;
   --success: #68d391;
   --info: #22d2ed;
   --warning: #ffc700;
   --danger: #f56565;
-  --dark: #000;
-  --light: #e9ecef;
+  --dark: #e6edf3;
+  --light: #21262d;
   --blue: #61bcff;
   --purple: #be82fa;
   --pink: #ea4998;
   --orange: #fa984a;
-  --border: 2px solid #000;
+  --border: 2px solid #30363d;
   --radius: 0.375rem;
   --font-base: 0.875rem;
 }
@@ -69,7 +69,7 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
   font-size: 0.8rem;
-  color: #666;
+  color: #8b949e;
 }
 
 a {
@@ -129,7 +129,7 @@ p {
 
 .project-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--dark);
+  box-shadow: 4px 4px 0 var(--primary);
   background: var(--secondary);
 }
 
@@ -142,7 +142,7 @@ p {
 .project-desc {
   display: block;
   margin-top: 0.25rem;
-  color: #555;
+  color: #8b949e;
   font-size: 0.85rem;
 }
 
@@ -151,8 +151,9 @@ p {
   padding: 0.15rem 0.5rem;
   font-size: 0.7rem;
   font-weight: 600;
-  border: 2px solid var(--dark);
+  border: 2px solid #000;
   border-radius: var(--radius);
   margin-left: 0.5rem;
   background: var(--primary);
+  color: #000;
 }
