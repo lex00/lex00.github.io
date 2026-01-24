@@ -4,8 +4,7 @@ title: "lex00"
 
 <div class="intro">
 
-Software engineer focused on building reliable infrastructure and developer tools.
-I work across the stack with a preference for systems that are simple, composable, and well-tested.
+Intentional infrastructure. Composable tooling.
 
 </div>
 
