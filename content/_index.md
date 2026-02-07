@@ -8,9 +8,9 @@ title: "lex00"
 
 <ul>
 <li>
-  <a href="https://lex00.github.io/wetwire/" class="project-card">
-    <span class="project-title">wetwire</span>
-    <span class="project-desc">Wetwire is a multi-language, multi-domain infrastructure-as-code pattern designed for AI-human collaborative development. It uses native language constructs with linting to enforce flat, declarative, analyzable code.</span>
+  <a href="https://github.com/lex00/chant" class="project-card">
+    <span class="project-title">chant</span>
+    <span class="project-desc">Spec driven development and operations.</span>
   </a>
 </li>
 </ul>
