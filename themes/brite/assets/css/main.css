@@ -105,6 +105,32 @@ p {
   margin-bottom: 2rem;
 }
 
+.tagline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline p {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.contact-icon {
+  color: #8b949e;
+  text-decoration: none;
+  display: inline-flex;
+  transition: color 0.15s ease;
+}
+
+.contact-icon:hover {
+  color: var(--dark);
+  background: none;
+}
+
 .projects {
   margin-top: 2rem;
 }
