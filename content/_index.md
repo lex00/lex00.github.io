@@ -17,7 +17,7 @@ title: "lex00"
 <li>
   <a href="https://intentius.github.io/chant/getting-started/introduction/" class="project-card">
     <span class="project-title">chant</span>
-    <span class="project-desc">Spec driven development and operations.</span>
+    <span class="project-desc">TypeScript first infrastructure as code.</span>
   </a>
 </li>
 </ul>
