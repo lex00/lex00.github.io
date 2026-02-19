@@ -15,7 +15,7 @@ title: "lex00"
 
 <ul>
 <li>
-  <a href="https://lex00.github.io/chant/" class="project-card">
+  <a href="https://intentius.github.io/chant/getting-started/introduction/" class="project-card">
     <span class="project-title">chant</span>
     <span class="project-desc">Spec driven development and operations.</span>
   </a>
