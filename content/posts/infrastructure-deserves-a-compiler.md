@@ -43,7 +43,7 @@ The abstractions that last are the ones that are both human-reviewable and machi
 
 The core idea is small. Infrastructure definitions are data. Data has a schema. Schemas can be expressed as types. Types can be checked at compile time.
 
-When your infrastructure is typed data you get a lot for free. Editor completions that know every valid attribute of an S3 bucket. Hover documentation pulled from the spec. Lint rules that traverse the full resource graph. Refactoring tools that understand what a reference means.
+When your infrastructure is typed data, useful things follow. Editor completions that know every valid attribute of an S3 bucket. Hover documentation pulled from the spec. Lint rules that traverse the full resource graph. Refactoring tools that understand what a reference means.
 
 There's a less obvious benefit. The entire definition is analyzable without executing it. No sandbox. No credentials. No provider plugins. The compiler reads TypeScript and emits JSON. Everything in between is pure computation over typed data.
 
@@ -51,6 +51,6 @@ There's a less obvious benefit. The entire definition is analyzable without exec
 
 CDKTF is discontinued. Pulumi requires a runtime. CDK still owns the full lifecycle. TypeScript users who want typed infrastructure have fewer options than they did a year ago.
 
-Chant takes a different position. It is only a compiler. It turns typed TypeScript into spec-native output and gets out of the way. You deploy with whatever you already use.
+Chant is only a compiler. It turns typed TypeScript into spec-native output and gets out of the way. You deploy with whatever you already use.
 
-If this framing resonates, the [docs](https://intentius.github.io/chant/getting-started/introduction/) walk through the model in detail. The [comparison page](https://intentius.github.io/chant/concepts/comparison/) maps chant against CDK, Pulumi, SST, and Terraform side by side.
+The [docs](https://intentius.github.io/chant/getting-started/introduction/) walk through the model in detail. The [comparison page](https://intentius.github.io/chant/concepts/comparison/) covers CDK, Pulumi, SST, and Terraform side by side.
