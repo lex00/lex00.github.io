@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ $categories := .Site.Taxonomies.categories }}
+  {{ if $categories }}
+    <nav class="category-nav">
+      <span class="category-nav-label">Browse: </span>
+      {{ range $name, $pages := $categories }}
+        <a href="{{ site.Home.RelPermalink }}categories/{{ $name | urlize }}/" class="category-link">{{ $name | title }}</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  {{ $paginator := .Paginate .Pages 20 }}
+  <ul class="post-list">
+    {{ range $paginator.Pages }}
+      {{ if not .Params.draft }}
+        <li class="post-item">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.categories }}
+            <span class="post-cats">
+              {{ range . }}
+                <a href="{{ site.Home.RelPermalink }}categories/{{ . | urlize }}/" class="category-link">{{ . }}</a>
+              {{ end }}
+            </span>
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" $paginator }}
+{{ end }}

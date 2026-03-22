@@ -1,7 +1,11 @@
 baseURL = 'https://lex00.github.io/'
 languageCode = 'en-us'
 title = 'lex00'
-theme = 'brite'
+theme = 'default'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
 
 [markup]
   [markup.goldmark]

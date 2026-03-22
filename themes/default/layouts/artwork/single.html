@@ -1,0 +1,53 @@
+{{ define "main" }}
+  <article class="artwork-single">
+    <div class="product-header">
+      <h1>
+        {{ .Title }}
+        {{ if .Params.sold }}
+          <span class="badge sold-out-badge">Sold</span>
+        {{ else if not .Params.available }}
+          <span class="badge sold-out-badge">Unavailable</span>
+        {{ end }}
+      </h1>
+      {{ with .Params.price_display }}
+        <p class="product-price-large">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    {{ $gallery := .Params.gallery }}
+    {{ $featured := .Params.featured_image }}
+    {{ if or $gallery $featured }}
+      <div class="artwork-gallery">
+        {{ with $featured }}
+          <img src="{{ print site.Home.RelPermalink (. | strings.TrimPrefix "/") }}" alt="{{ $.Title }}" class="artwork-gallery-img" loading="lazy">
+        {{ end }}
+        {{ range $gallery }}
+          {{ if ne . $.Params.featured_image }}
+            <img src="{{ print site.Home.RelPermalink (. | strings.TrimPrefix "/") }}" alt="{{ $.Title }}" class="artwork-gallery-img" loading="lazy">
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .Content }}
+      <div class="post-content">{{ . }}</div>
+    {{ end }}
+
+    <dl class="artwork-meta">
+      {{ with .Params.medium }}
+        <dt>Medium</dt><dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.dimensions }}
+        <dt>Dimensions</dt><dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.categories }}
+        <dt>Category</dt>
+        <dd>
+          {{ range . }}
+            <a href="{{ site.Home.RelPermalink }}categories/{{ . | urlize }}/" class="category-link">{{ . }}</a>
+          {{ end }}
+        </dd>
+      {{ end }}
+    </dl>
+  </article>
+{{ end }}

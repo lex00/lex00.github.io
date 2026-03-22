@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <article class="post">
+    <h1>{{ .Title }}</h1>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+
+    {{ with .Params.categories }}
+      <div class="post-tags" style="margin-bottom:1rem;">
+        {{ range . }}
+          <a href="{{ site.Home.RelPermalink }}categories/{{ . | urlize }}/" class="category-link">{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .Params.featured_image }}
+      <img src="{{ print site.Home.RelPermalink (. | strings.TrimPrefix "/") }}" alt="{{ $.Title }}" class="post-featured-img" loading="lazy">
+    {{ end }}
+
+    <div class="post-content">
+      {{ $base := site.Home.RelPermalink }}
+      {{ replaceRE `="/uploads/` (printf `="%suploads/` $base) .Content | safeHTML }}
+    </div>
+
+    {{ with .Params.tags }}
+      <div class="product-tags" style="margin-top:2rem;">
+        {{ range . }}
+          <span class="badge tag-badge">{{ . }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+  </article>
+{{ end }}

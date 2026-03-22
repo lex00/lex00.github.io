@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <ul class="artwork-grid">
+    {{ range .Pages }}
+      {{ if not .Params.draft }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="project-card artwork-card">
+            {{ with .Params.featured_image }}
+              <img src="{{ print site.Home.RelPermalink (. | strings.TrimPrefix "/") }}" alt="{{ $.Title }}" class="artwork-thumb" loading="lazy">
+            {{ end }}
+            <span class="project-title">
+              {{ .Title }}
+              {{ if .Params.sold }}
+                <span class="badge sold-out-badge">Sold</span>
+              {{ else if not .Params.available }}
+                <span class="badge sold-out-badge">Unavailable</span>
+              {{ end }}
+            </span>
+            {{ with .Params.medium }}
+              <span class="project-desc">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.price_display }}
+              <span class="product-price">{{ . }}</span>
+            {{ end }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}

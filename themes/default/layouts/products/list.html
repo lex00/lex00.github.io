@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ $categories := .Site.Taxonomies.categories }}
+  {{ if $categories }}
+    <nav class="category-nav">
+      <span class="category-nav-label">Browse: </span>
+      {{ range $name, $pages := $categories }}
+        <a href="{{ site.Home.RelPermalink }}categories/{{ $name | urlize }}/" class="category-link">{{ $name | title }}</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  <ul class="product-grid">
+    {{ range .Pages }}
+      {{ if not .Params.draft }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="project-card product-card">
+            {{ with .Params.featured_image }}
+              <img src="{{ print site.Home.RelPermalink (. | strings.TrimPrefix "/") }}" alt="{{ $.Title }}" class="product-thumb" loading="lazy">
+            {{ end }}
+            <span class="project-title">
+              {{ .Title }}
+              {{ if not .Params.available }}
+                <span class="badge sold-out-badge">Sold Out</span>
+              {{ end }}
+              {{ if .Params.featured }}
+                <span class="badge featured-badge">Featured</span>
+              {{ end }}
+            </span>
+            {{ with .Params.price_display }}
+              <span class="product-price">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.description }}
+              <span class="project-desc">{{ . | truncate 100 }}</span>
+            {{ end }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}
