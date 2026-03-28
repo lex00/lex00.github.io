@@ -1,7 +1,5 @@
 site_name: "lex00"
 accent_color: "#a2e436"
 nav_order:
-  - products
-  - about
-  - contact
+  - posts
 footer_text: "© 2026 lex00"
