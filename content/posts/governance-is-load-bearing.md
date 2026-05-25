@@ -15,7 +15,7 @@ But notice what those costs actually are. They are the costs of hosting the file
 
 Self-hosted state. You run the backend. You own the lock, the backups, and the corruption risk. Maximum control and maximum operational burden.
 
-A third-party SaaS managing state. You pay a vendor to host and operate the file. The operational burden goes away. In its place you take a vendor dependency, and your state and often your secrets now live in someone else's system. The state model has not changed. You have made the file someone else's problem.
+A third-party SaaS managing state. This one is not really a file. It is a queryable database, sometimes the real-time graph people picture state becoming. The vendor hosts and operates it, so the operational burden goes away. In its place you take a vendor dependency, and your state and often your secrets now live in someone else's system. The model has not changed. A faster, better-indexed source of truth is still a source of truth, and it still has to be correct and current.
 
 The platform managing state. CloudFormation and CDK are authoritative state too, but AWS hosts the file as part of the service. No backend to run, no lock to manage, no file to corrupt. You keep cloud lock-in and all-or-nothing applies. Here the file costs almost nothing to operate.
 
