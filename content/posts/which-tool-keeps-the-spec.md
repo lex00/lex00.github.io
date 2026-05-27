@@ -51,6 +51,8 @@ The output is the spec's own format. The AWS serializer emits a standard CloudFo
 
 Walk away cost is zero. If you delete chant the templates keep working, because the templates were never chant's format. They were always CloudFormation. The same holds for the other lexicons. GitLab CI output is `.gitlab-ci.yml`. Kubernetes output is plain manifests. Eleven lexicons ship today.
 
+Zero walk away cost is not unique on its own. A single target tool like cdk8s emits plain manifests and leaves nothing behind. The distinction is breadth and types. The multi-cloud tools that own deployment all keep authoritative state, so they lock you in. The ones with no lock in cover a single target, or give you a language with no provider types. Chant covers many targets, generates spec-true types for each, and locks you into none.
+
 Validation runs on top of the spec rather than replacing it. Lint rules check configuration for meaning. The AWS lexicon flags a bucket declared without encryption, an IAM policy with a wildcard, a hardcoded region. The rules read your source through the TypeScript compiler API and report file, line, and column. They do not change the output. They tell you when the spec compliant thing you wrote is probably not the thing you meant.
 
 ## Composites abstract, the output does not
