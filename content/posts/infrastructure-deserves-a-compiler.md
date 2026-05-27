@@ -17,7 +17,7 @@ TypeScript already has a type system. It has modules, generics, unions, intersec
 
 I built [chant](https://intentius.github.io/chant/) to treat infrastructure synthesis as a compilation problem.
 
-You write TypeScript. The compiler parses it as data, not as imperative instructions. Every resource is typed against the target spec. All 1,100+ CloudFormation resource types become TypeScript types with attribute-level constraints.
+You write TypeScript. The compiler runs it for synthesis only. A constrained subset, and nothing after it. No cloud calls. No state. Every resource is typed against the target spec. All 1,500+ CloudFormation resource types become TypeScript types with attribute-level constraints.
 
 Semantic linting happens at the data model level. Structural analysis of the resource graph instead of string matching on YAML keys. Linting rules are TypeScript files with access to the typed model. They can reason about relationships between resources instead of individual fields.
 
@@ -25,7 +25,7 @@ The output is standard CloudFormation JSON. Or GitLab CI YAML. The spec-native f
 
 ## This was always possible
 
-The approach predates the current generation of IaC tools. Parse a host language as data. Type-check it against a spec. Emit a target format. This is what compilers do. Infrastructure synthesis is a good fit for the same pattern.
+The approach predates the current generation of IaC tools. Read a host language and resolve it to typed values. Type-check it against a spec. Emit a target format. This is what compilers do. Infrastructure synthesis is a good fit for the same pattern.
 
 The pieces were available. TypeScript's type system is expressive enough to model infrastructure specs. The specs themselves are public, machine-readable data. The output formats are well-defined. The remaining step was treating synthesis as a standalone concern worth engineering on its own.
 
@@ -45,7 +45,7 @@ The core idea is small. Infrastructure definitions are data. Data has a schema. 
 
 When your infrastructure is typed data, useful things follow. Editor completions that know every valid attribute of an S3 bucket. Hover documentation pulled from the spec. Lint rules that traverse the full resource graph. Refactoring tools that understand what a reference means.
 
-There's a less obvious benefit. The entire definition is analyzable without executing it. No sandbox. No credentials. No provider plugins. The compiler reads TypeScript and emits JSON. Everything in between is pure computation over typed data.
+There's a less obvious benefit. The definition is analyzable without running it. Lint and type-check read the source statically. No sandbox. No credentials. No provider plugins. Build runs a constrained subset and emits JSON. For code inside that subset, the output is a pure function of typed data.
 
 ## The path from here
 
