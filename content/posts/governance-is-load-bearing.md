@@ -1,9 +1,9 @@
 ---
-title: "Governance is load-bearing in IaC"
+title: "Governance is what IaC depends on"
 date: 2026-05-25
 ---
 
-State is load-bearing. Anyone who has run infrastructure past a toy project knows this. I take the phrase from [William Collins](https://wcollins.io/posts/2026/ai-through-iac-not-instead-of-it/), who makes the case for AI through IaC rather than instead of it, and I agree with most of it. The argument I want to make is narrower. Load-bearing is not the same as authoritative. Almost everything you value about state lives on the load-bearing side, not the authoritative side.
+State is essential. Anyone who has run infrastructure past a toy project knows this. [William Collins](https://wcollins.io/posts/2026/ai-through-iac-not-instead-of-it/) makes the case for AI through IaC rather than instead of it, and I agree with most of it. My argument is narrower. Essential is not the same as authoritative. Almost everything you value about state is essential without being authoritative.
 
 ## What the file actually costs
 
@@ -27,7 +27,7 @@ Every step except the last keeps authoritative state and only moves who babysits
 
 The things you cannot give up are governance. A known changeset before apply. A lock so two operators do not collide. An audit trail you can read later. Blast-radius limits so one change cannot touch everything.
 
-Authoritative state is one mechanism that delivers those. It is not the only one. When someone says state is load-bearing they are usually pointing at the governance and crediting the mechanism. The governance is load-bearing. The authoritative state is a way to get it.
+Authoritative state is one mechanism that delivers those. It is not the only one. When someone says state is essential they are usually pointing at the governance and crediting the mechanism. The governance is the essential part. The authoritative state is a way to get it.
 
 ## A real example, not hyperscale
 
@@ -63,4 +63,4 @@ There is one case where the radius really does approach the whole estate. Rotati
 
 Put truth where it belongs. The live system is the source of truth. The snapshot is a baseline for the diff, and it is allowed to be stale, because a stale baseline is inconvenient and a stale source of truth is dangerous.
 
-The file was never the load-bearing part. The governance around it was. Keep the governance and the authoritative file becomes a choice rather than a requirement.
+The file was never the essential part. The governance around it was. Keep the governance and the authoritative file becomes a choice rather than a requirement.

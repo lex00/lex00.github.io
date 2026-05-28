@@ -5,9 +5,9 @@ date: 2026-05-27
 
 Two tools have made the same uncommon choice. [chant](https://intentius.github.io/chant/) and [formae](https://github.com/platform-engineering-labs/formae) both refuse the authoritative state file. Most infrastructure tools keep one. These two do not. That shared move is the right place to start, because it is the right move.
 
-## The state file was never the load-bearing part
+## The state file was never the part that matters
 
-An authoritative state file is a flat file doing a database's job. It needs a lock on every change. It holds secrets because the tool needs them to diff. It can corrupt and take a deploy down. Teams carry all of that because they believe state is load-bearing. What is actually load-bearing is governance. A known change before apply. An audit trail. A limit on blast radius. State was one way to get those. It was never the only way.
+An authoritative state file is a flat file doing a database's job. It needs a lock on every change. It holds secrets because the tool needs them to diff. It can corrupt and take a deploy down. Teams carry all of that because they believe state is essential. What is actually essential is governance. A known change before apply. An audit trail. A limit on blast radius. State was one way to get those. It was never the only way.
 
 formae and chant both drop the file and keep the governance.
 
