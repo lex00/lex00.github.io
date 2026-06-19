@@ -20,6 +20,12 @@ title: "lex00"
     <span class="project-desc">TypeScript first infrastructure as code.</span>
   </a>
 </li>
+<li>
+  <a href="https://blacklight.intentius.io" class="project-card">
+    <span class="project-title">blacklight</span>
+    <span class="project-desc">Paste a repo URL, see the misconfigurations hiding in your infra.</span>
+  </a>
+</li>
 </ul>
 
 </div>
