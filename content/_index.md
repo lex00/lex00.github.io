@@ -35,13 +35,13 @@ title: "lex00"
 <li>
   <a href="https://github.com/intentius/forgejo-warden" class="project-card">
     <span class="project-title">forgejo-warden</span>
-    <span class="project-desc">The same, for Forgejo and Codeberg orgs.</span>
+    <span class="project-desc">Reconcile Forgejo and Codeberg orgs to their declared state.</span>
   </a>
 </li>
 <li>
   <a href="https://github.com/intentius/gitlab-warden" class="project-card">
     <span class="project-title">gitlab-warden</span>
-    <span class="project-desc">The same, for GitLab groups and projects.</span>
+    <span class="project-desc">Reconcile GitLab groups and projects to their declared state.</span>
   </a>
 </li>
 </ul>
