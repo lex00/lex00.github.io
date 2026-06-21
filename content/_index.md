@@ -26,6 +26,24 @@ title: "lex00"
     <span class="project-desc">Paste a repo URL, see the misconfigurations hiding in your infra.</span>
   </a>
 </li>
+<li>
+  <a href="https://github.com/intentius/github-warden" class="project-card">
+    <span class="project-title">github-warden</span>
+    <span class="project-desc">Reconcile GitHub orgs and repos to their declared state.</span>
+  </a>
+</li>
+<li>
+  <a href="https://github.com/intentius/forgejo-warden" class="project-card">
+    <span class="project-title">forgejo-warden</span>
+    <span class="project-desc">The same, for Forgejo and Codeberg orgs.</span>
+  </a>
+</li>
+<li>
+  <a href="https://github.com/intentius/gitlab-warden" class="project-card">
+    <span class="project-title">gitlab-warden</span>
+    <span class="project-desc">The same, for GitLab groups and projects.</span>
+  </a>
+</li>
 </ul>
 
 </div>
