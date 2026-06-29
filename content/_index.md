@@ -44,6 +44,12 @@ title: "lex00"
     <span class="project-desc">Reconcile GitLab groups and projects to their declared state.</span>
   </a>
 </li>
+<li>
+  <a href="https://github.com/lex00/neo4j-backup" class="project-card">
+    <span class="project-title">neo4j-backup</span>
+    <span class="project-desc">Policy-based Neo4j Enterprise backup and restore, as drop-in Dagster pipelines.</span>
+  </a>
+</li>
 </ul>
 
 </div>
