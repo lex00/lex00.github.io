@@ -1,0 +1,8 @@
+{{- $path := printf "static/img/%s" (.Get "src") -}}
+{{- with os.ReadFile $path -}}
+<figure class="diagram" role="img" aria-label="{{ $.Get "alt" }}">
+{{ . | safeHTML }}
+</figure>
+{{- else -}}
+{{- errorf "inline-svg: file not found: %s" $path -}}
+{{- end -}}

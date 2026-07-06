@@ -11,10 +11,12 @@ On EC2, ECS, and CloudFormation there is no shared apply verb. Building an image
 
 You know what this turns into. Somewhere in each service's deploy job is a block that reaches into another stack to find the values it needs.
 
-```
-OUTPUTS=$(aws cloudformation describe-stacks --stack-name shared-alb --query 'Stacks[0].Outputs' --output json)
-PARAMS=$(echo "$OUTPUTS" | jq -r '... select(.OutputKey=="ListenerArn") ...')
-aws cloudformation deploy --parameter-overrides $PARAMS image=$IMAGE_URI
+```bash
+OUTPUTS=$(aws cloudformation describe-stacks --stack-name shared-alb \
+  --query 'Stacks[0].Outputs' --output json)
+LISTENER_ARN=$(echo "$OUTPUTS" | jq -r '.[] | select(.OutputKey=="ListenerArn") | .OutputValue')
+aws cloudformation deploy --stack-name my-service \
+  --parameter-overrides ListenerArn="$LISTENER_ARN" Image="$IMAGE_URI"
 ```
 
 Two services behind one load balancer means two copies of that. Add a third and you copy it again. Change how you deploy and you edit every copy. The pipeline count tracks the service count, and the glue drifts service by service until no two are quite the same.
@@ -23,7 +25,7 @@ Two services behind one load balancer means two copies of that. Add a third and 
 
 Plenty of tools attack a piece of this. None of them attack all of it, and the way each one falls short is consistent enough to draw.
 
-{{< figure src="/img/off-cluster-deploy-venn.svg" alt="A three-circle Venn of composable components, generates the pipeline, and your runner on any substrate, with CDK and Copilot in one overlap, Pulumi in another, CI components in a third, and chant alone in the center" >}}
+{{< inline-svg src="off-cluster-deploy-venn.svg" alt="A three-circle Venn of composable components, generates the pipeline, and your runner on any cloud, with CDK and Copilot in one overlap, Pulumi in another, CI components in a third, and chant alone in the center" >}}
 
 Start with the frameworks that give you composition. AWS CDK builds services out of constructs, and CDK Pipelines emits a pipeline that deploys your stacks in order with the cross-stack references resolved for you. It is a real answer. It is also AWS only, the pipeline it generates is CodePipeline rather than the GitLab or GitHub you already run, and the whole thing is a framework you commit to. AWS Copilot tells the same story pointed at ECS, with a manifest per service and a generated pipeline that stops hard at the edge of ECS. Both give you composition and both generate the pipeline. Neither runs on the CI you have.
 
@@ -33,7 +35,7 @@ Then there is the answer a good engineer reaches for first, which is to use what
 
 A couple of tools do not sit cleanly in any of the three regions. Terragrunt passes outputs between modules in dependency order, which is exactly the cross-stack move, but it is Terraform only and has no build or publish story. Spinnaker and Harness will template pipelines across clouds, but you adopt their platform to get it, which is the thing you were trying to avoid. They belong in the table more than on the diagram.
 
-{{< figure src="/img/off-cluster-deploy-matrix.svg" alt="A capability matrix comparing chant, CDK Pipelines, AWS Copilot, Pulumi, Terragrunt, CI components, and Spinnaker across composable components, generates plain CI, your existing runner, any substrate, cross-stack wiring, and build and publish" >}}
+{{< inline-svg src="off-cluster-deploy-matrix.svg" alt="A capability matrix comparing chant, CDK Pipelines, AWS Copilot, Pulumi, Terragrunt, CI components, and Spinnaker across composable components, generates plain CI, your existing runner, any cloud, cross-stack wiring, and build and publish" >}}
 
 ---
 

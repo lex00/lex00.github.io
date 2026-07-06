@@ -264,6 +264,21 @@ header nav {
   margin-bottom: 1rem;
 }
 
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.diagram {
+  margin: 1.5rem 0;
+}
+
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ── Product grid ─────────────────────────────────────────────── */
 
 .product-grid {
