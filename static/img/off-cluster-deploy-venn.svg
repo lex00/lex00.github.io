@@ -17,9 +17,9 @@
   <text x="158" y="556" font-size="14.5" font-weight="700" fill="#9a6a12" text-anchor="middle">Generates the pipeline</text>
   <text x="158" y="574" font-size="10.5" fill="#b0894a" text-anchor="middle">you don't hand-write the deploy</text>
 
-  <!-- circle C label (your runner, any substrate) — outside lower-right -->
+  <!-- circle C label (your runner, any cloud) — outside lower-right -->
   <line x1="700" y1="540" x2="636" y2="486" stroke="#1c8a82" stroke-width="1" stroke-opacity="0.6"/>
-  <text x="742" y="556" font-size="14.5" font-weight="700" fill="#167a72" text-anchor="middle">Your runner, any substrate</text>
+  <text x="742" y="556" font-size="14.5" font-weight="700" fill="#167a72" text-anchor="middle">Your runner, any cloud</text>
   <text x="742" y="574" font-size="10.5" fill="#4aa39a" text-anchor="middle">no new platform, not one cloud</text>
 
   <!-- tools in overlaps -->
