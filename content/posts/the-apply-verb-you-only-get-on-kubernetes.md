@@ -3,13 +3,13 @@ title: "The apply verb you only get on Kubernetes"
 date: 2026-07-06
 ---
 
-Kubernetes made one thing uniform that most people forget was ever a decision: every service deploys the same way. `kubectl apply`. The manifest describes the desired state and a controller makes it real. Because the verb is shared, the CI around it is shared too. A platform team writes one pipeline and a hundred services ride it, because from the pipeline's point of view they are all the same operation.
+Kubernetes made something uniform that people forget was ever a choice. Every service deploys the same way. A manifest describes the desired state, `kubectl apply` hands it over, and a controller makes it real. Because the verb is shared, the CI around it is shared too. A platform team writes one pipeline and a hundred services ride it, since from the pipeline's point of view they are all the same operation.
 
 Step off the cluster and that uniformity is gone.
 
 On EC2, ECS, and CloudFormation there is no shared apply verb. Building an image is one thing, promoting it is another, applying a stack is a third, and handing one stack's outputs to the next is a fourth. None of it is standardized, so all of it ends up in the pipeline. And because the pipeline is where the variance lives, the pipeline is what multiplies. Every service grows its own.
 
-You have seen the shape it takes. Somewhere in each service's deploy job is a block that reaches into another stack to find the values it needs:
+You know what this turns into. Somewhere in each service's deploy job is a block that reaches into another stack to find the values it needs.
 
 ```
 OUTPUTS=$(aws cloudformation describe-stacks --stack-name shared-alb --query 'Stacks[0].Outputs' --output json)
@@ -25,7 +25,7 @@ Plenty of tools attack a piece of this. None of them attack all of it, and the w
 
 {{< figure src="/img/off-cluster-deploy-venn.svg" alt="A three-circle Venn of composable components, generates the pipeline, and your runner on any substrate, with CDK and Copilot in one overlap, Pulumi in another, CI components in a third, and chant alone in the center" >}}
 
-Start with the frameworks that give you composition. AWS CDK builds services out of constructs, and CDK Pipelines emits a pipeline that deploys your stacks in order with the cross-stack references resolved for you. It is a real answer. It is also AWS only, the pipeline it generates is CodePipeline rather than the GitLab or GitHub you already run, and the whole thing is a framework you commit to. AWS Copilot is the same story pointed at ECS: a manifest per service, a generated pipeline, and a hard stop at the edge of ECS. Both give you composition and both generate the pipeline. Neither runs on the CI you have.
+Start with the frameworks that give you composition. AWS CDK builds services out of constructs, and CDK Pipelines emits a pipeline that deploys your stacks in order with the cross-stack references resolved for you. It is a real answer. It is also AWS only, the pipeline it generates is CodePipeline rather than the GitLab or GitHub you already run, and the whole thing is a framework you commit to. AWS Copilot tells the same story pointed at ECS, with a manifest per service and a generated pipeline that stops hard at the edge of ECS. Both give you composition and both generate the pipeline. Neither runs on the CI you have.
 
 Pulumi sits in a different overlap. Its components are real, it spans clouds, and you run it wherever you like. But it does not generate the pipeline. You still write the orchestration that calls it. Composition and openness, without the generation.
 
@@ -39,6 +39,6 @@ A couple of tools do not sit cleanly in any of the three regions. Terragrunt pas
 
 Read the diagram by its empty spaces. Each tool is missing exactly one circle. CDK and Copilot do not run on your CI. Pulumi does not generate the pipeline. The CI-native components are not a component model. The center, where all three overlap, is where the pain actually goes away, and it is mostly empty.
 
-[chant](https://intentius.github.io/chant/) is built to sit there. You describe each service as data. One generic runner deploys them all, with no per-service code in the runner itself. Adding a service is one declaration and no new pipeline. And it generates the CI you already run, turning the dependency graph into one thin job per service, with each stack's outputs handed to the next job as an artifact instead of scraped back out with `jq`. There is a [runnable version](https://github.com/INTENTIUS/chant/tree/main/examples/adopt-alb-services): two services on a shared load balancer, the bespoke pipeline and the generated one side by side.
+[chant](https://intentius.github.io/chant/) is built to sit there. You describe each service as data. One generic runner deploys them all, with no per-service code in the runner itself. Adding a service is one declaration and no new pipeline. And it generates the CI you already run, turning the dependency graph into one thin job per service, with each stack's outputs handed to the next job as an artifact instead of scraped back out with `jq`. There is a [runnable version](https://github.com/INTENTIUS/chant/tree/main/examples/adopt-alb-services) with two services on a shared load balancer, the bespoke pipeline and the generated one side by side.
 
-None of the individual moves are novel. Composition exists. Pipeline generation exists. Cross-stack wiring exists. What is missing everywhere else is having them in one place, on the runner you already have, without picking a cloud first. Kubernetes got deploy uniformity by giving everyone one verb. Off the cluster you get it by describing your services as data and generating the pipeline from them. The lever is the same one it always was, which is to stop writing a pipeline per service.
+None of the individual moves are novel. Composition, pipeline generation, and cross-stack wiring all exist already. What is missing everywhere else is having them in one place, on the runner you already have, without picking a cloud first. Kubernetes got deploy uniformity by giving everyone one verb. Off the cluster you get it by describing your services as data and generating the pipeline from them, so the hundredth service stays as cheap as the first.
