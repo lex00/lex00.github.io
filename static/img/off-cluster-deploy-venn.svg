@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#111">What it takes to kill bespoke pipelines off-cluster</text>
+  <text x="40" y="66" font-size="13" fill="#666">Three capabilities. Every tool has two of them. The center is where the pain goes away.</text>
+
+  <!-- circles -->
+  <circle cx="450" cy="242" r="150" fill="#4a78c0" fill-opacity="0.13" stroke="#4a78c0" stroke-opacity="0.85" stroke-width="1.5"/>
+  <circle cx="366" cy="380" r="150" fill="#d89a2a" fill-opacity="0.13" stroke="#b07d00" stroke-opacity="0.85" stroke-width="1.5"/>
+  <circle cx="534" cy="380" r="150" fill="#2aa39a" fill-opacity="0.13" stroke="#1c8a82" stroke-opacity="0.85" stroke-width="1.5"/>
+
+  <!-- circle A label (composable components) — inside the top-only region -->
+  <text x="450" y="150" font-size="14.5" font-weight="700" fill="#35597e" text-anchor="middle">Composable components</text>
+  <text x="450" y="168" font-size="10.5" fill="#7a8ba0" text-anchor="middle">a deploy model, not CI reuse</text>
+
+  <!-- circle B label (generates the pipeline) — outside lower-left -->
+  <line x1="200" y1="540" x2="264" y2="486" stroke="#b07d00" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="158" y="556" font-size="14.5" font-weight="700" fill="#9a6a12" text-anchor="middle">Generates the pipeline</text>
+  <text x="158" y="574" font-size="10.5" fill="#b0894a" text-anchor="middle">you don't hand-write the deploy</text>
+
+  <!-- circle C label (your runner, any substrate) — outside lower-right -->
+  <line x1="700" y1="540" x2="636" y2="486" stroke="#1c8a82" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="742" y="556" font-size="14.5" font-weight="700" fill="#167a72" text-anchor="middle">Your runner, any substrate</text>
+  <text x="742" y="574" font-size="10.5" fill="#4aa39a" text-anchor="middle">no new platform, not one cloud</text>
+
+  <!-- tools in overlaps -->
+  <g font-size="13" fill="#333" text-anchor="middle">
+    <!-- A ∩ B : composition + generation, not your runner -->
+    <text x="346" y="292" font-weight="600">CDK Pipelines</text>
+    <text x="346" y="310">AWS Copilot</text>
+
+    <!-- A ∩ C : composition + open, no generation -->
+    <text x="556" y="300" font-weight="600">Pulumi</text>
+
+    <!-- C only : your runner, but reuse not a model -->
+    <text x="602" y="412" font-weight="600">GitLab CI</text>
+    <text x="602" y="430">GitHub Actions</text>
+  </g>
+
+  <!-- chant, dead center (A ∩ B ∩ C) -->
+  <rect x="410" y="316" width="80" height="34" rx="9" fill="#1a9850"/>
+  <text x="450" y="338" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">chant</text>
+
+  <!-- footnote -->
+  <text x="40" y="606" font-size="11" fill="#888">Terragrunt (Terraform-only, no build) and Spinnaker / Harness (their own platform) sit off the diagram — see the table.</text>
+</svg>
