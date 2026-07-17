@@ -8,8 +8,8 @@
  viewBox="0.00 0.00 635.00 444.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 407.51)">
 <title>determinism_ladder</title>
-<text xml:space="preserve" text-anchor="start" x="58.62" y="-349.51" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="20.00" fill="#0f172a">Determinism: by avoidance vs. by enforcement</text>
-<text xml:space="preserve" text-anchor="start" x="8" y="-338.06" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#475569">Kustomize&#45;over&#45;Helm buys determinism by avoidance. A compiler enforces it — same inputs, same YAML, always.</text>
+<text xml:space="preserve" text-anchor="start" x="58.62" y="-349.51" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="20.00" fill="#e6edf3">Determinism: by avoidance vs. by enforcement</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-338.06" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#8b949e">Kustomize&#45;over&#45;Helm buys determinism by avoidance. A compiler enforces it — same inputs, same YAML, always.</text>
 <text xml:space="preserve" text-anchor="start" x="278.75" y="-318.51" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#0f172a"> </text>
 <!-- helm -->
 <g id="node1" class="node">
@@ -32,7 +32,7 @@
 <title>helm&#45;&gt;kust</title>
 <path fill="none" stroke="#6366f1" stroke-width="1.4" d="M281.38,-237.56C281.38,-226.53 281.38,-214.27 281.38,-202.65"/>
 <polygon fill="#6366f1" stroke="#6366f1" stroke-width="1.4" points="284.88,-202.97 281.38,-192.97 277.88,-202.97 284.88,-202.97"/>
-<text xml:space="preserve" text-anchor="middle" x="362.75" y="-210.34" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#475569">non&#45;determinism — so teams avoid it</text>
+<text xml:space="preserve" text-anchor="middle" x="362.75" y="-210.34" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#8b949e">non&#45;determinism — so teams avoid it</text>
 </g>
 <!-- chant -->
 <g id="node3" class="node">
@@ -47,7 +47,7 @@
 <title>kust&#45;&gt;chant</title>
 <path fill="none" stroke="#6366f1" stroke-width="1.4" d="M281.38,-117.98C281.38,-107.22 281.38,-95.22 281.38,-83.81"/>
 <polygon fill="#6366f1" stroke="#6366f1" stroke-width="1.4" points="284.88,-83.86 281.38,-73.86 277.88,-83.86 284.88,-83.86"/>
-<text xml:space="preserve" text-anchor="middle" x="366.88" y="-90.67" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#475569">enforce it instead of avoiding it by hand</text>
+<text xml:space="preserve" text-anchor="middle" x="366.88" y="-90.67" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#8b949e">enforce it instead of avoiding it by hand</text>
 </g>
 </g>
 </svg>
