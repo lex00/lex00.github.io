@@ -17,5 +17,5 @@ tfpolicy shifted the catch to pre-plan. chant put it at the keystroke. Go take a
 
 ## Read more
 
-- [Organizational policy](https://intentius.github.io/chant/guide/organizational-policy/) — typed policy that gates the build
-- [TypeScript as data](https://intentius.github.io/chant/concepts/typescript-as-data/) — why it is typed, not stringly
+- [Organizational policy](https://intentius.io/chant/guide/organizational-policy/) — typed policy that gates the build
+- [TypeScript as data](https://intentius.io/chant/concepts/typescript-as-data/) — why it is typed, not stringly

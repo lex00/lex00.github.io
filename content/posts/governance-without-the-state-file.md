@@ -25,7 +25,7 @@ Its deletes are ownership-gated. A typo in the config does not become a purge, a
 
 There is no state file to host, lock, or corrupt, because the live platform is the source of truth.
 
-The 3 CI wardens share the same [reconcile engine](https://intentius.github.io/chant/) underneath. The interesting part is what changes between them.
+The 3 CI wardens share the same [reconcile engine](https://intentius.io/chant/) underneath. The interesting part is what changes between them.
 
 ## Three platforms
 

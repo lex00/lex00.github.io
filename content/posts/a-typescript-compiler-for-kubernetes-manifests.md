@@ -7,7 +7,7 @@ A GitOps pipeline on Kubernetes is full of tools. Reconcilers like Flux or Argo 
 
 The least guarded stage is the one where the manifests get written. YAML gets patched with Kustomize and templated with Helm, then goes unchecked for meaning until the reconciler tries to apply it.
 
-[chant](https://intentius.github.io/chant/) is a compiler for that layer. Typed TypeScript goes in and native Kubernetes YAML comes out. The build type checks and semantic lints and synthesizes deterministically, then stops and hands a standard manifest to the existing deploy path.
+[chant](https://intentius.io/chant/) is a compiler for that layer. Typed TypeScript goes in and native Kubernetes YAML comes out. The build type checks and semantic lints and synthesizes deterministically, then stops and hands a standard manifest to the existing deploy path.
 
 {{< figure src="/img/k8s-compiler-pipeline.svg" alt="A TypeScript compiler for Kubernetes manifests" >}}
 

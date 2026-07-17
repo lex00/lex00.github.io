@@ -15,7 +15,7 @@ TypeScript already has a type system. It has modules, generics, unions, intersec
 
 ## What a compiler approach looks like
 
-I built [chant](https://intentius.github.io/chant/) to treat infrastructure synthesis as a compilation problem.
+I built [chant](https://intentius.io/chant/) to treat infrastructure synthesis as a compilation problem.
 
 You write TypeScript. The compiler runs it for synthesis only. A constrained subset, and nothing after it. No cloud calls. No state. Every resource is typed against the target spec. All 1,500+ CloudFormation resource types become TypeScript types with attribute-level constraints.
 
@@ -53,4 +53,4 @@ CDKTF is discontinued. Pulumi requires a runtime. CDK still owns the full lifecy
 
 Chant is only a compiler. It turns typed TypeScript into spec-native output and gets out of the way. You deploy with whatever you already use.
 
-The [docs](https://intentius.github.io/chant/getting-started/introduction/) walk through the model in detail. The [comparison page](https://intentius.github.io/chant/concepts/comparison/) covers CDK, Pulumi, SST, and Terraform side by side.
+The [docs](https://intentius.io/chant/getting-started/introduction/) walk through the model in detail. The [comparison page](https://intentius.io/chant/concepts/comparison/) covers CDK, Pulumi, SST, and Terraform side by side.

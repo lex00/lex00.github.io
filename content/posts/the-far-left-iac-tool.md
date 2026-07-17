@@ -9,7 +9,7 @@ Terraform shifted left with `plan`, Bicep with `what-if`. Same idea, see the cha
 
 {{< figure src="/img/iac-shift-left.svg" alt="The infrastructure pipeline left to right, with chant catching mistakes at the keystroke and Terraform and Bicep catching them at preview" >}}
 
-Picture the pipeline running left to right, idea to code to apply to incident. The cloud is on the right, and `plan` and `what-if` sit just to its left because both need an API to mean anything. The leftmost seat is the red squiggle in your editor, the type checker, the lint rule that fires before you save. No network, no credentials, no deploy. That's the spot [chant](https://intentius.github.io/chant/) took.
+Picture the pipeline running left to right, idea to code to apply to incident. The cloud is on the right, and `plan` and `what-if` sit just to its left because both need an API to mean anything. The leftmost seat is the red squiggle in your editor, the type checker, the lint rule that fires before you save. No network, no credentials, no deploy. That's the spot [chant](https://intentius.io/chant/) took.
 
 You write infrastructure as constrained, deterministic TypeScript, not the arbitrary kind CDK lets phone home and do anything. Get a property wrong and the type checker stops you. Violate a naming rule and lint stops you. Reference a resource that can't exist and synthesis stops you, all with zero connection to any cloud. The bad deploy was never assembled in the first place.
 
@@ -23,6 +23,6 @@ Bring your own lifecycle. We'll see you on the left.
 
 ## Read more
 
-- [TypeScript as data](https://intentius.github.io/chant/concepts/typescript-as-data/) — why it's constrained, not CDK
-- [Lint rules overview](https://intentius.github.io/chant/lint-rules/overview/) — the checks that run offline
-- [Lifecycle models](https://intentius.github.io/chant/concepts/lifecycle-models/) — where `plan` and `what-if` fit
+- [TypeScript as data](https://intentius.io/chant/concepts/typescript-as-data/) — why it's constrained, not CDK
+- [Lint rules overview](https://intentius.io/chant/lint-rules/overview/) — the checks that run offline
+- [Lifecycle models](https://intentius.io/chant/concepts/lifecycle-models/) — where `plan` and `what-if` fit

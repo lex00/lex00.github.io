@@ -5,7 +5,7 @@ date: 2026-05-27
 
 *In the IaC world, who is truly spec native?*
 
-Most infrastructure tools put a layer between you and the target spec. The layer is the product. It owns state, deployment, and a model of your cloud that is not quite the cloud's own model. [Chant](https://intentius.github.io/chant/) makes a different choice. Its types come from the target spec. Its output is the target spec. Nothing chant specific survives in the artifact.
+Most infrastructure tools put a layer between you and the target spec. The layer is the product. It owns state, deployment, and a model of your cloud that is not quite the cloud's own model. [Chant](https://intentius.io/chant/) makes a different choice. Its types come from the target spec. Its output is the target spec. Nothing chant specific survives in the artifact.
 
 This post explains that choice. It also shows where Terraform, AWS CDK, and Pulumi drift from the spec, and what staying close to the spec buys you.
 
