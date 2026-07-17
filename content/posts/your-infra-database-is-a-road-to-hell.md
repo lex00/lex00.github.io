@@ -64,3 +64,13 @@ And you are about to hand this to agents. They write TypeScript fluently and Pkl
 Score the three questions. Truth stays in the live system, not a store chant hosts. The lifecycle is yours: hand the native artifact to your pipeline, or run chant's own durable Ops, dialed per environment from observe to apply. The authoring surface is TypeScript you already write, and the output keeps working the day you stop using chant.
 
 ConfigHub owns the truth and the lifecycle. formae owns the lifecycle and a language you had to learn first. chant owns none of it. That is the case, and it is why chant is better.
+
+---
+
+## Read more
+
+- [Governance without the state file](https://lex00.github.io/posts/governance-without-the-state-file/)
+- [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
+- [The far-left IaC tool](https://lex00.github.io/posts/the-far-left-iac-tool/)
+- [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
+- [chant](https://intentius.github.io/chant/) · [formae](https://github.com/platform-engineering-labs/formae) · [ConfigHub](https://confighub.com/)
