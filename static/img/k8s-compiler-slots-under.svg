@@ -8,13 +8,13 @@
  viewBox="0.00 0.00 630.00 661.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 625.1)">
 <title>slots_under</title>
-<text xml:space="preserve" text-anchor="start" x="40.25" y="-567.1" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="20.00" fill="#0f172a">chant slots under your stack — nothing comes out</text>
-<text xml:space="preserve" text-anchor="start" x="8" y="-555.65" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#475569">Same reconciler. Same native YAML. Walk&#45;away cost is zero — delete chant and the committed YAML still works.</text>
-<text xml:space="preserve" text-anchor="start" x="276.5" y="-536.1" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#0f172a"> </text>
+<text xml:space="preserve" text-anchor="start" x="40.25" y="-567.1" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="20.00" fill="#e6edf3">chant slots under your stack — nothing comes out</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-555.65" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#8b949e">Same reconciler. Same native YAML. Walk&#45;away cost is zero — delete chant and the committed YAML still works.</text>
+<text xml:space="preserve" text-anchor="start" x="276.5" y="-536.1" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#e6edf3"> </text>
 <g id="clust1" class="cluster">
 <title>cluster_before</title>
 <path fill="none" stroke="#cbd5e1" d="M40.12,-251.3C40.12,-251.3 196.12,-251.3 196.12,-251.3 202.12,-251.3 208.12,-257.3 208.12,-263.3 208.12,-263.3 208.12,-510.1 208.12,-510.1 208.12,-516.1 202.12,-522.1 196.12,-522.1 196.12,-522.1 40.12,-522.1 40.12,-522.1 34.12,-522.1 28.12,-516.1 28.12,-510.1 28.12,-510.1 28.12,-263.3 28.12,-263.3 28.12,-257.3 34.12,-251.3 40.12,-251.3"/>
-<text xml:space="preserve" text-anchor="middle" x="118.12" y="-505.75" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#64748b">BEFORE</text>
+<text xml:space="preserve" text-anchor="middle" x="118.12" y="-505.75" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#8b949e">BEFORE</text>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_after</title>
