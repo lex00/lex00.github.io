@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 468" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="468" fill="#0d1117"/>
+
+  <text x="30" y="42" font-size="22" font-weight="700" fill="#e6edf3">Representation, location, lifecycle</text>
+  <text x="30" y="66" font-size="13" fill="#8b949e">Three tools past the authoritative model. Read the chant column.</text>
+
+  <!-- chant column highlight -->
+  <rect x="676" y="92" width="232" height="312" rx="10" fill="#1a9850" opacity="0.07"/>
+  <rect x="676" y="92" width="232" height="312" rx="10" fill="none" stroke="#1a9850" stroke-width="2"/>
+
+  <!-- headers -->
+  <text x="312" y="120" font-size="16" font-weight="700" fill="#e0b84a" text-anchor="middle">ConfigHub</text>
+  <rect x="272" y="128" width="80" height="3" fill="#e0b84a"/>
+  <text x="552" y="120" font-size="16" font-weight="700" fill="#58a6ff" text-anchor="middle">formae</text>
+  <rect x="512" y="128" width="80" height="3" fill="#58a6ff"/>
+  <text x="792" y="120" font-size="16" font-weight="700" fill="#68d391" text-anchor="middle">chant</text>
+  <rect x="752" y="128" width="80" height="3" fill="#68d391"/>
+  <line x1="30" y1="140" x2="908" y2="140" stroke="#30363d" stroke-width="1"/>
+
+  <!-- row separators -->
+  <line x1="30" y1="209" x2="908" y2="209" stroke="#21262d" stroke-width="1"/>
+  <line x1="30" y1="275" x2="908" y2="275" stroke="#21262d" stroke-width="1"/>
+  <line x1="30" y1="341" x2="908" y2="341" stroke="#21262d" stroke-width="1"/>
+
+  <!-- row labels -->
+  <g font-size="14" font-weight="700" fill="#adbac7">
+    <text x="34" y="181">Representation</text>
+    <text x="34" y="247">Location</text>
+    <text x="34" y="313">Lifecycle</text>
+    <text x="34" y="379">Ownership</text>
+  </g>
+
+  <!-- Representation -->
+  <text x="312" y="181" font-size="13" fill="#c9d1d9" text-anchor="middle">data in a store</text>
+  <text x="552" y="181" font-size="13" fill="#c9d1d9" text-anchor="middle">Pkl</text>
+  <text x="792" y="181" font-size="13" font-weight="600" fill="#d6f5e2" text-anchor="middle">typed TS = the spec</text>
+
+  <!-- Location -->
+  <text x="312" y="247" font-size="13" fill="#c9d1d9" text-anchor="middle">a database</text>
+  <text x="552" y="247" font-size="13" fill="#c9d1d9" text-anchor="middle">the source code</text>
+  <text x="792" y="247" font-size="13" font-weight="600" fill="#d6f5e2" text-anchor="middle">the live system</text>
+
+  <!-- Lifecycle -->
+  <text x="312" y="313" font-size="13" fill="#c9d1d9" text-anchor="middle">around the store</text>
+  <text x="552" y="313" font-size="13" fill="#c9d1d9" text-anchor="middle">cloud &#8594; code</text>
+  <text x="792" y="313" font-size="13" font-weight="600" fill="#d6f5e2" text-anchor="middle">yours, per env</text>
+
+  <!-- Ownership -->
+  <text x="312" y="379" font-size="13" fill="#f56565" text-anchor="middle">&#10007; from state</text>
+  <text x="552" y="379" font-size="13" fill="#c9d1d9" text-anchor="middle">from code</text>
+  <text x="792" y="379" font-size="13" font-weight="600" fill="#68d391" text-anchor="middle">from a live marker &#10003;</text>
+
+  <text x="30" y="440" font-size="12" fill="#6e7681">Terraform and Pulumi kept the authoritative model. They aren&#8217;t in this comparison.</text>
+</svg>

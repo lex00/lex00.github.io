@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="loopblue" markerWidth="9" markerHeight="9" refX="4" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,4 L0,8 Z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="560" fill="#0d1117"/>
+
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#e6edf3">Three homes for the truth</text>
+  <text x="40" y="68" font-size="13" fill="#8b949e">The authoritative model is gone. Where each tool keeps the truth now.</text>
+
+  <!-- discarded model -->
+  <rect x="298" y="92" width="304" height="52" rx="8" fill="#161b22" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="320" y="112" width="15" height="12" rx="2" fill="none" stroke="#6e7681" stroke-width="1.5"/>
+  <path d="M323,112 a4.5,4.5 0 0 1 9,0" fill="none" stroke="#6e7681" stroke-width="1.5"/>
+  <text x="470" y="114" font-size="13" font-weight="600" fill="#adbac7" text-anchor="middle">state = truth = ownership</text>
+  <text x="470" y="132" font-size="11" fill="#6e7681" text-anchor="middle">Terraform · Pulumi</text>
+  <text x="450" y="164" font-size="11" fill="#6e7681" text-anchor="middle" font-style="italic">left behind by all three</text>
+
+  <line x1="60" y1="192" x2="840" y2="192" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="222" font-size="13" fill="#c9d1d9" text-anchor="middle">the truth now lives in…</text>
+
+  <!-- ConfigHub -->
+  <rect x="40" y="244" width="250" height="286" rx="10" fill="#161b22" stroke="#e0b84a" stroke-width="1.5"/>
+  <ellipse cx="165" cy="280" rx="38" ry="10" fill="#1b2230" stroke="#e0b84a" stroke-width="1.8"/>
+  <line x1="127" y1="280" x2="127" y2="316" stroke="#e0b84a" stroke-width="1.8"/>
+  <line x1="203" y1="280" x2="203" y2="316" stroke="#e0b84a" stroke-width="1.8"/>
+  <path d="M127,316 A38,10 0 0 0 203,316" fill="none" stroke="#e0b84a" stroke-width="1.8"/>
+  <path d="M127,294 A38,10 0 0 0 203,294" fill="none" stroke="#e0b84a" stroke-width="1" opacity="0.5"/>
+  <path d="M127,305 A38,10 0 0 0 203,305" fill="none" stroke="#e0b84a" stroke-width="1" opacity="0.5"/>
+  <text x="165" y="372" font-size="17" font-weight="700" fill="#e0b84a" text-anchor="middle">ConfigHub</text>
+  <text x="165" y="398" font-size="12.5" fill="#c9d1d9" text-anchor="middle">truth = data in a store</text>
+  <text x="165" y="418" font-size="12.5" fill="#c9d1d9" text-anchor="middle">you author in the store</text>
+  <line x1="70" y1="438" x2="260" y2="438" stroke="#30363d" stroke-width="1"/>
+  <text x="165" y="462" font-size="12" fill="#e0b84a" text-anchor="middle" opacity="0.85">representation went too far</text>
+
+  <!-- formae -->
+  <rect x="325" y="244" width="250" height="286" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="450" y="298" font-size="42" font-weight="700" fill="#58a6ff" text-anchor="middle">{ }</text>
+  <path d="M450,311 a13,13 0 1 1 -9,3.5" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#loopblue)"/>
+  <text x="450" y="372" font-size="17" font-weight="700" fill="#58a6ff" text-anchor="middle">formae</text>
+  <text x="450" y="398" font-size="12.5" fill="#c9d1d9" text-anchor="middle">truth = the source code</text>
+  <text x="450" y="418" font-size="12.5" fill="#c9d1d9" text-anchor="middle">cloud reconciled back to code</text>
+  <line x1="355" y1="438" x2="545" y2="438" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="462" font-size="12" fill="#58a6ff" text-anchor="middle" opacity="0.85">right inversion, wrong language</text>
+
+  <!-- chant -->
+  <rect x="610" y="244" width="250" height="286" rx="10" fill="#1a9850" opacity="0.08"/>
+  <rect x="610" y="244" width="250" height="286" rx="10" fill="none" stroke="#1a9850" stroke-width="2.5"/>
+  <path d="M712,306 a13,13 0 0 1 0,-24 a16,16 0 0 1 30,-4 a12,12 0 0 1 15,6 a12,12 0 0 1 -3,22 z" fill="#12261a" stroke="#1a9850" stroke-width="2"/>
+  <text x="735" y="296" font-size="13" font-weight="700" fill="#68d391" text-anchor="middle">{ TS }</text>
+  <text x="735" y="372" font-size="17" font-weight="700" fill="#68d391" text-anchor="middle">chant</text>
+  <text x="735" y="398" font-size="12.5" fill="#d6f5e2" text-anchor="middle">truth = the live system</text>
+  <text x="735" y="418" font-size="12.5" fill="#d6f5e2" text-anchor="middle">typed source in, native out</text>
+  <line x1="640" y1="438" x2="830" y2="438" stroke="#1f4d34" stroke-width="1"/>
+  <text x="735" y="462" font-size="12" fill="#68d391" text-anchor="middle">spec-native, nothing to unwind</text>
+</svg>
