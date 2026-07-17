@@ -3,7 +3,7 @@ title: "Your infra database is a road to hell"
 date: 2026-07-17
 ---
 
-The authoritative model Terraform made famous has always been a poor fit for teams just trying to automate a little infra. The state file is only its most visible cost. Give up the model and three questions decide the tool: how the truth is represented, where it lives, and what lifecycle runs around it. [ConfigHub](https://confighub.com/) and [formae](https://github.com/platform-engineering-labs/formae) are already past it, and [chant](https://intentius.github.io/chant/) answers the same three again.
+The authoritative model Terraform made famous has always been a poor fit for teams just trying to automate a little infra. The state file is only its most visible cost. Give up the model and three questions decide the tool: how the truth is represented, where it lives, and what lifecycle runs around it. [ConfigHub](https://confighub.com/) and [formae](https://github.com/platform-engineering-labs/formae) are already past it, and [chant](https://intentius.io/chant/) answers the same three again.
 
 - **Representation.** ConfigHub makes the truth data in a store. formae makes it Pkl. chant makes it typed TypeScript that is the spec itself.
 - **Location.** ConfigHub puts the truth in a database. formae pushes it into the source code and reconciles the cloud back to it. chant leaves it in the live system, where it already is.
@@ -73,4 +73,4 @@ ConfigHub owns the truth and the lifecycle. formae owns the lifecycle and a lang
 - [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
 - [The far-left IaC tool](https://lex00.github.io/posts/the-far-left-iac-tool/)
 - [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
-- [chant](https://intentius.github.io/chant/) · [formae](https://github.com/platform-engineering-labs/formae) · [ConfigHub](https://confighub.com/)
+- [chant](https://intentius.io/chant/) · [formae](https://github.com/platform-engineering-labs/formae) · [ConfigHub](https://confighub.com/)
