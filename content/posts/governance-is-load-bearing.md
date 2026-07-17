@@ -45,7 +45,7 @@ The boundary is Terraform. chant does not emit HCL. So a Terraform shop does not
 
 ## A diff, not a plan
 
-[chant](https://intentius.github.io/chant/) gives you a diff, not a plan.
+[chant](https://intentius.io/chant/) gives you a diff, not a plan.
 
 There are two modes. The default is offline. It builds the project, fingerprints the declarations, and compares against the last snapshot. Fast feedback on what you changed. The other mode queries the cloud and compares the live result against both the last snapshot and the current build. That one catches the change someone made by hand.
 

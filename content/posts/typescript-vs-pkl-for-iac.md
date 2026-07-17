@@ -3,7 +3,7 @@ title: "TypeScript vs Pkl for IaC"
 date: 2026-05-27
 ---
 
-Two tools have made the same uncommon choice. [chant](https://intentius.github.io/chant/) and [formae](https://github.com/platform-engineering-labs/formae) both refuse the authoritative state file. Most infrastructure tools keep one. These two do not. That shared move is the right place to start, because it is the right move.
+Two tools have made the same uncommon choice. [chant](https://intentius.io/chant/) and [formae](https://github.com/platform-engineering-labs/formae) both refuse the authoritative state file. Most infrastructure tools keep one. These two do not. That shared move is the right place to start, because it is the right move.
 
 ## The state file was never the part that matters
 

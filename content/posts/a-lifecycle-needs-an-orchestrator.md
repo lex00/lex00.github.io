@@ -11,11 +11,11 @@ Then you ask what runs it, and the answer is nothing. No typed input, no retry, 
 
 Read the diagram by its empty column. They tie on the easy row. Everything under it is the executor Actions neglect.
 
-[chant](https://intentius.github.io/chant/) makes a day-two step typed TypeScript that runs on Temporal, so retries, timeouts, human gates, and a durable record come with the step, not a flag. Go take a closer look.
+[chant](https://intentius.io/chant/) makes a day-two step typed TypeScript that runs on Temporal, so retries, timeouts, human gates, and a durable record come with the step, not a flag. Go take a closer look.
 
 Bring your own lifecycle. Just bring one that can finish the job.
 
 ## Read more
 
-- [Ops](https://intentius.github.io/chant/guide/ops/) — day-two work as a typed step
-- [Local vs Temporal](https://intentius.github.io/chant/guide/local-vs-temporal/) — the executor, and what it costs
+- [Ops](https://intentius.io/chant/guide/ops/) — day-two work as a typed step
+- [Local vs Temporal](https://intentius.io/chant/guide/local-vs-temporal/) — the executor, and what it costs
