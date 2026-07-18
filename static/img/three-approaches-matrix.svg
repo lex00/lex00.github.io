@@ -46,7 +46,7 @@
   <text x="792" y="313" font-size="13" font-weight="600" fill="#d6f5e2" text-anchor="middle">yours, per env</text>
 
   <!-- Ownership -->
-  <text x="312" y="379" font-size="13" fill="#f56565" text-anchor="middle">&#10007; from state</text>
+  <text x="312" y="379" font-size="13" fill="#c9d1d9" text-anchor="middle">via live markers</text>
   <text x="552" y="379" font-size="13" fill="#c9d1d9" text-anchor="middle">from code</text>
   <text x="792" y="379" font-size="13" font-weight="600" fill="#68d391" text-anchor="middle">from a live marker &#10003;</text>
 

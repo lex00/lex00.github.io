@@ -33,7 +33,7 @@
   <text x="165" y="398" font-size="12.5" fill="#c9d1d9" text-anchor="middle">truth = data in a store</text>
   <text x="165" y="418" font-size="12.5" fill="#c9d1d9" text-anchor="middle">you author in the store</text>
   <line x1="70" y1="438" x2="260" y2="438" stroke="#30363d" stroke-width="1"/>
-  <text x="165" y="462" font-size="12" fill="#e0b84a" text-anchor="middle" opacity="0.85">representation went too far</text>
+  <text x="165" y="462" font-size="12" fill="#e0b84a" text-anchor="middle" opacity="0.85">requires a database</text>
 
   <!-- formae -->
   <rect x="325" y="244" width="250" height="286" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
@@ -54,5 +54,5 @@
   <text x="735" y="398" font-size="12.5" fill="#d6f5e2" text-anchor="middle">truth = the live system</text>
   <text x="735" y="418" font-size="12.5" fill="#d6f5e2" text-anchor="middle">typed source in, native out</text>
   <line x1="640" y1="438" x2="830" y2="438" stroke="#1f4d34" stroke-width="1"/>
-  <text x="735" y="462" font-size="12" fill="#68d391" text-anchor="middle">spec-native, nothing to unwind</text>
+  <text x="735" y="462" font-size="12" fill="#68d391" text-anchor="middle">no database, nothing to unwind</text>
 </svg>

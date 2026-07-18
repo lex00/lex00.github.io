@@ -8,7 +8,7 @@ The authoritative model Terraform made famous has always been a poor fit for tea
 - **Representation.** ConfigHub makes the truth data in a store. formae makes it Pkl. chant makes it typed TypeScript that is the spec itself.
 - **Location.** ConfigHub puts the truth in a database. formae pushes it into the source code and reconciles the cloud back to it. chant leaves it in the live system, where it already is.
 - **Lifecycle.** ConfigHub builds one around its store. formae builds one that pulls reality into code. chant hands the lifecycle to you, dialed per environment.
-- **Ownership.** Here ConfigHub slips: like Terraform, it derives ownership from state, so absence from the store authorizes the delete.
+- **Ownership.** Terraform ties it to state. ConfigHub delegates it to live markers in ArgoCD and Crossplane, which is right. chant reads it straight off the resource, no store in the loop.
 - **Verdict.** Three tools past the authoritative model, and one that also refuses to own you: typed source you already write, truth left live, artifacts that outlive the tool.
 
 {{< inline-svg src="where-truth-lives.svg" alt="Three panels showing where each tool keeps the truth. ConfigHub in a database, formae in the source code with a reconcile loop, chant in the live system as typed TypeScript. Above them, the discarded authoritative model where state, truth, and ownership are one locked box." >}}
@@ -17,23 +17,23 @@ The authoritative model Terraform made famous has always been a poor fit for tea
 
 ConfigHub replaces the file with a database, and the database is the truth. You author in it through an API. It actuates from it. Brian Grant is right that configuration is data and that Git is a poor place to keep it, and the product follows honestly from that.
 
-The representation is where it overshot. Configuration is still written by developers, and it is already hard enough with abstractions stacked on everything. Moving it into database records adds one more layer between the author and the spec. That is the case for staying spec-native: the thing you write should be the thing that ships.
+The representation is spec-native on both sides, and that is worth being exact about. ConfigHub holds KRM, the real spec, as data. chant holds the same spec as typed source. Neither abstracts over it. The split is where the spec lives and how you touch it: records in a store you edit through tools, or typed source you author and read in an editor.
 
 And look at what you signed. The store is your authoring surface, your source of truth, and your control plane at once. Three kinds of lock-in wearing one login.
 
 ## Ownership is not state
 
-Every deploy tool answers two questions: what is true, and what is mine to delete. The defect is deriving the second from the first.
+Every deploy tool answers two questions: what is true, and what is mine to delete. The trap is deriving the second from the first.
 
-Terraform reads ownership off presence in state. In the file, it's yours; drop it, the file authorizes the delete. I've made this case about Terraform before.
+Terraform walked into it. In the state file a resource is yours because it sits in the file. Drop it and the file authorizes the delete. State and ownership are the same record.
 
-ConfigHub does the same by design, and builds its whole lifecycle on it. The store is the truth, so absence from it authorizes the delete, and the entire actuate-and-reconcile loop runs on that identity. Server-side apply tracks field ownership live, which helps, but never decides whether a resource should exist. That call comes from the store.
+ConfigHub does not make that mistake. Ownership and pruning ride the actuators, ArgoCD and Flux, or Crossplane, ACK, and Config Connector for cloud resources, and those answer "is this mine" from live markers on the resource, not from the store. That is the right design. What stays true is narrower: the store is the desired-state authority. It decides what should exist, and where pruning is on, absence from the store is what the actuators enact.
 
-It never had to. Ownership can be its own fact: a marker on the live resource, read directly, independent of any record of truth. chant deletes only what is owned and undeclared, two signals agreeing. ConfigHub built a product on a conflation that did not need to exist.
+chant answers ownership the same way those actuators do, from a live marker on the resource, and answers existence from the source. A delete needs both, owned and undeclared. The difference is that there is no desired-state store in the loop. The plan is computed against the live system.
 
 {{< inline-svg src="ownership-conflation.svg" alt="Two models compared. Conflated: a single band where in-the-record equals true equals owned equals deletable. Separated: two overlapping bands, Declared and Owned, where a delete happens only in the owned-and-undeclared sliver." >}}
 
-ConfigHub is Terraform's conflation with a query planner.
+ConfigHub avoided the conflation. It kept the database.
 
 ## formae gets the truth right, and the wrong language
 
@@ -74,3 +74,7 @@ ConfigHub owns the truth and the lifecycle. formae owns the lifecycle and a lang
 - [The far-left IaC tool](https://lex00.github.io/posts/the-far-left-iac-tool/)
 - [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
 - [chant](https://intentius.io/chant/) · [formae](https://github.com/platform-engineering-labs/formae) · [ConfigHub](https://confighub.com/)
+
+---
+
+*Update: an earlier version said ConfigHub abstracts over the spec and derives ownership from state. Both were wrong. ConfigHub holds KRM as data, and ownership and pruning ride live markers in ArgoCD, Flux, and Crossplane. Corrected above, with thanks to [Brian Grant](https://confighub.com/) for the pushback. The database point stands.*
