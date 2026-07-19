@@ -10,7 +10,7 @@ Every tool sits on a lower layer. For infrastructure it is a cloud's native spec
 
 Two people in two fields, [Gregor Hohpe](https://www.linkedin.com/in/ghohpe) in software architecture and [Adam Chlipala](https://www.linkedin.com/in/adamch/) in formal verification, describe that same failure and the same fix.
 
-<p style="text-align: center; font-size: 1.3em; font-weight: 700;">chant is what the fix looks like for infrastructure: what you write is what you ship.</p>
+<p style="text-align: center; font-size: 1.3em; font-weight: 700;"><a href="https://intentius.io/chant/">chant</a> is what the fix looks like for infrastructure: what you write is what you ship.</p>
 
 The deployed spec is fixed by your source alone, readable before anything runs. That is the part people do not believe at first, and the part you can check. I can show where it lands and where other tools fall short. None of it rests on personal taste.
 
