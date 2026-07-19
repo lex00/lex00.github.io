@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="600" fill="#0d1117"/>
+
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#e6edf3">Where the tools land</text>
+  <text x="40" y="68" font-size="13" fill="#8b949e">The same two criteria, now as circles. Each design clears one. chant clears both, and by design rather than by discipline.</text>
+
+  <!-- circle A: Hohpe's test -->
+  <circle cx="385" cy="322" r="182" fill="#58a6ff" fill-opacity="0.10" stroke="#58a6ff" stroke-opacity="0.8" stroke-width="1.5"/>
+  <!-- circle B: Chlipala's test -->
+  <circle cx="560" cy="322" r="182" fill="#e0b84a" fill-opacity="0.10" stroke="#e0b84a" stroke-opacity="0.8" stroke-width="1.5"/>
+
+  <text x="248" y="120" font-size="15" font-weight="700" fill="#79c0ff" text-anchor="middle">A real language, compiled</text>
+  <text x="248" y="139" font-size="11" fill="#8b949e" text-anchor="middle">Hohpe&#8217;s test</text>
+
+  <text x="686" y="120" font-size="15" font-weight="700" fill="#e0b84a" text-anchor="middle">Checkable without running it</text>
+  <text x="686" y="139" font-size="11" fill="#b0894a" text-anchor="middle">Chlipala&#8217;s test</text>
+
+  <!-- A only -->
+  <text x="250" y="302" font-size="11.5" font-weight="700" fill="#adbac7" text-anchor="middle">real language, but executed</text>
+  <text x="250" y="328" font-size="14" font-weight="600" fill="#c9d1d9" text-anchor="middle">CDK</text>
+  <text x="250" y="350" font-size="10.5" fill="#8b949e" text-anchor="middle">you run the program to synthesize</text>
+  <text x="250" y="370" font-size="10.5" fill="#6e7681" text-anchor="middle">Hohpe&#8217;s example, and the closest &#183; AWS only</text>
+
+  <!-- B only -->
+  <text x="696" y="302" font-size="11.5" font-weight="700" fill="#adbac7" text-anchor="middle">fixed, but not a language</text>
+  <text x="696" y="328" font-size="14" font-weight="600" fill="#c9d1d9" text-anchor="middle">raw YAML</text>
+  <text x="696" y="350" font-size="10.5" fill="#8b949e" text-anchor="middle">just data, nothing compiles</text>
+
+  <!-- center: chant -->
+  <rect x="429" y="305" width="88" height="34" rx="9" fill="#1a9850"/>
+  <text x="473" y="327" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">chant</text>
+  <text x="473" y="357" font-size="10.5" fill="#7ee787" text-anchor="middle">both, by construction</text>
+
+  <!-- neither -->
+  <text x="473" y="556" font-size="13" font-weight="700" fill="#adbac7" text-anchor="middle">Terraform &#183; neither</text>
+  <text x="473" y="576" font-size="10.5" fill="#8b949e" text-anchor="middle">a document language, run against state to learn the result</text>
+
+  <text x="40" y="596" font-size="11" fill="#6e7681">CDK proved it on AWS. chant reaches the same place, carries it to more clouds, and fixes the result without a run.</text>
+</svg>
