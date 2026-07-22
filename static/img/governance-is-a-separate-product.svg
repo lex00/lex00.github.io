@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
   <text x="40" y="42" font-size="22" font-weight="700" fill="#e6edf3">The governance engine is a separate product</text>
-  <text x="40" y="66" font-size="13" fill="#8b949e">The governance engine lives almost entirely in the column you pay for.</text>
+  <text x="40" y="66" font-size="13" fill="#8b949e">The governance engine lives almost entirely in the hosted platform, not the CLI.</text>
 
   <!-- LEFT: free CLI -->
   <rect x="40" y="92" width="380" height="372" rx="8" fill="#68d391" fill-opacity="0.05" stroke="#68d391" stroke-width="1.5"/>
@@ -20,10 +20,10 @@
   <text x="60" y="410" font-size="20" font-weight="700" fill="#68d391">per-resource checks only</text>
   <text x="60" y="438" font-size="12" fill="#8b949e">catches org-wide policy: none of it</text>
 
-  <!-- RIGHT: paid platform -->
+  <!-- RIGHT: hosted platform -->
   <rect x="480" y="92" width="380" height="372" rx="8" fill="#f56565" fill-opacity="0.06" stroke="#f56565" stroke-width="1.5"/>
   <text x="500" y="122" font-size="15" font-weight="700" fill="#f89a9a">HCP Terraform</text>
-  <text x="500" y="142" font-size="12" fill="#8b949e">the paid platform, billed per resource / month</text>
+  <text x="500" y="142" font-size="12" fill="#8b949e">the hosted platform — governance tiers paid</text>
 
   <g font-size="13" fill="#e6edf3">
     <text x="500" y="178">Sentinel — proprietary policy language</text>
