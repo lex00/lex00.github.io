@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1280" height="720" fill="#0d1117"/>
+
+  <text x="640" y="212" font-size="66" font-weight="800" fill="#e6edf3" text-anchor="middle">The long road</text>
+  <text x="640" y="284" font-size="66" font-weight="800" text-anchor="middle"><tspan fill="#e6edf3">back to</tspan><tspan fill="#68d391" dx="24">cloud native</tspan></text>
+
+  <!-- LEFT: the HCL layer, a slice lifting off -->
+  <ellipse cx="450" cy="440" rx="96" ry="62" fill="#e0b84a" opacity="0.09"/>
+  <rect x="386" y="458" width="128" height="22" rx="4" fill="#1b2230" stroke="#e0b84a" stroke-width="2.2"/>
+  <rect x="386" y="430" width="128" height="22" rx="4" fill="#1b2230" stroke="#e0b84a" stroke-width="2.2"/>
+  <g transform="rotate(-7 466 411)" opacity="0.6">
+    <rect x="402" y="400" width="128" height="22" rx="4" fill="#1b2230" stroke="#e0b84a" stroke-width="2.2"/>
+  </g>
+  <text x="450" y="538" font-size="22" font-weight="700" fill="#e0b84a" text-anchor="middle">the layer</text>
+  <text x="450" y="564" font-size="16" fill="#8b949e" text-anchor="middle">HCL + state &#183; on top</text>
+
+  <!-- MIDDLE: chant moves the estate to native -->
+  <text x="644" y="418" font-size="23" font-weight="700" fill="#68d391" text-anchor="middle">chant</text>
+  <line x1="558" y1="440" x2="722" y2="440" stroke="#68d391" stroke-width="5"/>
+  <polygon points="744,440 722,429 722,451" fill="#68d391"/>
+
+  <!-- RIGHT: the native spec, underneath -->
+  <ellipse cx="830" cy="440" rx="88" ry="60" fill="#1a9850" opacity="0.11"/>
+  <rect x="776" y="408" width="108" height="66" rx="16" fill="#12261a" stroke="#1a9850" stroke-width="2.2"/>
+  <text x="830" y="450" font-size="26" font-weight="700" fill="#68d391" text-anchor="middle">{ spec }</text>
+  <text x="830" y="538" font-size="22" font-weight="700" fill="#68d391" text-anchor="middle">the ground</text>
+  <text x="830" y="564" font-size="16" fill="#8b949e" text-anchor="middle">native spec &#183; underneath</text>
+
+  <text x="1200" y="702" font-size="15" fill="#6e7681" text-anchor="end">lex00.github.io</text>
+</svg>
