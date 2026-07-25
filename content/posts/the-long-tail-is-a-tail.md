@@ -2,6 +2,7 @@
 title: "The long tail is a tail"
 date: 2026-07-25
 draft: false
+featured_image: "img/the-long-tail-cover.svg"
 ---
 
 By definition a tail is the small, infrequent remainder. The long tail of spec-less APIs never touches chant. Here's why.
