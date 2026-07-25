@@ -17,7 +17,7 @@ The tail is smaller than it sounds. The [Terraform Registry alone carries thousa
 
 chant composes with your stack. It owns the declarative surface and runs alongside whatever handles the rest, a script, a provider, a controller, a vendor CLI.
 
-Compiling specs is the whole job, and chant does it across every platform that has one.
+Compiling specs is the whole job, and chant does it across the platforms that run most infrastructure.
 
 ---
 
