@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="cg" cx="0.5" cy="0.62" r="0.6">
+    <stop offset="0" stop-color="#6c8cff" stop-opacity="0.14"/>
+    <stop offset="0.75" stop-color="#6c8cff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1280" height="720" fill="#0d1117"/>
+<rect width="1280" height="720" fill="url(#cg)"/>
+
+<text x="640" y="78" font-size="22" font-weight="700" letter-spacing="6" fill="#6e7681" text-anchor="middle">BOTH AT ONCE</text>
+
+<text x="640" y="158" font-size="56" font-weight="800" text-anchor="middle"><tspan fill="#e6edf3">Configuration as code,</tspan><tspan fill="#be82fa" dx="16">and as data</tspan></text>
+
+<text x="640" y="206" font-size="23" fill="#8b949e" text-anchor="middle">Code on the way in. Data on the way out.</text>
+
+<circle cx="545" cy="460" r="170" fill="#61bcff" fill-opacity="0.13" stroke="#61bcff" stroke-width="2.5"/>
+<circle cx="735" cy="460" r="170" fill="#be82fa" fill-opacity="0.13" stroke="#be82fa" stroke-width="2.5"/>
+
+<text x="466" y="436" font-size="23" font-weight="700" fill="#61bcff" text-anchor="middle">Configuration</text>
+<text x="466" y="466" font-size="23" font-weight="700" fill="#61bcff" text-anchor="middle">as Code</text>
+<text x="466" y="502" font-size="15" fill="#8b949e" text-anchor="middle">typed and compiled</text>
+
+<text x="814" y="436" font-size="23" font-weight="700" fill="#be82fa" text-anchor="middle">Configuration</text>
+<text x="814" y="466" font-size="23" font-weight="700" fill="#be82fa" text-anchor="middle">as Data</text>
+<text x="814" y="502" font-size="15" fill="#8b949e" text-anchor="middle">readable before apply</text>
+
+<text x="640" y="452" font-size="31" font-weight="800" fill="#e6edf3" text-anchor="middle">chant</text>
+<text x="640" y="480" font-size="15" fill="#8b949e" text-anchor="middle">both</text>
+
+<text x="640" y="672" font-size="20" fill="#6e7681" text-anchor="middle">A compiler is the bridge between them</text>
+
+<text x="1200" y="702" font-size="15" fill="#6e7681" text-anchor="end">lex00.github.io</text>
+</svg>
