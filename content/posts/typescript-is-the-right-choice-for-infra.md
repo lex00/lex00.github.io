@@ -96,3 +96,14 @@ An infrastructure toolchain answers all fourteen rows, and one abstraction shoul
 TypeScript does, and it's already fluent in every editor and every model, and it's already shaped like the spec.
 
 TypeScript is the right choice for infra.
+
+---
+
+## Read more
+
+- [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
+- [Configuration as code, and as data](https://lex00.github.io/posts/code-as-config-config-as-data/)
+- [Infrastructure deserves a compiler](https://lex00.github.io/posts/infrastructure-deserves-a-compiler/)
+- [A TypeScript compiler for Kubernetes manifests](https://lex00.github.io/posts/a-typescript-compiler-for-kubernetes-manifests/)
+- [chant TypeScript as Data](https://intentius.io/chant/concepts/typescript-as-data/)
+- [chant](https://intentius.io/chant/)
