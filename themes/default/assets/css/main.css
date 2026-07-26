@@ -534,3 +534,38 @@ header nav {
 .pagination-info {
   color: #8b949e;
 }
+
+/* Tables */
+.post-content table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid #30363d;
+  text-align: left;
+}
+
+.post-content th {
+  color: #8b949e;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Score columns: keep the two tool columns apart and centred */
+.post-content th:nth-child(n+3),
+.post-content td:nth-child(n+3) {
+  padding-left: 2.25rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Roman numeral column stays tight */
+.post-content th:first-child,
+.post-content td:first-child {
+  padding-right: 0.5rem;
+  color: #8b949e;
+}
