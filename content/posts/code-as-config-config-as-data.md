@@ -33,3 +33,14 @@ Configuration as code is what makes configuration as data comfortable for a pers
 chant is both.
 
 For the language side of this, and why TypeScript lets a tool be both at once, see [TypeScript is the right choice for infra](/posts/typescript-is-the-right-choice-for-infra/).
+
+---
+
+## Read more
+
+- [TypeScript is the right choice for infra](https://lex00.github.io/posts/typescript-is-the-right-choice-for-infra/)
+- [Your infra database is a road to hell](https://lex00.github.io/posts/your-infra-database-is-a-road-to-hell/)
+- [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
+- [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
+- [chant how it compares](https://intentius.io/chant/concepts/comparison/)
+- [chant](https://intentius.io/chant/)
