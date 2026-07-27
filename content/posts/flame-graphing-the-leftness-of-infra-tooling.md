@@ -29,7 +29,7 @@ The bottom strip is chant, and it's just as busy, but nothing lights up. That's 
 Don't take the pictures' word for it. Both recordings are live in [spicypath](https://github.com/INTENTIUS/spicypath), my profile viewer — no install, no login:
 
 - [The CDK recording](https://spicypath.intentius.workers.dev/#eyJ2dCI6ImZsYW1lIiwibW9kZSI6ImNoYXJ0IiwicSI6ImZpbGU6Y2RrLWFwcCIsIm1rIjpbWzEwNTc1MTg3MzQ1OSwieW91ciBjb2RlIHN0YXJ0cyBoZXJlIiwiI2ZmNDQ0NCJdXSwic3JjIjoic2FtcGxlcy9sZWZ0bmVzcy1jZGstc3ludGguY3B1cHJvZmlsZSIsInNyY1R5cGUiOiJzYW1wbGUifQ==), with a marker on the moment your code starts.
-- [The chant recording](https://spicypath.intentius.workers.dev/#eyJ2dCI6ImZsYW1lIiwibW9kZSI6ImNoYXJ0Iiwic3JjIjoic2FtcGxlcy9sZWZ0bmVzcy1jaGFudC1idWlsZC5jcHVwcm9maWxlIiwic3JjVHlwZSI6InNhbXBsZSJ9), where there is no such moment to mark.
+- [The chant recording](https://spicypath.intentius.workers.dev/#eyJ2dCI6ImZsYW1lIiwibW9kZSI6ImNoYXJ0IiwicSI6ImZpbGU6Y2hhbnQtYXBwL3NyYyIsInNyYyI6InNhbXBsZXMvbGVmdG5lc3MtY2hhbnQtYnVpbGQuY3B1cHJvZmlsZSIsInNyY1R5cGUiOiJzYW1wbGUifQ==), where the same search for your code comes back 0 matches — the whole strip dims because nothing qualifies.
 
 One caveat, this works for code written in chant's supported style. Files that are deliberately programs still run, in a sandbox, with intention. What sits left of the execution line is exactly the part of your repo that describes infrastructure rather than computes it.
 
