@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="larrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#e0b84a"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#e6edf3">What runs while each tool builds your deployment plan</text>
+  <text x="40" y="66" font-size="13" fill="#8b949e">Same app given to both. Time runs left to right.</text>
+
+  <!-- ── CDK bar ── -->
+  <text x="40" y="112" font-size="15" font-weight="700" fill="#e6edf3">cdk synth</text>
+  <!-- tool startup sliver -->
+  <rect x="150" y="96" width="14" height="34" rx="4" fill="#30363d"/>
+  <!-- your code running: dominant, amber -->
+  <rect x="166" y="96" width="614" height="34" rx="4" fill="#e0b84a"/>
+  <text x="473" y="118" font-size="13.5" font-weight="700" fill="#1c2128" text-anchor="middle">your code + its infrastructure library, executing</text>
+  <!-- marker -->
+  <line x1="166" y1="88" x2="166" y2="140" stroke="#f56565" stroke-width="3"/>
+  <text x="176" y="158" font-size="12" fill="#f56565" font-weight="700">your code starts here — the tool learns the plan by running it</text>
+  <!-- plan box -->
+  <rect x="788" y="96" width="72" height="34" rx="4" fill="#161b22" stroke="#8b949e"/>
+  <text x="824" y="118" font-size="12.5" fill="#c9d1d9" text-anchor="middle">plan</text>
+
+  <!-- ── chant bar ── -->
+  <text x="40" y="222" font-size="15" font-weight="700" fill="#e6edf3">chant build</text>
+  <!-- reading: full length, calm green -->
+  <rect x="150" y="206" width="630" height="34" rx="4" fill="#1a9850"/>
+  <text x="465" y="228" font-size="13.5" font-weight="700" fill="#eafff1" text-anchor="middle">the tool reads your files — like a recipe, without cooking it</text>
+  <!-- plan box -->
+  <rect x="788" y="206" width="72" height="34" rx="4" fill="#161b22" stroke="#8b949e"/>
+  <text x="824" y="228" font-size="12.5" fill="#c9d1d9" text-anchor="middle">plan</text>
+  <!-- never-runs badge -->
+  <rect x="150" y="250" width="214" height="26" rx="13" fill="none" stroke="#68d391" stroke-width="1.5"/>
+  <text x="257" y="267" font-size="12.5" font-weight="700" fill="#68d391" text-anchor="middle">your code: never runs</text>
+
+  <!-- bottom note -->
+  <text x="40" y="312" font-size="13" fill="#8b949e">That's the whole claim. Below is the actual recording of both runs.</text>
+</svg>

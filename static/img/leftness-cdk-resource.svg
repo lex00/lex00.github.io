@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="342" font-family="Menlo,Consolas,monospace">
+<rect width="1200" height="342" fill="#0d1117"/>
+<rect x="0.0" y="306" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="276" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="246" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="216" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="186" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="156" width="10.3" height="29" rx="2" fill="#b4f6d6"/>
+<rect x="0.0" y="126" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="96" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="66" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="36" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="0.0" y="6" width="10.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="306" width="114.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="276" width="114.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="246" width="114.3" height="29" rx="2" fill="#9bedee"/>
+<text x="65.6" y="261" fill="#f4f7fb" font-size="11">get</text>
+<rect x="61.6" y="216" width="114.3" height="29" rx="2" fill="#9bedee"/>
+<text x="65.6" y="231" fill="#f4f7fb" font-size="11">get</text>
+<rect x="61.6" y="186" width="114.3" height="29" rx="2" fill="#9bedee"/>
+<text x="65.6" y="201" fill="#f4f7fb" font-size="11">get</text>
+<rect x="176.9" y="306" width="28.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="176.9" y="276" width="28.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="176.9" y="246" width="28.3" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="176.9" y="216" width="28.3" height="29" rx="2" fill="#9bedee"/>
+<text x="180.9" y="231" fill="#f4f7fb" font-size="11">cx…</text>
+<rect x="206.2" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="206.2" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="206.2" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="231.4" y="306" width="24.9" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="231.4" y="276" width="24.9" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="231.4" y="246" width="24.9" height="29" rx="2" fill="#9bedee"/>
+<rect x="257.2" y="306" width="201.0" height="29" rx="2" fill="#9bedee"/>
+<text x="261.2" y="321" fill="#f4f7fb" font-size="11">get</text>
+<rect x="257.2" y="276" width="201.0" height="29" rx="2" fill="#9bedee"/>
+<text x="261.2" y="291" fill="#f4f7fb" font-size="11">get</text>
+<rect x="257.2" y="246" width="201.0" height="29" rx="2" fill="#9bedee"/>
+<text x="261.2" y="261" fill="#f4f7fb" font-size="11">createBuilder</text>
+<rect x="206.2" y="216" width="252.0" height="29" rx="2" fill="#9bedee"/>
+<text x="210.2" y="231" fill="#f4f7fb" font-size="11">Stage</text>
+<rect x="459.2" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="459.2" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="459.2" y="246" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="459.2" y="216" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="176.9" y="186" width="306.5" height="29" rx="2" fill="#9bedee"/>
+<text x="180.9" y="201" fill="#f4f7fb" font-size="11">App</text>
+<rect x="484.4" y="306" width="23.5" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="484.4" y="276" width="23.5" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="484.4" y="246" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="508.8" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="508.8" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="508.8" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="534.0" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="534.0" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="534.0" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="559.1" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="559.1" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="559.1" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="484.4" y="216" width="98.9" height="29" rx="2" fill="#9bedee"/>
+<text x="488.4" y="231" fill="#f4f7fb" font-size="11">Stack2</text>
+<rect x="584.3" y="306" width="24.9" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="584.3" y="276" width="24.9" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="584.3" y="246" width="24.9" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="610.1" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="610.1" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="610.1" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="584.3" y="216" width="50.0" height="29" rx="2" fill="#9bedee"/>
+<text x="588.3" y="231" fill="#f4f7fb" font-size="11">get</text>
+<rect x="484.4" y="186" width="149.9" height="29" rx="2" fill="#b4f6d6"/>
+<text x="488.4" y="201" fill="#f4f7fb" font-size="11">ItemsStack</text>
+<rect x="61.6" y="156" width="572.7" height="29" rx="2" fill="#b4f6d6"/>
+<text x="65.6" y="171" fill="#f4f7fb" font-size="11">(anonymous)</text>
+<rect x="61.6" y="126" width="572.7" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="96" width="572.7" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="66" width="572.7" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="36" width="572.7" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="61.6" y="6" width="572.7" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="660.5" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="685.6" y="306" width="24.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="711.4" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="660.5" y="276" width="75.2" height="29" rx="2" fill="#9bedee"/>
+<text x="664.5" y="291" fill="#f4f7fb" font-size="11">Table2</text>
+<rect x="660.5" y="246" width="75.2" height="29" rx="2" fill="#9bedee"/>
+<text x="664.5" y="261" fill="#f4f7fb" font-size="11">WrappedCl…</text>
+<rect x="660.5" y="216" width="75.2" height="29" rx="2" fill="#9bedee"/>
+<text x="664.5" y="231" fill="#f4f7fb" font-size="11">WrappedCl…</text>
+<rect x="736.6" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="736.6" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="736.6" y="246" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="761.8" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="761.8" y="276" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="761.8" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="736.6" y="216" width="49.3" height="29" rx="2" fill="#9bedee"/>
+<text x="740.6" y="231" fill="#f4f7fb" font-size="11">get</text>
+<rect x="786.9" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="786.9" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="812.1" y="306" width="74.5" height="29" rx="2" fill="#9bedee"/>
+<text x="816.1" y="321" fill="#f4f7fb" font-size="11">Role2</text>
+<rect x="812.1" y="276" width="74.5" height="29" rx="2" fill="#9bedee"/>
+<text x="816.1" y="291" fill="#f4f7fb" font-size="11">WrappedCl…</text>
+<rect x="887.5" y="306" width="23.5" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="887.5" y="276" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="912.0" y="306" width="24.8" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="912.0" y="276" width="24.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="786.9" y="246" width="149.9" height="29" rx="2" fill="#9bedee"/>
+<text x="790.9" y="261" fill="#f4f7fb" font-size="11">Function2</text>
+<rect x="786.9" y="216" width="149.9" height="29" rx="2" fill="#9bedee"/>
+<text x="790.9" y="231" fill="#f4f7fb" font-size="11">WrappedClass</text>
+<rect x="937.9" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="937.9" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="937.9" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="937.9" y="216" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="963.0" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="963.0" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="963.0" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="963.0" y="216" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="988.2" y="306" width="22.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="988.2" y="276" width="22.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="988.2" y="246" width="22.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="988.2" y="216" width="22.8" height="29" rx="2" fill="#9bedee"/>
+<rect x="1011.9" y="306" width="24.2" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="1011.9" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1011.9" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1011.9" y="216" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1037.1" y="306" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="1037.1" y="276" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="1037.1" y="246" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="1037.1" y="216" width="23.5" height="29" rx="2" fill="#9bedee"/>
+<rect x="660.5" y="186" width="400.1" height="29" rx="2" fill="#b4f6d6"/>
+<text x="664.5" y="201" fill="#f4f7fb" font-size="11">ItemsStack</text>
+<rect x="660.5" y="156" width="400.1" height="29" rx="2" fill="#b4f6d6"/>
+<text x="664.5" y="171" fill="#f4f7fb" font-size="11">(anonymous)</text>
+<rect x="660.5" y="126" width="400.1" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="660.5" y="96" width="400.1" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="660.5" y="66" width="400.1" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="660.5" y="36" width="400.1" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="660.5" y="6" width="400.1" height="29" rx="2" fill="#86cbb1" fill-opacity="0.3"/>
+<rect x="1110.5" y="306" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="276" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="246" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="216" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="186" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="156" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="126" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1110.5" y="96" width="24.2" height="29" rx="2" fill="#9bedee"/>
+<rect x="1160.8" y="306" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="321" fill="#f4f7fb" font-size="11">_re…</text>
+<rect x="1160.8" y="276" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="291" fill="#f4f7fb" font-size="11">res…</text>
+<rect x="1160.8" y="246" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="261" fill="#f4f7fb" font-size="11">_re…</text>
+<rect x="1160.8" y="216" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="231" fill="#f4f7fb" font-size="11">res…</text>
+<rect x="1160.8" y="186" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="201" fill="#f4f7fb" font-size="11">fin…</text>
+<rect x="1160.8" y="156" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="171" fill="#f4f7fb" font-size="11">fin…</text>
+<rect x="1160.8" y="126" width="38.2" height="29" rx="2" fill="#9bedee"/>
+<text x="1164.8" y="141" fill="#f4f7fb" font-size="11">res…</text>
+<rect x="1135.6" y="96" width="63.4" height="29" rx="2" fill="#9bedee"/>
+<text x="1139.6" y="111" fill="#f4f7fb" font-size="11">prepare…</text>
+<rect x="1110.5" y="66" width="88.5" height="29" rx="2" fill="#9bedee"/>
+<text x="1114.5" y="81" fill="#f4f7fb" font-size="11">synthesize</text>
+<rect x="1110.5" y="36" width="88.5" height="29" rx="2" fill="#9bedee"/>
+<text x="1114.5" y="51" fill="#f4f7fb" font-size="11">synth</text>
+<rect x="1110.5" y="6" width="88.5" height="29" rx="2" fill="#9bedee"/>
+<text x="1114.5" y="21" fill="#f4f7fb" font-size="11">synth</text>
+<text x="16" y="34" fill="#ffd166" font-size="21" font-weight="bold" font-family="Helvetica,Arial,sans-serif" stroke="#0d1117" stroke-width="4" paint-order="stroke">blown up: ItemsStack → Table2, Role2, Function2.</text>
+<text x="16" y="63" fill="#ffd166" font-size="21" font-weight="bold" font-family="Helvetica,Arial,sans-serif" stroke="#0d1117" stroke-width="4" paint-order="stroke">That's your database table, your IAM role, your Lambda —</text>
+<text x="16" y="92" fill="#ffd166" font-size="21" font-weight="bold" font-family="Helvetica,Arial,sans-serif" stroke="#0d1117" stroke-width="4" paint-order="stroke">each one CREATED by executing code inside cdk synth.</text>
+</svg>
