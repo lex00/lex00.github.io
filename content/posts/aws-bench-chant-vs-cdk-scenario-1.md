@@ -6,11 +6,11 @@ featured_image: "img/aws-bench-s1-cover.svg"
 
 chant beats CDK on an infrastructure-agent benchmark.
 
-Same model on both sides: Haiku 4.5, fixed. The only variable was the tooling, a CDK-driven agent vs a chant-driven one. On aws-bench's fair task set, chant scored 15/15 against CDK's 11/15, at 29% lower cost and 36% fewer tokens generated. Sonnet bare, a stronger model with no special tooling, also scored 11/15. Three of the four extra tasks come down to one question: which EC2 instances are SSH-reachable from the internet?
+Same model on both sides: Haiku 4.5, fixed. The only variable was the tooling, a CDK-driven agent vs a chant-driven one. On aws-bench's task set, chant scored 15/15 against CDK's 11/15, at 29% lower cost and 36% fewer tokens generated. Sonnet bare, a stronger model with no special tooling, also scored 11/15. Three of the four extra tasks come down to one question: which EC2 instances are SSH-reachable from the internet?
 
 | | Sonnet bare | CDK | chant |
 | --- | --- | --- | --- |
-| fair-set valid | 11/15 | 11/15 | 15/15 |
+| tasks correct | 11/15 | 11/15 | 15/15 |
 | ssh-reachability | 0/3 | 0/3 | 3/3 |
 | input tokens | 2.66M | 7.88M | 6.37M |
 | output tokens | 39k | 82k | 53k |
@@ -38,7 +38,7 @@ Output: the correct 2, including the launch-template instance the CLI path drops
 
 ## The full board
 
-Every configuration tested, fair set, k=3 per task:
+Every configuration tested, five tasks, k=3 per task:
 
 | configuration | pass | valid | in-tok | out-tok | $ |
 | --- | --- | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ The tasks that separate tools are multi-hop joins. The list and describe tasks s
 
 ## Caveats
 
-This is the quickstart tier. Three of the five fair tasks saturate, so the signal is thin. Real differentiation needs scenarios where joins are the norm.
+This is the quickstart tier. Three of the five tasks saturate, so the signal is thin. Real differentiation needs scenarios where joins are the norm.
 
 ## Methodology
 
