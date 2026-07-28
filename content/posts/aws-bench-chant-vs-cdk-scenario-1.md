@@ -53,8 +53,6 @@ ssh-reach: CDK 0/3, Sonnet bare 0/3, chant 3/3.
 
 chant uses 6.4M input tokens to CDK's 7.9M, and the fewest output tokens of any configuration. CLI analysis grows with the resource count. A scoped query stays roughly flat, so the gap should widen on larger estates.
 
-Along the way we tried a use-the-tool-first briefing and a trust-building `--explain` footer, and neither moved accuracy. What moved it was making the tool able to answer the question at all. Once it could, the small model used it on every trial. Don't tune prompts to force a tool that can't express the answer.
-
 The tasks that separate tools are multi-hop joins. The list and describe tasks saturate for everyone, bare Haiku included.
 
 ## Caveats
