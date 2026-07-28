@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="cg" cx="0.5" cy="0.6" r="0.62">
+    <stop offset="0" stop-color="#6c8cff" stop-opacity="0.13"/>
+    <stop offset="0.75" stop-color="#6c8cff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1280" height="720" fill="#0d1117"/>
+<rect width="1280" height="720" fill="url(#cg)"/>
+
+<text x="640" y="76" font-size="21" font-weight="700" letter-spacing="6" fill="#6e7681" text-anchor="middle">TWO DIRECTIONS, ONE LIST</text>
+
+<text x="640" y="150" font-size="52" font-weight="800" text-anchor="middle"><tspan fill="#e6edf3">Anthropic reached</tspan><tspan fill="#a5b4fc" dx="15">the same list</tspan></text>
+
+<text x="640" y="196" font-size="22" fill="#8b949e" text-anchor="middle">Application security and infrastructure ops, arriving at the same rules.</text>
+
+<text x="575" y="268" font-size="16" font-weight="700" letter-spacing="2" fill="#6e7681" text-anchor="end">SECURING AN AI-NATIVE SDLC</text>
+<text x="705" y="268" font-size="16" font-weight="700" letter-spacing="2" fill="#6e7681" text-anchor="start">ACCESSIBLE OPS</text>
+
+<line x1="300" y1="288" x2="575" y2="288" stroke="#30363d" stroke-width="1.5"/>
+<line x1="705" y1="288" x2="1030" y2="288" stroke="#30363d" stroke-width="1.5"/>
+
+<text x="575" y="342" font-size="19" fill="#e6edf3" text-anchor="end">Single-purpose agent identity</text>
+<line x1="597" y1="336" x2="683" y2="336" stroke="#68d391" stroke-width="2"/>
+<circle cx="597" cy="336" r="3.5" fill="#68d391"/><circle cx="683" cy="336" r="3.5" fill="#68d391"/>
+<text x="705" y="342" font-size="19" fill="#a5b4fc" text-anchor="start">V &#183; Named secrets, least privilege</text>
+
+<text x="575" y="402" font-size="19" fill="#e6edf3" text-anchor="end">Diagnosis split from deploy</text>
+<line x1="597" y1="396" x2="683" y2="396" stroke="#68d391" stroke-width="2"/>
+<circle cx="597" cy="396" r="3.5" fill="#68d391"/><circle cx="683" cy="396" r="3.5" fill="#68d391"/>
+<text x="705" y="402" font-size="19" fill="#a5b4fc" text-anchor="start">VII &#183; Reversible before risky</text>
+
+<text x="575" y="462" font-size="19" fill="#e6edf3" text-anchor="end">Every action to the SIEM</text>
+<line x1="597" y1="456" x2="683" y2="456" stroke="#68d391" stroke-width="2"/>
+<circle cx="597" cy="456" r="3.5" fill="#68d391"/><circle cx="683" cy="456" r="3.5" fill="#68d391"/>
+<text x="705" y="462" font-size="19" fill="#a5b4fc" text-anchor="start">IX &#183; Attributable</text>
+
+<text x="575" y="522" font-size="19" fill="#e6edf3" text-anchor="end">Guidance in CLAUDE.md</text>
+<line x1="597" y1="516" x2="683" y2="516" stroke="#68d391" stroke-width="2"/>
+<circle cx="597" cy="516" r="3.5" fill="#68d391"/><circle cx="683" cy="516" r="3.5" fill="#68d391"/>
+<text x="705" y="522" font-size="19" fill="#a5b4fc" text-anchor="start">III &#183; Documentation is law</text>
+
+<text x="640" y="626" font-size="23" font-weight="700" fill="#8b949e" text-anchor="middle">Boundaries beat instructions</text>
+
+<text x="1200" y="702" font-size="15" fill="#6e7681" text-anchor="end">lex00.github.io</text>
+</svg>
