@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 428" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="428" fill="#0d1117"/>
+<text x="600" y="48" font-size="24" font-weight="800" fill="#e6edf3" text-anchor="middle">aws-bench scenario 1 · Haiku 4.5 unless noted</text>
+<rect x="988" y="66" width="184" height="322" rx="10" fill="#161b22" stroke="#68d391" stroke-width="1.5"/>
+<text x="620" y="98" font-size="18" font-weight="700" fill="#8b949e" text-anchor="end">sonnet bare</text>
+<text x="860" y="98" font-size="18" font-weight="700" fill="#8b949e" text-anchor="end">aws cdk</text>
+<text x="1120" y="98" font-size="18" font-weight="700" fill="#68d391" text-anchor="end">chant</text>
+<line x1="40" y1="108" x2="1160" y2="108" stroke="#30363d" stroke-width="1"/>
+<text x="60" y="142" font-size="20" fill="#8b949e">tasks correct</text>
+<text x="620" y="142" font-size="20" fill="#e6edf3" text-anchor="end">11/15</text>
+<text x="860" y="142" font-size="20" fill="#e6edf3" text-anchor="end">11/15</text>
+<text x="1120" y="142" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="end">15/15</text>
+<text x="60" y="196" font-size="20" fill="#8b949e">ssh-reachability</text>
+<text x="620" y="196" font-size="20" fill="#e6edf3" text-anchor="end">0/3</text>
+<text x="860" y="196" font-size="20" fill="#e6edf3" text-anchor="end">0/3</text>
+<text x="1120" y="196" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="end">3/3</text>
+<text x="60" y="250" font-size="20" fill="#8b949e">input tokens</text>
+<text x="620" y="250" font-size="20" fill="#e6edf3" text-anchor="end">2.66M</text>
+<text x="860" y="250" font-size="20" fill="#e6edf3" text-anchor="end">7.88M</text>
+<text x="1120" y="250" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="end">6.37M</text>
+<text x="60" y="304" font-size="20" fill="#8b949e">output tokens</text>
+<text x="620" y="304" font-size="20" fill="#e6edf3" text-anchor="end">39k</text>
+<text x="860" y="304" font-size="20" fill="#e6edf3" text-anchor="end">82k</text>
+<text x="1120" y="304" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="end">53k</text>
+<text x="60" y="358" font-size="20" fill="#8b949e">cost (USD)</text>
+<text x="620" y="358" font-size="20" fill="#e6edf3" text-anchor="end">2.02</text>
+<text x="860" y="358" font-size="20" fill="#e6edf3" text-anchor="end">1.87</text>
+<text x="1120" y="358" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="end">1.32</text>
+</svg>

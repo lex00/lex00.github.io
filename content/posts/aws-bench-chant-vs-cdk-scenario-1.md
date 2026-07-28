@@ -8,13 +8,7 @@ chant beats CDK on an infrastructure-agent benchmark.
 
 Same model on both sides: Haiku 4.5, fixed. The only variable was the tooling, a CDK-driven agent vs a chant-driven one. On aws-bench's task set, chant scored 15/15 against CDK's 11/15, at 29% lower cost and 36% fewer tokens generated. Sonnet bare, a stronger model with no special tooling, also scored 11/15. Three of the four extra tasks come down to one question: which EC2 instances are SSH-reachable from the internet?
 
-| | Sonnet bare | CDK | chant |
-| --- | --- | --- | --- |
-| tasks correct | 11/15 | 11/15 | 15/15 |
-| ssh-reachability | 0/3 | 0/3 | 3/3 |
-| input tokens | 2.66M | 7.88M | 6.37M |
-| output tokens | 39k | 82k | 53k |
-| cost (USD) | 2.02 | 1.87 | 1.32 |
+{{< figure src="/img/aws-bench-s1-table-headline.svg" alt="Metrics table. Tasks correct, Sonnet bare 11 of 15, aws cdk 11 of 15, chant 15 of 15. SSH reachability, 0 of 3, 0 of 3, 3 of 3. Input tokens 2.66M, 7.88M, 6.37M. Output tokens 39k, 82k, 53k. Cost 2.02, 1.87, 1.32 dollars. The chant column is highlighted." >}}
 
 ## The question that separated them
 
@@ -38,14 +32,7 @@ Output: the correct 2, including the launch-template instance the CLI path drops
 
 ## The full board
 
-Every configuration tested, five tasks, k=3 per task:
-
-| configuration | pass | valid | in-tok | out-tok | $ |
-| --- | --- | --- | --- | --- | --- |
-| Sonnet bare | 16 | 11/15 | 2.66M | 39k | 2.02 |
-| Haiku bare | 12 | 9/15 | 2.85M | 44k | 0.81 |
-| Haiku + CDK | 14 | 11/15 | 7.88M | 82k | 1.87 |
-| Haiku + chant | 17 | 15/15 | 6.37M | 53k | 1.32 |
+{{< figure src="/img/aws-bench-s1-table-board.svg" alt="Board table, five tasks at k equals 3 per configuration. Sonnet bare 11 of 15 correct, 2.66M in, 39k out, 2.02 dollars. Haiku bare 9 of 15, 2.85M, 44k, 0.81. Haiku plus CDK 11 of 15, 7.88M, 82k, 1.87. Haiku plus chant, highlighted, 15 of 15 correct, 6.37M, 53k, 1.32." >}}
 
 ssh-reach: CDK 0/3, Sonnet bare 0/3, chant 3/3.
 
