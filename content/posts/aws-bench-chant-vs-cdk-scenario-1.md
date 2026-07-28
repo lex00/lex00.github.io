@@ -57,8 +57,7 @@ The tasks that separate tools are multi-hop joins. The list and describe tasks s
 
 ## Caveats
 
-- This is the quickstart tier. Three of the five fair tasks saturate, so the signal is thin. Real differentiation needs scenarios where joins are the norm.
-- One task was excluded: describe-cfn-stack-resources has CDK-shaped ground truth that counts L2 construct cruft, so it measures the IaC generator, not the agent, and scores 0/3 for every configuration.
+This is the quickstart tier. Three of the five fair tasks saturate, so the signal is thin. Real differentiation needs scenarios where joins are the norm.
 
 ## Methodology
 
