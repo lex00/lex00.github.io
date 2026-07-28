@@ -22,10 +22,7 @@ The CDK agent assembles this from raw describe calls and consistently misses the
 chant resolves the join in its typed graph. An enrichment folds two derived facts onto each instance node: `effectiveIngress`, the normalized ingress rules from all reachable security groups, direct and via launch template, and `internetFacing`, whether the subnet routes to an internet gateway. The whole question becomes one query a small model can run:
 
 ```
-chant search "kind:EC2::Instance
-              attr:internetFacing=true
-              attr:effectiveIngress=tcp:22:0.0.0.0/0"
-  --live --env floci --explain --show InstanceId
+chant search "kind:EC2::Instance attr:internetFacing=true attr:effectiveIngress=tcp:22:0.0.0.0/0" --live --env floci --explain --show InstanceId
 ```
 
 Output: the correct 2, including the launch-template instance the CLI path drops, with the `--explain` footer stating why each near-miss was excluded. The agent used this query on every ssh-reach trial, with zero fallback to the raw AWS CLI.
