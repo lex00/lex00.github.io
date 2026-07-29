@@ -60,24 +60,7 @@ Below are the [accessible ops](https://accessibleops.net) principles.
 
 Here is the configuration language column beside chant, from the [full chart](https://intentius.io).
 
-| | | chant | Pkl / CUE / KCL |
-|---|---|:---:|:---:|
-| **I** | [Honor the lower layer](https://accessibleops.net) | ● | ● |
-| **II** | [The same check, left of the commit](https://accessibleops.net) | ● | ● |
-| **III** | [Documentation is law](https://accessibleops.net) | ● | ● |
-| **IV** | [One path to prod](https://accessibleops.net) | ● | – |
-| **V** | [Named secrets, least privilege](https://accessibleops.net) | ● | – |
-| **VI** | [Bounded blast radius](https://accessibleops.net) | ● | – |
-| **VII** | [Reversible before risky](https://accessibleops.net) | ● | – |
-| **VIII** | [Escalate the judgment](https://accessibleops.net) | ● | – |
-| **IX** | [Attributable](https://accessibleops.net) | ● | – |
-| **X** | [Secret rotation is cheap](https://accessibleops.net) | ● | – |
-| **XI** | [The live system is the truth](https://accessibleops.net) | ● | ✗ |
-| **XII** | [Adopt in place](https://accessibleops.net) | ● | ◐ |
-| **XIII** | [Manage only what you declare](https://accessibleops.net) | ● | – |
-| **XIV** | [Verify the artifact](https://accessibleops.net) | ● | – |
-
-● by design, ◐ partial, ✗ not met, – out of scope. 
+{{< figure src="/img/typescript-infra-principles-table.svg" alt="Table of the fourteen accessible ops principles comparing chant and the config languages Pkl, CUE, and KCL. chant meets all fourteen by design. The config languages meet the first three, honor the lower layer, the same check left of the commit, and documentation is law. Adopt in place is partial. The live system is the truth is not met. The remaining ten are out of scope." >}}
 
 This is Intentius' chart and is biased toward chant, so read it accordingly.
 
@@ -97,10 +80,17 @@ TypeScript does, and it's already fluent in every editor and every model, and it
 
 TypeScript is the right choice for infra.
 
+## The benchmark agrees
+
+aws-bench scenario 1 put this argument on the record. Same model on both sides, Haiku 4.5, against Terraform, Pulumi, and CDK. The full story is in the [scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/).
+
+{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table with a wins column of crowns. chant, 15 of 15, 1.33 dollars, 6.4M in, 53k out, marked unranked, wins all. Pulumi, 12 of 15, 1.76, 7.3M, 60k, three crowns for cost, input, and output. Terraform, 13 of 15, 2.17, 10.9M, 83k, one crown for tasks correct. AWS CDK, 11 of 15, 1.87, 7.9M, 82k, no wins." >}}
+
 ---
 
 ## Read more
 
+- [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
 - [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
 - [Configuration as code, and as data](https://lex00.github.io/posts/code-as-config-config-as-data/)
 - [Infrastructure deserves a compiler](https://lex00.github.io/posts/infrastructure-deserves-a-compiler/)
