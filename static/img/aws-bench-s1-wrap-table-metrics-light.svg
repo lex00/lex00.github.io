@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="360" fill="#ffffff"/>
+<text x="600" y="48" font-size="24" font-weight="800" fill="#1c2128" text-anchor="middle">aws-bench scenario 1 · a winner for each metric</text>
+<text x="60" y="92" font-size="18" font-weight="700" fill="#57606a">configuration</text>
+<text x="430" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">tasks correct</text>
+<text x="560" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">cost (USD)</text>
+<text x="690" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">input</text>
+<text x="810" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">output</text>
+<text x="860" y="92" font-size="18" font-weight="700" fill="#57606a">wins</text>
+<g transform="translate(922 86) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+</g>
+<line x1="40" y1="104" x2="1160" y2="104" stroke="#d0d7de" stroke-width="1"/>
+<rect x="60" y="134" width="14" height="14" rx="3" fill="#1a9850"/>
+<text x="84" y="148" font-size="20" font-weight="700" fill="#1a9850">chant</text>
+<text x="430" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">15/15</text>
+<text x="560" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">1.33</text>
+<text x="690" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">6.4M</text>
+<text x="810" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">53k</text>
+<text x="860" y="148" font-size="20" fill="#57606a">unranked · wins all</text>
+<rect x="60" y="188" width="14" height="14" rx="3" fill="#c22e88"/>
+<text x="84" y="202" font-size="20" font-weight="700" fill="#c22e88">pulumi</text>
+<text x="430" y="202" font-size="20" fill="#1c2128" text-anchor="end">12/15</text>
+<text x="560" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">1.76</text>
+<text x="690" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">7.3M</text>
+<text x="810" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">60k</text>
+<text x="860" y="202" font-size="17" fill="#57606a">cost</text>
+<g transform="translate(908 196) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+</g>
+<text x="926" y="202" font-size="17" fill="#57606a" text-anchor="middle">·</text>
+<text x="940" y="202" font-size="17" fill="#57606a">input</text>
+<g transform="translate(996 196) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+</g>
+<text x="1014" y="202" font-size="17" fill="#57606a" text-anchor="middle">·</text>
+<text x="1028" y="202" font-size="17" fill="#57606a">output</text>
+<g transform="translate(1104 196) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+</g>
+<rect x="60" y="242" width="14" height="14" rx="3" fill="#7b42bc"/>
+<text x="84" y="256" font-size="20" font-weight="700" fill="#7b42bc">terraform</text>
+<text x="430" y="256" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">13/15</text>
+<text x="560" y="256" font-size="20" fill="#1c2128" text-anchor="end">2.17</text>
+<text x="690" y="256" font-size="20" fill="#1c2128" text-anchor="end">10.9M</text>
+<text x="810" y="256" font-size="20" fill="#1c2128" text-anchor="end">83k</text>
+<text x="860" y="256" font-size="17" fill="#57606a">tasks correct</text>
+<g transform="translate(985 250) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+</g>
+<rect x="60" y="296" width="14" height="14" rx="3" fill="#e8590c"/>
+<text x="84" y="310" font-size="20" font-weight="700" fill="#e8590c">aws cdk</text>
+<text x="430" y="310" font-size="20" fill="#1c2128" text-anchor="end">11/15</text>
+<text x="560" y="310" font-size="20" fill="#1c2128" text-anchor="end">1.87</text>
+<text x="690" y="310" font-size="20" fill="#1c2128" text-anchor="end">7.9M</text>
+<text x="810" y="310" font-size="20" fill="#1c2128" text-anchor="end">82k</text>
+<text x="860" y="310" font-size="20" fill="#57606a">—</text>
+</svg>
