@@ -22,7 +22,7 @@ chant takes the first half. The spec it emits is data, readable and checkable be
 
 You author chant in a real typed language, and a compiler turns it into the data. Code on the way in, data on the way out. 
 
-The config is the same thing at both ends, seen two ways.
+The compiler changes the format, not the config.
 
 # Accessible Ops
 

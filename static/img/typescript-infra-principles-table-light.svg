@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="600" y="48" font-size="24" font-weight="800" fill="#1c2128" text-anchor="middle">accessible ops principles</text>
+<text x="60" y="88" font-size="18" font-weight="700" fill="#57606a">principle</text>
+<text x="880" y="88" font-size="18" font-weight="700" fill="#1a9850" text-anchor="middle">chant</text>
+<text x="1060" y="88" font-size="18" font-weight="700" fill="#57606a" text-anchor="middle">Pkl / CUE / KCL</text>
+<line x1="40" y1="100" x2="1160" y2="100" stroke="#d0d7de" stroke-width="1"/>
+<text x="60" y="134" font-size="18" font-weight="700" fill="#57606a">I</text>
+<text x="120" y="134" font-size="19" fill="#424a53">Honor the lower layer</text>
+<text x="880" y="134" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="134" font-size="24" fill="#1c2128" text-anchor="middle">●</text>
+<text x="60" y="174" font-size="18" font-weight="700" fill="#57606a">II</text>
+<text x="120" y="174" font-size="19" fill="#424a53">The same check, left of the commit</text>
+<text x="880" y="174" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="174" font-size="24" fill="#1c2128" text-anchor="middle">●</text>
+<text x="60" y="214" font-size="18" font-weight="700" fill="#57606a">III</text>
+<text x="120" y="214" font-size="19" fill="#424a53">Documentation is law</text>
+<text x="880" y="214" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="214" font-size="24" fill="#1c2128" text-anchor="middle">●</text>
+<text x="60" y="254" font-size="18" font-weight="700" fill="#57606a">IV</text>
+<text x="120" y="254" font-size="19" fill="#424a53">One path to prod</text>
+<text x="880" y="254" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="254" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="294" font-size="18" font-weight="700" fill="#57606a">V</text>
+<text x="120" y="294" font-size="19" fill="#424a53">Named secrets, least privilege</text>
+<text x="880" y="294" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="294" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="334" font-size="18" font-weight="700" fill="#57606a">VI</text>
+<text x="120" y="334" font-size="19" fill="#424a53">Bounded blast radius</text>
+<text x="880" y="334" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="334" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="374" font-size="18" font-weight="700" fill="#57606a">VII</text>
+<text x="120" y="374" font-size="19" fill="#424a53">Reversible before risky</text>
+<text x="880" y="374" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="374" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="414" font-size="18" font-weight="700" fill="#57606a">VIII</text>
+<text x="120" y="414" font-size="19" fill="#424a53">Escalate the judgment</text>
+<text x="880" y="414" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="414" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="454" font-size="18" font-weight="700" fill="#57606a">IX</text>
+<text x="120" y="454" font-size="19" fill="#424a53">Attributable</text>
+<text x="880" y="454" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="454" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="494" font-size="18" font-weight="700" fill="#57606a">X</text>
+<text x="120" y="494" font-size="19" fill="#424a53">Secret rotation is cheap</text>
+<text x="880" y="494" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="494" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="534" font-size="18" font-weight="700" fill="#57606a">XI</text>
+<text x="120" y="534" font-size="19" fill="#424a53">The live system is the truth</text>
+<text x="880" y="534" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="534" font-size="24" fill="#d1242f" text-anchor="middle">✗</text>
+<text x="60" y="574" font-size="18" font-weight="700" fill="#57606a">XII</text>
+<text x="120" y="574" font-size="19" fill="#424a53">Adopt in place</text>
+<text x="880" y="574" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="574" font-size="24" fill="#9a6700" text-anchor="middle">◐</text>
+<text x="60" y="614" font-size="18" font-weight="700" fill="#57606a">XIII</text>
+<text x="120" y="614" font-size="19" fill="#424a53">Manage only what you declare</text>
+<text x="880" y="614" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="614" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<text x="60" y="654" font-size="18" font-weight="700" fill="#57606a">XIV</text>
+<text x="120" y="654" font-size="19" fill="#424a53">Verify the artifact</text>
+<text x="880" y="654" font-size="24" fill="#1a9850" text-anchor="middle">●</text>
+<text x="1060" y="654" font-size="24" fill="#57606a" text-anchor="middle">–</text>
+<line x1="40" y1="672" x2="1160" y2="672" stroke="#d0d7de" stroke-width="1"/>
+<text x="600" y="702" font-size="17" fill="#57606a" text-anchor="middle">● by design · ◐ partial · ✗ not met · – out of scope</text>
+</svg>
