@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs></defs>
+<rect width="1280" height="720" fill="#ffffff"/>
+<text x="640" y="56" font-size="19" font-weight="700" letter-spacing="6" fill="#57606a" text-anchor="middle">AWS-BENCH · SCENARIO 1 · WRAP</text>
+<text x="640" y="116" font-size="46" font-weight="800" fill="#1c2128" text-anchor="middle">the field on haiku 4.5 + Floci</text>
+<rect x="422" y="149" width="14" height="14" rx="3" fill="#1a9850"/>
+<text x="442" y="161" font-size="17" font-weight="600" fill="#424a53">chant</text>
+<rect x="527" y="149" width="14" height="14" rx="3" fill="#7b42bc"/>
+<text x="547" y="161" font-size="17" font-weight="600" fill="#424a53">terraform</text>
+<rect x="665" y="149" width="14" height="14" rx="3" fill="#c22e88"/>
+<text x="685" y="161" font-size="17" font-weight="600" fill="#424a53">pulumi</text>
+<rect x="778" y="149" width="14" height="14" rx="3" fill="#e8590c"/>
+<text x="798" y="161" font-size="17" font-weight="600" fill="#424a53">aws cdk</text>
+<rect x="70" y="190" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="92" y="224" font-size="19" font-weight="700" fill="#1c2128">tasks correct (of 15)</text>
+<text x="588" y="224" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">higher is better</text>
+<path d="M126,368 V262 Q126,258 130,258 H196 Q200,258 200,262 V368 Z" fill="#1a9850"/>
+<path d="M244,368 V277 Q244,273 248,273 H314 Q318,273 318,277 V368 Z" fill="#7b42bc"/>
+<path d="M362,368 V284 Q362,280 366,280 H432 Q436,280 436,284 V368 Z" fill="#c22e88"/>
+<path d="M480,368 V291 Q480,287 484,287 H550 Q554,287 554,291 V368 Z" fill="#e8590c"/>
+<line x1="100" y1="368" x2="580" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="163" y="248" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">15</text>
+<text x="281" y="263" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">13</text>
+<text x="399" y="270" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">12</text>
+<text x="517" y="277" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">11</text>
+<text x="163" y="388" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<text x="281" y="388" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<text x="399" y="388" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<text x="517" y="388" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<rect x="670" y="190" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="692" y="224" font-size="19" font-weight="700" fill="#1c2128">cost (USD)</text>
+<text x="1188" y="224" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
+<path d="M726,368 V305 Q726,301 730,301 H796 Q800,301 800,305 V368 Z" fill="#1a9850"/>
+<path d="M844,368 V262 Q844,258 848,258 H914 Q918,258 918,262 V368 Z" fill="#7b42bc"/>
+<path d="M962,368 V283 Q962,279 966,279 H1032 Q1036,279 1036,283 V368 Z" fill="#c22e88"/>
+<path d="M1080,368 V277 Q1080,273 1084,273 H1150 Q1154,273 1154,277 V368 Z" fill="#e8590c"/>
+<line x1="700" y1="368" x2="1180" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="763" y="291" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.33</text>
+<text x="881" y="248" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$2.17</text>
+<text x="999" y="269" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.76</text>
+<text x="1117" y="263" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.87</text>
+<text x="763" y="388" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<text x="881" y="388" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<text x="999" y="388" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<text x="1117" y="388" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<rect x="70" y="436" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="92" y="470" font-size="19" font-weight="700" fill="#1c2128">input tokens</text>
+<text x="588" y="470" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
+<path d="M126,614 V554 Q126,550 130,550 H196 Q200,550 200,554 V614 Z" fill="#1a9850"/>
+<path d="M244,614 V508 Q244,504 248,504 H314 Q318,504 318,508 V614 Z" fill="#7b42bc"/>
+<path d="M362,614 V545 Q362,541 366,541 H432 Q436,541 436,545 V614 Z" fill="#c22e88"/>
+<path d="M480,614 V538 Q480,534 484,534 H550 Q554,534 554,538 V614 Z" fill="#e8590c"/>
+<line x1="100" y1="614" x2="580" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="163" y="540" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">6.4M</text>
+<text x="281" y="494" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">10.9M</text>
+<text x="399" y="531" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">7.3M</text>
+<text x="517" y="524" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">7.9M</text>
+<text x="163" y="634" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<text x="281" y="634" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<text x="399" y="634" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<text x="517" y="634" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<rect x="670" y="436" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="692" y="470" font-size="19" font-weight="700" fill="#1c2128">output tokens</text>
+<text x="1188" y="470" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
+<path d="M726,614 V548 Q726,544 730,544 H796 Q800,544 800,548 V614 Z" fill="#1a9850"/>
+<path d="M844,614 V508 Q844,504 848,504 H914 Q918,504 918,508 V614 Z" fill="#7b42bc"/>
+<path d="M962,614 V538 Q962,534 966,534 H1032 Q1036,534 1036,538 V614 Z" fill="#c22e88"/>
+<path d="M1080,614 V509 Q1080,505 1084,505 H1150 Q1154,505 1154,509 V614 Z" fill="#e8590c"/>
+<line x1="700" y1="614" x2="1180" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="763" y="534" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">53k</text>
+<text x="881" y="494" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">83k</text>
+<text x="999" y="524" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">60k</text>
+<text x="1117" y="495" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">82k</text>
+<text x="763" y="634" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<text x="881" y="634" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<text x="999" y="634" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<text x="1117" y="634" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+</svg>
