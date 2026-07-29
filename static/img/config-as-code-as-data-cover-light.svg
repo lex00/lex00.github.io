@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs></defs>
+
+<rect width="1280" height="720" fill="#ffffff"/>
+
+<text x="640" y="80" font-size="22" font-weight="700" letter-spacing="6" fill="#57606a" text-anchor="middle">TYPESCRIPT AS DATA</text>
+
+<text x="560" y="168" font-size="42" font-weight="800" fill="#1c2128" text-anchor="end">Configuration as Code</text>
+<path d="M585 154 H676" stroke="#57606a" stroke-width="3" fill="none"/>
+<path d="M674 147 L697 154 L674 161 Z" fill="#57606a"/>
+<text x="720" y="168" font-size="42" font-weight="800" fill="#5b5bd6" text-anchor="start">Configuration as Data</text>
+
+<text x="640" y="216" font-size="23" fill="#57606a" text-anchor="middle">The compiler changes the format, not the config.</text>
+
+<rect x="90" y="270" width="460" height="310" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="114" y="308" font-size="18" font-weight="600" letter-spacing="1" fill="#57606a">resource.ts</text>
+<line x1="90" y1="324" x2="550" y2="324" stroke="#d0d7de" stroke-width="1.5"/>
+<g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="17" xml:space="preserve">
+  <text x="114" y="364"><tspan fill="#cf222e">export const </tspan><tspan fill="#1c2128">store </tspan><tspan fill="#57606a">= </tspan><tspan fill="#cf222e">new </tspan><tspan fill="#8250df">Bucket</tspan><tspan fill="#57606a">({</tspan></text>
+  <text x="140" y="395"><tspan fill="#0550ae">BucketName</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0a3069">"my-data"</tspan><tspan fill="#57606a">,</tspan></text>
+  <text x="140" y="426"><tspan fill="#0550ae">VersioningConfiguration</tspan><tspan fill="#57606a">: {</tspan></text>
+  <text x="166" y="457"><tspan fill="#0550ae">Status</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0a3069">"Enabled"</tspan><tspan fill="#57606a">,</tspan></text>
+  <text x="140" y="488"><tspan fill="#57606a">},</tspan></text>
+  <text x="114" y="519"><tspan fill="#57606a">});</tspan></text>
+</g>
+
+<rect x="730" y="270" width="460" height="310" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="754" y="308" font-size="18" font-weight="600" letter-spacing="1" fill="#57606a">template.yaml</text>
+<line x1="730" y1="324" x2="1190" y2="324" stroke="#d0d7de" stroke-width="1.5"/>
+<g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="17" xml:space="preserve">
+  <text x="754" y="364"><tspan fill="#0550ae">store</tspan><tspan fill="#57606a">:</tspan></text>
+  <text x="780" y="395"><tspan fill="#0550ae">Type</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0a3069">AWS::S3::Bucket</tspan></text>
+  <text x="780" y="426"><tspan fill="#0550ae">Properties</tspan><tspan fill="#57606a">:</tspan></text>
+  <text x="806" y="457"><tspan fill="#0550ae">BucketName</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0a3069">my-data</tspan></text>
+  <text x="806" y="488"><tspan fill="#0550ae">VersioningConfiguration</tspan><tspan fill="#57606a">:</tspan></text>
+  <text x="832" y="519"><tspan fill="#0550ae">Status</tspan><tspan fill="#57606a">: </tspan><tspan fill="#0a3069">Enabled</tspan></text>
+</g>
+
+<text x="640" y="648" font-size="20" fill="#57606a" text-anchor="middle">TypeScript is the right choice for infra</text>
+
+<text x="1200" y="702" font-size="15" fill="#57606a" text-anchor="end">lex00.github.io</text>
+</svg>
