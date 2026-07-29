@@ -10,7 +10,7 @@ Same model on both sides: Haiku 4.5, fixed. The only variable was the tooling, a
 
 {{< figure src="/img/aws-bench-s1-table-headline.svg" alt="Metrics table. Tasks correct, Sonnet bare 11 of 15, aws cdk 11 of 15, chant 15 of 15. SSH reachability, 0 of 3, 0 of 3, 3 of 3. Input tokens 2.66M, 7.88M, 6.37M. Output tokens 39k, 82k, 53k. Cost 2.02, 1.87, 1.32 dollars. The chant column is highlighted." >}}
 
-## The question that separated them
+## What CDK got wrong
 
 The scenario is six EC2 instances across three regions. The discriminating task: which are reachable via SSH from the internet? The ground truth is 2 instances, and answering takes a multi-hop join:
 
@@ -27,13 +27,12 @@ chant search "kind:EC2::Instance attr:internetFacing=true attr:effectiveIngress=
 
 Output: the correct 2, including the launch-template instance the CLI path drops, with the `--explain` footer stating why each near-miss was excluded. The agent used this query on every ssh-reach trial, with zero fallback to the raw AWS CLI.
 
-## The full board
+## The numbers
 
 {{< figure src="/img/aws-bench-s1-table-board.svg" alt="Board table, five tasks at k equals 3 per configuration. Sonnet bare 11 of 15 correct, 2.66M in, 39k out, 2.02 dollars. Haiku bare 9 of 15, 2.85M, 44k, 0.81. Haiku plus CDK 11 of 15, 7.88M, 82k, 1.87. Haiku plus chant, highlighted, 15 of 15 correct, 6.37M, 53k, 1.32." >}}
 
 ssh-reach: CDK 0/3, Sonnet bare 0/3, chant 3/3.
 
-## What the board says
 
 chant uses 6.4M input tokens to CDK's 7.9M, and the fewest output tokens of any configuration. CLI analysis grows with the resource count. A scoped query stays roughly flat, so the gap should widen on larger estates.
 
