@@ -8,7 +8,7 @@ Scenario 1 is done. aws-bench puts an agent in front of a live AWS estate and gr
 
 ## The benchmark is open source
 
-This benchmark is not mine. [aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness and the scenarios. The configurations I ran live in my fork, each with a REPRODUCE.md, linked at the bottom. Everything runs against the [Floci](https://github.com/floci-io/floci) emulator, for free.
+This benchmark is not mine. [aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness and the scenarios. The configurations I ran live in my fork, each with a REPRODUCE.md, plus a benchmark runbook that reproduces the full score table below. All linked at the bottom. Everything runs against the [Floci](https://github.com/floci-io/floci) emulator, for free.
 
 ## This is the beginning
 
@@ -48,6 +48,7 @@ Formae and ConfigHub runs are coming, along with more scenarios.
 - [aws-bench: chant vs Terraform scenario 1](/posts/aws-bench-chant-vs-terraform-scenario-1/)
 - [aws-bench: chant vs Pulumi scenario 1](/posts/aws-bench-chant-vs-pulumi-scenario-1/)
 - [aws-bench](https://github.com/aws-bench/aws-bench)
+- [Reproduce the full benchmark](https://github.com/lex00/aws-bench/blob/feat/emulator-floci/benchmarks/arms/REPRODUCE-BENCHMARK.md) — all four arms, scores and cost
 - [Reproduce the chant run](https://github.com/lex00/aws-bench/blob/feat/emulator-floci/benchmarks/arms/chant-ec2-multiregion-search-v2/REPRODUCE.md)
 - [Reproduce the Terraform run](https://github.com/lex00/aws-bench/blob/feat/emulator-floci/benchmarks/arms/terraform-ec2-multiregion/REPRODUCE.md)
 - [Reproduce the Pulumi run](https://github.com/lex00/aws-bench/blob/feat/emulator-floci/benchmarks/arms/pulumi-ec2-multiregion/REPRODUCE.md)
