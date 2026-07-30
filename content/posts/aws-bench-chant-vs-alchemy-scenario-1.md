@@ -56,7 +56,7 @@ The Alchemy side got what an Alchemy shop would have. The applied program with i
 
 The Effect run pinned `alchemy@2.0.0-beta.65` with `effect@4.0.0-beta.102`, deployed as three per-region stacks because its environment is single-region, with one custom Effect-style provider for the launch-template instance and three documented patch sites. The estate was verified against the emulator before every run.
 
-Everything needed to rerun both configurations is in [aws-bench](https://github.com/lex00/aws-bench) under `benchmarks/arms/alchemy-ec2-multiregion/` and `benchmarks/arms/alchemy-effect-ec2-multiregion/`, each with a REPRODUCE.md.
+Everything needed to rerun both configurations lives in my fork, each with a REPRODUCE.md, linked at the bottom.
 
 ## Next
 
@@ -69,5 +69,7 @@ Rerun the Effect line when it leaves beta. Then the harder scenarios, compute-an
 - [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
 - [Queryable Infrastructure](/posts/queryable-infrastructure/)
 - [aws-bench](https://github.com/aws-bench/aws-bench)
+- [Reproduce the Alchemy run](https://github.com/lex00/aws-bench/blob/feat/alchemy-arm-handoff/benchmarks/arms/alchemy-ec2-multiregion/REPRODUCE.md)
+- [Reproduce the Alchemy Effect run](https://github.com/lex00/aws-bench/blob/feat/alchemy-arm-handoff/benchmarks/arms/alchemy-effect-ec2-multiregion/REPRODUCE.md)
 - [Floci](https://github.com/floci-io/floci)
 - [chant](https://intentius.io/chant/)
