@@ -6,7 +6,7 @@ featured_image: "img/queryable-infrastructure-cover.svg"
 
 Agentic ops means agents need to query your infra on demand. If the live details of your estate are fragmented this can lead to extra lookups costing time and tokens.
 
-I measured this on [aws-bench](/posts/aws-bench-chant-vs-cdk-scenario-1/): asked which EC2 instances were open to SSH from the internet, an agent assembling the answer from raw AWS calls missed instances on every trial.
+I measured this on [aws-bench](/posts/aws-bench-scenario-1-wrap/): asked which security groups were attached to nothing, every toolchain that reads a stored copy of the estate scored 0 out of 3.
 
 Many things can be queried like a database without being one. The live cloud is one of them.
 
@@ -22,7 +22,8 @@ Agents benefit from queryable infrastructure, and the spec [covers most of it](/
 
 ## Read more
 
-- [aws-bench: chant vs CDK scenario 1](/posts/aws-bench-chant-vs-cdk-scenario-1/)
+- [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
+- [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/)
 - [Your infra database is a road to hell](/posts/your-infra-database-is-a-road-to-hell/)
 - [Honor the lower layer](/posts/honor-the-lower-layer/)
 - [The long tail is a tail](/posts/the-long-tail-is-a-tail/)

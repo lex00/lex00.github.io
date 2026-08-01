@@ -1,78 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
 <defs></defs>
 <rect width="1280" height="720" fill="#ffffff"/>
+
 <text x="640" y="56" font-size="19" font-weight="700" letter-spacing="6" fill="#57606a" text-anchor="middle">AWS-BENCH · SCENARIO 1 · WRAP</text>
-<text x="640" y="116" font-size="46" font-weight="800" fill="#1c2128" text-anchor="middle">the field on haiku 4.5 + Floci</text>
-<rect x="422" y="149" width="14" height="14" rx="3" fill="#1a9850"/>
-<text x="442" y="161" font-size="17" font-weight="600" fill="#424a53">chant</text>
-<rect x="527" y="149" width="14" height="14" rx="3" fill="#7b42bc"/>
-<text x="547" y="161" font-size="17" font-weight="600" fill="#424a53">terraform</text>
-<rect x="665" y="149" width="14" height="14" rx="3" fill="#c22e88"/>
-<text x="685" y="161" font-size="17" font-weight="600" fill="#424a53">pulumi</text>
-<rect x="778" y="149" width="14" height="14" rx="3" fill="#e8590c"/>
-<text x="798" y="161" font-size="17" font-weight="600" fill="#424a53">aws cdk</text>
+<text x="640" y="112" font-size="44" font-weight="800" fill="#1c2128" text-anchor="middle">five toolchains and no tool at all</text>
+<text x="640" y="150" font-size="19" fill="#57606a" text-anchor="middle">haiku 4.5 · eight questions · k=3 · against the Floci emulator</text>
 <rect x="70" y="190" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="92" y="224" font-size="19" font-weight="700" fill="#1c2128">tasks correct (of 15)</text>
+<text x="92" y="224" font-size="19" font-weight="700" fill="#1c2128">questions correct (of 24)</text>
 <text x="588" y="224" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">higher is better</text>
-<path d="M126,368 V262 Q126,258 130,258 H196 Q200,258 200,262 V368 Z" fill="#1a9850"/>
-<path d="M244,368 V277 Q244,273 248,273 H314 Q318,273 318,277 V368 Z" fill="#7b42bc"/>
-<path d="M362,368 V284 Q362,280 366,280 H432 Q436,280 436,284 V368 Z" fill="#c22e88"/>
-<path d="M480,368 V291 Q480,287 484,287 H550 Q554,287 554,291 V368 Z" fill="#e8590c"/>
-<line x1="100" y1="368" x2="580" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="163" y="248" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">15</text>
-<text x="281" y="263" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">13</text>
-<text x="399" y="270" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">12</text>
-<text x="517" y="277" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">11</text>
-<text x="163" y="388" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
-<text x="281" y="388" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
-<text x="399" y="388" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
-<text x="517" y="388" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<line x1="96" y1="368" x2="584" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
+<path d="M114,368 V264 Q114,260 118,260 H162 Q166,260 166,264 V368 Z" fill="#1a9850"/>
+<text x="140" y="251" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">22</text>
+<text x="140" y="390" font-size="12" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<path d="M194,368 V289 Q194,285 198,285 H242 Q246,285 246,289 V368 Z" fill="#6e7781"/>
+<text x="220" y="276" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">17</text>
+<text x="220" y="390" font-size="12" font-weight="600" fill="#6e7781" text-anchor="middle">no tool</text>
+<path d="M274,368 V279 Q274,275 278,275 H322 Q326,275 326,279 V368 Z" fill="#c22e88"/>
+<text x="300" y="266" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">19</text>
+<text x="300" y="390" font-size="12" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<path d="M354,368 V279 Q354,275 358,275 H402 Q406,275 406,279 V368 Z" fill="#7b42bc"/>
+<text x="380" y="266" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">19</text>
+<text x="380" y="390" font-size="12" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<path d="M434,368 V289 Q434,285 438,285 H482 Q486,285 486,289 V368 Z" fill="#e8590c"/>
+<text x="460" y="276" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">17</text>
+<text x="460" y="390" font-size="12" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<path d="M514,368 V274 Q514,270 518,270 H562 Q566,270 566,274 V368 Z" fill="#9a6700"/>
+<text x="540" y="261" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">20</text>
+<text x="540" y="390" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">alchemy</text>
 <rect x="670" y="190" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="692" y="224" font-size="19" font-weight="700" fill="#1c2128">cost (USD)</text>
+<text x="692" y="224" font-size="19" font-weight="700" fill="#1c2128">cost per correct answer</text>
 <text x="1188" y="224" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
-<path d="M726,368 V305 Q726,301 730,301 H796 Q800,301 800,305 V368 Z" fill="#1a9850"/>
-<path d="M844,368 V262 Q844,258 848,258 H914 Q918,258 918,262 V368 Z" fill="#7b42bc"/>
-<path d="M962,368 V283 Q962,279 966,279 H1032 Q1036,279 1036,283 V368 Z" fill="#c22e88"/>
-<path d="M1080,368 V277 Q1080,273 1084,273 H1150 Q1154,273 1154,277 V368 Z" fill="#e8590c"/>
-<line x1="700" y1="368" x2="1180" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="763" y="291" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.33</text>
-<text x="881" y="248" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$2.17</text>
-<text x="999" y="269" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.76</text>
-<text x="1117" y="263" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">$1.87</text>
-<text x="763" y="388" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
-<text x="881" y="388" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
-<text x="999" y="388" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
-<text x="1117" y="388" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<line x1="696" y1="368" x2="1184" y2="368" stroke="#d0d7de" stroke-width="1.5"/>
+<path d="M714,368 V343 Q714,339 718,339 H762 Q766,339 766,343 V368 Z" fill="#1a9850"/>
+<text x="740" y="330" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.033</text>
+<text x="740" y="390" font-size="12" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<path d="M794,368 V328 Q794,324 798,324 H842 Q846,324 846,328 V368 Z" fill="#6e7781"/>
+<text x="820" y="315" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.050</text>
+<text x="820" y="390" font-size="12" font-weight="600" fill="#6e7781" text-anchor="middle">no tool</text>
+<path d="M874,368 V296 Q874,292 878,292 H922 Q926,292 926,296 V368 Z" fill="#c22e88"/>
+<text x="900" y="283" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.086</text>
+<text x="900" y="390" font-size="12" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<path d="M954,368 V274 Q954,270 958,270 H1002 Q1006,270 1006,274 V368 Z" fill="#7b42bc"/>
+<text x="980" y="261" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.111</text>
+<text x="980" y="390" font-size="12" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<path d="M1034,368 V266 Q1034,262 1038,262 H1082 Q1086,262 1086,266 V368 Z" fill="#e8590c"/>
+<text x="1060" y="253" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.120</text>
+<text x="1060" y="390" font-size="12" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<path d="M1114,368 V264 Q1114,260 1118,260 H1162 Q1166,260 1166,264 V368 Z" fill="#9a6700"/>
+<text x="1140" y="251" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">$0.123</text>
+<text x="1140" y="390" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">alchemy</text>
 <rect x="70" y="436" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="92" y="470" font-size="19" font-weight="700" fill="#1c2128">input tokens</text>
+<text x="92" y="470" font-size="19" font-weight="700" fill="#1c2128">input tokens per question</text>
 <text x="588" y="470" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
-<path d="M126,614 V554 Q126,550 130,550 H196 Q200,550 200,554 V614 Z" fill="#1a9850"/>
-<path d="M244,614 V508 Q244,504 248,504 H314 Q318,504 318,508 V614 Z" fill="#7b42bc"/>
-<path d="M362,614 V545 Q362,541 366,541 H432 Q436,541 436,545 V614 Z" fill="#c22e88"/>
-<path d="M480,614 V538 Q480,534 484,534 H550 Q554,534 554,538 V614 Z" fill="#e8590c"/>
-<line x1="100" y1="614" x2="580" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="163" y="540" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">6.4M</text>
-<text x="281" y="494" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">10.9M</text>
-<text x="399" y="531" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">7.3M</text>
-<text x="517" y="524" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">7.9M</text>
-<text x="163" y="634" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
-<text x="281" y="634" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
-<text x="399" y="634" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
-<text x="517" y="634" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<line x1="96" y1="614" x2="584" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
+<path d="M114,614 V595 Q114,591 118,591 H162 Q166,591 166,595 V614 Z" fill="#1a9850"/>
+<text x="140" y="582" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">111k</text>
+<text x="140" y="636" font-size="12" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<path d="M194,614 V595 Q194,591 198,591 H242 Q246,591 246,595 V614 Z" fill="#6e7781"/>
+<text x="220" y="582" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">108k</text>
+<text x="220" y="636" font-size="12" font-weight="600" fill="#6e7781" text-anchor="middle">no tool</text>
+<path d="M274,614 V559 Q274,555 278,555 H322 Q326,555 326,559 V614 Z" fill="#c22e88"/>
+<text x="300" y="546" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">282k</text>
+<text x="300" y="636" font-size="12" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<path d="M354,614 V543 Q354,539 358,539 H402 Q406,539 406,543 V614 Z" fill="#7b42bc"/>
+<text x="380" y="530" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">357k</text>
+<text x="380" y="636" font-size="12" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<path d="M434,614 V551 Q434,547 438,547 H482 Q486,547 486,551 V614 Z" fill="#e8590c"/>
+<text x="460" y="538" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">318k</text>
+<text x="460" y="636" font-size="12" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<path d="M514,614 V510 Q514,506 518,506 H562 Q566,506 566,510 V614 Z" fill="#9a6700"/>
+<text x="540" y="497" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">515k</text>
+<text x="540" y="636" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">alchemy</text>
 <rect x="670" y="436" width="540" height="226" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="692" y="470" font-size="19" font-weight="700" fill="#1c2128">output tokens</text>
+<text x="692" y="470" font-size="19" font-weight="700" fill="#1c2128">output tokens per question</text>
 <text x="1188" y="470" font-size="13" font-weight="600" fill="#57606a" text-anchor="end">lower is better</text>
-<path d="M726,614 V548 Q726,544 730,544 H796 Q800,544 800,548 V614 Z" fill="#1a9850"/>
-<path d="M844,614 V508 Q844,504 848,504 H914 Q918,504 918,508 V614 Z" fill="#7b42bc"/>
-<path d="M962,614 V538 Q962,534 966,534 H1032 Q1036,534 1036,538 V614 Z" fill="#c22e88"/>
-<path d="M1080,614 V509 Q1080,505 1084,505 H1150 Q1154,505 1154,509 V614 Z" fill="#e8590c"/>
-<line x1="700" y1="614" x2="1180" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
-<text x="763" y="534" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">53k</text>
-<text x="881" y="494" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">83k</text>
-<text x="999" y="524" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">60k</text>
-<text x="1117" y="495" font-size="18" font-weight="700" fill="#1c2128" text-anchor="middle">82k</text>
-<text x="763" y="634" font-size="15" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
-<text x="881" y="634" font-size="15" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
-<text x="999" y="634" font-size="15" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
-<text x="1117" y="634" font-size="15" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<line x1="696" y1="614" x2="1184" y2="614" stroke="#d0d7de" stroke-width="1.5"/>
+<path d="M714,614 V577 Q714,573 718,573 H762 Q766,573 766,577 V614 Z" fill="#1a9850"/>
+<text x="740" y="564" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">2.1k</text>
+<text x="740" y="636" font-size="12" font-weight="600" fill="#1a9850" text-anchor="middle">chant</text>
+<path d="M794,614 V566 Q794,562 798,562 H842 Q846,562 846,566 V614 Z" fill="#6e7781"/>
+<text x="820" y="553" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">2.7k</text>
+<text x="820" y="636" font-size="12" font-weight="600" fill="#6e7781" text-anchor="middle">no tool</text>
+<path d="M874,614 V543 Q874,539 878,539 H922 Q926,539 926,543 V614 Z" fill="#c22e88"/>
+<text x="900" y="530" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">3.9k</text>
+<text x="900" y="636" font-size="12" font-weight="600" fill="#c22e88" text-anchor="middle">pulumi</text>
+<path d="M954,614 V525 Q954,521 958,521 H1002 Q1006,521 1006,525 V614 Z" fill="#7b42bc"/>
+<text x="980" y="512" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">4.8k</text>
+<text x="980" y="636" font-size="12" font-weight="600" fill="#7b42bc" text-anchor="middle">terraform</text>
+<path d="M1034,614 V510 Q1034,506 1038,506 H1082 Q1086,506 1086,510 V614 Z" fill="#e8590c"/>
+<text x="1060" y="497" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">5.6k</text>
+<text x="1060" y="636" font-size="12" font-weight="600" fill="#e8590c" text-anchor="middle">aws cdk</text>
+<path d="M1114,614 V516 Q1114,512 1118,512 H1162 Q1166,512 1166,516 V614 Z" fill="#9a6700"/>
+<text x="1140" y="503" font-size="15" font-weight="700" fill="#1c2128" text-anchor="middle">5.3k</text>
+<text x="1140" y="636" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">alchemy</text>
 </svg>
