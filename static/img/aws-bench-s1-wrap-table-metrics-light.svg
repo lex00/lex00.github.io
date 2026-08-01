@@ -1,73 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-<rect width="1200" height="360" fill="#ffffff"/>
-<text x="600" y="48" font-size="24" font-weight="800" fill="#1c2128" text-anchor="middle">aws-bench scenario 1 · a winner for each metric</text>
-<text x="60" y="92" font-size="18" font-weight="700" fill="#57606a">configuration</text>
-<text x="430" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">tasks correct</text>
-<text x="560" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">cost (USD)</text>
-<text x="690" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">input</text>
-<text x="810" y="92" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">output</text>
-<text x="860" y="92" font-size="18" font-weight="700" fill="#57606a">wins</text>
-<g transform="translate(922 86) scale(0.4)">
-<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 526" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="526" fill="#ffffff"/>
+<text x="600" y="48" font-size="24" font-weight="800" fill="#1c2128" text-anchor="middle">aws-bench scenario 1 · ranked by cost per correct answer</text>
+<text x="600" y="78" font-size="15" fill="#57606a" text-anchor="middle">eight questions · k=3 · tokens per question</text>
+<text x="60" y="128" font-size="18" font-weight="700" fill="#57606a">configuration</text>
+<text x="400" y="128" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">correct</text>
+<text x="530" y="128" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">$ / correct</text>
+<text x="650" y="128" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">input</text>
+<text x="765" y="128" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">output</text>
+<text x="810" y="128" font-size="18" font-weight="700" fill="#57606a">wins</text>
+<g transform="translate(872 122) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#9a6700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
 </g>
-<line x1="40" y1="104" x2="1160" y2="104" stroke="#d0d7de" stroke-width="1"/>
-<rect x="60" y="134" width="14" height="14" rx="3" fill="#1a9850"/>
-<text x="84" y="148" font-size="20" font-weight="700" fill="#1a9850">chant</text>
-<text x="430" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">15/15</text>
-<text x="560" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">1.33</text>
-<text x="690" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">6.4M</text>
-<text x="810" y="148" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">53k</text>
-<text x="860" y="148" font-size="20" fill="#57606a">unranked · wins all</text>
-<rect x="60" y="188" width="14" height="14" rx="3" fill="#c22e88"/>
-<text x="84" y="202" font-size="20" font-weight="700" fill="#c22e88">pulumi</text>
-<text x="430" y="202" font-size="20" fill="#1c2128" text-anchor="end">12/15</text>
-<text x="560" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">1.76</text>
-<text x="690" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">7.3M</text>
-<text x="810" y="202" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">60k</text>
-<text x="860" y="202" font-size="17" fill="#57606a">cost</text>
-<g transform="translate(908 196) scale(0.4)">
-<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<line x1="40" y1="140" x2="1160" y2="140" stroke="#d0d7de" stroke-width="1"/>
+<rect x="60" y="158" width="14" height="14" rx="3" fill="#1a9850"/>
+<text x="84" y="172" font-size="20" font-weight="700" fill="#1a9850">chant</text>
+<text x="400" y="172" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">22/24</text>
+<text x="530" y="172" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">$0.033</text>
+<text x="650" y="172" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">111k</text>
+<text x="765" y="172" font-size="20" font-weight="700" fill="#1a9850" text-anchor="end">2.1k</text>
+<text x="810" y="172" font-size="20" fill="#57606a">unranked · wins all</text>
+<rect x="60" y="212" width="14" height="14" rx="3" fill="#6e7781"/>
+<text x="84" y="226" font-size="20" font-weight="700" fill="#6e7781">no tool</text>
+<text x="180" y="226" font-size="14" fill="#57606a">aws cli baseline</text>
+<text x="400" y="226" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">17/24</text>
+<text x="530" y="226" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">$0.050</text>
+<text x="650" y="226" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">108k</text>
+<text x="765" y="226" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">2.7k</text>
+<text x="810" y="226" font-size="16" fill="#57606a">cost</text>
+<g transform="translate(853 220) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#9a6700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
 </g>
-<text x="926" y="202" font-size="17" fill="#57606a" text-anchor="middle">·</text>
-<text x="940" y="202" font-size="17" fill="#57606a">input</text>
-<g transform="translate(996 196) scale(0.4)">
-<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<text x="868" y="226" font-size="16" fill="#57606a">·</text>
+<text x="881" y="226" font-size="16" fill="#57606a">input</text>
+<g transform="translate(932 220) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#9a6700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
 </g>
-<text x="1014" y="202" font-size="17" fill="#57606a" text-anchor="middle">·</text>
-<text x="1028" y="202" font-size="17" fill="#57606a">output</text>
-<g transform="translate(1104 196) scale(0.4)">
-<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<text x="947" y="226" font-size="16" fill="#57606a">·</text>
+<text x="960" y="226" font-size="16" fill="#57606a">output</text>
+<g transform="translate(1019 220) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#9a6700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
 </g>
-<rect x="60" y="242" width="14" height="14" rx="3" fill="#7b42bc"/>
-<text x="84" y="256" font-size="20" font-weight="700" fill="#7b42bc">terraform</text>
-<text x="430" y="256" font-size="21" font-weight="700" fill="#1c2128" text-anchor="end">13/15</text>
-<text x="560" y="256" font-size="20" fill="#1c2128" text-anchor="end">2.17</text>
-<text x="690" y="256" font-size="20" fill="#1c2128" text-anchor="end">10.9M</text>
-<text x="810" y="256" font-size="20" fill="#1c2128" text-anchor="end">83k</text>
-<text x="860" y="256" font-size="17" fill="#57606a">tasks correct</text>
-<g transform="translate(985 250) scale(0.4)">
-<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#bf8700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="-22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="0" cy="-15" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
-<circle cx="22" cy="-7" r="2.8" fill="#bf8700" stroke="#ffffff" stroke-width="1.6"/>
+<rect x="60" y="266" width="14" height="14" rx="3" fill="#c22e88"/>
+<text x="84" y="280" font-size="20" font-weight="700" fill="#c22e88">pulumi</text>
+<text x="400" y="280" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">19/24</text>
+<text x="530" y="280" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">$0.086</text>
+<text x="650" y="280" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">282k</text>
+<text x="765" y="280" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">3.9k</text>
+<text x="810" y="280" font-size="20" fill="#57606a">—</text>
+<rect x="60" y="320" width="14" height="14" rx="3" fill="#7b42bc"/>
+<text x="84" y="334" font-size="20" font-weight="700" fill="#7b42bc">terraform</text>
+<text x="400" y="334" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">19/24</text>
+<text x="530" y="334" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">$0.111</text>
+<text x="650" y="334" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">357k</text>
+<text x="765" y="334" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">4.8k</text>
+<text x="810" y="334" font-size="20" fill="#57606a">—</text>
+<rect x="60" y="374" width="14" height="14" rx="3" fill="#e8590c"/>
+<text x="84" y="388" font-size="20" font-weight="700" fill="#e8590c">aws cdk</text>
+<text x="400" y="388" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">17/24</text>
+<text x="530" y="388" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">$0.120</text>
+<text x="650" y="388" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">318k</text>
+<text x="765" y="388" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">5.6k</text>
+<text x="810" y="388" font-size="20" fill="#57606a">—</text>
+<rect x="60" y="428" width="14" height="14" rx="3" fill="#9a6700"/>
+<text x="84" y="442" font-size="20" font-weight="700" fill="#9a6700">alchemy</text>
+<text x="400" y="442" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">20/24</text>
+<text x="530" y="442" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">$0.123</text>
+<text x="650" y="442" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">515k</text>
+<text x="765" y="442" font-size="20" font-weight="500" fill="#1c2128" text-anchor="end">5.3k</text>
+<text x="810" y="442" font-size="16" fill="#57606a">correct</text>
+<g transform="translate(877 436) scale(0.4)">
+<path d="M-22,12 L-22,-5 L-10,2 L0,-13 L10,2 L22,-5 L22,12 Z" fill="#9a6700" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="-22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="0" cy="-15" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="22" cy="-7" r="2.8" fill="#9a6700" stroke="#ffffff" stroke-width="1.6"/>
 </g>
-<rect x="60" y="296" width="14" height="14" rx="3" fill="#e8590c"/>
-<text x="84" y="310" font-size="20" font-weight="700" fill="#e8590c">aws cdk</text>
-<text x="430" y="310" font-size="20" fill="#1c2128" text-anchor="end">11/15</text>
-<text x="560" y="310" font-size="20" fill="#1c2128" text-anchor="end">1.87</text>
-<text x="690" y="310" font-size="20" fill="#1c2128" text-anchor="end">7.9M</text>
-<text x="810" y="310" font-size="20" fill="#1c2128" text-anchor="end">82k</text>
-<text x="860" y="310" font-size="20" fill="#57606a">—</text>
 </svg>

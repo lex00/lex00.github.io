@@ -82,15 +82,16 @@ TypeScript is the right choice for infra.
 
 ## The benchmark agrees
 
-aws-bench scenario 1 put this argument on the record. Same model on both sides, Haiku 4.5, against Terraform, Pulumi, and CDK. The full story is in the [scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/).
+aws-bench scenario 1 put this argument on the record. Same model on every side, Haiku 4.5, against Terraform, Pulumi, CDK, Alchemy, and an agent with no infrastructure tooling at all. The full story is in the [scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/), and every run is published on [chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/).
 
-{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table with a wins column of crowns. chant, 15 of 15, 1.33 dollars, 6.4M in, 53k out, marked unranked, wins all. Pulumi, 12 of 15, 1.76, 7.3M, 60k, three crowns for cost, input, and output. Terraform, 13 of 15, 2.17, 10.9M, 83k, one crown for tasks correct. AWS CDK, 11 of 15, 1.87, 7.9M, 82k, no wins." >}}
+{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table ranked by cost per correct answer, eight questions at k equals 3, tokens per question. chant 22 of 24 correct, 0.033 dollars per correct answer, 111k in, 2.1k out, marked unranked, wins all. no tool, the aws cli baseline, 17 of 24, 0.050, 108k, 2.7k, with crowns for cost, input and output. pulumi 19 of 24, 0.086, 282k, 3.9k. terraform 19 of 24, 0.111, 357k, 4.8k. aws cdk 17 of 24, 0.120, 318k, 5.6k. alchemy 20 of 24, 0.123, 515k, 5.3k, with a crown for correct." >}}
 
 ---
 
 ## Read more
 
 - [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
+- [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/)
 - [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
 - [Configuration as code, and as data](https://lex00.github.io/posts/code-as-config-config-as-data/)
 - [Infrastructure deserves a compiler](https://lex00.github.io/posts/infrastructure-deserves-a-compiler/)
