@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 452" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="820" height="452" fill="#0d1117"/>
+
+  <g fill="#0f141b">
+    <rect x="20" y="110" width="780" height="40"/>
+    <rect x="20" y="190" width="780" height="40"/>
+    <rect x="20" y="270" width="780" height="40"/>
+    <rect x="20" y="350" width="780" height="40"/>
+  </g>
+
+  <line x1="534" y1="26" x2="534" y2="430" stroke="#30363d" stroke-width="1.4"/>
+  <line x1="20" y1="70" x2="800" y2="70" stroke="#484f58" stroke-width="1.6"/>
+
+  <g font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1.1">
+    <text x="24" y="54">THE PROBLEM</text>
+    <text x="216" y="54" fill="#a89878">GRUEL</text>
+    <text x="548" y="54" fill="#7ee787">SOLVABLE WITH</text>
+  </g>
+
+  <g font-size="13" fill="#c9d1d9">
+    <text x="24" y="96">Versioning config</text>
+    <text x="24" y="136">What changed a value</text>
+    <text x="24" y="176">Environment variants</text>
+    <text x="24" y="216">Transforming config</text>
+    <text x="24" y="256">Understanding a format</text>
+    <text x="24" y="296">Finding things</text>
+    <text x="24" y="336">Cutting a release</text>
+    <text x="24" y="376">Approving a change</text>
+    <text x="24" y="416">Answering “is this mine”</text>
+  </g>
+
+  <g font-size="12.5" fill="#a89878">
+    <text x="216" y="96">units · revisions · head pointers …</text>
+    <text x="216" y="136">per-path provenance · back-indexes</text>
+    <text x="216" y="176">spaces · lineage links · three-way merge</text>
+    <text x="216" y="216">typed functions · executor registry · workers …</text>
+    <text x="216" y="256">converters · semantic paths · merge keys …</text>
+    <text x="216" y="296">semantic index · attribute registry · link graph</text>
+    <text x="216" y="336">release objects · exact revisions · digests</text>
+    <text x="216" y="376">gates · apply-gates · apply-warnings</text>
+    <text x="216" y="416">delegated out to the actuators</text>
+  </g>
+
+  <g font-size="13" font-weight="600" fill="#7ee787">
+    <text x="548" y="96">git</text>
+    <text x="548" y="136">the line that sets it</text>
+    <text x="548" y="176">a build parameter</text>
+    <text x="548" y="216">a compiler pass</text>
+    <text x="548" y="256">types from the spec</text>
+    <text x="548" y="296">query the artifact</text>
+    <text x="548" y="336">the build output</text>
+    <text x="548" y="376">a gate step in a workflow</text>
+    <text x="548" y="416">the marker on the resource</text>
+  </g>
+</svg>
