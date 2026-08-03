@@ -101,5 +101,5 @@ So, gruel or Korean BBQ?  I know what I'm having for lunch.
 
 - [Your infra database is a road to hell](https://lex00.github.io/posts/your-infra-database-is-a-road-to-hell/)
 - [Configuration as code, and as data](https://lex00.github.io/posts/code-as-config-config-as-data/)
-- [The gap closes faster this time](https://lex00.github.io/posts/the-gap-closes-faster-this-time/)
+- [The consolidation problem](https://lex00.github.io/posts/the-consolidation-problem/)
 - [chant how it compares](https://intentius.io/chant/concepts/comparison/) · [chant](https://intentius.io/chant/)
