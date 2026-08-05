@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" style="max-width:600px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="250" fill="#ffffff"/>
+
+  <!-- the estate you are in -->
+  <rect x="24" y="100" width="132" height="54" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="90" y="122" text-anchor="middle" font-size="12.5" fill="#1f2328">Terraform estate</text>
+  <text x="90" y="140" text-anchor="middle" font-size="10.5" fill="#57606a">HCL and state</text>
+
+  <path d="M158,127 L206,127" stroke="#8c959f" stroke-width="1.5"/>
+  <path d="M212,127 l-8,-4.5 0,9 z" fill="#8c959f"/>
+  <text x="184" y="115" text-anchor="middle" font-size="10" fill="#57606a">carve out</text>
+
+  <!-- what you author -->
+  <rect x="216" y="100" width="132" height="54" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="282" y="122" text-anchor="middle" font-size="12.5" fill="#1f2328">typed TypeScript</text>
+  <text x="282" y="140" text-anchor="middle" font-size="10.5" fill="#57606a">no state, nothing runs</text>
+
+  <g fill="none" stroke="#1a7f37" stroke-width="1.5">
+    <path d="M350,127 C378,127 380,76 400,76"/>
+    <path d="M350,127 L400,127"/>
+    <path d="M350,127 C378,127 380,178 400,178"/>
+  </g>
+  <g fill="#1a7f37">
+    <path d="M406,76 l-8,-4.5 0,9 z"/>
+    <path d="M406,127 l-8,-4.5 0,9 z"/>
+    <path d="M406,178 l-8,-4.5 0,9 z"/>
+  </g>
+  <text x="376" y="112" text-anchor="middle" font-size="10" fill="#57606a">build</text>
+
+  <!-- where it lands -->
+  <rect x="408" y="55" width="184" height="42" rx="4" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="500" y="81" text-anchor="middle" font-size="12" fill="#1f2328">CloudFormation</text>
+
+  <rect x="408" y="106" width="184" height="42" rx="4" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="500" y="132" text-anchor="middle" font-size="12" fill="#1f2328">Kubernetes YAML</text>
+
+  <rect x="408" y="157" width="184" height="42" rx="4" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="500" y="183" text-anchor="middle" font-size="12" fill="#1f2328">ARM JSON</text>
+
+  <text x="500" y="224" text-anchor="middle" font-size="11" fill="#57606a">your platform already reads these</text>
+</svg>
