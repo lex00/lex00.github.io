@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 424" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="424" fill="#0d1117"/>
+
+  <g fill="#0f141b">
+    <rect x="20" y="120" width="720" height="46"/>
+    <rect x="20" y="212" width="720" height="46"/>
+    <rect x="20" y="304" width="720" height="46"/>
+  </g>
+
+  <line x1="400" y1="26" x2="400" y2="400" stroke="#30363d" stroke-width="1.4"/>
+  <line x1="20" y1="70" x2="740" y2="70" stroke="#484f58" stroke-width="1.6"/>
+
+  <g font-size="13" font-weight="700" letter-spacing="1.1">
+    <text x="24" y="54" fill="#8b949e">THE CHOICE</text>
+    <text x="414" y="54" fill="#7ee787">BECAUSE</text>
+  </g>
+
+  <g font-size="14" fill="#c9d1d9">
+    <text x="24" y="95">kinds resolve from the spec pass</text>
+    <text x="24" y="113">that made the types</text>
+    <text x="24" y="148">raw JSON, no model coercion</text>
+    <text x="24" y="194">managedFields as primitives</text>
+    <text x="24" y="240">provenance on every read</text>
+    <text x="24" y="286">typed failures</text>
+    <text x="24" y="332">no watch, no exec, no port-forward</text>
+    <text x="24" y="378">credentials behind an import-graph test</text>
+  </g>
+
+  <g font-size="14" fill="#d2f8dc">
+    <text x="414" y="102">they cannot skew</text>
+    <text x="414" y="141">coercion drops what</text>
+    <text x="414" y="159">drift attribution needs</text>
+    <text x="414" y="187">every field attributed,</text>
+    <text x="414" y="205">ownership surfaced</text>
+    <text x="414" y="233">a read is evidence,</text>
+    <text x="414" y="251">and not all of it is equal</text>
+    <text x="414" y="286">the callers are programs</text>
+    <text x="414" y="325">cockpit features belong</text>
+    <text x="414" y="343">in a cockpit</text>
+    <text x="414" y="378">synthesis stays pure</text>
+  </g>
+</svg>
