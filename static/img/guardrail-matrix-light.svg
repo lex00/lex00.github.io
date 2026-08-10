@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="880" height="470" fill="#ffffff"/>
+
+  <g fill="#f6f8fa">
+    <rect x="20" y="120" width="840" height="46"/>
+    <rect x="20" y="212" width="840" height="46"/>
+    <rect x="20" y="304" width="840" height="46"/>
+    <rect x="20" y="396" width="840" height="46"/>
+  </g>
+
+  <rect x="170" y="26" width="260" height="420" fill="#1a7f37" fill-opacity="0.05" stroke="#1a7f37" stroke-opacity="0.4" stroke-width="1.2"/>
+
+  <line x1="435" y1="26" x2="435" y2="446" stroke="#d0d7de" stroke-width="1.4"/>
+  <line x1="655" y1="26" x2="655" y2="446" stroke="#d0d7de" stroke-width="1.4"/>
+  <line x1="20" y1="70" x2="860" y2="70" stroke="#8c959f" stroke-width="1.6"/>
+
+  <g font-size="12" font-weight="700" letter-spacing="1.1">
+    <text x="182" y="54" fill="#1a7f37">CHANT</text>
+    <text x="448" y="54" fill="#57606a">KUBECTL + VARIANTS</text>
+    <text x="668" y="54" fill="#6b5f49">CONFIG-STORE TOOLS</text>
+  </g>
+
+  <g font-size="13" fill="#57606a">
+    <text x="24" y="102">writes to</text>
+    <text x="24" y="148">truth lives in</text>
+    <text x="24" y="194">guardrails live in</text>
+    <text x="24" y="240">adding one</text>
+    <text x="24" y="286">sees backwards</text>
+    <text x="24" y="332">drift</text>
+    <text x="24" y="378">ownership</text>
+    <text x="24" y="424">escape hatch</text>
+  </g>
+
+  <g font-size="13" fill="#116329">
+    <text x="182" y="102">typed source</text>
+    <text x="182" y="148">git</text>
+    <text x="182" y="194">the compiler</text>
+    <text x="182" y="240">one lint rule, every surface</text>
+    <text x="182" y="286">round trip: import, carve</text>
+    <text x="182" y="332">attributed, field by field</text>
+    <text x="182" y="369">shared, surfaced,</text>
+    <text x="182" y="387">never seized for you</text>
+    <text x="182" y="424">platform native, in-language</text>
+  </g>
+
+  <g font-size="13" fill="#1f2328">
+    <text x="448" y="102">live state</text>
+    <text x="448" y="139">the cluster, plus</text>
+    <text x="448" y="157">whatever else happened</text>
+    <text x="448" y="194">each command</text>
+    <text x="448" y="240">fork the tool</text>
+    <text x="448" y="286">no</text>
+    <text x="448" y="332">tolerated</text>
+    <text x="448" y="378">none</text>
+    <text x="448" y="415">the console.</text>
+    <text x="448" y="433">now you have drift</text>
+  </g>
+
+  <g font-size="13" fill="#1f2328">
+    <text x="668" y="102">config records</text>
+    <text x="668" y="148">a database</text>
+    <text x="668" y="194">tool code + triggers</text>
+    <text x="668" y="240">write tool code</text>
+    <text x="668" y="286">own records only</text>
+    <text x="668" y="332">discarded</text>
+    <text x="668" y="378">exclusive</text>
+    <text x="668" y="415">break glass.</text>
+    <text x="668" y="433">now you have drift</text>
+  </g>
+</svg>
