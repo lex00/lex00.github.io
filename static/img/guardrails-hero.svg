@@ -1,11 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <rect x="0" y="0" width="880" height="460" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 10 810 350" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="70" y="10" width="810" height="350" fill="#0d1117"/>
 
   <!-- the drop: everything left and above the cliff edge -->
   <path d="M0,490 L300,490 C315,390 335,315 368,240 C404,158 462,112 525,72 C588,32 690,28 790,22 L880,20 L880,0 L0,0 Z" fill="#04070b"/>
   <path d="M300,490 C315,390 335,315 368,240 C404,158 462,112 525,72 C588,32 690,28 790,22 L880,20" fill="none" stroke="#3d4551" stroke-width="2.6"/>
   <path d="M290,490 C305,390 325,315 358,238 C394,156 452,108 515,68 C578,28 686,22 786,16 L880,14" fill="none" stroke="#262d36" stroke-width="3.4" opacity="0.7"/>
   <path d="M278,490 C293,390 313,313 346,236 C382,154 440,104 503,64 C566,24 682,16 782,10 L880,8" fill="none" stroke="#1a2029" stroke-width="4.5" opacity="0.5"/>
+
+  <!-- terraces far below, falling away from the cliff -->
+  <g fill="none" stroke="#0e141c" stroke-width="2">
+    <path d="M170,470 C190,360 215,255 265,160 C297,98 320,55 335,10"/>
+    <path d="M95,470 C115,365 140,265 190,175 C222,113 248,68 265,20"/>
+  </g>
 
   <!-- cliff hachures, ticking into the void -->
   <g stroke="#3d4551" stroke-width="1.6">
