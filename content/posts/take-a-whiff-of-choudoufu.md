@@ -21,3 +21,13 @@ Choudoufu is stinky tofu.  It's famous for having a strong flavor that is an acq
 All three of these jobs are easily serviced by ordinary IAM governance. Together they make estates easy to carve up into smaller domains, shrink your blast radius, and drop the locks you manage.
 
 choudoufu is experimental and AWS only. If the smell doesn't put you off, [intentius.io/choudoufu](https://intentius.io/choudoufu/) is ready for you to try migrating an existing estate or start fresh.
+
+---
+
+## Read more
+
+- [An entire industry exists to fix Terraform](/posts/fix-terraform/)
+- [The revolving door of authoritative state](/posts/the-revolving-door-of-authoritative-state/)
+- [Your infra database is a road to hell](/posts/your-infra-database-is-a-road-to-hell/)
+- [Governance without the state file](/posts/governance-without-the-state-file/)
+- [choudoufu](https://intentius.io/choudoufu/)
