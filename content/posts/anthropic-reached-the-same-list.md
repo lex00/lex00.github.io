@@ -9,7 +9,7 @@ Anthropic published [how they secure an AI-native software development lifecycle
 
 So they built controls that scale instead. Automated project security reviews at planning. Specialized review agents at CI, each scoped narrowly, with separate blindspots. Continuous dynamic scans against staging. An incident response agent with its own identity and its own limits.
 
-I keep [fourteen principles](https://accessibleops.net) for infrastructure operations, written for the same pressure from the other end. Most of their controls land on my rows.
+[Accessible Ops](https://accessibleops.net) is fourteen principles for infrastructure operations, written for the same pressure from the other end. Most of their controls land on rows already in that list.
 
 ## Least agency
 
@@ -59,9 +59,9 @@ Anthropic is not writing about chant, or about these principles, or about infras
 
 So this is not an endorsement and it would be dishonest to present it as one.
 
-The claim is narrower. Two teams, working on different problems, arrived at nearly the same set of rules for letting an agent touch production. They got there from application security with a model writing most of the code. I got there from infrastructure operations with the same pressure arriving a little later. When a list shows up twice, from two directions, it is more likely to be the shape of the problem than the taste of the person who wrote it.
+The claim is narrower. Two teams, working on different problems, arrived at nearly the same set of rules for letting an agent touch production. They got there from application security with a model writing most of the code. Accessible Ops got there from infrastructure operations with the same pressure arriving a little later. When a list shows up twice, from two directions, it is more likely to be the shape of the problem than the taste of the person who wrote it.
 
-The one rule I would take from their side to mine is least agency. Boundaries on what a thing can do outlast instructions about what it should do, and that applies to a coding agent and a build step equally well.
+The one rule worth carrying from their side into Accessible Ops is least agency. Boundaries on what a thing can do outlast instructions about what it should do, and that applies to a coding agent and a build step equally well.
 
 ---
 
