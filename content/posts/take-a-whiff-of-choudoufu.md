@@ -26,8 +26,8 @@ choudoufu is experimental and AWS only. If the smell doesn't put you off, [inten
 
 ## Read more
 
-- [An entire industry exists to fix Terraform](/posts/fix-terraform/)
-- [The revolving door of authoritative state](/posts/the-revolving-door-of-authoritative-state/)
-- [Your infra database is a road to hell](/posts/your-infra-database-is-a-road-to-hell/)
-- [Governance without the state file](/posts/governance-without-the-state-file/)
+- [An entire industry exists to fix Terraform](https://lex00.github.io/posts/fix-terraform/)
+- [The revolving door of authoritative state](https://lex00.github.io/posts/the-revolving-door-of-authoritative-state/)
+- [Your infra database is a road to hell](https://lex00.github.io/posts/your-infra-database-is-a-road-to-hell/)
+- [Governance without the state file](https://lex00.github.io/posts/governance-without-the-state-file/)
 - [choudoufu](https://intentius.io/choudoufu/)
