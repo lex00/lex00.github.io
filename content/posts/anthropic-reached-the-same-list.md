@@ -1,8 +1,8 @@
 ---
 title: "Anthropic reached the same list"
-date: 2026-07-26
+date: 2026-08-14
 featured_image: "img/anthropic-same-list-cover.svg"
-draft: true
+draft: false
 ---
 
 Anthropic published [how they secure an AI-native software development lifecycle](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle). Claude writes roughly 80% of the code that gets merged there. At that ratio, any control that depends on a human reading everything has already stopped working.
@@ -47,7 +47,7 @@ The reason I care about the distinction is agents. An agent that writes chant so
 
 Their architecture is heavily runtime, and mine is heavily build time. Reading their post makes the gap legible.
 
-They run continuous dynamic scans against staging to catch logic vulnerabilities that only appear across components. They treat agents as a new class of insider threat and alert when one deviates from its normal pattern. They sample automated approvals by risk weight and keep humans in a third of them. New reviewers run in shadow mode, posting comments for human approval until they earn trust.
+They run continuous dynamic scans against staging to catch logic vulnerabilities that only appear across components. They treat agents as a new class of insider threat and alert when one deviates from its normal pattern. They sample automated approvals by risk weight and route the sample to humans. New reviewers run in shadow mode, posting comments for human approval until they earn trust.
 
 chant has none of that. The lifecycle layer covers deployment and observation through Ops and WatchOp, and there is no SIEM story, no behavioral monitoring of agents, and no graduated-trust path for automation. Their use of several narrow reviewers with deliberately different blindspots is also a different shape from lexicon lint, which is rules rather than agents.
 
