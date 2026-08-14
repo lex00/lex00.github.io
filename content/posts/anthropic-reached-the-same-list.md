@@ -15,7 +15,7 @@ Their incident response agent can read production logs and post to channels but 
 
 The mapping has holes. Their architecture is heavily runtime, with behavioral monitoring of agents, risk-weighted human sampling of automated approvals, and new reviewers in shadow mode until they earn trust. chant is build time and has none of that.
 
-This is no endorsement. Anthropic is describing its own internal tooling and is not writing about infrastructure at all. But two teams starting from different problems arrived at nearly the same rules for letting an agent near production, which suggests the list is the shape of the problem. The rule worth carrying into Accessible Ops is least agency. Boundaries on what a thing can do outlast instructions about what it should do.
+This is no endorsement. Anthropic is describing its own internal tooling and is not writing about infrastructure at all. But two teams starting from different problems arrived at nearly the same rules for letting an agent near production, which suggests the problem itself forces the list. The rule Accessible Ops should take from their side is least agency. Boundaries on what a thing can do outlast instructions about what it should do.
 
 ---
 
