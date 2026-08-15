@@ -5,6 +5,8 @@ featured_image: "img/choudoufu-hero.png"
 draft: false
 ---
 
+Choudoufu is IAM-governed state for OpenTofu.  Estates are inherited by granting access.
+
 Terraform bundles three jobs into a state model that has survived for too long. Ownership, estate boundaries, and effect memory all live in the same artifact, behind the same lock, at the same access level.
 
 This is an extremely convenient workflow for the folks who get to drive it.  It can also make life terribly difficult for operators who are blessed with inheriting the estate as teams are "restructured". Orgs who share a single production account across many teams see the worst of this.  
