@@ -1,6 +1,7 @@
 ---
 title: "A billion proofs a day"
 date: 2026-08-15
+featured_image: "img/billion-proofs-cover.svg"
 draft: false
 ---
 
