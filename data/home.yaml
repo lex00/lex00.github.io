@@ -84,8 +84,3 @@ experience:
     role: "Test engineering, then DevOps"
     when: "Acquired by NetApp"
     note: "On-site hardware lab for a distributed SAN product. Hands on a wide variety of hardware."
-
-  - org: "Miami"
-    role: "First data center"
-    when: "2010"
-    note: "One rack. fwbuilder pushing iptables across two Linux hosts with DRBD."
