@@ -828,3 +828,97 @@ a.card:hover {
   background: var(--primary);
   color: var(--secondary);
 }
+
+/* The resume download is the primary action on the page. */
+.hero-link-primary {
+  background: var(--primary);
+  color: var(--secondary);
+  border-color: var(--primary);
+  font-weight: 600;
+}
+
+.hero-link-primary:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: var(--secondary);
+}
+
+/* ---------------------------------------------------------------------------
+   Rollover and press states
+   Anything clickable lifts on hover and presses in on click. Static cards get
+   a lighter border only, so the page never promises a link that isn't there.
+   --------------------------------------------------------------------------- */
+
+a.card,
+.hero-link,
+.card-part {
+  transition: transform 0.09s ease, box-shadow 0.09s ease,
+              background 0.12s ease, border-color 0.12s ease;
+}
+
+/* Press: drop back to the resting position and collapse the shadow. */
+a.card:active {
+  transform: translate(0, 0);
+  box-shadow: 1px 1px 0 var(--primary);
+}
+
+.hero-link:active,
+.card-part:active {
+  transform: translateY(1px);
+}
+
+/* Static cards acknowledge the cursor without pretending to be links. */
+.card-stat,
+.card-job,
+.card-project:not(a) {
+  transition: border-color 0.15s ease;
+}
+
+.card-stat:hover,
+.card-job:hover,
+.card-project:not(a):hover {
+  border-color: #484f58;
+}
+
+/* Keyboard users get the same affordance as mouse users. */
+a.card:focus-visible,
+.hero-link:focus-visible,
+.card-part:focus-visible,
+main a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+
+/* Respect a reduced-motion preference: keep the colour, drop the movement. */
+@media (prefers-reduced-motion: reduce) {
+  a.card,
+  .hero-link,
+  .card-part {
+    transition: background 0.12s ease, border-color 0.12s ease;
+  }
+
+  a.card:hover,
+  a.card:active,
+  .hero-link:active,
+  .card-part:active {
+    transform: none;
+  }
+}
+
+/* Music toggle: quiet until it is on. */
+.music-toggle {
+  float: right;
+  background: none;
+  border: 1px solid #30363d;
+  border-radius: var(--radius);
+  color: #6e7681;
+  cursor: pointer;
+  padding: 0.25rem 0.45rem;
+  line-height: 0;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.music-toggle:hover { color: var(--dark); border-color: #484f58; }
+.music-toggle.is-playing { color: var(--secondary); background: var(--primary); border-color: var(--primary); }
+.music-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }

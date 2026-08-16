@@ -1,0 +1,99 @@
+<!doctype html>
+<!--
+  Source for the social share card. Rendered to static/img/og-card.png with:
+
+      just og-card
+
+  1200x630 is the size LinkedIn, Slack and the rest crop to. Keep the text
+  large and few: this gets shown at about a third of that width in a feed.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+  }
+
+  body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+    padding: 84px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Accent rule down the left, the same device the site hero uses. */
+  .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    background: #a2e436;
+  }
+
+  .name {
+    font-size: 92px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 26px;
+  }
+
+  .pitch {
+    font-size: 46px;
+    font-weight: 500;
+    color: #a2e436;
+    margin-bottom: 40px;
+  }
+
+  .sub {
+    font-size: 30px;
+    line-height: 1.45;
+    color: #8b949e;
+    max-width: 32ch;
+  }
+
+  .foot {
+    position: absolute;
+    left: 90px;
+    bottom: 60px;
+    display: flex;
+    gap: 34px;
+    font-size: 24px;
+    color: #6e7681;
+  }
+
+  .foot span::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #30363d;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <div class="bar"></div>
+  <div class="name">Alex Artigues</div>
+  <div class="pitch">Infra tools for humans</div>
+  <div class="sub">Currently building choudoufu: OpenTofu without the state file.</div>
+  <div class="foot">
+    <span>choudoufu</span>
+    <span>chant</span>
+    <span>warden</span>
+    <span>loomster</span>
+  </div>
+</body>
+</html>

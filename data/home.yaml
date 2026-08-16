@@ -9,7 +9,14 @@ hero:
   location: "Denver, CO"
   email: "albert.a.artigues@gmail.com"
 
+# `primary: true` fills the chip; `download: true` makes the browser save
+# rather than navigate.
 links:
+  - label: "Resume (PDF)"
+    url: "/alex-artigues-resume.pdf"
+    primary: true
+    download: true
+
   - label: "choudoufu"
     url: "https://intentius.io/choudoufu/"
   - label: "GitHub"

@@ -10,7 +10,8 @@
   </div>
   <div class="hero-links">
     {{- range $home.links }}
-    <a href="{{ .url }}" class="hero-link">{{ .label }}</a>
+    <a href="{{ .url }}" class="hero-link{{ if .primary }} hero-link-primary{{ end }}"
+       {{- with .download }} download{{ end }}>{{ .label }}</a>
     {{- end }}
   </div>
 </section>
