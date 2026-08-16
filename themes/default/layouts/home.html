@@ -13,6 +13,7 @@
     <a href="{{ .url }}" class="hero-link{{ if .primary }} hero-link-primary{{ end }}"
        {{- with .download }} download{{ end }}>{{ .label }}</a>
     {{- end }}
+    {{ partial "donotpress.html" . }}
   </div>
 </section>
 
@@ -76,4 +77,5 @@
     {{- end }}
   </div>
 </section>
+
 {{ end }}

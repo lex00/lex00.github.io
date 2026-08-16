@@ -1,0 +1,21 @@
+{{- /*
+A small, glossy, obviously pressable button labelled DO NOT PRESS. Clicking it
+sounds a buzzer and throws lightning out of the sides. Deliberate click only:
+nothing here makes noise unless someone goes looking for it.
+
+The bolts are pre-rendered and parked behind the button. A class on the stage
+fires them outward; each reads its own angle from --a.
+*/ -}}
+<div class="dnp-stage">
+  <span class="dnp-bolts" aria-hidden="true">
+      {{- range (slice 20 65 110 155 200 245 290 335) }}
+      <svg class="bolt" style="--a: {{ . }}deg" viewBox="0 0 24 24" width="18" height="18">
+        <path d="M13 2 L4 14 h6 l-2 8 9-12 h-6 z"/>
+      </svg>
+      {{- end }}
+    </span>
+    <button type="button" class="dnp" data-sound-src="{{ "audio/buzzer.mp3" | absURL }}"
+            aria-label="Do not press">
+      <span class="dnp-label">Do not press</span>
+    </button>
+</div>

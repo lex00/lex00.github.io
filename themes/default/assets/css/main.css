@@ -629,6 +629,7 @@ header nav {
 .hero-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -906,19 +907,108 @@ main a:focus-visible {
   }
 }
 
-/* Music toggle: quiet until it is on. */
-.music-toggle {
-  float: right;
-  background: none;
-  border: 1px solid #30363d;
-  border-radius: var(--radius);
-  color: #6e7681;
-  cursor: pointer;
-  padding: 0.25rem 0.45rem;
-  line-height: 0;
-  transition: color 0.15s ease, border-color 0.15s ease;
+/* ---------------------------------------------------------------------------
+   DO NOT PRESS
+   Small, rectangular, glossy. Lightning fires out of it on click.
+   --------------------------------------------------------------------------- */
+
+.dnp-stage {
+  position: relative;
+  display: inline-flex;
+  isolation: isolate;
 }
 
-.music-toggle:hover { color: var(--dark); border-color: #484f58; }
-.music-toggle.is-playing { color: var(--secondary); background: var(--primary); border-color: var(--primary); }
-.music-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.dnp {
+  position: relative;
+  z-index: 2;
+  padding: 0.36rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #7e1620;
+  border-top-color: #ff8e8e;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #ef4a54 0%, #d0202f 48%, #9d1622 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.35),
+    0 3px 0 #6f1019,
+    0 5px 9px rgba(0, 0, 0, 0.45);
+  transition: transform 0.06s ease, box-shadow 0.06s ease, filter 0.12s ease;
+}
+
+/* The specular highlight: a glass sheen across the top half. */
+.dnp::before {
+  content: "";
+  position: absolute;
+  inset: 1px 1px 58% 1px;
+  border-radius: 6px 6px 14px 14px / 6px 6px 10px 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.dnp:hover { filter: brightness(1.1); }
+
+/* Travel down onto its own shadow. */
+.dnp:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.5),
+    0 0 0 #6f1019,
+    0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.dnp:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+
+.dnp-label { position: relative; z-index: 1; }
+
+/* --- lightning --- */
+
+.dnp-bolts {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.bolt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -9px 0 0 -9px;
+  fill: #ffd84d;
+  opacity: 0;
+  filter: drop-shadow(0 0 6px rgba(255, 216, 77, 0.9));
+  transform: rotate(var(--a)) translateY(-12px) scale(0.3);
+}
+
+.dnp-stage.is-firing .bolt {
+  animation: bolt-out 0.45s cubic-bezier(0.2, 0.75, 0.3, 1) forwards;
+}
+
+@keyframes bolt-out {
+  0%   { opacity: 0;    transform: rotate(var(--a)) translateY(-6px) scale(0.25); }
+  15%  { opacity: 1;    transform: rotate(var(--a)) translateY(-46px) scale(1.2); }
+  100% { opacity: 0;    transform: rotate(var(--a)) translateY(-120px) scale(0.45); }
+}
+
+/* A white flash on the button itself as the bolts leave. */
+.dnp-stage.is-firing .dnp { animation: dnp-flash 0.3s ease; }
+
+@keyframes dnp-flash {
+  0%   { filter: brightness(1.75) saturate(0.75); }
+  100% { filter: brightness(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dnp, .dnp:active { transition: none; transform: none; }
+  .dnp-stage.is-firing .bolt,
+  .dnp-stage.is-firing .dnp { animation: none; }
+}
