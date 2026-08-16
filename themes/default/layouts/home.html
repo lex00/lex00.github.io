@@ -1,3 +1,78 @@
 {{ define "main" }}
-  {{ .Content }}
+{{- $home := hugo.Data.home }}
+
+<section class="hero">
+  <h1 class="hero-name">{{ $home.hero.name }}</h1>
+  <p class="hero-pitch">{{ $home.hero.pitch }}</p>
+  <div class="hero-meta">
+    <span>{{ $home.hero.location }}</span>
+    <a href="mailto:{{ $home.hero.email }}">{{ $home.hero.email }}</a>
+  </div>
+  <div class="hero-links">
+    {{- range $home.links }}
+    <a href="{{ .url }}" class="hero-link">{{ .label }}</a>
+    {{- end }}
+  </div>
+</section>
+
+<section class="band">
+  <h2 class="band-label">The receipts</h2>
+  <div class="grid grid-3">
+    {{- range (hugo.Data.receipts).receipts }}
+    <div class="card card-stat">
+      <span class="stat-claim">{{ .claim }}</span>
+      <span class="stat-context">{{ .context }}</span>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+<section class="band">
+  <h2 class="band-label">Run it yourself</h2>
+  {{ partial "rundemo.html" . }}
+</section>
+
+<section class="band">
+  <h2 class="band-label">What I've built</h2>
+  <div class="grid grid-2">
+    {{- range $home.projects }}
+      {{- if .parts }}
+    <div class="card card-project">
+      <span class="card-head">
+        <span class="card-title">{{ .name }}</span>
+        <span class="card-tag">{{ .tag }}</span>
+      </span>
+      <span class="card-desc">{{ .desc }}</span>
+      <span class="card-parts">
+        {{- range .parts }}<a href="{{ .url }}" class="card-part">{{ .label }}</a>{{ end }}
+      </span>
+    </div>
+      {{- else }}
+    <a href="{{ .url }}" class="card card-project">
+      <span class="card-head">
+        <span class="card-title">{{ .name }}</span>
+        <span class="card-tag">{{ .tag }}</span>
+      </span>
+      <span class="card-desc">{{ .desc }}</span>
+    </a>
+      {{- end }}
+    {{- end }}
+  </div>
+</section>
+
+<section class="band">
+  <h2 class="band-label">Before this</h2>
+  <div class="grid grid-2">
+    {{- range $home.experience }}
+    <div class="card card-job">
+      <span class="card-head">
+        <span class="card-title">{{ .org }}</span>
+        <span class="card-tag">{{ .when }}</span>
+      </span>
+      <span class="card-role">{{ .role }}</span>
+      <span class="card-desc">{{ .note }}</span>
+    </div>
+    {{- end }}
+  </div>
+</section>
 {{ end }}

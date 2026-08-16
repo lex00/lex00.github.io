@@ -1,7 +1,7 @@
 <nav>
   <a href="{{ site.Home.RelPermalink }}" class="site-title">{{ site.Title }}</a>
   {{- $nav := slice "posts" }}
-  {{- with site.Data.site_config.nav_order }}{{ $nav = . }}{{ end }}
+  {{- with hugo.Data.site_config.nav_order }}{{ $nav = . }}{{ end }}
   {{- $sections := slice }}
   {{- range site.Sections }}{{ $sections = $sections | append .Section }}{{ end }}
   {{- range $nav }}

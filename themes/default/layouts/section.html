@@ -1,12 +1,9 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <ul class="post-list">
+  <div class="grid grid-2 post-grid">
     {{ range .Pages }}
-      <li class="post-item">
-        <time datetime="{{ .Date | time.Format "2006-01-02" }}">{{ .Date | time.Format "Jan 2, 2006" }}</time>
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      </li>
+      {{ partial "post-card.html" . }}
     {{ end }}
-  </ul>
+  </div>
 {{ end }}

@@ -1,0 +1,23 @@
+# Cards on the home page. Edit freely; the layout adapts to any count.
+# Each card is a claim (big) plus the context that makes it checkable (small).
+# Keep every one of these true and specific. A card nobody can verify is worse
+# than no card.
+
+receipts:
+  - claim: "25 years"
+    context: "Infrastructure and software since 2000. Data centers, storage, streaming, graph."
+
+  - claim: "8 years of Terraform"
+    context: "ProtectWise and Shutterstock in production, and now a fork of OpenTofu with a feature in it."
+
+  - claim: "15 lexicons on npm"
+    context: "chant, my multi-cloud infrastructure compiler. AWS, Azure, GCP, Kubernetes, Helm, Docker and more, synthesized from one typed source."
+
+  - claim: "5 years on the pager"
+    context: "Owned Shutterstock's clickstream analytics platform around the clock. Kafka, EMR, Terraform."
+
+  - claim: "3 years in regulated production"
+    context: "FINRA's Graph-as-a-Service platform on Neo4j, with the security review and compliance weight."
+
+  - claim: "39 posts"
+    context: "A year of working out in public why infrastructure state belongs somewhere else."

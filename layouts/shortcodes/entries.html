@@ -1,0 +1,18 @@
+{{- /*
+Wraps a run of paragraphs so each one reads as a discrete entry, separated by
+hairlines. Mirrors the résumé PDF, where the "Also mine" and "Before this"
+sections carry the same separators.
+
+Inserted automatically by scripts/sync_resume.py; you do not normally hand-write
+this in content.
+
+@example:
+  {{< entries >}}
+  **chant** — a synthesis compiler.
+
+  **warden** — governance-as-code.
+  {{< /entries >}}
+*/ -}}
+<div class="entries">
+{{ .Inner | markdownify }}
+</div>

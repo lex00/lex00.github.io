@@ -1,0 +1,25 @@
+{{- /*
+One post as a card. Shared by the posts list, section lists, and taxonomy
+pages so they all read the same.
+
+Posts carry no description field, so the blurb falls back to Hugo's auto
+summary. Add `description:` to a post's front matter to write it by hand.
+
+@context {page} the post
+*/ -}}
+<a href="{{ .RelPermalink }}" class="card card-post">
+  <span class="card-head">
+    <span class="card-title">{{ .LinkTitle }}</span>
+    {{- with .Date }}
+    <time class="card-tag" datetime="{{ time.Format "2006-01-02" . }}">{{ time.Format "Jan 2, 2006" . }}</time>
+    {{- end }}
+  </span>
+  {{- with (or .Description (.Summary | plainify)) }}
+  <span class="card-desc">{{ truncate 155 . }}</span>
+  {{- end }}
+  {{- with .Params.categories }}
+  <span class="card-cats">
+    {{- range . }}<span class="card-cat">{{ . }}</span>{{ end }}
+  </span>
+  {{- end }}
+</a>

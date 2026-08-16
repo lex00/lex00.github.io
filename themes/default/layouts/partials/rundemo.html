@@ -1,0 +1,17 @@
+{{- /*
+The run-it-yourself block. Nothing here is hosted: the visitor runs it on their
+own machine against their own Docker, and the exit code is the verdict.
+*/ -}}
+<div class="rundemo">
+  <div class="rundemo-head">
+    <span class="rundemo-meta">~2 minutes &middot; needs Docker &middot; nothing hosted</span>
+  </div>
+  <pre class="rundemo-code"><code>git clone https://github.com/INTENTIUS/choudoufu
+cd choudoufu
+bash live/e2e/run.sh --expect 5</code></pre>
+  <p class="rundemo-note">
+    It stands up a real estate against a local AWS emulator, deletes the state
+    file in front of you, and replans. Exit 0 means every claim the script makes
+    held. Or hand the repo to a coding agent and have it report each step back.
+  </p>
+</div>

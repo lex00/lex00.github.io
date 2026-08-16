@@ -1,0 +1,91 @@
+# The home page is composed from data files, not from a wall of prose.
+# This one holds the hero band and the link row under it.
+
+hero:
+  name: "Alex Artigues"
+  # Line breaks here are preserved on the page.
+  pitch: |-
+    Infra tools for humans
+  location: "Denver, CO"
+  email: "albert.a.artigues@gmail.com"
+
+links:
+  - label: "choudoufu"
+    url: "https://intentius.io/choudoufu/"
+  - label: "GitHub"
+    url: "https://github.com/orgs/INTENTIUS/repositories"
+  - label: "intentius.io"
+    url: "https://intentius.io"
+  - label: "Posts"
+    url: "/posts/"
+
+# Project cards. Order is deliberate: choudoufu leads.
+projects:
+  - name: "choudoufu"
+    tag: "Go · MPL-2.0"
+    url: "https://intentius.io/choudoufu/"
+    desc: "OpenTofu without the state file. Each resource carries its ownership as ordinary cloud tags, so AWS tells you what an estate contains and your existing IAM decides who may change it."
+
+  - name: "chant"
+    tag: "TypeScript"
+    url: "https://intentius.io/chant"
+    desc: "A synthesis compiler for infrastructure. Roundtrips native vendor specs 1:1 from a typed source, with an LSP and an MCP server on the same model."
+
+  # One card, three repos. `parts` renders as linked chips inside the card.
+  - name: "warden"
+    tag: "Built on chant"
+    desc: "Governance-as-code for git forges. One YAML file holds an org in a declared state: diff against the live API, run guardrails, dry-run or apply. Ownership-gated deletes and a removal cap so a typo cannot cascade. Three siblings on one shared reconcile core."
+    parts:
+      - label: "GitHub"
+        url: "https://github.com/INTENTIUS/github-warden"
+      - label: "GitLab"
+        url: "https://github.com/INTENTIUS/gitlab-warden"
+      - label: "Forgejo"
+        url: "https://github.com/INTENTIUS/forgejo-warden"
+
+  - name: "loomster"
+    tag: "Built on chant"
+    url: "https://intentius.io/loomster/"
+    desc: "Typed, tiered infrastructure-as-code for awslabs/loom. Six components, three tiers, generated CI, and a naming scheme that keeps many instances from colliding."
+
+  - name: "spicypath"
+    tag: "Live"
+    url: "https://spicypath.intentius.workers.dev"
+    desc: "A profile inspector for the OpenTelemetry era. Reads OTLP Profiles, pprof, speedscope and four more formats into one model."
+
+  - name: "blacklight"
+    tag: "Hosted"
+    url: "https://blacklight.intentius.io"
+    desc: "Paste a repo URL, see the misconfigurations hiding in your infra. A hosted run of chant's audit engine."
+
+  - name: "neo4j-backup"
+    tag: "Dagster"
+    url: "https://github.com/lex00/neo4j-backup"
+    desc: "Policy-based backup and restore for self-hosted Neo4j Enterprise, as drop-in Dagster pipelines. Validated, and agentless on restore via seed-from-URI and an alias swap."
+
+# Work history as cards rather than paragraphs.
+experience:
+  - org: "FINRA"
+    role: "Graph platform"
+    when: "3 years, current"
+    note: "Graph-as-a-Service on Neo4j, in a maximally regulated environment. All on AWS."
+
+  - org: "Shutterstock"
+    role: "Principal data infrastructure"
+    when: "5 years"
+    note: "Owned the clickstream analytics platform around the clock. Terraform, Kafka, EMR. Mentored three engineers in Ireland into ownership."
+
+  - org: "ProtectWise"
+    role: "Data infrastructure"
+    when: "Acquired by Verizon"
+    note: "Streaming pipelines for real-time network-security analytics. Owned the Hadoop infrastructure."
+
+  - org: "SolidFire"
+    role: "Test engineering, then DevOps"
+    when: "Acquired by NetApp"
+    note: "On-site hardware lab for a distributed SAN product. Hands on a wide variety of hardware."
+
+  - org: "Miami"
+    role: "First data center"
+    when: "2010"
+    note: "One rack. fwbuilder pushing iptables across two Linux hosts with DRBD."

@@ -1,0 +1,20 @@
+{{- /*
+Renders the home-page cards from data/receipts.yaml.
+
+Each card is a claim plus the context that makes it checkable. Edit the data
+file, not this template. Any card count works; the grid reflows.
+
+@example: {{< receipts >}}
+*/ -}}
+{{- with hugo.Data.receipts.receipts }}
+<div class="receipts">
+  {{- range . }}
+  <div class="receipt">
+    <span class="receipt-claim">{{ .claim }}</span>
+    <span class="receipt-context">{{ .context }}</span>
+  </div>
+  {{- end }}
+</div>
+{{- else }}
+{{- errorf "receipts: data/receipts.yaml is missing or has no `receipts` key" }}
+{{- end }}
