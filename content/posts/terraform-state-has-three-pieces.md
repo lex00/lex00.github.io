@@ -17,7 +17,7 @@ That is [choudoufu](https://intentius.io/choudoufu/), an OpenTofu fork I have be
 
 ## No lock to manage
 
-No state file means no lock table to provision, permission, or force open at 3am.
+No state file means no lock table to provision, permission, or force open.
 
 Concurrent runs settle at the API instead. Two creates of the same named resource resolve on the cloud's uniqueness constraint, and the loser re-plans clean.
 
