@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" fill="#ffffff"/>
+
+<!-- ── title ───────────────────────────────────────────────────────────── -->
+<text x="64" y="92" font-size="44" font-weight="700" fill="#24292f">Terraform state has three pieces</text>
+<text x="64" y="132" font-size="22" fill="#57606a">One file doing three jobs, and what happens when you separate them</text>
+
+<!-- ── left: the one file ──────────────────────────────────────────────── -->
+<rect x="64" y="196" width="420" height="404" rx="14" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<text x="274" y="176" font-size="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#57606a" text-anchor="middle">terraform.tfstate</text>
+
+<rect x="96" y="228" width="356" height="106" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="124" y="266" font-size="21" font-weight="700" fill="#24292f">Identity</text>
+<text x="124" y="300" font-size="19" fill="#57606a">which live resource</text>
+
+<rect x="96" y="346" width="356" height="106" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="124" y="384" font-size="21" font-weight="700" fill="#24292f">Values</text>
+<text x="124" y="418" font-size="19" fill="#57606a">what AWS cannot hold</text>
+
+<rect x="96" y="464" width="356" height="106" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="124" y="502" font-size="21" font-weight="700" fill="#24292f">Effects</text>
+<text x="124" y="536" font-size="19" fill="#57606a">what leaves no trace</text>
+
+<text x="274" y="632" font-size="18" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1">ONE PERMISSION BOUNDARY</text>
+
+<!-- ── arrows ──────────────────────────────────────────────────────────── -->
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b7fe8"/>
+  </marker>
+</defs>
+<g stroke="#5b7fe8" stroke-width="2.5" fill="none">
+  <path d="M 496 281 H 560 L 560 250 H 636" marker-end="url(#a)"/>
+  <path d="M 496 399 H 636" marker-end="url(#a)"/>
+  <path d="M 496 517 H 560 L 560 548 H 636" marker-end="url(#a)"/>
+</g>
+
+<!-- ── right: three homes ──────────────────────────────────────────────── -->
+<rect x="644" y="196" width="572" height="108" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<circle cx="682" cy="250" r="7" fill="#5b7fe8"/>
+<text x="708" y="242" font-size="25" font-weight="700" fill="#24292f">Two tags on the resource</text>
+<text x="708" y="274" font-size="19" fill="#57606a">any cloud tool can list it</text>
+
+<rect x="644" y="345" width="572" height="108" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<circle cx="682" cy="399" r="7" fill="#5b7fe8"/>
+<text x="708" y="391" font-size="25" font-weight="700" fill="#24292f">A record store</text>
+<text x="708" y="423" font-size="19" fill="#57606a">Parameter Store, S3, or a directory</text>
+
+<rect x="644" y="494" width="572" height="108" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<circle cx="682" cy="548" r="7" fill="#5b7fe8"/>
+<text x="708" y="540" font-size="25" font-weight="700" fill="#24292f">A receipt you declare</text>
+<text x="708" y="572" font-size="19" fill="#57606a">an ordinary resource in your plan</text>
+
+<text x="930" y="632" font-size="18" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1">ONE BOUNDARY PER RESOURCE</text>
+
+<line x1="64" y1="664" x2="1216" y2="664" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="64" y="694" font-size="18" fill="#57606a">With choudoufu, your IAM governs all three, per resource</text>
+</svg>
