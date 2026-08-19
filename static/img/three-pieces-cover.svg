@@ -3,7 +3,7 @@
 
 <!-- ── title ───────────────────────────────────────────────────────────── -->
 <text x="64" y="92" font-size="44" font-weight="700" fill="#e6edf3">Terraform state has three pieces</text>
-<text x="64" y="132" font-size="22" fill="#8b949e">One file doing three unrelated jobs, and what happens when you separate them</text>
+<text x="64" y="132" font-size="22" fill="#8b949e">One file doing three jobs, and what happens when you separate them</text>
 
 <!-- ── left: the one file ──────────────────────────────────────────────── -->
 <rect x="64" y="196" width="420" height="404" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
@@ -11,15 +11,15 @@
 
 <rect x="96" y="228" width="356" height="106" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
 <text x="124" y="266" font-size="21" font-weight="700" fill="#e6edf3">Identity</text>
-<text x="124" y="300" font-size="19" fill="#8b949e">which live resource an address means</text>
+<text x="124" y="300" font-size="19" fill="#8b949e">which live resource</text>
 
 <rect x="96" y="346" width="356" height="106" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
 <text x="124" y="384" font-size="21" font-weight="700" fill="#e6edf3">Values</text>
-<text x="124" y="418" font-size="19" fill="#8b949e">what the cloud cannot hold</text>
+<text x="124" y="418" font-size="19" fill="#8b949e">what AWS cannot hold</text>
 
 <rect x="96" y="464" width="356" height="106" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
 <text x="124" y="502" font-size="21" font-weight="700" fill="#e6edf3">Effects</text>
-<text x="124" y="536" font-size="19" fill="#8b949e">what leaves no trace behind</text>
+<text x="124" y="536" font-size="19" fill="#8b949e">what leaves no trace</text>
 
 <text x="274" y="632" font-size="18" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="1">ONE PERMISSION BOUNDARY</text>
 
@@ -39,7 +39,7 @@
 <rect x="644" y="196" width="572" height="108" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
 <circle cx="682" cy="250" r="7" fill="#6c8cff"/>
 <text x="708" y="242" font-size="25" font-weight="700" fill="#e6edf3">Two tags on the resource</text>
-<text x="708" y="274" font-size="19" fill="#8b949e">any cloud tool can list what you own</text>
+<text x="708" y="274" font-size="19" fill="#8b949e">any cloud tool can list it</text>
 
 <rect x="644" y="345" width="572" height="108" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
 <circle cx="682" cy="399" r="7" fill="#6c8cff"/>
@@ -49,10 +49,10 @@
 <rect x="644" y="494" width="572" height="108" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
 <circle cx="682" cy="548" r="7" fill="#6c8cff"/>
 <text x="708" y="540" font-size="25" font-weight="700" fill="#e6edf3">A receipt you declare</text>
-<text x="708" y="572" font-size="19" fill="#8b949e">an ordinary resource, visible in every plan</text>
+<text x="708" y="572" font-size="19" fill="#8b949e">an ordinary resource in your plan</text>
 
 <text x="930" y="632" font-size="18" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="1">ONE BOUNDARY PER RESOURCE</text>
 
 <line x1="64" y1="664" x2="1216" y2="664" stroke="#30363d" stroke-width="1.5"/>
-<text x="64" y="694" font-size="18" fill="#8b949e">Your IAM governs all three, per resource</text>
+<text x="64" y="694" font-size="18" fill="#8b949e">With choudoufu, your IAM governs all three, per resource</text>
 </svg>

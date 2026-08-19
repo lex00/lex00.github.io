@@ -5,7 +5,7 @@ featured_image: "img/three-pieces-cover.svg"
 draft: false
 ---
 
-A state file does three unrelated jobs.
+A state file does three jobs.
 
 It says which live resource an address refers to. It holds values the cloud has nowhere to put. And it records that an effect happened.
 
