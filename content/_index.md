@@ -1,4 +1,4 @@
 ---
 title: "Alex Artigues"
-description: "Infrastructure engineer. Currently building choudoufu, IAM-governed state for OpenTofu."
+description: "Infrastructure engineer. Currently building choudoufu, OpenTofu with one permission model."
 ---
