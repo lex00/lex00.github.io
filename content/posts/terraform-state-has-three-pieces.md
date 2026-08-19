@@ -37,12 +37,6 @@ One policy covers every team, and onboarding is a session tag rather than a new 
 
 You could always write conditions like that. What you could not do is trust the tag. `default_tags` misses types that take none and modules that override them, nothing checks it, and stock OpenTofu never reads tags back anyway.
 
-## Where it actually is
-
-Experimental, AWS only, and per-resource scoping reaches only the services that honour the condition key.
-
-26 of 145 real third-party configurations pass the offline check today. That number leads the front page, rendered from a committed test artifact.
-
 ---
 
 ## Read more
