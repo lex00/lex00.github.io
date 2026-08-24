@@ -7,31 +7,29 @@ draft: false
 
 Culture rots. It's perfectly normal and to some degree not preventable.
 
-In the world of ops there are some common themes around this rot.
+It rots because it's an honor system, and honor systems are only as strong as the participants.
 
 ## Above the clouds of responsibility
 
-There is an invisible caste system in many orgs, and ops is at the bottom of it. If you've been there, you were likely painfully aware of it at the time.
+There is an invisible caste system in many orgs, and ops is at the bottom of it. The euphemism "Ops problem" has survived every re-org I've experienced. 
 
-The euphemism "Ops problem" has survived every re-org I've experienced. 
+Watching the players at higher levels in the system feign ignorance about who will end up holding the bag can be maddening, because the answer is always the same. Ops.
 
-Watching the players at higher levels in the system feign ignorance about who will end up holding the bag can be maddening.
-
-Listening to them pat themselves on the back about supposed cultural observations that will help in the future can be enough to make one ill.
+They're not lying. They're just too far up to see it.
 
 ## What makes great ops tools
 
-The best ops tooling embraces the reality of culture-rot by empowering the operator to work around it.
-
 Good tools make no apologies or concessions to culture as a thin veil over lack of power.
 
-When you look at a tool and see a set of choices that seem to benefit the vendor more than you, understand that this is no accident.
+Identity is on the resource itself, not waiting around for a manager to bless it.
+
+The vendor's actual customer is the one signing the check.
 
 ## What can we do?
 
 We can build. 
 
-Tools that give us maximum leverage over identity and ownership are a good start.
+Tools that give us maximum leverage over identity and ownership are a good start. Leverage that doesn't need anyone above the clouds to notice, let alone approve.
 
 ---
 
