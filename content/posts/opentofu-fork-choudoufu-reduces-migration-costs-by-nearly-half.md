@@ -16,8 +16,6 @@ This claim sounds a bit outrageous at first, but it's actually quite conservativ
 
 People problems stay at full price in my math. The months I subtract for choudoufu are all about Terraform's state model.
 
-![The migration's published outcomes](/img/cursor-migration/outcomes.svg)
-
 ## Keeping a separate ledger is costly
 
 Terraform's state model bundles multiple concerns together.
