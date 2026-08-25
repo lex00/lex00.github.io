@@ -11,11 +11,11 @@ This blog takes a look at Cursor's recent migration from Terraform to OpenTofu.
 
 ## choudoufu writes ownership on the resource itself
 
+choudoufu adopts by stamping. Terraform adopts by fixing resolution in state.
+
 Two tags on the resource, read live at plan time. That's the whole trick of [identity hooks](/posts/tofu-tastes-better-with-identity-hooks/).
 
-The traditional migration pattern becomes a tag rename and your IaC stays where it is.
-
-The orchestration bill becomes your own CI plus [one IAM policy](/posts/terraform-state-has-three-pieces/).
+![The state world translated to the tag world](/img/cursor-migration/translation.svg)
 
 ![One monolith split with a state file vs with identity hooks](/img/cursor-migration/split-mechanics.svg)
 

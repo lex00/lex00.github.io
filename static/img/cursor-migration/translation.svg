@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="The state world translated to the tag world: an import becomes a stamp, a split becomes a tag rename, the platform becomes your CI plus one IAM policy, and the drift check becomes every plan">
+  <title>The state world, translated</title>
+  <rect width="760" height="320" fill="#fcfcfb"/>
+  <text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">The state world, translated</text>
+  <text x="20" y="50" font-size="12" fill="#52514e">ownership as a file · ownership as two tags read live at plan time</text>
+
+  <!-- column headers -->
+  <text x="60" y="86" font-size="12" font-weight="600" fill="#898781">with a state file</text>
+  <text x="470" y="86" font-size="12" font-weight="600" fill="#2a78d6">with identity hooks</text>
+
+  <!-- rows: left pill (gray), arrow, right pill (blue) -->
+  <g font-size="12.5">
+    <rect x="40" y="100" width="330" height="34" rx="8" fill="#f0efec"/>
+    <text x="60" y="122" fill="#0b0b0b">adopt a resource with an import</text>
+    <path d="M382,117 h34" stroke="#898781" stroke-width="3" stroke-linecap="round"/>
+    <path d="M410,110 l10,7 -10,7" fill="none" stroke="#898781" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="100" width="290" height="34" rx="8" fill="#2a78d6"/>
+    <text x="450" y="122" fill="#ffffff">stamp it</text>
+
+    <rect x="40" y="146" width="330" height="34" rx="8" fill="#f0efec"/>
+    <text x="60" y="168" fill="#0b0b0b">split an estate with state surgery</text>
+    <path d="M382,163 h34" stroke="#898781" stroke-width="3" stroke-linecap="round"/>
+    <path d="M410,156 l10,7 -10,7" fill="none" stroke="#898781" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="146" width="290" height="34" rx="8" fill="#2a78d6"/>
+    <text x="450" y="168" fill="#ffffff">rename the tag</text>
+
+    <rect x="40" y="192" width="330" height="34" rx="8" fill="#f0efec"/>
+    <text x="60" y="214" fill="#0b0b0b">buy a platform to host the file</text>
+    <path d="M382,209 h34" stroke="#898781" stroke-width="3" stroke-linecap="round"/>
+    <path d="M410,202 l10,7 -10,7" fill="none" stroke="#898781" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="192" width="290" height="34" rx="8" fill="#2a78d6"/>
+    <text x="450" y="214" fill="#ffffff">your CI plus one IAM policy</text>
+
+    <rect x="40" y="238" width="330" height="34" rx="8" fill="#f0efec"/>
+    <text x="60" y="260" fill="#0b0b0b">schedule drift checks against the file</text>
+    <path d="M382,255 h34" stroke="#898781" stroke-width="3" stroke-linecap="round"/>
+    <path d="M410,248 l10,7 -10,7" fill="none" stroke="#898781" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="238" width="290" height="34" rx="8" fill="#2a78d6"/>
+    <text x="450" y="260" fill="#ffffff">every plan reads the cloud</text>
+  </g>
+  <text x="40" y="302" font-size="10.5" fill="#898781">your IaC stays where it is in every row</text>
+</svg>
