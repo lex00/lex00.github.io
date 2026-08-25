@@ -41,4 +41,5 @@
   <rect x="499" y="368" width="211" height="24" rx="4" fill="#eb6834"><title>State work: ~18.5 weeks (38%) - the removable share gating the critical path</title></rect>
   <text x="322" y="384" font-size="10.5" fill="#fcfcfb" font-weight="600" text-anchor="middle">thinking ~62% · survives</text>
   <text x="604" y="384" font-size="10.5" font-weight="600" fill="#fcfcfb" text-anchor="middle">state work ~38% · removable</text>
+  <text x="150" y="412" font-size="10.5" fill="#898781">38% of the weeks is the serialized share, so it sets closer to half the calendar</text>
 </svg>

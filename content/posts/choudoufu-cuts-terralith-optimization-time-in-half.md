@@ -31,7 +31,9 @@ This means moving resources is as easy as changing tag values. Each plan reads t
 
 ![Migration work sorted: thinking that survives any tool vs work that exists because the file does](/img/cursor-migration/work-shape.svg)
 
-In the actual migration the slowest chain was state. Removing the state chain reduces the timeline driver to the decision making on boundaries.
+In the actual migration the slowest chain was state. State work is 38% of the engineering weeks and a larger share of the calendar, since parallel work shares the schedule while the serialized chain sets it.
+
+Removing the state chain reduces the timeline driver to the decision making on boundaries.
 
 ## Half the time
 
