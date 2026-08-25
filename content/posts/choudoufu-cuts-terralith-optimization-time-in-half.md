@@ -7,7 +7,7 @@ draft: false
 
 [choudoufu](https://intentius.io/choudoufu/docs/) is a fork of OpenTofu with [identity hooks](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/).
 
-This blog takes a look at Cursor's recent migration from Terraform to OpenTofu.
+This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, and how it could have gone differently if it wasn't held back by state.
 
 ## choudoufu writes ownership on the resource itself
 
