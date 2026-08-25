@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Moving one workspace: to a new state backend it takes five gated steps ending in a cutover; to choudoufu it takes two, and nothing waits on a backend. The estate had 21 workspaces to move.">
+  <title>Moving one workspace</title>
+  <rect width="760" height="330" fill="#fcfcfb"/>
+  <text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">Moving one workspace</text>
+  <text x="20" y="50" font-size="12" fill="#52514e">the estate had 21 of these to move · the published dates show this gating everything until late January</text>
+
+  <!-- left card: new state backend -->
+  <rect x="20" y="66" width="350" height="244" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <text x="40" y="94" font-size="12.5" font-weight="600" fill="#0b0b0b">to a new state backend</text>
+  <g font-size="11.5">
+    <rect x="40" y="106" width="310" height="28" rx="6" fill="#f0efec"/>
+    <text x="52" y="124" fill="#52514e">1</text><text x="70" y="124" fill="#0b0b0b">freeze changes in the workspace</text>
+    <rect x="40" y="142" width="310" height="28" rx="6" fill="#f0efec"/>
+    <text x="52" y="160" fill="#52514e">2</text><text x="70" y="160" fill="#0b0b0b">pull the state out through the export API</text>
+    <rect x="40" y="178" width="310" height="28" rx="6" fill="#f0efec"/>
+    <text x="52" y="196" fill="#52514e">3</text><text x="70" y="196" fill="#0b0b0b">create the new stack, wire VCS and credentials</text>
+    <rect x="40" y="214" width="310" height="28" rx="6" fill="#f0efec"/>
+    <text x="52" y="232" fill="#52514e">4</text><text x="70" y="232" fill="#0b0b0b">upload state, verify a clean plan</text>
+    <rect x="40" y="250" width="310" height="28" rx="6" fill="#f0efec"/>
+    <text x="52" y="268" fill="#52514e">5</text><text x="70" y="268" fill="#0b0b0b">cut over, retire the old workspace</text>
+  </g>
+
+  <!-- right card: choudoufu -->
+  <rect x="390" y="66" width="350" height="244" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <text x="410" y="94" font-size="12.5" font-weight="600" fill="#0b0b0b">to choudoufu</text>
+  <g font-size="11.5">
+    <rect x="410" y="106" width="310" height="28" rx="6" fill="#2a78d6"/>
+    <text x="422" y="124" fill="#cde2fb">1</text><text x="440" y="124" fill="#ffffff">live-import reads the state, stamps the tags</text>
+    <rect x="410" y="142" width="310" height="28" rx="6" fill="#2a78d6"/>
+    <text x="422" y="160" fill="#cde2fb">2</text><text x="440" y="160" fill="#ffffff">point your CI at the repo</text>
+  </g>
+  <text x="410" y="216" font-size="14" font-weight="600" fill="#0b0b0b">Nothing waits on a backend.</text>
+  <text x="410" y="236" font-size="11.5" fill="#52514e">no lock to carry over, no cutover window,</text>
+  <text x="410" y="252" font-size="11.5" fill="#52514e">and the old state is deleted, not moved</text>
+</svg>

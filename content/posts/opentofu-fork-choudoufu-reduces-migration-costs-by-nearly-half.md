@@ -4,9 +4,9 @@ date: 2026-08-25
 draft: false
 ---
 
-Cursor spent seven months migrating Terraform to OpenTofu.
+[choudoufu](https://intentius.io/choudoufu/docs/) is a fork of OpenTofu with identity hooks.
 
-The top track in this graphic is their timeline, the bottom two are the same estate on identity hooks.
+This blog takes a look at Cursor's recent migration from Terraform to OpenTofu.
 
 ![OpenTofu actual vs choudoufu replay vs chant projection](/img/cursor-migration/timeline.svg)
 
@@ -38,13 +38,23 @@ Because choudoufu observes the tags live at plan time, you are protected from st
 
 ## What took less time
 
-The state never moves again, because one import pass stamps its contents onto the resources as tags.
+The state never moves again, because one import pass stamps its contents onto the resources as tags. Standing up runs somewhere new is where that shows first.
+
+![Moving one workspace: to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
 
 With no file, there is no platform to stand up. A split stops being surgery and becomes a rename. Drift workarounds have nothing to work around, since every plan reads the cloud directly.
 
 Adopting choudoufu is one verified pass over the estate you already run. A traditional migration is months of carrying a fragile file between vendors without dropping it.
 
 That gap is the whole claim.
+
+## The slowest part sets the calendar
+
+A migration takes as long as its slowest chain, not its average step.
+
+In the actual migration the slowest chain was state. Splits serialize behind locks and coordination freezes, and decomposition waited on workspaces landing on the new platform. The published dates agree, with the platform move wrapping in February and decomposition running to May.
+
+Remove the state chain and the pacing item becomes deciding the 141 boundaries. That thinking is most of what remains in my estimate.
 
 ## Half the time
 
