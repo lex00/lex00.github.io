@@ -1,5 +1,5 @@
 ---
-title: "OpenTofu fork choudoufu reduces migration costs by nearly half"
+title: "choudoufu cuts terralith optimization time in half"
 date: 2026-08-25
 featured_image: "img/tofu-electrodes-hero.png"
 draft: false
