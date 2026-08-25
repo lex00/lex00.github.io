@@ -1,7 +1,7 @@
 ---
 title: "choudoufu cuts terralith optimization time in half"
 date: 2026-08-25
-featured_image: "img/tofu-electrodes-hero.png"
+featured_image: "img/this-is-choudoufu.jpg"
 draft: false
 ---
 
@@ -21,7 +21,7 @@ Two tags on the resource, read live at plan time. That's the whole trick of [ide
 
 ## What takes less time
 
-choudoufu's import pass stamps identity markers onto the resources as tags.
+To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. choudoufu adopts resources by tagging them, thanks to identity hooks. An existing OpenTofu codebase imports directly, without a rewrite.
 
 ![Moving one workspace: to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
 
