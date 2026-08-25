@@ -38,6 +38,16 @@ Because choudoufu observes the tags live at plan time, you are protected from st
 
 ![One monolith split with a state file vs with identity hooks](/img/cursor-migration/split-mechanics.svg)
 
+## What took less time
+
+The state never moves again, because one import pass stamps its contents onto the resources as tags.
+
+With no file, there is no platform to stand up. A split stops being surgery and becomes a rename. Drift workarounds have nothing to work around, since every plan reads the cloud directly.
+
+Adopting choudoufu is one verified pass over the estate you already run. A traditional migration is months of carrying a fragile file between vendors without dropping it.
+
+That gap is the whole claim.
+
 ## Half the time
 
 ![Waterfall from 7 months to roughly 3.9](/img/cursor-migration/waterfall.svg)
