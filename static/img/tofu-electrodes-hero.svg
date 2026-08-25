@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="A block of tofu hooked up to the AWS cloud with jumper cables">
+  <title>choudoufu, hooked up to the cloud</title>
+  <rect width="1200" height="630" fill="#fcfcfb"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="330" cy="500" rx="230" ry="26" fill="#e1e0d9" opacity="0.6"/>
+
+  <!-- tofu block: front, top, side -->
+  <polygon points="180,300 260,240 560,240 480,300" fill="#fffdf4" stroke="#d9d2bd" stroke-width="3"/>
+  <polygon points="480,300 560,240 560,430 480,490" fill="#efe6cf" stroke="#d9d2bd" stroke-width="3"/>
+  <rect x="180" y="300" width="300" height="190" fill="#f9f4e4" stroke="#d9d2bd" stroke-width="3"/>
+
+  <!-- stink wisps -->
+  <g stroke="#93a06f" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.75">
+    <path d="M258,222 q16,-24 0,-48 q-14,-22 6,-42"/>
+    <path d="M330,210 q18,-26 2,-50 q-14,-22 8,-44 q14,-20 0,-38"/>
+    <path d="M404,204 q16,-26 0,-50 q-12,-22 6,-42"/>
+    <path d="M470,214 q18,-24 2,-48 q-12,-20 6,-38"/>
+    <path d="M528,232 q14,-20 2,-40"/>
+  </g>
+  <g stroke="#b3bd8e" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6">
+    <path d="M296,196 q10,-16 0,-32"/>
+    <path d="M440,188 q10,-16 0,-32"/>
+  </g>
+
+  <!-- tofu texture: press-cloth dashes and pores -->
+  <g stroke="#e3d9bd" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <line x1="210" y1="330" x2="226" y2="326"/><line x1="300" y1="322" x2="318" y2="318"/><line x1="402" y1="330" x2="420" y2="326"/>
+    <line x1="238" y1="410" x2="256" y2="406"/><line x1="352" y1="402" x2="370" y2="398"/><line x1="430" y1="416" x2="448" y2="412"/>
+    <line x1="212" y1="462" x2="230" y2="458"/><line x1="322" y1="470" x2="340" y2="466"/>
+    <line x1="286" y1="262" x2="304" y2="256"/><line x1="404" y1="258" x2="422" y2="252"/><line x1="472" y1="270" x2="490" y2="264"/>
+  </g>
+  <g fill="#e8dfc6">
+    <circle cx="268" cy="356" r="2.5"/><circle cx="356" cy="348" r="2"/><circle cx="440" cy="368" r="2.5"/>
+    <circle cx="246" cy="438" r="2"/><circle cx="392" cy="444" r="2.5"/><circle cx="336" cy="382" r="2"/>
+    <circle cx="500" cy="330" r="2"/><circle cx="502" cy="402" r="2.5"/>
+  </g>
+
+  <!-- mold -->
+  <g fill="#6f8f5e" opacity="0.55">
+    <ellipse cx="215" cy="320" rx="26" ry="14"/>
+    <ellipse cx="238" cy="334" rx="14" ry="8"/>
+    <ellipse cx="452" cy="462" rx="30" ry="16"/>
+    <ellipse cx="424" cy="474" rx="14" ry="8"/>
+    <ellipse cx="310" cy="268" rx="22" ry="10"/>
+    <ellipse cx="512" cy="262" rx="16" ry="8"/>
+  </g>
+  <g fill="#4f7a55" opacity="0.5">
+    <circle cx="204" cy="312" r="5"/><circle cx="252" cy="326" r="4"/><circle cx="228" cy="344" r="3.5"/>
+    <circle cx="468" cy="452" r="5"/><circle cx="438" cy="470" r="4"/><circle cx="484" cy="472" r="3"/>
+    <circle cx="296" cy="262" r="4"/><circle cx="330" cy="274" r="3"/>
+    <circle cx="342" cy="452" r="4"/><circle cx="366" cy="462" r="3"/>
+    <circle cx="196" cy="452" r="4.5"/><circle cx="212" cy="466" r="3"/>
+  </g>
+  <g fill="#8aa06a" opacity="0.4">
+    <circle cx="360" cy="316" r="3"/><circle cx="420" cy="336" r="3.5"/><circle cx="446" cy="316" r="2.5"/>
+    <circle cx="286" cy="418" r="3.5"/><circle cx="316" cy="436" r="2.5"/>
+  </g>
+
+  <!-- wobble -->
+  <g stroke="#b8b09a" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M158,340 q-12,30 0,60"/>
+    <path d="M144,352 q-10,24 0,48"/>
+    <path d="M592,300 q12,28 0,56"/>
+    <path d="M606,312 q10,22 0,44"/>
+  </g>
+  <path d="M196,310 q30,8 60,0 q30,-8 60,0 q30,8 60,0 q30,-8 60,0" fill="none" stroke="#e3d9bd" stroke-width="3" opacity="0.9"/>
+
+  <!-- electrode pads: red and blue -->
+  <circle cx="270" cy="380" r="24" fill="#e34948"/>
+  <circle cx="270" cy="380" r="9" fill="#fcfcfb"/>
+  <circle cx="386" cy="380" r="24" fill="#2a78d6"/>
+  <circle cx="386" cy="380" r="9" fill="#fcfcfb"/>
+
+  <!-- cables to the cloud: braided steel -->
+  <path d="M270,358 C270,220 560,120 800,180" fill="none" stroke="#55544f" stroke-width="11" stroke-linecap="round"/>
+  <path d="M270,358 C270,220 560,120 800,180" fill="none" stroke="#a8a69e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M270,358 C270,220 560,120 800,180" fill="none" stroke="#e8e6df" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="7 9"/>
+  <path d="M386,358 C400,260 620,220 812,238" fill="none" stroke="#55544f" stroke-width="11" stroke-linecap="round"/>
+  <path d="M386,358 C400,260 620,220 812,238" fill="none" stroke="#a8a69e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M386,358 C400,260 620,220 812,238" fill="none" stroke="#e8e6df" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="7 9"/>
+
+  <!-- cloud -->
+  <g>
+    <path d="M880,300 a70,70 0 0 1 8,-139 a95,95 0 0 1 180,-24 a80,80 0 0 1 42,163 z" fill="#ffffff" stroke="#c3c2b7" stroke-width="4"/>
+    <text x="985" y="243" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#0b0b0b" text-anchor="middle">aws</text>
+  </g>
+  <polyline points="856,262 880,270 862,284 886,296" fill="none" stroke="#eda100" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="375" y="568" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="44" font-weight="700" fill="#0b0b0b" text-anchor="middle">choudoufu</text>
+</svg>
