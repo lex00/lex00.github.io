@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="484" viewBox="0 0 760 484" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Three timelines for the same estate: the actual 7-month OpenTofu migration, a choudoufu replay done in about 3.9 months, and a chant projection that reinvests the saved months into typed re-authoring">
+  <title>Three timelines, one estate</title>
+  <defs>
+    <pattern id="notspent" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#c3c2b7" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="760" height="484" fill="#fcfcfb"/>
+  <text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">Three timelines, one estate</text>
+  <text x="20" y="50" font-size="12" fill="#52514e">top track from published dates · bottom tracks are my estimates · months from Nov 2025</text>
+
+  <!-- month grid: x = 150 + m * 82 -->
+  <g stroke="#e1e0d9" stroke-width="1">
+    <line x1="150" y1="64" x2="150" y2="448"/><line x1="232" y1="64" x2="232" y2="448"/>
+    <line x1="314" y1="64" x2="314" y2="448"/><line x1="396" y1="64" x2="396" y2="448"/>
+    <line x1="478" y1="64" x2="478" y2="448"/><line x1="560" y1="64" x2="560" y2="448"/>
+    <line x1="642" y1="64" x2="642" y2="448"/><line x1="724" y1="64" x2="724" y2="448"/>
+  </g>
+  <g font-size="10.5" fill="#898781" text-anchor="middle">
+    <text x="150" y="464">Nov</text><text x="232" y="464">Dec</text><text x="314" y="464">Jan</text>
+    <text x="396" y="464">Feb</text><text x="478" y="464">Mar</text><text x="560" y="464">Apr</text>
+    <text x="642" y="464">May</text><text x="724" y="464">Jun</text>
+  </g>
+
+  <!-- Track A: actual -->
+  <text x="20" y="88" font-size="12.5" font-weight="600" fill="#0b0b0b">OpenTofu</text>
+  <text x="20" y="103" font-size="10.5" fill="#52514e">what happened</text>
+  <text x="20" y="117" font-size="10.5" fill="#52514e">7 mo</text>
+  <g>
+    <rect x="150" y="78" width="80" height="16" rx="4" fill="#2a78d6"><title>Audit + IAM dedup: Nov, 1 month</title></rect>
+    <text x="236" y="90" font-size="10.5" fill="#52514e">audit + dedup</text>
+    <rect x="232" y="100" width="244" height="16" rx="4" fill="#eb6834"><title>TFC to Spacelift + runtime swap: Dec-Feb, 3 months</title></rect>
+    <text x="482" y="112" font-size="10.5" fill="#52514e">platform + runtime</text>
+    <rect x="314" y="122" width="408" height="16" rx="4" fill="#1baf7a"><title>Terralith decomposition 21 to 141 root modules: Jan-May, 5 months of state surgery per split</title></rect>
+    <text x="320" y="134" font-size="10.5" fill="#fcfcfb" font-weight="600">decomposition 21 → 141</text>
+    <rect x="396" y="144" width="326" height="16" rx="4" fill="#eda100"><title>AI agent guardrails as prose rules: Feb-May, 4 months, arriving last</title></rect>
+    <text x="402" y="156" font-size="10.5" fill="#0b0b0b" font-weight="600">guardrails (prose, arrive last)</text>
+    <line x1="724" y1="70" x2="724" y2="168" stroke="#52514e" stroke-width="1.5"/>
+    <text x="718" y="76" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="end">7 mo</text>
+  </g>
+
+  <line x1="20" y1="180" x2="740" y2="180" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- Track B: choudoufu ; done at 3.9mo -> x = 150 + 3.85*82 ≈ 466 -->
+  <text x="20" y="204" font-size="12.5" font-weight="600" fill="#0b0b0b">choudoufu</text>
+  <text x="20" y="219" font-size="10.5" fill="#52514e">replay</text>
+  <text x="20" y="233" font-size="10.5" fill="#52514e">~3.9 mo</text>
+  <g>
+    <rect x="466" y="186" width="258" height="96" fill="url(#notspent)" opacity="0.55"><title>The claim, drawn: about 3 months of file work that does not happen on identity hooks</title></rect>
+    <rect x="150" y="192" width="62" height="16" rx="4" fill="#2a78d6"><title>live-import stamps the estate + dedup refactor: ~3 weeks</title></rect>
+    <text x="218" y="204" font-size="10.5" fill="#52514e">live-import + dedup</text>
+    <rect x="212" y="214" width="123" height="16" rx="4" fill="#eb6834"><title>ABAC governance + pilot + bulk adoption: ~6 weeks. No platform to stand up.</title></rect>
+    <text x="341" y="226" font-size="10.5" fill="#52514e">governance + adoption</text>
+    <rect x="253" y="236" width="213" height="16" rx="4" fill="#1baf7a"><title>Decomposition as tag writes + policy copies, ~120 splits, incl. the make-it-stamppable add-back</title></rect>
+    <text x="259" y="248" font-size="10.5" fill="#fcfcfb" font-weight="600">splits = tag writes</text>
+    <rect x="273" y="258" width="193" height="16" rx="4" fill="#eda100"><title>Guardrails: same rule files, plus tool-refused grammar and credential-less live-check</title></rect>
+    <text x="279" y="270" font-size="10.5" fill="#0b0b0b" font-weight="600">guardrails</text>
+    <line x1="466" y1="186" x2="466" y2="282" stroke="#0b0b0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="595" y="230" font-size="11.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">≈3 months not spent</text>
+    <text x="595" y="246" font-size="10.5" fill="#52514e" text-anchor="middle">−45% of the calendar</text>
+  </g>
+
+  <line x1="20" y1="294" x2="740" y2="294" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- Track C: chant -->
+  <text x="20" y="318" font-size="12.5" font-weight="600" fill="#0b0b0b">chant</text>
+  <text x="20" y="333" font-size="10.5" fill="#52514e">projection</text>
+  <text x="20" y="347" font-size="10.5" fill="#52514e">reinvests the savings</text>
+  <g>
+    <rect x="150" y="306" width="62" height="16" rx="4" fill="#2a78d6"><title>Audit (chant audit) + carve pilot: ~3 weeks</title></rect>
+    <text x="218" y="318" font-size="10.5" fill="#52514e">audit + carve pilot</text>
+    <rect x="212" y="328" width="123" height="16" rx="4" fill="#eb6834"><title>Governance + rendered forge pipelines: ~6 weeks. Same no-platform savings.</title></rect>
+    <text x="341" y="340" font-size="10.5" fill="#52514e">governance + pipelines</text>
+    <rect x="253" y="350" width="213" height="16" rx="4" fill="#1baf7a"><title>Carve = decomposition + typed re-authoring in one act</title></rect>
+    <rect x="466" y="350" width="250" height="16" rx="4" fill="#1baf7a" opacity="0.35"><title>Carve tail: typed coverage grows per component while the remainder keeps working</title></rect>
+    <polygon points="716,350 728,358 716,366" fill="#1baf7a" opacity="0.35"/>
+    <text x="259" y="362" font-size="10.5" fill="#fcfcfb" font-weight="600">carve = split + rewrite</text>
+    <text x="590" y="362" font-size="10.5" fill="#52514e" text-anchor="middle">carve tail → typed estate</text>
+    <rect x="150" y="374" width="566" height="6" rx="3" fill="#eda100"><title>Guardrails are the medium from day one: typed source, build lint, chant search</title></rect>
+    <text x="480" y="392" font-size="10.5" fill="#52514e" text-anchor="middle">guardrails built in from day one</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="10.5" fill="#52514e">
+    <rect x="150" y="414" width="10" height="10" rx="3" fill="#2a78d6"/><text x="165" y="423">adopt/audit</text>
+    <rect x="242" y="414" width="10" height="10" rx="3" fill="#eb6834"/><text x="257" y="423">platform/governance</text>
+    <rect x="384" y="414" width="10" height="10" rx="3" fill="#1baf7a"/><text x="399" y="423">decomposition</text>
+    <rect x="494" y="414" width="10" height="10" rx="3" fill="#eda100"/><text x="509" y="423">guardrails</text>
+    <rect x="590" y="414" width="14" height="10" fill="url(#notspent)" opacity="0.55"/><text x="609" y="423">not spent</text>
+  </g>
+</svg>

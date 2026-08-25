@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="400" viewBox="0 0 760 400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="760" height="400" fill="#fcfcfb"/>
+  <text x="20" y="28" font-size="15" font-weight="600" fill="#0b0b0b">Where the seven months go</text>
+  <text x="20" y="46" font-size="12" fill="#52514e">published 7-month timeline minus my estimated step sizes · the one add-back is choudoufu's grammar refactor</text>
+
+  <!-- y scale: 0..7 months -> y = 340 - m*40 ; gridlines at 0..7 -->
+  <g stroke="#e1e0d9" stroke-width="1">
+    <line x1="60" y1="60" x2="740" y2="60"/><line x1="60" y1="140" x2="740" y2="140"/>
+    <line x1="60" y1="220" x2="740" y2="220"/><line x1="60" y1="300" x2="740" y2="300"/>
+  </g>
+  <g font-size="10.5" fill="#898781" text-anchor="end">
+    <text x="52" y="64">7</text><text x="52" y="144">5</text><text x="52" y="224">3</text><text x="52" y="304">1</text>
+  </g>
+  <line x1="60" y1="340" x2="740" y2="340" stroke="#c3c2b7" stroke-width="1"/>
+
+  <!-- bars: w=72, gap; columns at x = 72, 168, 264, 360, 456, 552, 648 -->
+  <!-- 1 Actual total 7.0: y 60..340 -->
+  <rect x="72" y="60" width="72" height="280" rx="4" fill="#52514e"><title>Published migration calendar, Nov 2025 - May 2026: 7.0 months</title></rect>
+  <text x="108" y="78" font-size="11" font-weight="600" fill="#fcfcfb" text-anchor="middle">7.0</text>
+  <!-- 2 platform core -1.75: from 7.0 to 5.25 -> y 60..130 -->
+  <line x1="144" y1="60" x2="168" y2="60" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="168" y="60" width="72" height="70" rx="4" fill="#2a78d6"><title>Spacelift standup + 4-phase bulk state migration: -1.75 months. Nothing to host, nothing to lock.</title></rect>
+  <text x="204" y="78" font-size="11" font-weight="600" fill="#fcfcfb" text-anchor="middle">−1.75</text>
+  <!-- 3 split mechanics -1.25: 5.25 to 4.0 -> y 130..180 -->
+  <line x1="240" y1="130" x2="264" y2="130" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="264" y="130" width="72" height="50" rx="4" fill="#2a78d6"><title>Per-split state surgery across ~120 splits becomes tag write + policy copy: -1.25 months</title></rect>
+  <text x="300" y="122" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">−1.25</text>
+  <!-- 4 drift/ECS -0.5: 4.0 to 3.5 -> y 180..200 -->
+  <line x1="336" y1="180" x2="360" y2="180" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="360" y="180" width="72" height="20" rx="4" fill="#2a78d6"><title>ECS template-pattern workaround mostly unnecessary: -0.5 months. Every plan is live.</title></rect>
+  <text x="396" y="172" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">−0.5</text>
+  <!-- 5 perf hunting -0.25: 3.5 to 3.25 -> y 200..210 -->
+  <line x1="432" y1="200" x2="456" y2="200" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="456" y="200" width="72" height="10" rx="4" fill="#2a78d6"><title>OTel plan-bottleneck hunting simplifies: -0.25 months. Plan time = scoped live reads.</title></rect>
+  <text x="492" y="192" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">−0.25</text>
+  <!-- 6 add-back +0.6: 3.25 to 3.85 -> y 210 up to 186 -->
+  <line x1="528" y1="210" x2="552" y2="210" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="552" y="186" width="72" height="24" rx="4" fill="#e34948"><title>Make-it-stamppable refactor (count-expanded modules, count.index names, CIDR for_each): +0.6 months</title></rect>
+  <text x="588" y="178" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">+0.6</text>
+  <!-- 7 replay total 3.85: y 186..340 -->
+  <line x1="624" y1="186" x2="648" y2="186" stroke="#c3c2b7" stroke-width="1"/>
+  <rect x="648" y="186" width="72" height="154" rx="4" fill="#52514e"><title>choudoufu replay estimate: ~3.85 months (band 3.5-4, error bars +/- 1 month)</title></rect>
+  <text x="684" y="178" font-size="11" font-weight="600" fill="#0b0b0b" text-anchor="middle">≈3.9</text>
+
+  <g font-size="10.5" fill="#52514e" text-anchor="middle">
+    <text x="108" y="358">actual</text>
+    <text x="204" y="358">platform +</text><text x="204" y="371">bulk migration</text>
+    <text x="300" y="358">split</text><text x="300" y="371">mechanics</text>
+    <text x="396" y="358">drift</text><text x="396" y="371">workarounds</text>
+    <text x="492" y="358">perf</text><text x="492" y="371">hunting</text>
+    <text x="588" y="358">stamppable</text><text x="588" y="371">add-back</text>
+    <text x="684" y="358">replay</text>
+  </g>
+  <text x="20" y="392" font-size="10.5" fill="#898781">≈45% saved, error bars about a month either way. The thinking survives; the mechanics don't.</text>
+</svg>
