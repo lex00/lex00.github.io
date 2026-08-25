@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="The migration's published outcomes: plans 5x faster, 2.6x more infrastructure PRs per week, 91% smaller blast radius, 571% more root modules, and 45.8% of state removed as duplication">
-  <title>The results, priced at seven months</title>
+  <title>What half the time must still deliver</title>
   <rect width="760" height="330" fill="#fcfcfb"/>
-  <text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">The results, priced at seven months</text>
+  <text x="20" y="30" font-size="16" font-weight="600" fill="#0b0b0b">What half the time must still deliver</text>
   <text x="20" y="50" font-size="12" fill="#52514e">the migration's published numbers, Oct 2025 → May 2026</text>
 
   <!-- tile grid: 4 tiles, 172w x 150h, gap 12, y=70 -->
