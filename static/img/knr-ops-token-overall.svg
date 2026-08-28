@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 536" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="700" height="536" fill="#0d1117"/>
+<text x="40" y="88" font-size="18" font-weight="700" fill="#8b949e">stack</text>
+<text x="660" y="88" font-size="18" font-weight="700" fill="#8b949e" text-anchor="end">avg tokens / run</text>
+<line x1="40" y1="100" x2="660" y2="100" stroke="#30363d" stroke-width="1"/>
+<text x="40" y="128" font-size="20" font-weight="700" fill="#68d391">chant</text>
+<text x="660" y="128" font-size="20" font-weight="700" fill="#68d391" text-anchor="end">4,585</text>
+<line x1="40" y1="150" x2="660" y2="150" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="182" font-size="20" font-weight="500" fill="#e6edf3">pulumi-typescript</text>
+<text x="660" y="182" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">5,212</text>
+<line x1="40" y1="204" x2="660" y2="204" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="236" font-size="20" font-weight="500" fill="#e6edf3">Crossplane</text>
+<text x="660" y="236" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">5,275</text>
+<line x1="40" y1="258" x2="660" y2="258" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="290" font-size="20" font-weight="500" fill="#e6edf3">bare</text>
+<text x="660" y="290" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">5,354</text>
+<line x1="40" y1="312" x2="660" y2="312" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="344" font-size="20" font-weight="500" fill="#e6edf3">knr-ops</text>
+<text x="660" y="344" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">5,757</text>
+<line x1="40" y1="366" x2="660" y2="366" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="398" font-size="20" font-weight="500" fill="#e6edf3">pulumi-python</text>
+<text x="660" y="398" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">5,785</text>
+<line x1="40" y1="420" x2="660" y2="420" stroke="#30363d" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="452" font-size="20" font-weight="500" fill="#e6edf3">terraform</text>
+<text x="660" y="452" font-size="20" font-weight="500" fill="#e6edf3" text-anchor="end">6,068</text>
+</svg>

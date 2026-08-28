@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 374" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="900" height="374" fill="#ffffff"/>
+<text x="40" y="88" font-size="18" font-weight="700" fill="#57606a">task</text>
+<text x="420" y="88" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">knr-ops</text>
+<text x="620" y="88" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">Crossplane</text>
+<text x="820" y="88" font-size="18" font-weight="700" fill="#57606a" text-anchor="end">knr-ops saves</text>
+<line x1="40" y1="100" x2="860" y2="100" stroke="#d0d7de" stroke-width="1"/>
+<text x="40" y="128" font-size="20" font-weight="600" fill="#1c2128">comprehend</text>
+<text x="420" y="128" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">5,076</text>
+<text x="620" y="128" font-size="20" fill="#1c2128" text-anchor="end">6,431</text>
+<text x="820" y="128" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">21%</text>
+<line x1="40" y1="150" x2="860" y2="150" stroke="#d0d7de" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="182" font-size="20" font-weight="600" fill="#1c2128">generate</text>
+<text x="420" y="182" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">9,010</text>
+<text x="620" y="182" font-size="20" fill="#1c2128" text-anchor="end">9,836</text>
+<text x="820" y="182" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">8%</text>
+<line x1="40" y1="204" x2="860" y2="204" stroke="#d0d7de" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="236" font-size="20" font-weight="600" fill="#1c2128">modify</text>
+<text x="420" y="236" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">3,433</text>
+<text x="620" y="236" font-size="20" fill="#1c2128" text-anchor="end">3,434</text>
+<text x="820" y="236" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">~0%</text>
+<line x1="40" y1="258" x2="860" y2="258" stroke="#d0d7de" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40" y="290" font-size="20" font-weight="600" fill="#1c2128">debug</text>
+<text x="420" y="290" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">3,440</text>
+<text x="620" y="290" font-size="20" fill="#1c2128" text-anchor="end">4,011</text>
+<text x="820" y="290" font-size="20" font-weight="700" fill="#1f6feb" text-anchor="end">14%</text>
+</svg>

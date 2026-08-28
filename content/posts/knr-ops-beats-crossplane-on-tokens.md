@@ -14,26 +14,13 @@ Here is a new round of [iac-cd-bench](https://github.com/lex00/iac-cd-bench) wit
 
 Haiku 4.5, k=3, all seven stacks, cold and warm, 252 runs.
 
-| task | knr-ops | Crossplane | knr-ops saves |
-|---|---:|---:|---:|
-| comprehend | 5,075 | 6,431 | 21% |
-| generate | 9,009 | 9,836 | 8% |
-| modify | 3,433 | 3,434 | ~0% |
-| debug | 3,440 | 4,011 | 14% |
+{{< figure src="/img/knr-ops-token-tasks.svg" alt="knr-ops versus Crossplane, average tokens per run by task. comprehend: knr-ops 5,076, Crossplane 6,431, knr-ops saves 21%. generate: knr-ops 9,010, Crossplane 9,836, saves 8%. modify: knr-ops 3,433, Crossplane 3,434, saves about 0%. debug: knr-ops 3,440, Crossplane 4,011, saves 14%." >}}
 
 Crossplane does better on two task types, review and deep semantic questions.  This is because Crossplane's CRDs are cheaper than a Flux/kustomize overlay.
 
 ## The buried number: chant beats everyone
 
-| stack | avg tokens / run |
-|---|---:|
-| **chant** | **4,584** |
-| pulumi-typescript | 5,212 |
-| Crossplane | 5,274 |
-| bare | 5,354 |
-| knr-ops | 5,756 |
-| pulumi-python | 5,785 |
-| terraform | 6,067 |
+{{< figure src="/img/knr-ops-token-overall.svg" alt="Average tokens per run across all seven stacks, cheapest first. chant 4,585. pulumi-typescript 5,212. Crossplane 5,275. bare 5,354. knr-ops 5,757. pulumi-python 5,785. terraform 6,068." >}}
 
 [chant](https://intentius.io/chant/) is 24% cheaper than Terraform here. The saving comes from compiling TypeScript into the same plain manifests other tools hand an agent directly.
 
