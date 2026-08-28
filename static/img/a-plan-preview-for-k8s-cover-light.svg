@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="bgk8sl" cx="0.5" cy="0.5" r="0.7">
+    <stop offset="0" stop-color="#1a9850" stop-opacity="0.08"/>
+    <stop offset="0.8" stop-color="#1a9850" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1280" height="720" fill="#ffffff"/>
+<rect width="1280" height="720" fill="url(#bgk8sl)"/>
+<text x="640" y="70" font-size="18" font-weight="700" letter-spacing="5" fill="#57606a" text-anchor="middle">OWNERSHIP AND SOURCE, NOT JUST STATE</text>
+<text x="640" y="122" font-size="46" font-weight="800" fill="#1c2128" text-anchor="middle">A plan preview for k8s</text>
+<text x="640" y="158" font-size="19" fill="#57606a" text-anchor="middle">kubectl shows what's running. chant adds ownership.</text>
+
+<!-- shared object, top of each column -->
+<text x="330" y="222" font-size="16" font-weight="700" letter-spacing="3" fill="#6e7681" text-anchor="middle">KUBECTL</text>
+<text x="950" y="222" font-size="16" font-weight="700" letter-spacing="3" fill="#1a9850" text-anchor="middle">CHANT KUBE</text>
+
+<!-- kubectl panel -->
+<rect x="150" y="248" width="360" height="86" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<text x="176" y="282" font-size="18" font-family="Menlo,Consolas,monospace" fill="#1c2128">Deployment/web-frontend</text>
+<text x="176" y="308" font-size="15" font-family="Menlo,Consolas,monospace" fill="#57606a">manager: kubectl-client-side-apply</text>
+
+<line x1="330" y1="334" x2="330" y2="392" stroke="#d0d7de" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="330" cy="420" r="26" fill="none" stroke="#6e7681" stroke-width="2.5"/>
+<text x="330" y="429" font-size="26" font-weight="700" fill="#6e7681" text-anchor="middle">?</text>
+<text x="330" y="474" font-size="16" fill="#6e7681" text-anchor="middle">whose is this, and</text>
+<text x="330" y="496" font-size="16" fill="#6e7681" text-anchor="middle">where did it come from</text>
+
+<!-- chant panel -->
+<rect x="770" y="248" width="360" height="86" rx="10" fill="#f6f8fa" stroke="#1a9850" stroke-width="2"/>
+<text x="796" y="282" font-size="18" font-family="Menlo,Consolas,monospace" fill="#1c2128">Deployment/web-frontend</text>
+<text x="796" y="308" font-size="15" font-family="Menlo,Consolas,monospace" fill="#1a9850">manager: chant:web</text>
+
+<line x1="950" y1="334" x2="950" y2="392" stroke="#1a9850" stroke-width="2"/>
+<rect x="826" y="392" width="248" height="52" rx="8" fill="#e6f4ea" stroke="#1a9850" stroke-width="1.5"/>
+<text x="950" y="415" font-size="15" font-weight="700" fill="#1a9850" text-anchor="middle">owned &#183; declared</text>
+<text x="950" y="435" font-size="14" fill="#57606a" text-anchor="middle">no drift from source</text>
+
+<line x1="950" y1="444" x2="950" y2="472" stroke="#1a9850" stroke-width="2"/>
+<rect x="826" y="472" width="248" height="46" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="950" y="501" font-size="16" font-family="Menlo,Consolas,monospace" fill="#1c2128" text-anchor="middle">src/web.ts &#8594; webApp()</text>
+
+<text x="640" y="662" font-size="19" fill="#57606a" text-anchor="middle">chant kube get &#183; chant kube source &#183; chant kube apply --yes to persist</text>
+</svg>
