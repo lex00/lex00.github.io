@@ -1,12 +1,14 @@
 ---
-title: "A plan preview for k8s"
+title: "A plan preview for k8s with ownership"
 date: 2026-08-28
 featured_image: "img/a-plan-preview-for-k8s-cover.svg"
 ---
 
-kubectl can already dry-run an apply against the real API server and show you what it would produce.
+kubectl can already dry-run an apply against the real API server and show you what it would produce. 
 
-[chant](https://intentius.io/chant/)'s k8s client adds ownership knowledge.
+"chant kube apply" and "chant kube delete" make that the default action instead of a flag you have to remember.  Pass `--yes` to persist.
+
+[chant](https://intentius.io/chant/)'s k8s client adds ownership knowledge on top of that.
 
 ## Ownership at two granularities
 
