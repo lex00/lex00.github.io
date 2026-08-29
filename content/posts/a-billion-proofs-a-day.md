@@ -13,7 +13,7 @@ CDK has a miniature version of this. It runs a risky statement merge at synth, s
 
 To the left of CDK is an infra compiler named [chant](https://intentius.io/chant/). Zelkova is at the far right, answering questions about existing artifacts.
 
-chant features synthesis as a pure function of the source. Every output value traces to a literal, a constant, or a reference. You ship an artifact that is typed, linted, planned, and signed.
+chant features synthesis as a pure function of the source. Every output value traces to a literal or a constant or a reference. You ship an artifact that is typed and linted and planned and signed.
 
 None of chant's guarantees are a formal proof.  Types cannot answer what a policy permits. The output is spec-native JSON though, so Zelkova's own tooling can check it directly. A wrapper with its own representation would need its own Zelkova.
 

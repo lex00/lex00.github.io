@@ -9,7 +9,7 @@ By definition a tail is the small, infrequent remainder. The long tail of spec-l
 
 chant compiles a typed source to the platform's native spec, while some platforms are a pure API with nothing declarative underneath.
 
-{{< inline-svg src="the-long-tail.svg" alt="A golden spiral. The specced platforms, AWS, Kubernetes, the clouds, CI, are the wide outer sweep, and the long tail tapers to a point at the center." >}}
+{{< inline-svg src="the-long-tail.svg" alt="A golden spiral. Specced platforms like AWS and Kubernetes and the clouds and CI are the wide outer sweep while the long tail tapers to a point at the center." >}}
 
 The platforms that run most production infrastructure all have specs. AWS is the [largest cloud most shops build on](https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/), and its spec is deep, [over 1,500 resource types](https://awsfundamentals.com/cloudformation) in CloudFormation. The specced surface is the ground everyone stands on.
 

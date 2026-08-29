@@ -7,19 +7,19 @@ featured_image: "img/temporal-and-chant-cover.svg"
 
 A common line drawn about AI and infrastructure: "It changes how things get written, not how they get operated." It casts the near term as a moment when AI reshapes authoring while operations waits without an answer.
 
-This tends to come from people observing the shift rather than shipping on it, and it already reads as dated. It also has the timing backwards, treating writing and operating as a sequence when they are moving together. Temporal and chant are already built for it.
+This tends to come from people observing the shift rather than shipping on it, and it already reads as dated. The timing is also backwards since writing and operating are moving together rather than in sequence. Temporal and chant are already built for it.
 
 ## Operating is mostly execution
 
 The real line is between execution and judgment. Judgment is the call that a change is allowed and that now is a safe time to make it. Everything on the execution side of that call is what agents are already good at, and operating lives mostly on the execution side, because most of it is applying changes and recovering from failures.
 
-Ops looked safe for one reason, that running it took a reliability layer agents did not have.
+Ops looked safe for one reason, that running it took a reliability layer they did not have.
 
 ## What Temporal already built
 
 Temporal built this years before the word agentic attached to it. Durable execution grew out of the Cadence project at Uber, meant for long business workflows, and it happens to be the exact shape an autonomous agent needs before you let it near production. 
 
-The funding caught up to what the engineering already was. In February 2026 Temporal [raised $300M at a $5B valuation](https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies), led by Andreessen Horowitz, on an openly agentic pitch, revenue up more than 380% on the year. The OpenAI Agents SDK integration reached GA in March 2026, running each agent step as a durable activity. The layer under it had been carrying Snap, Netflix, and Datadog in production for years, while the rest of the conversation stayed on whether agents can write YAML.
+The funding caught up to what the engineering already was. In February 2026 Temporal [raised $300M at a $5B valuation](https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies), led by Andreessen Horowitz, on an openly agentic pitch, revenue up more than 380% on the year. The OpenAI Agents SDK integration reached GA in March 2026, running each agent step as a durable activity. The layer under it had been carrying Snap and Netflix and Datadog in production for years, while the rest of the conversation stayed on whether AI can write YAML.
 
 ## The "not ready" hedge
 
@@ -35,7 +35,7 @@ chant lines up with Temporal because it made the same architectural call. It kee
 
 Temporal and chant fit together closely. When an agent proposes a change, the lint and the diff answer for it, a human approves at the gate, and the apply runs as a durable workflow that survives a crash and resumes where it left off. 
 
-{{< inline-svg src="agentic-ops-loop.svg" alt="A left-to-right loop of four boxes. Agent proposes a change, chant runs lint and diff so it is checkable first, a human approves at the gate, and Temporal applies it as a durable workflow that resumes on crash. A dashed return arrow observes the live system back to the agent. A note reads: the gate is judgment, everything else is execution, and execution is what agents do." >}}
+{{< inline-svg src="agentic-ops-loop.svg" alt="A left-to-right loop of four boxes. The agent proposes a change and chant runs lint and diff so it is checkable first. A human approves at the gate and Temporal applies it as a durable workflow that resumes on crash. A dashed return arrow observes the live system back to the agent. A note reads that the gate is judgment. Everything else is execution." >}}
 
 chant + Temporal is agentic infrastructure ops, working today, on the layer the market just funded at five billion dollars. chant was standing there before the demand showed up.
 

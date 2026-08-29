@@ -9,7 +9,7 @@ A state file does three jobs.
 
 It says which live resource an address refers to. It holds values the cloud has nowhere to put. And it records that an effect happened.
 
-Those got bundled because one file happened to do all of them. Bundling is what turns persistence into a permission boundary, a secret, and a thing to lock.
+Those got bundled because one file happened to do all of them. Bundling is what turns persistence into a permission boundary and a secret and a thing to lock.
 
 Take them apart and each goes somewhere AWS already has. Identity becomes two tags on the resource. Values go in a record store. Effects get a receipt you declare, so the plan shows the migration coming before anything fires.
 
@@ -35,7 +35,7 @@ Ownership is a tag derived from the configuration address, so IAM can read it.
 
 One policy covers every team, and onboarding is a session tag rather than a new policy. The same shape takes `aws:CurrentTime` for a change window, or `aws:MultiFactorAuthPresent` to touch production.
 
-You could always write conditions like that. What you could not do is trust the tag. `default_tags` misses types that take none and modules that override them, nothing checks it, and stock OpenTofu never reads tags back anyway.
+You could always write conditions like that. What you could not do is trust the tag. `default_tags` misses types that take none and modules that override them. Nothing checks it and stock OpenTofu never reads tags back anyway.
 
 ---
 

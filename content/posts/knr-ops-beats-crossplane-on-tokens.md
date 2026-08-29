@@ -14,9 +14,9 @@ Here is a new round of [iac-cd-bench](https://github.com/lex00/iac-cd-bench) wit
 
 Haiku 4.5, k=3, all seven stacks, cold and warm, 252 runs.
 
-{{< figure src="/img/knr-ops-token-tasks.svg" alt="knr-ops versus Crossplane, average tokens per run by task. comprehend: knr-ops 5,076, Crossplane 6,431, knr-ops saves 21%. generate: knr-ops 9,010, Crossplane 9,836, saves 8%. modify: knr-ops 3,433, Crossplane 3,434, saves about 0%. debug: knr-ops 3,440, Crossplane 4,011, saves 14%." >}}
+{{< figure src="/img/knr-ops-token-tasks.svg" alt="knr-ops versus Crossplane in average tokens per run by task. On comprehend knr-ops averages 5076 against 6431 and saves 21%. generate runs 9010 against 9836 for 8%. The two tie near 3433 on modify. debug runs 3440 against 4011 for 14%." >}}
 
-Crossplane does better on two task types, review and deep semantic questions.  This is because Crossplane's CRDs are cheaper than a Flux/kustomize overlay.
+Crossplane does better on review and deep semantic questions.  Its CRDs are cheaper than a Flux/kustomize overlay.
 
 ## The buried number: chant beats everyone
 
@@ -34,7 +34,7 @@ Terraform, Pulumi, and Crossplane all require an agent to stage a representation
 
 ## Read more
 
-- [iac-cd-bench](https://github.com/lex00/iac-cd-bench), the benchmark this round is from
-- [chant-bench](https://intentius.io/chant-bench/), how chant's own runs are gated and what gets published
-- [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/), on chant's cost advantage against a live AWS estate
-- [Which infrastructure tool actually keeps the spec?](/posts/which-tool-keeps-the-spec/), on why chant's output has nothing left to walk away from
+- [iac-cd-bench](https://github.com/lex00/iac-cd-bench) is the benchmark this round is from
+- [chant-bench](https://intentius.io/chant-bench/) shows how chant's own runs are gated and what gets published
+- [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/) covers chant's cost advantage against a live AWS estate
+- [Which infrastructure tool actually keeps the spec?](/posts/which-tool-keeps-the-spec/) explains why chant's output has nothing left to walk away from

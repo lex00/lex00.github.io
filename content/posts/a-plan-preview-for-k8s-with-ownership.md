@@ -17,7 +17,7 @@ kubectl's manager identity is generic, stamping whatever invoked it as the name 
 chant derives identity from your project instead using the bare string "chant", or "chant:\<stack\>".
 
 Two mechanisms share this identity which otherwise can drift.
-   - A label-based marker, set by chant, for ownership of the whole object
+   - A label-based marker, set by the tool, for ownership of the whole object
    - A field manager, set by the API server, for ownership of each field
 
 Both come from the same "ownership.stack" config, so they can't disagree with each other about who owns what.
@@ -34,9 +34,9 @@ Loud failures are much better than a silent split.
 
 ## chant kube get and chant kube source read your source, not just the cluster
 
-`chant kube get` lists live resources with an extra column: declared, owned, drifted, or foreign-owned. 
+`chant kube get` lists live resources with an extra column showing declared or owned or drifted or foreign-owned. 
 
-`chant kube source` goes the other way. Handed a live object, it traces back to the `.ts` file and composite that declared it.
+`chant kube source` goes the other way. Handed a live object it traces back to the `.ts` file and composite that declared it.
 
 kubectl has no opinion on either question. Alignment is something you reconstruct by hand.
 

@@ -3,7 +3,7 @@ title: "An ecosystem of gruel"
 date: 2026-08-03
 ---
 
-Configuration tooling keeps getting thrown into one cauldron. Start with eye of newt, then add a splash of versioning, a pinch of transformation, and a few sprigs of authoritative state.
+Configuration tooling keeps getting thrown into one cauldron. Start with eye of newt. Add a splash of versioning and a pinch of transformation and a few sprigs of authoritative state.
 
 Gruel ends up tasting the same no matter how it gets started.  Once cooked you have no way to cleanly extract any of the ingredients.
 
@@ -13,7 +13,7 @@ Clean separation of concerns with toolchains like this boils down to the fact th
 
 # The chant dining experience
 
-{{< inline-svg src="no-system-to-run.svg" alt="Developer, on the left, holds TypeScript, your own IDE, and checked before live. In the middle sit three separate floating sections. chant synth is marked REQUIRED and runs chant build into spec-native artifacts, deterministic with no network, no state and nothing running. chant ops is marked OPT IN and DURABLE, covering gates, rollback and apply. chant lifecycle is marked OPT IN and GITOPS, covering observe, diff, plan and reconcile. Delivery, on the right, is your platform unchanged: kubectl, Argo, Flux, CFN deploy, CI pipeline. A dashed return path runs from Delivery back through chant lifecycle to Developer." >}}
+{{< inline-svg src="no-system-to-run.svg" alt="The developer on the left holds TypeScript in your own IDE with everything checked before live. In the middle sit three separate floating sections. chant synth carries a REQUIRED badge and runs chant build into spec-native artifacts with no network and no state and nothing running. chant ops carries OPT IN and DURABLE badges for gates and rollback and apply. chant lifecycle carries OPT IN and GITOPS badges for observe and diff and plan and reconcile. Delivery on the right is your platform unchanged whether that is kubectl or Argo or Flux or CFN deploy or a CI pipeline. A dashed return path runs from Delivery back through chant lifecycle to Developer." >}}
 
 chant gives you a menu of choices.
 
@@ -21,11 +21,11 @@ You write TypeScript. It compiles to your platform's own spec.
 
 When your produced artifacts are your platform's native format, they continue to be deployable even if you dump the toolchain that produced them.
 
-{{< inline-svg src="chant-synth.svg" alt="chant synth, marked REQUIRED. chant build, which folds, resolves and serializes, produces spec-native artifacts: Kubernetes YAML, CloudFormation, .gitlab-ci.yml. Deterministic, no network, no state, nothing running." >}}
+{{< inline-svg src="chant-synth.svg" alt="The chant synth box with its REQUIRED badge. Inside it chant build folds and resolves and serializes into spec-native artifacts like Kubernetes YAML and CloudFormation and .gitlab-ci.yml. It is deterministic with no network and no state and nothing running." >}}
 
 # Serving gruel vs ingredients
 
-{{< inline-svg src="gruel-vs-ingredients.svg" alt="A three column table. The problem, gruel, and solvable with. Versioning config: units, revisions, head pointers and more, or git. What changed a value: per-path provenance and back-indexes, or the line that sets it. Environment variants: spaces, lineage links and three-way merge, or a build parameter. Transforming config: typed functions, an executor registry, workers and more, or a compiler pass. Understanding a format: converters, semantic paths, merge keys and more, or types from the spec. Finding things: a semantic index, attribute registry and link graph, or query the artifact. Cutting a release: release objects, exact revisions and digests, or the build output. Approving a change: gates, apply-gates and apply-warnings, or a gate step in a workflow. Answering is this mine: delegated out to the actuators, or the marker on the resource." >}}
+{{< inline-svg src="gruel-vs-ingredients.svg" alt="A three column table pairing each problem with the gruel answer and the simpler answer. Versioning config takes units and revisions and head pointers in gruel or plain git. What changed a value takes per-path provenance and back-indexes or the line that sets it. Environment variants take spaces and lineage links and three-way merge or a build parameter. Transforming config takes typed functions and an executor registry and workers or a compiler pass. Understanding a format takes converters and semantic paths and merge keys or types from the spec. Finding things takes a semantic index and attribute registry and link graph or a query on the artifact. Cutting a release takes release objects and exact revisions and digests or the build output. Approving a change takes gates and apply-gates and apply-warnings or a gate step in a workflow. Answering is this mine gets delegated out to the actuators or read off the marker on the resource." >}}
 
 Every entry in the left column is a real problem with more than one answer.
 
@@ -50,17 +50,17 @@ Handing exact revisions to a reconciler is the easy half. Everyone does that one
 
 The other half typically gets scoped out.
 
-{{< inline-svg src="chant-ops.svg" alt="chant ops, marked OPT IN and DURABLE, covering three things: gates, a durable approval; rollback, auto compensation; and apply, over server-side apply, CloudFormation and ARM. It survives a crash, holds an approval for days, and unwinds a partial apply." >}}
+{{< inline-svg src="chant-ops.svg" alt="The chant ops box wearing OPT IN and DURABLE badges. Gates give a durable approval while rollback gives auto compensation and apply rides server-side apply or CloudFormation or ARM. It survives a crash and holds an approval for days and unwinds a partial apply." >}}
 
-A gate is a durable wait for a signal. If an apply dies halfway, each capability unwinds
+A gate is a durable wait for a signal. If an apply dies halfway each capability unwinds
 its own step and the half-applied change comes back.
 
-{{< inline-svg src="chant-lifecycle.svg" alt="chant lifecycle, marked OPT IN and GITOPS, covering three things: observe, a live read across 11 categories; diff and plan, producing a typed change set; and reconcile, which opens a PR. It reads the live system, or you commit the artifact and let Argo or Flux do it." >}}
+{{< inline-svg src="chant-lifecycle.svg" alt="Last comes lifecycle under OPT IN and GITOPS badges. Observe does a live read across 11 categories while diff and plan produce a typed change set and reconcile opens a PR. It reads the live system or you commit the artifact and let Argo or Flux do it." >}}
 
-When live drifts from source, `ReconcileOp` regenerates the TypeScript and opens a pull request. It
+When live drifts from source `ReconcileOp` regenerates the TypeScript and opens a pull request. It
 never merges and it never commits to main. Cloud back into code is the direction most out-of-band changes actually travel, and it tends to lack strong support.
 
-Releases carry an SBOM, a signature and provenance, and publish promotes by digest so the bytes
+Releases carry an SBOM and a signature and provenance. Publish promotes by digest so the bytes
 tested in dev are the bytes in prod. [behold](https://github.com/INTENTIUS/behold) renders the whole
 estate live off `chant graph` and never mutates anything.
 
@@ -75,8 +75,8 @@ What chant leaves in your hands is the push itself. The bundle exists and is con
 an Op puts it wherever your reconciler pulls from.
 
 Content-addressing gives identity to output you cannot reproduce. Where synthesis is closed the
-source is already the identity. Where a generator leaves its inputs open, as Helm does, the render
-needs a digest, and chant is building that for charts.
+source is already the identity. A generator like Helm leaves its inputs open so the render
+needs a digest and chant is building that for charts.
 
 # What a toolchain should cost you
 
@@ -93,7 +93,7 @@ it. The day you walk, your artifacts keep deploying.
 
 So, gruel or Korean BBQ?  I know what I'm having for lunch.
 
-{{< inline-svg src="chant-dishes.svg" alt="Three small dishes side by side under the word chant, seen from the same angle as the bowl. Each holds a different ingredient, neatly arranged and kept apart: green rounds, amber cubes, purple strips." >}}
+{{< inline-svg src="chant-dishes.svg" alt="Three small dishes side by side under the word chant and seen from the same angle as the bowl. Each holds a single ingredient kept apart from the rest. The dishes carry green rounds and amber cubes and purple strips." >}}
 
 ---
 

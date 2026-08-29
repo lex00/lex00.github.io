@@ -29,11 +29,11 @@ The 3 CI wardens share the same [reconcile engine](https://intentius.io/chant/) 
 
 ## Three platforms
 
-**GitHub.** [github-warden](https://github.com/intentius/github-warden): authenticates as a GitHub App and reconciles rulesets, the security features behind GHAS, deployment environments, tokens and apps.
+On GitHub the [github-warden](https://github.com/intentius/github-warden) authenticates as a GitHub App. It reconciles rulesets and deployment environments and tokens and apps along with the security features behind GHAS.
 
-**Forgejo, and Codeberg.** [forgejo-warden](https://github.com/intentius/forgejo-warden): self-hosted, so the warden takes a host URL and a token instead of an app.
+[forgejo-warden](https://github.com/intentius/forgejo-warden) covers Forgejo and Codeberg. Those are self-hosted so the warden takes a host URL and a token instead of an app.
 
-**GitLab.** [gitlab-warden](https://github.com/intentius/gitlab-warden): re-asserts push rules on every run.
+On GitLab the [gitlab-warden](https://github.com/intentius/gitlab-warden) re-asserts push rules on every run.
 
 ## Knowing is half the battle
 

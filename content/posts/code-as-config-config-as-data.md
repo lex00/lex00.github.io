@@ -6,17 +6,17 @@ featured_image: "img/code-as-config-cover.svg"
 
 [Brian Grant](https://medium.com/@bgrant0607) coined the [Kubernetes Resource Model](https://kube.fm/krm-brian) and argues that configuration should be data, not a program you run to find out what it is. chant agrees, and most of the industry is still catching up to him.
 
-His case is simple: declarative configuration is data. It is separated from the code that transforms it. This is a huge part of what makes Kubernetes manageable.
+His argument is that declarative configuration is data. It is separated from the code that transforms it. This is a huge part of what makes Kubernetes manageable.
 
 # chant is configuration as data
 
 chant compiles a typed source to the platform's own spec and hands that spec back untouched. 
 
-The output is declarative data, in the format the platform already speaks, separated from the compiler that produced it, readable and checkable before anything runs. 
+The output is declarative data in the format the platform already speaks. It sits apart from the compiler that produced it and can be read and checked before anything runs. 
 
 [Brian's definition](https://itnext.io/what-is-configuration-as-data-210b0c4be324) has two halves. Represent configuration as data, and store and manage it like data.
 
-chant takes the first half. The spec it emits is data, readable and checkable before anything runs. ConfigHub takes both, and keeps the data in a store. chant leaves it in git.
+chant takes the first half. The spec it emits holds up to reading and checking before anything runs. ConfigHub takes both, and keeps the data in a store. chant leaves it in git.
 
 # chant is configuration as code
 

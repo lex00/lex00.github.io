@@ -11,17 +11,17 @@ aliases:
 
 Scenario 1 is done. aws-bench puts an agent in front of a live AWS estate and grades its answers.
 
-Six configurations ran it on the same model, Haiku 4.5: chant, Pulumi, Terraform, AWS CDK, Alchemy, and an agent holding nothing but the AWS CLI. Eight questions, three attempts each, 24 trials apiece, against six EC2 instances spread over three regions.
+Six configurations ran it on the same model Haiku 4.5. Those were chant and Pulumi and Terraform and AWS CDK and Alchemy and an agent holding nothing but the AWS CLI. Eight questions, three attempts each, 24 trials apiece, against six EC2 instances spread over three regions.
 
 ## The results live on chant-bench
 
 I used to keep a post per matchup. That stopped working the first time I re-ran the benchmark and half the numbers moved, so the results now live where they are generated.
 
-[chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/) publishes every run: the score, the per-question breakdown, what each agent actually ran to get its answer, what it cost, and the logs. A run whose tooling broke is published as invalid rather than as a low score.
+[chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/) publishes every run. Each one carries the score and per-question breakdown along with what the agent ran and what it cost and the logs. A run whose tooling broke is published as invalid rather than as a low score.
 
-The table below lists each configuration's three most recent runs that passed every gate, and ranks on the middle one. Everything else in this post is aggregated over every valid run each configuration has: 26 for chant, 6 to 8 for the others, 1,584 trials in total. I have rewritten this post's numbers three times because I quoted single runs, and three attempts at a question does not pin one down — these configurations move about three trials in 24 between identical runs.
+The table below lists each configuration's three most recent runs that passed every gate, and ranks on the middle one. Everything else in this post is aggregated over every valid run each configuration has: 26 for chant, 6 to 8 for the others, 1,584 trials in total. I have rewritten this post's numbers three times because I quoted single runs, and three attempts at a question does not pin one down. These configurations move about three trials in 24 between identical runs.
 
-{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table ranked by cost per correct answer, eight questions at k equals 3, tokens per question. Each row lists the arm's three most recent runs and ranks on the middle one. chant 22, 24 and 22 correct, 0.033 dollars per correct answer, 125k in, 2.1k out, marked unranked, wins all. no tool, the aws cli baseline, 18, 16 and 19, 0.050, 124k, 2.8k, with crowns for cost, input and output. pulumi 17, 18 and 18, 0.089, 262k, 4.0k. terraform 19, 20 and 19, 0.099, 351k, 4.1k, with a crown for correct. aws cdk 13, 18 and 15, 0.133, 330k, 5.4k. alchemy 19, 15 and 14, 0.158, 485k, 5.2k." >}}
+{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table ranked by cost per correct answer over eight questions at k equals 3 with tokens per question. chant scores 22 and 24 and 22 correct at 0.033 dollars per correct answer with 125k in and 2.1k out and is marked unranked while winning all. The aws cli baseline with no tool scores 18 and 16 and 19 at 0.050 with 124k and 2.8k and crowns for cost and input and output. pulumi scores 17 and 18 and 18 at 0.089 with 262k and 4.0k. terraform scores 19 and 20 and 19 at 0.099 with 351k and 4.1k and a crown for correct. aws cdk scores 13 and 18 and 15 at 0.133 with 330k and 5.4k. alchemy scores 19 and 15 and 14 at 0.158 with 485k and 5.2k." >}}
 
 ## The baseline is the story
 
@@ -31,7 +31,7 @@ Bare AWS CLI answers at about five cents per correct answer. Pulumi is the best 
 
 chant is the only configuration that comes in under an agent holding nothing.
 
-I want to be careful about what that does and does not say. Accuracy is the thing you are actually buying, and over every run on record the baseline answers 72% of trials correctly. Terraform is the best of the field at 81%, Pulumi 77%. CDK is at 70% and Alchemy 67%, which puts both below an agent with no infrastructure tooling at all while costing two to three times as much.
+I want to be careful about what that does and does not say. Accuracy is the thing you are actually buying, and over every run on record the baseline answers 72% of trials correctly. The best of the field is Terraform at 81% with Pulumi at 77%. CDK is at 70% and Alchemy 67%, which puts both below an agent with no infrastructure tooling at all while costing two to three times as much.
 
 The finding is not that the tools fail. Terraform buys you nine points of accuracy over the baseline, and on a real estate that is worth paying for. It is that the premium is large, it varies by a factor of three across tools that look interchangeable from the outside, and nobody has been measuring it.
 
@@ -41,7 +41,7 @@ One question separates the baseline from everything else. Asked which instances 
 
 Pulumi gets it 96% of the time, Terraform 95%, chant 85%, CDK 71%. Alchemy manages 19%.
 
-The answer is two instances, and one of them is only reachable through a security group attached via its launch template. An agent walking describe calls by hand does not find that hop, and eighteen attempts have not found it once. A tool that keeps a model of the estate does, whether the model is a state file or a typed graph.
+The answer is two instances, and one of them is only reachable through a security group attached via its launch template. An agent walking describe calls by hand does not find that hop, and eighteen attempts have not found it once. A tool that keeps a model of the estate does whether that model is a state file or a typed graph.
 
 That is one question out of eight, and it is the clearest thing a toolchain buys anyone here.
 
@@ -59,19 +59,19 @@ That is worth more than the two points of accuracy it costs on the scoreboard, b
 
 ## chant is not perfect
 
-chant's three runs in the table are 22, 24 and 22, and the middle one is what ranks. Across 26 runs it averages 88% and has scored anywhere from 15 to 24. On the unused security groups question it is right about half the time, which is the best on the board and still a coin flip. A benchmark I always win is a benchmark I built wrong, so the site publishes every replicate including the ones that undercut this post.
+The three runs in the table are 22 and 24 and 22 and the middle one is what ranks. Across 26 runs it averages 88% and has scored anywhere from 15 to 24. On the unused security groups question it is right about half the time, which is the best on the board and still a coin flip. A benchmark I always win is a benchmark I built wrong, so the site publishes every replicate including the ones that undercut this post.
 
 What holds steady across every replicate is the cost. chant answers a question in under 3 commands against Pulumi's 7 and Alchemy's 14, for roughly a third of the tokens the average toolchain spends, and it does it without reading the account at all.
 
 ## The benchmark is not mine
 
-[aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness, the estate, the questions, and the reference answers. What is mine is a fork that runs it against an emulator, one deployment per toolchain, and the gates that decide whether a run counts at all.
+[aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness and the estate and the questions and the reference answers. What is mine is a fork that runs it against an emulator with one deployment per toolchain and the gates that decide whether a run counts at all.
 
 Everything runs against the [Floci](https://github.com/floci-io/floci) emulator, so a full pass costs nothing in real AWS.
 
 ## Losing to chant is no shame
 
-chant is an infra compiler, and it was built to be at the top of this benchmark. With a typed graph, folded joins, and scoped queries, it answers in one query what the others assemble by hand. That is the whole design, aimed directly at this.
+chant is an infra compiler, and it was built to be at the top of this benchmark. With a typed graph and folded joins and scoped queries it answers in one query what the others assemble by hand. That is the whole design, aimed directly at this.
 
 The cost column is the part I would pay attention to. Accuracy converges as the models get better. Token cost does not.
 
@@ -87,7 +87,7 @@ chant is 100% prompted. It's a scope of work I simply could not have delivered a
 
 ## Next
 
-Alchemy v2, the Effect line, has since run and is [on the results page](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/). I have left it off the board above because this post was written around six configurations and I would rather add it properly than bolt a row on. Formae and ConfigHub next.
+Alchemy v2 (the Effect line) has since run and is [on the results page](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/). I have left it off the board above because this post was written around six configurations and I would rather add it properly than bolt a row on. Formae and ConfigHub next.
 
 Then the harder scenarios, compute-and-data and serverless, where multi-hop joins are the norm rather than one question out of eight. That is where the baseline should fall away, and where I expect the cost gap to widen.
 
@@ -95,8 +95,8 @@ Then the harder scenarios, compute-and-data and serverless, where multi-hop join
 
 ## Read more
 
-- [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/) — every run, per question, with the commands each agent ran
-- [chant-bench](https://intentius.io/chant-bench/) — how the runs are gated and what gets published
+- [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/) lists every run per question with the commands each agent ran
+- [chant-bench](https://intentius.io/chant-bench/) explains how the runs are gated and what gets published
 - [Queryable Infrastructure](/posts/queryable-infrastructure/)
 - [TypeScript is the right choice for infra](/posts/typescript-is-the-right-choice-for-infra/)
 - [aws-bench](https://github.com/aws-bench/aws-bench)

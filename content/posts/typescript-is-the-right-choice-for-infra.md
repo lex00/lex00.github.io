@@ -42,15 +42,15 @@ Non-goal six directs you to "use TypeScript to describe existing libraries."
 
 [James Ward's Pkl talk](https://youtu.be/yUmA5bA50H0) is the strongest case anyone has made for a purpose built configuration language. Watch it before you argue with any of this.
 
-[Luke Hoban](https://infoq.com/presentations/cloud-programming-typescript) co-created TypeScript and took it to infrastructure at Pulumi. Pulumi executes your TypeScript. Constructors run, API calls happen, and the program's result is the infrastructure. TypeScript as a program.
+[Luke Hoban](https://infoq.com/presentations/cloud-programming-typescript) co-created TypeScript and took it to infrastructure at Pulumi. Pulumi executes your TypeScript. Constructors run and API calls happen and the program's result is the infrastructure. TypeScript as a program.
 
 [Brian Grant](https://itnext.io/introducing-confighub-b127736641c5) wrote the Kubernetes Resource Model and has argued for years that configuration is data. ConfigHub follows that through. The config lives as data in a store, and tools manipulate it. No language at all.
 
-A new language, an executed language, and no language.
+A new language and an executed language and no language.
 
 ## TypeScript as data
 
-chant takes the language Hoban chose and the data model Grant argued for. Resources are typed object literals, the build reduces them to the spec, and synthesis never touches the cloud.
+chant takes the language Hoban chose and the data model Grant argued for. Resources are typed object literals and the build reduces them to the spec while synthesis never touches the cloud.
 
 Configuration as code and configuration as data, [at the same time](/posts/code-as-config-config-as-data/).
 
@@ -60,7 +60,7 @@ Below are the [accessible ops](https://accessibleops.net) principles.
 
 Here is the configuration language column beside chant, from the [full chart](https://intentius.io).
 
-{{< figure src="/img/typescript-infra-principles-table.svg" alt="Table of the fourteen accessible ops principles comparing chant and the config languages Pkl, CUE, and KCL. chant meets all fourteen by design. The config languages meet the first three, honor the lower layer, the same check left of the commit, and documentation is law. Adopt in place is partial. The live system is the truth is not met. The remaining ten are out of scope." >}}
+{{< figure src="/img/typescript-infra-principles-table.svg" alt="Table of the fourteen accessible ops principles comparing chant and the config languages Pkl, CUE, and KCL. chant meets all fourteen by design. The config languages meet the first three which are honor the lower layer and the same check left of the commit and documentation is law. Adopt in place is partial. The live system is the truth is not met. The remaining ten are out of scope." >}}
 
 This is Intentius' chart and is biased toward chant, so read it accordingly.
 
@@ -76,15 +76,15 @@ Config languages are good, so use them where appropriate.
 
 An infrastructure toolchain answers all fourteen rows, and one abstraction should carry them. 
 
-TypeScript does, and it's already fluent in every editor and every model, and it's already shaped like the spec.
+TypeScript does. It's already fluent in every editor and every model and already shaped like the spec.
 
 TypeScript is the right choice for infra.
 
 ## The benchmark agrees
 
-aws-bench scenario 1 put this argument on the record. Same model on every side, Haiku 4.5, against Terraform, Pulumi, CDK, Alchemy, and an agent with no infrastructure tooling at all. The full story is in the [scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/), and every run is published on [chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/).
+aws-bench scenario 1 put this argument on the record. Same model on every side, Haiku 4.5, against Terraform, Pulumi, CDK, Alchemy, and an agent with no infrastructure tooling at all. The details are in the [scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/), and every run is published on [chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/).
 
-{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table ranked by cost per correct answer, eight questions at k equals 3, tokens per question. chant 22 of 24 correct, 0.033 dollars per correct answer, 111k in, 2.1k out, marked unranked, wins all. no tool, the aws cli baseline, 17 of 24, 0.050, 108k, 2.7k, with crowns for cost, input and output. pulumi 19 of 24, 0.086, 282k, 3.9k. terraform 19 of 24, 0.111, 357k, 4.8k. aws cdk 17 of 24, 0.120, 318k, 5.6k. alchemy 20 of 24, 0.123, 515k, 5.3k, with a crown for correct." >}}
+{{< figure src="/img/aws-bench-s1-wrap-table-metrics.svg" alt="Board table ranked by cost per correct answer over eight questions at k equals 3 with tokens per question. chant scores 22 of 24 correct at 0.033 dollars per correct answer with 111k in and 2.1k out and is marked unranked while winning all. The aws cli baseline with no tool scores 17 of 24 at 0.050 with 108k and 2.7k and crowns for cost and input and output. pulumi scores 19 of 24 at 0.086 with 282k and 3.9k. terraform scores 19 of 24 at 0.111 with 357k and 4.8k. aws cdk scores 17 of 24 at 0.120 with 318k and 5.6k. alchemy scores 20 of 24 at 0.123 with 515k and 5.3k and a crown for correct." >}}
 
 ---
 

@@ -14,7 +14,7 @@ Typed source is another. chant tooling reads [TypeScript as data](https://intent
 
 The fragmentation of truth between the live system and a stored copy is far more serious than IaC spread across repos.
 
-When many repos deploy changes they converge in the live system, which is already authoritative and already queryable. The repo layout never enters into it.
+When many repos deploy changes they converge in the live system which is already authoritative and already queryable. The repo layout never enters into it.
 
 Agents benefit from queryable infrastructure, and the spec [covers most of it](/posts/the-long-tail-is-a-tail/).
 

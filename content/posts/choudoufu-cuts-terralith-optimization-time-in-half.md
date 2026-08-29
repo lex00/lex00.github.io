@@ -11,9 +11,7 @@ This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, 
 
 ## choudoufu writes ownership on the resource itself
 
-choudoufu adopts by stamping. Terraform adopts by fixing resolution in state.
-
-Two tags on the resource, read live at plan time. That's the whole trick of [identity hooks](/posts/tofu-tastes-better-with-identity-hooks/).
+choudoufu adopts by stamping while Terraform adopts by fixing resolution in state. Two tags on the resource, read live at plan time. That's the whole trick of [identity hooks](/posts/tofu-tastes-better-with-identity-hooks/).
 
 ![The state world translated to the tag world](/img/cursor-migration/translation.svg)
 
@@ -21,19 +19,17 @@ Two tags on the resource, read live at plan time. That's the whole trick of [ide
 
 ## What takes less time
 
-To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. choudoufu adopts resources by tagging them, thanks to identity hooks. An existing OpenTofu codebase imports directly, without a rewrite.
+To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. Resources get adopted by tagging instead, thanks to identity hooks. An existing OpenTofu codebase imports directly, without a rewrite.
 
-![Moving one workspace: to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
+![Moving one workspace to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
 
 This means moving resources is as easy as changing tag values. Each plan reads the cloud directly, avoiding costly drift workarounds.
 
 ## The slowest part sets the calendar
 
-![Migration work sorted: thinking that survives any tool vs work that exists because the file does](/img/cursor-migration/work-shape.svg)
+![Migration work sorted into thinking that survives any tool vs work that exists because the file does](/img/cursor-migration/work-shape.svg)
 
-In the actual migration the slowest chain was state. State work is 38% of the engineering weeks and a larger share of the calendar, since parallel work shares the schedule while the serialized chain sets it.
-
-Removing the state chain reduces the timeline driver to the decision making on boundaries.
+In the actual migration the slowest chain was state. State work is 38% of the engineering weeks and a larger share of the calendar, since parallel work shares the schedule while the serialized chain sets it. Removing the state chain reduces the timeline driver to the decision making on boundaries.
 
 ## Half the time
 
@@ -41,21 +37,15 @@ The top track is Cursor's timeline. The bottom two are the same estate on identi
 
 ![OpenTofu actual vs choudoufu replay vs chant projection](/img/cursor-migration/timeline.svg)
 
-Either of the bottom tracks offers you a migration path taking half the time.
-
-People problems stay at full price in my math. The months I subtract for choudoufu are all about Terraform's state model.
+Either of the bottom tracks offers you a migration path taking half the time. People problems stay at full price in my math and the months I subtract are all about Terraform's state model.
 
 ![Waterfall from 7 months to roughly 3.9](/img/cursor-migration/waterfall.svg)
 
-My claim is the same migration to choudoufu would be 3.5 to 4 months against the actual 7, with error margin about a month either way.
-
-Every before-and-after figure here comes from the migration's public case study. Only the step-size estimates are mine.
+My claim is the same migration to choudoufu would be 3.5 to 4 months against the actual 7, with error margin about a month either way. Every before-and-after figure here comes from the migration's public case study and only the step-size estimates are mine.
 
 ## What is chant?
 
-[chant](https://intentius.io/chant/) is the reason choudoufu exists. It also works with live markers, among other useful changes from our favorite infra tools.
-
-[choudoufu](https://intentius.io/choudoufu/docs/) is experimental and AWS only, for now...
+[chant](https://intentius.io/chant/) is the reason choudoufu exists. It also works with live markers, among other useful changes from our favorite infra tools. [choudoufu](https://intentius.io/choudoufu/docs/) is experimental and AWS only, for now...
 
 ---
 
