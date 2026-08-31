@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="bgio" cx="0.5" cy="0.42" r="0.75">
+    <stop offset="0" stop-color="#f85149" stop-opacity="0.07"/>
+    <stop offset="0.8" stop-color="#f85149" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1280" height="720" fill="#0d1117"/>
+<rect width="1280" height="720" fill="url(#bgio)"/>
+
+<text x="640" y="118" font-size="18" font-weight="700" letter-spacing="5" fill="#8b949e" text-anchor="middle">WHERE OWNERSHIP GOES</text>
+
+<!-- Kubernetes -->
+<text x="430" y="222" font-size="22" font-weight="600" fill="#e6edf3" text-anchor="end">Kubernetes</text>
+<rect x="470" y="190" width="620" height="60" rx="8" fill="#161b22"/>
+<text x="498" y="227" font-size="17" font-family="Menlo,Consolas,monospace" fill="#68d391">managedFields[].manager</text>
+
+<!-- Argo -->
+<text x="430" y="322" font-size="22" font-weight="600" fill="#e6edf3" text-anchor="end">Argo</text>
+<rect x="470" y="290" width="620" height="60" rx="8" fill="#161b22"/>
+<text x="498" y="327" font-size="17" font-family="Menlo,Consolas,monospace" fill="#68d391">app.kubernetes.io/instance</text>
+
+<!-- Flux -->
+<text x="430" y="422" font-size="22" font-weight="600" fill="#e6edf3" text-anchor="end">Flux</text>
+<rect x="470" y="390" width="620" height="60" rx="8" fill="#161b22"/>
+<text x="498" y="427" font-size="17" font-family="Menlo,Consolas,monospace" fill="#68d391">kustomize.toolkit.fluxcd.io/name</text>
+
+<!-- Terraform: the empty slot -->
+<text x="430" y="522" font-size="22" font-weight="600" fill="#e6edf3" text-anchor="end">Terraform</text>
+<rect x="470" y="490" width="620" height="60" rx="8" fill="none" stroke="#f85149" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="498" y="527" font-size="17" font-family="Menlo,Consolas,monospace" fill="#f85149" fill-opacity="0.75">nowhere</text>
+
+</svg>
