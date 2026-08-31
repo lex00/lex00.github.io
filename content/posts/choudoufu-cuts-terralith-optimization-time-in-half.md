@@ -19,7 +19,7 @@ choudoufu adopts by stamping while Terraform adopts by fixing resolution in stat
 
 ## What takes less time
 
-To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. Resources get adopted by tagging instead, thanks to identity hooks. An existing OpenTofu codebase imports directly, without a rewrite.
+To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. Resources get adopted by tagging instead, thanks to identity hooks. An existing OpenTofu codebase imports directly. Adoption asks for no rewrite, though the compatibility reference lists HCL that is still refused.
 
 ![Moving one workspace to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
 
@@ -29,7 +29,7 @@ This means moving resources is as easy as changing tag values. Each plan reads t
 
 ![Migration work sorted into thinking that survives any tool vs work that exists because the file does](/img/cursor-migration/work-shape.svg)
 
-In the actual migration the slowest chain was state. State work is 38% of the engineering weeks and a larger share of the calendar, since parallel work shares the schedule while the serialized chain sets it. Removing the state chain reduces the timeline driver to the decision making on boundaries.
+In the actual migration the slowest chain was state. Splitting the published phases myself puts state work at 38% of the engineering weeks, and a larger share of the calendar, since parallel work shares the schedule while the serialized chain sets it. Removing the state chain reduces the timeline driver to the decision making on boundaries.
 
 ## Half the time
 
@@ -41,7 +41,17 @@ Either of the bottom tracks offers you a migration path taking half the time. Pe
 
 ![Waterfall from 7 months to roughly 3.9](/img/cursor-migration/waterfall.svg)
 
-My claim is the same migration to choudoufu would be 3.5 to 4 months against the actual 7, with error margin about a month either way. Every before-and-after figure here comes from the migration's public case study and only the step-size estimates are mine.
+My claim is the same migration to choudoufu would be 3.5 to 4 months against the actual 7, with error margin about a month either way. Every before-and-after figure comes from the migration's public case study. The step sizes are mine. So are the 38% split and the timeline.
+
+## What has been measured since
+
+Some of this has since been run.
+
+A generated terralith migrated cleanly through 4005 resources with nothing walling. Against real AWS the sweep held at 200 to 226 seconds at both the smallest size and 4x, so finding what you own scales with resource types. Reading it still scales with resources, same as stock.
+
+With count, for_each and nested modules in play, no resource needed a hand written marker. That was the step I expected to cost most.
+
+The estate was generated, so it says nothing about real world HCL. The timeline above is still an estimate.
 
 ## What is chant?
 
