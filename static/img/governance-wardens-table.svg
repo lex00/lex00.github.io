@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="820" fill="#0d1117"/>
+<text x="600" y="46" font-size="24" font-weight="800" fill="#e6edf3" text-anchor="middle">What each warden manages</text>
+<text x="590" y="92" font-size="17" font-weight="700" font-family="Menlo,Consolas,monospace" fill="#e6edf3" text-anchor="middle">github-warden</text>
+<text x="830" y="92" font-size="17" font-weight="700" font-family="Menlo,Consolas,monospace" fill="#fc6d26" text-anchor="middle">gitlab-warden</text>
+<text x="1075" y="92" font-size="17" font-weight="700" font-family="Menlo,Consolas,monospace" fill="#fb923c" text-anchor="middle">forgejo-warden</text>
+<line x1="40" y1="104" x2="1160" y2="104" stroke="#30363d" stroke-width="1"/>
+<rect x="40" y="111" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="138" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Org / group settings</text>
+<text x="590" y="139" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="830" y="139" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="139" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="60" y="182" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Repo / project settings</text>
+<text x="590" y="183" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="830" y="183" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="183" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<rect x="40" y="199" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="226" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Membership</text>
+<text x="590" y="226" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">teams</text>
+<text x="830" y="226" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">direct + inherited</text>
+<text x="1075" y="226" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">teams</text>
+<text x="60" y="270" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Branch rules</text>
+<text x="590" y="270" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">protection + rulesets</text>
+<text x="830" y="270" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">branches + push rules</text>
+<text x="1075" y="270" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">protection</text>
+<rect x="40" y="287" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="314" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Secrets &amp; variables</text>
+<text x="590" y="315" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="830" y="315" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="315" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="60" y="358" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Repo provisioning</text>
+<text x="590" y="359" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="830" y="359" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="359" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<rect x="40" y="375" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="402" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Webhooks</text>
+<text x="590" y="402" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="830" y="403" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="403" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="60" y="446" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Security features</text>
+<text x="590" y="446" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">GHAS</text>
+<text x="830" y="446" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">policies + frameworks</text>
+<text x="1075" y="446" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<rect x="40" y="463" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="490" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Environments</text>
+<text x="590" y="491" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="830" y="490" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">protected</text>
+<text x="1075" y="490" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="60" y="534" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Token governance</text>
+<text x="590" y="534" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">fine-grained PATs</text>
+<text x="830" y="534" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">access + deploy</text>
+<text x="1075" y="534" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<rect x="40" y="551" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="578" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Dependency hygiene</text>
+<text x="590" y="578" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">Dependabot</text>
+<text x="830" y="578" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="1075" y="578" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="60" y="622" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">MR approval settings</text>
+<text x="590" y="622" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="830" y="623" font-size="20" font-weight="700" fill="#68d391" text-anchor="middle">&#10003;</text>
+<text x="1075" y="622" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<rect x="40" y="639" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="666" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Instance settings</text>
+<text x="590" y="666" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<text x="830" y="666" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">self-managed</text>
+<text x="1075" y="666" font-size="18" fill="#484f58" text-anchor="middle">&#8211;</text>
+<line x1="40" y1="679" x2="1160" y2="679" stroke="#30363d" stroke-width="1"/>
+<text x="60" y="710" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Auth</text>
+<text x="590" y="710" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">token or GitHub App</text>
+<text x="830" y="710" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">PAT</text>
+<text x="1075" y="710" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">plain token</text>
+<rect x="40" y="727" width="1120" height="44" fill="#161b22" opacity="0.6"/>
+<text x="60" y="754" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="start">Host</text>
+<text x="590" y="754" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">github.com</text>
+<text x="830" y="754" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">SaaS or self-managed</text>
+<text x="1075" y="754" font-size="16" font-weight="500" fill="#e6edf3" text-anchor="middle">any instance</text>
+</svg>
