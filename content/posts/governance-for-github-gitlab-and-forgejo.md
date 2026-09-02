@@ -43,7 +43,7 @@ Each warden adds the client and the cycles for its own forge, giving all 3 consi
 
 Every row is driven by the same policy file and checked by the same audit.
 
-Node 22, an API token, and about ten minutes to a first dry-run. The dry-run is read-only, so start there.
+All you need is an API token and about ten minutes to see a dry-run in your forge.
 
 ---
 
