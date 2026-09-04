@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="bgm" cx="0.5" cy="0.4" r="0.75">
+    <stop offset="0" stop-color="#fc6d26" stop-opacity="0.06"/>
+    <stop offset="0.8" stop-color="#fc6d26" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1280" height="720" fill="#0d1117"/>
+<rect width="1280" height="720" fill="url(#bgm)"/>
+
+<text x="640" y="96" font-size="18" font-weight="700" letter-spacing="5" fill="#8b949e" text-anchor="middle">WORKFLOWS IN, PIPELINES OUT</text>
+
+<!-- fork in the road: Y with a visible trunk -->
+<path d="M 560 720 L 295 300 L 370 265 L 640 480 L 910 265 L 985 300 L 720 720 Z" fill="#21262d"/>
+<path d="M 640 715 L 640 520" stroke="#8b949e" stroke-width="4" stroke-dasharray="18 16" opacity="0.55" fill="none"/>
+<path d="M 640 520 L 335 285" stroke="#8b949e" stroke-width="4" stroke-dasharray="18 16" opacity="0.55" fill="none"/>
+<path d="M 640 520 L 945 285" stroke="#8b949e" stroke-width="4" stroke-dasharray="18 16" opacity="0.55" fill="none"/>
+
+<!-- github badge -->
+<circle cx="500" cy="360" r="78" fill="#161b22" stroke="#e6edf3" stroke-opacity="0.55" stroke-width="3"/>
+<g transform="translate(445,305) scale(4.6)">
+  <path fill="#e6edf3" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+</g>
+<text x="500" y="480" font-size="16" font-family="Menlo,Consolas,monospace" fill="#8b949e" text-anchor="middle">github actions</text>
+
+<!-- gitlab badge -->
+<circle cx="780" cy="360" r="78" fill="#161b22" stroke="#fc6d26" stroke-opacity="0.55" stroke-width="3"/>
+<g transform="translate(725,305) scale(4.6)">
+  <path fill="#fc6d26" d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"/>
+</g>
+<text x="780" y="480" font-size="16" font-family="Menlo,Consolas,monospace" fill="#8b949e" text-anchor="middle">gitlab ci</text>
+
+<!-- waving hand on the gitlab side -->
+<g transform="translate(700,272) rotate(-24)">
+  <rect x="-15" y="-8" width="30" height="36" rx="13" fill="#fc6d26"/>
+  <rect x="-15" y="-26" width="7" height="24" rx="3.5" fill="#fc6d26"/>
+  <rect x="-6.5" y="-30" width="7" height="28" rx="3.5" fill="#fc6d26"/>
+  <rect x="2" y="-29" width="7" height="27" rx="3.5" fill="#fc6d26"/>
+  <rect x="10" y="-24" width="7" height="22" rx="3.5" fill="#fc6d26"/>
+  <rect x="-26" y="-2" width="20" height="8" rx="4" fill="#fc6d26" transform="rotate(-30)"/>
+</g>
+<path d="M 654 244 A 30 30 0 0 1 676 226" stroke="#8b949e" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M 640 228 A 44 44 0 0 1 672 202" stroke="#8b949e" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+</svg>
