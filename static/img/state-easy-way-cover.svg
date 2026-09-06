@@ -15,8 +15,8 @@
 <text x="96" y="624" font-size="20" font-weight="700" fill="#f0883e">locks only the runs that use it</text>
 <rect x="660" y="180" width="556" height="480" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
 <text x="692" y="226" font-size="24" font-weight="700" fill="#68d391">Live backend</text>
-<path d="M716 294 l22 -22 h178 a6 6 0 0 1 6 6 v32 a6 6 0 0 1 -6 6 h-178 z" fill="#1f6feb"/><circle cx="738" cy="294" r="5" fill="#0d1117"/><text x="756" y="301" font-size="20" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-estate</text>
-<path d="M716 354 l22 -22 h178 a6 6 0 0 1 6 6 v32 a6 6 0 0 1 -6 6 h-178 z" fill="#1f6feb"/><circle cx="738" cy="354" r="5" fill="#0d1117"/><text x="756" y="361" font-size="20" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-address</text>
+<path d="M716 294 l22 -22 h210 a6 6 0 0 1 6 6 v32 a6 6 0 0 1 -6 6 h-210 z" fill="#1f6feb"/><circle cx="738" cy="294" r="5" fill="#0d1117"/><text x="756" y="301" font-size="20" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-estate</text>
+<path d="M716 354 l22 -22 h210 a6 6 0 0 1 6 6 v32 a6 6 0 0 1 -6 6 h-210 z" fill="#1f6feb"/><circle cx="738" cy="354" r="5" fill="#0d1117"/><text x="756" y="361" font-size="20" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-address</text>
 <text x="716" y="430" font-size="22" fill="#e6edf3">two tags on the resource</text>
 <text x="716" y="470" font-size="22" fill="#e6edf3">a parameter store the account has</text>
 <text x="716" y="510" font-size="22" fill="#e6edf3">nothing to keep alive</text>
