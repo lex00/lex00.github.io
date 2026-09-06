@@ -16,8 +16,8 @@
 <path d="M712 176 l26 -26 h250 a7 7 0 0 1 7 7 v38 a7 7 0 0 1 -7 7 h-250 z" fill="#0969da"/><circle cx="738" cy="176" r="6" fill="#ffffff"/><text x="760" y="185" font-size="25" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-estate</text>
 <path d="M712 252 l26 -26 h250 a7 7 0 0 1 7 7 v38 a7 7 0 0 1 -7 7 h-250 z" fill="#0969da"/><circle cx="738" cy="252" r="6" fill="#ffffff"/><text x="760" y="261" font-size="25" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-address</text>
 <text x="712" y="346" font-size="27" fill="#24292f">two tags on the resource</text>
-<text x="712" y="394" font-size="27" fill="#24292f">a parameter store the account has</text>
-<text x="712" y="442" font-size="27" fill="#24292f">nothing to keep alive</text>
+<text x="712" y="394" font-size="27" fill="#24292f">cloud managed parameters</text>
+<text x="712" y="442" font-size="27" fill="#24292f">serverless</text>
 <text x="688" y="530" font-size="26" fill="#57606a">$0 a year</text>
 <text x="688" y="572" font-size="26" fill="#57606a">2 hours, one IAM policy</text>
 <text x="688" y="626" font-size="26" font-weight="700" fill="#1a7f37">the cloud referees every writer</text>
