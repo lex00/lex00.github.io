@@ -7,7 +7,7 @@ featured_image: "img/intoxicating-mix-cover.svg"
 
 When software engineers build infra toolchains they always mix synthesis with execution. It's hard to resist when you carry a bag of golden hammers in the form of a full featured language.
 
-Look closely and you'll see that what these toolchains are celebrated for is managing a mess they made by fusing synthesis with execution.
+Look closely and you'll see that what these toolchains are celebrated for is managing a mess they made by fusing them.
 
 ## How the experts price this problem
 
