@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 556" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1200" height="556" fill="#ffffff"/>
+<text x="600.0" y="48" font-size="24" font-weight="800" fill="#24292f" text-anchor="middle">five concerns</text>
+<text x="56" y="92" font-size="18" font-weight="700" fill="#57606a">Concern</text>
+<text x="286" y="92" font-size="18" font-weight="700" fill="#bc4c00">RDBMS</text>
+<text x="706" y="92" font-size="18" font-weight="700" fill="#1a7f37">Live backend</text>
+<line x1="40" y1="106" x2="1160" y2="106" stroke="#d0d7de" stroke-width="1"/>
+<text x="56" y="140" font-size="19" font-weight="700" fill="#24292f">No global locks</text>
+<text x="286" y="140" font-size="19" fill="#bc4c00">Only locks runs that use the database</text>
+<text x="706" y="140" font-size="19" fill="#1a7f37">No lock. The cloud rejects the duplicate</text>
+<text x="706" y="167" font-size="19" fill="#1a7f37">create.</text>
+<line x1="40" y1="188" x2="1160" y2="188" stroke="#d0d7de" stroke-width="1"/>
+<rect x="40" y="188" width="1120" height="82" fill="#f6f8fa"/>
+<text x="56" y="222" font-size="19" font-weight="700" fill="#24292f">Agent governance</text>
+<text x="286" y="222" font-size="19" fill="#bc4c00">Only governs agents that go through the</text>
+<text x="286" y="249" font-size="19" fill="#bc4c00">server</text>
+<text x="706" y="222" font-size="19" fill="#1a7f37">The ownership tag is an IAM rule. The cloud</text>
+<text x="706" y="249" font-size="19" fill="#1a7f37">refuses.</text>
+<line x1="40" y1="270" x2="1160" y2="270" stroke="#d0d7de" stroke-width="1"/>
+<text x="56" y="304" font-size="19" font-weight="700" fill="#24292f">Live inventory</text>
+<text x="286" y="304" font-size="19" fill="#bc4c00">A stored copy that goes stale between</text>
+<text x="286" y="331" font-size="19" fill="#bc4c00">runs</text>
+<text x="706" y="304" font-size="19" fill="#1a7f37">One tag query against the cloud, always</text>
+<text x="706" y="331" font-size="19" fill="#1a7f37">current.</text>
+<line x1="40" y1="352" x2="1160" y2="352" stroke="#d0d7de" stroke-width="1"/>
+<rect x="40" y="352" width="1120" height="82" fill="#f6f8fa"/>
+<text x="56" y="386" font-size="19" font-weight="700" fill="#24292f">Audit timeline</text>
+<text x="286" y="386" font-size="19" fill="#bc4c00">A log that expires, with no export</text>
+<text x="706" y="386" font-size="19" fill="#1a7f37">Plan in git, tag writes in the cloud audit</text>
+<text x="706" y="413" font-size="19" fill="#1a7f37">log.</text>
+<line x1="40" y1="434" x2="1160" y2="434" stroke="#d0d7de" stroke-width="1"/>
+<text x="56" y="468" font-size="19" font-weight="700" fill="#24292f">Atomic apply</text>
+<text x="286" y="468" font-size="19" font-weight="700" fill="#bc4c00">Not true. A failed apply leaves</text>
+<text x="286" y="495" font-size="19" font-weight="700" fill="#bc4c00">resources behind.</text>
+<text x="706" y="468" font-size="19" font-weight="700" fill="#1a7f37">Tags ride the create call, so nothing is</text>
+<text x="706" y="495" font-size="19" font-weight="700" fill="#1a7f37">lost.</text>
+<line x1="40" y1="516" x2="1160" y2="516" stroke="#d0d7de" stroke-width="1"/>
+</svg>
