@@ -1,24 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
 <rect width="1280" height="720" fill="#0d1117"/>
 <rect x="40" y="40" width="588" height="640" rx="16" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-<text x="76" y="100" font-size="32" font-weight="700" fill="#f0883e">RDBMS you run</text>
-<defs><linearGradient id="cyl" x1="0" x2="1"><stop offset="0" stop-color="#3a4048"/><stop offset="0.5" stop-color="#c9d1d9"/><stop offset="1" stop-color="#3a4048"/></linearGradient></defs><path d="M96 180.6 v200 a85.0 30.599999999999998 0 0 0 170 0 v-200 z" fill="url(#cyl)" stroke="#30363d" stroke-width="2"/><ellipse cx="181.0" cy="180.6" rx="85.0" ry="30.599999999999998" fill="#6b737d" stroke="#30363d" stroke-width="2"/><ellipse cx="181.0" cy="246.6" rx="85.0" ry="30.599999999999998" fill="none" stroke="#30363d" stroke-width="2"/><ellipse cx="181.0" cy="312.6" rx="85.0" ry="30.599999999999998" fill="none" stroke="#30363d" stroke-width="2"/>
-<text x="300" y="200" font-size="27" fill="#e6edf3">a server in every plan</text>
-<text x="300" y="248" font-size="27" fill="#e6edf3">upgrades and migrations</text>
-<text x="300" y="296" font-size="27" fill="#e6edf3">backups and restore drills</text>
-<text x="300" y="344" font-size="27" fill="#e6edf3">failover and patching</text>
-<text x="300" y="392" font-size="27" fill="#e6edf3">a pager</text>
-<text x="76" y="530" font-size="26" fill="#8b949e">$1,650 to $2,800 a year</text>
-<text x="76" y="572" font-size="26" fill="#8b949e">12 hours of ops</text>
-<text x="76" y="626" font-size="26" font-weight="700" fill="#f0883e">locks only the runs that use it</text>
+<text x="334" y="104" font-size="34" font-weight="700" fill="#f0883e" text-anchor="middle">RDBMS you run</text>
+<defs><linearGradient id="cyl" x1="0" x2="1"><stop offset="0" stop-color="#3a4048"/><stop offset="0.5" stop-color="#c9d1d9"/><stop offset="1" stop-color="#3a4048"/></linearGradient></defs><path d="M224 199.6 v250 a110.0 39.6 0 0 0 220 0 v-250 z" fill="url(#cyl)" stroke="#30363d" stroke-width="2"/><ellipse cx="334.0" cy="199.6" rx="110.0" ry="39.6" fill="#6b737d" stroke="#30363d" stroke-width="2"/><ellipse cx="334.0" cy="282.1" rx="110.0" ry="39.6" fill="none" stroke="#30363d" stroke-width="2"/><ellipse cx="334.0" cy="364.6" rx="110.0" ry="39.6" fill="none" stroke="#30363d" stroke-width="2"/>
+<text x="334" y="540" font-size="28" fill="#8b949e" text-anchor="middle">$1,650 to $2,800 a year</text>
+<text x="334" y="584" font-size="28" fill="#8b949e" text-anchor="middle">12 hours of ops</text>
+<text x="334" y="638" font-size="27" font-weight="700" fill="#f0883e" text-anchor="middle">locks only the runs that use it</text>
 <rect x="652" y="40" width="588" height="640" rx="16" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-<text x="688" y="100" font-size="32" font-weight="700" fill="#68d391">Live backend</text>
-<path d="M712 176 l26 -26 h250 a7 7 0 0 1 7 7 v38 a7 7 0 0 1 -7 7 h-250 z" fill="#1f6feb"/><circle cx="738" cy="176" r="6" fill="#0d1117"/><text x="760" y="185" font-size="25" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-estate</text>
-<path d="M712 252 l26 -26 h250 a7 7 0 0 1 7 7 v38 a7 7 0 0 1 -7 7 h-250 z" fill="#1f6feb"/><circle cx="738" cy="252" r="6" fill="#0d1117"/><text x="760" y="261" font-size="25" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-address</text>
-<text x="712" y="346" font-size="27" fill="#e6edf3">two tags on the resource</text>
-<text x="712" y="394" font-size="27" fill="#e6edf3">cloud managed parameters</text>
-<text x="712" y="442" font-size="27" fill="#e6edf3">serverless</text>
-<text x="688" y="530" font-size="26" fill="#8b949e">$0 a year</text>
-<text x="688" y="572" font-size="26" fill="#8b949e">2 hours, one IAM policy</text>
-<text x="688" y="626" font-size="26" font-weight="700" fill="#68d391">the cloud referees every writer</text>
+<text x="946" y="104" font-size="34" font-weight="700" fill="#68d391" text-anchor="middle">Live backend</text>
+<path d="M776 240 l30 -30 h290 a8 8 0 0 1 8 8 v44 a8 8 0 0 1 -8 8 h-290 z" fill="#1f6feb"/><circle cx="806" cy="240" r="7" fill="#0d1117"/><text x="832" y="250" font-size="29" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-estate</text>
+<path d="M776 340 l30 -30 h290 a8 8 0 0 1 8 8 v44 a8 8 0 0 1 -8 8 h-290 z" fill="#1f6feb"/><circle cx="806" cy="340" r="7" fill="#0d1117"/><text x="832" y="350" font-size="29" font-weight="700" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">tofu-address</text>
+<text x="946" y="540" font-size="28" fill="#8b949e" text-anchor="middle">$0 a year</text>
+<text x="946" y="584" font-size="28" fill="#8b949e" text-anchor="middle">2 hours, one IAM policy</text>
+<text x="946" y="638" font-size="27" font-weight="700" fill="#68d391" text-anchor="middle">the cloud referees every writer</text>
 </svg>
