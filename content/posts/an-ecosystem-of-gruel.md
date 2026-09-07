@@ -86,7 +86,7 @@ If your story of scale is a smaller one, the gruel machinery will not shrink for
 
 Teams that do have fleet problems are typically the ones least in need of an opinion. What they want is a spec-true artifact and a set of capabilities they can compose on their own terms.
 
-chant's drift detection ships with a section on determining if it has value for you. The lifecycle is a dial you set per environment. Temporal is opt-in.
+chant's drift detection ships with a section on determining if it has value for you. The lifecycle is a dial you set per environment. Durable execution is opt-in.
 
 chant's output is CloudFormation, or Kubernetes YAML, or `.gitlab-ci.yml`, with nothing chant-specific in
 it. The day you walk, your artifacts keep deploying.
