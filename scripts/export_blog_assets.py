@@ -39,6 +39,10 @@ LIGHT = {
     "#f0883e": "#bc4c00",  # drift orange
     "#a78bfa": "#6639ba",  # forge purple
     "#e8985a": "#e24329",  # GitLab, brighter on white
+    "#3a4048": "#8a929c",  # cylinder metal, dark end
+    "#c8d0d8": "#f3f6f9",  # cylinder metal, lit band
+    "#7d868f": "#b7bfc8",  # cylinder cap
+    "#1f6feb": "#0969da",  # marker tag, darker on white
 }
 
 PAIRS = [("expectations-hero", "hero"),
