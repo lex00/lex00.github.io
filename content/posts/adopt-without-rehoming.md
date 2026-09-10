@@ -2,9 +2,8 @@
 title: "Adopt infrastructure without re-homing it"
 date: 2026-09-10
 draft: false
+featured_image: "img/adopt-stamps-hero.svg"
 ---
-
-{{< inline-svg src="adopt-stamps-hero.svg" alt="A database cylinder carrying two ownership marker tags, tofu-estate and tofu-address, clipped to its side like luggage tags. Two rubber stamps labelled choudoufu and chant are poised above them. The caption reads: ownership rides on the resource, not in a state file." >}}
 
 Lots of us are familiar with the set of decisions faced when inheriting a Terraform estate.
 
