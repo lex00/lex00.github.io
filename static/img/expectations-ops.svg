@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 528" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1100" height="528" fill="#0d1117"/>
+<text x="32" y="48" font-size="27" font-weight="800" fill="#e6edf3">The CI a choudoufu estate needs, as five Ops</text>
+<text x="32" y="78" font-size="19" fill="#8b949e">Generated for GitHub, Forgejo and GitLab from one project that builds</text>
+<text x="32" y="128" font-size="20.0" fill="#8b949e" font-weight="700" xml:space="preserve"><tspan>Op</tspan><tspan> and</tspan><tspan> job</tspan><tspan> name</tspan></text>
+<text x="232" y="128" font-size="20.0" fill="#8b949e" font-weight="700" xml:space="preserve"><tspan>Trigger</tspan></text>
+<text x="412" y="128" font-size="20.0" fill="#8b949e" font-weight="700" xml:space="preserve"><tspan>What</tspan><tspan> it</tspan><tspan> may</tspan><tspan> do</tspan></text>
+<line x1="32" y1="140" x2="1068" y2="140" stroke="#30363d" stroke-width="1"/>
+<text x="32" y="192" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">live-check</tspan></text>
+<text x="232" y="192" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>pull</tspan><tspan> request</tspan></text>
+<text x="412" y="192" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>Nothing.</tspan><tspan> No</tspan><tspan> cloud</tspan><tspan> call,</tspan><tspan> no</tspan><tspan> state,</tspan><tspan> no</tspan><tspan> credential</tspan></text>
+<line x1="32" y1="217" x2="1068" y2="217" stroke="#30363d" stroke-width="1"/>
+<text x="32" y="256" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">live-plan</tspan></text>
+<text x="232" y="256" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>pull</tspan><tspan> request</tspan></text>
+<text x="412" y="256" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>Read</tspan><tspan> the</tspan><tspan> live</tspan><tspan> system,</tspan><tspan> post</tspan><tspan> the</tspan><tspan> plan</tspan></text>
+<line x1="32" y1="282" x2="1068" y2="282" stroke="#30363d" stroke-width="1"/>
+<text x="32" y="322" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">live-adopt</tspan></text>
+<text x="232" y="322" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>push</tspan><tspan> to</tspan></text>
+<text x="232" y="352" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">staging</tspan></text>
+<text x="412" y="322" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>Write</tspan><tspan> two</tspan><tspan> tags</tspan><tspan> per</tspan><tspan> adoptable</tspan><tspan> resource,</tspan><tspan> after</tspan><tspan> an</tspan><tspan> approval</tspan></text>
+<line x1="32" y1="378" x2="1068" y2="378" stroke="#30363d" stroke-width="1"/>
+<text x="32" y="418" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">live-apply</tspan></text>
+<text x="232" y="418" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>push</tspan><tspan> to</tspan><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff"> main</tspan></text>
+<text x="412" y="418" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>Change</tspan><tspan> the</tspan><tspan> estate,</tspan><tspan> after</tspan><tspan> an</tspan><tspan> approval</tspan></text>
+<line x1="32" y1="443" x2="1068" y2="443" stroke="#30363d" stroke-width="1"/>
+<text x="32" y="482" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#79c0ff">live-discover</tspan></text>
+<text x="232" y="482" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>cron</tspan></text>
+<text x="412" y="482" font-size="22.5" fill="#e6edf3" xml:space="preserve"><tspan>Read</tspan><tspan> the</tspan><tspan> account,</tspan><tspan> open</tspan><tspan> an</tspan><tspan> issue</tspan></text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 782" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1100" height="782" fill="#ffffff"/>
+<text x="32" y="48" font-size="27" font-weight="800" fill="#1c2128">The 2026 pitch, answered line by line</text>
+<text x="32" y="78" font-size="19" fill="#57606a">Where there is no answer, the cell says so</text>
+<text x="32" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>The</tspan><tspan> expectation</tspan></text>
+<text x="312" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>choudoufu</tspan></text>
+<text x="692" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>chant</tspan></text>
+<line x1="32" y1="140" x2="1068" y2="140" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Terraform,</tspan><tspan> Ansible</tspan><tspan> and</tspan></text>
+<text x="32" y="222" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Helm</tspan><tspan> in</tspan><tspan> one</tspan><tspan> governed</tspan><tspan> run</tspan></text>
+<text x="312" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Out</tspan><tspan> of</tspan><tspan> scope</tspan></text>
+<text x="692" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Ops</tspan><tspan> span</tspan><tspan> seventeen</tspan><tspan> lexicons</tspan></text>
+<line x1="32" y1="248" x2="1068" y2="248" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Every</tspan><tspan> change</tspan><tspan> approved</tspan></text>
+<text x="32" y="318" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>before</tspan><tspan> it</tspan><tspan> happens</tspan></text>
+<text x="312" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Re-plans</tspan><tspan> first,</tspan><tspan> exits</tspan><tspan> 3</tspan><tspan> on</tspan><tspan> drift</tspan></text>
+<text x="692" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>The</tspan><tspan> gate</tspan><tspan> is</tspan><tspan> a</tspan><tspan> fact</tspan><tspan> in</tspan><tspan> git</tspan></text>
+<line x1="32" y1="344" x2="1068" y2="344" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Nothing</tspan><tspan> runs</tspan><tspan> off-plan</tspan></text>
+<text x="312" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Holds</tspan><tspan> against</tspan><tspan> drift</tspan></text>
+<text x="692" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Not</tspan><tspan> against</tspan><tspan> an</tspan><tspan> edited</tspan><tspan> root</tspan></text>
+<line x1="32" y1="409" x2="1068" y2="409" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>10x</tspan><tspan> scale,</tspan><tspan> thousands</tspan><tspan> of</tspan></text>
+<text x="32" y="480" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>resources</tspan></text>
+<text x="312" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>745</tspan><tspan> against</tspan><tspan> real</tspan><tspan> AWS,</tspan><tspan> at</tspan><tspan> call</tspan><tspan> parity</tspan></text>
+<text x="692" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Synthetic</tspan><tspan> bench</tspan><tspan> to</tspan><tspan> 200</tspan></text>
+<line x1="32" y1="505" x2="1068" y2="505" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="544" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Brownfield</tspan><tspan> adoption</tspan></text>
+<text x="312" y="544" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#0550ae">live-adopt</tspan><tspan>,</tspan><tspan> behind</tspan><tspan> a</tspan><tspan> gate</tspan></text>
+<text x="692" y="544" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20.9" fill="#0550ae">carve</tspan><tspan>,</tspan><tspan> one</tspan><tspan> resource</tspan><tspan> at</tspan><tspan> a</tspan><tspan> time</tspan></text>
+<line x1="32" y1="570" x2="1068" y2="570" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="610" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Cost</tspan><tspan> allocation</tspan><tspan> you</tspan><tspan> can</tspan></text>
+<text x="32" y="640" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>trust</tspan></text>
+<text x="312" y="610" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>The</tspan><tspan> marker</tspan><tspan> is</tspan><tspan> written</tspan><tspan> on</tspan><tspan> create</tspan></text>
+<text x="692" y="610" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Nothing</tspan></text>
+<line x1="32" y1="666" x2="1068" y2="666" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="706" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>One</tspan><tspan> place</tspan><tspan> to</tspan><tspan> see</tspan><tspan> the</tspan></text>
+<text x="32" y="736" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>whole</tspan><tspan> estate</tspan></text>
+<text x="312" y="706" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>What</tspan><tspan> behold</tspan><tspan> reads</tspan></text>
+<text x="692" y="706" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>The</tspan><tspan> graph</tspan><tspan> behold</tspan><tspan> renders</tspan></text>
+</svg>

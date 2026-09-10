@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="380" fill="#0d1117"/>
+
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#57606a"/>
+    </marker>
+
+    <!-- GitHub mark -->
+    <g id="gh">
+      <path fill="#c9d1d9" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </g>
+
+    <!-- GitLab tanuki -->
+    <g id="gl">
+      <path fill="#e8985a" d="m23.6 9.6-.03-.09L20.67 1.9a1.4 1.4 0 0 0-.54-.66 1.4 1.4 0 0 0-1.6.09 1.4 1.4 0 0 0-.47.7l-1.96 6H7.9L5.94 2.03a1.4 1.4 0 0 0-.46-.7 1.4 1.4 0 0 0-1.6-.1 1.4 1.4 0 0 0-.55.67L.42 9.5l-.03.09a5.3 5.3 0 0 0 1.76 6.12l.1.08 2.7 2.02 4.13 3.12 1.9 1.43a1.65 1.65 0 0 0 2 0l1.9-1.43 4.13-3.12 2.73-2.05.01-.01A5.3 5.3 0 0 0 23.6 9.6"/>
+    </g>
+
+    <!-- Forgejo: branch glyph, not the official mark -->
+    <g id="fj">
+      <g fill="none" stroke="#a78bfa" stroke-width="2.4" stroke-linecap="round">
+        <path d="M7 8.6 V17"/>
+        <path d="M7 12.4 h5.6 a3.4 3.4 0 0 0 3.4-3.4"/>
+      </g>
+      <circle cx="7" cy="5.6" r="3" fill="#a78bfa"/>
+      <circle cx="7" cy="19" r="3" fill="#a78bfa"/>
+      <circle cx="16" cy="6" r="3" fill="#a78bfa"/>
+    </g>
+  </defs>
+
+  <!-- two independent tools -->
+  <rect x="118" y="18" width="188" height="62" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="212" y="40" font-size="13" font-weight="700" fill="#c9d1d9" text-anchor="middle">chant</text>
+  <text x="212" y="56" font-size="10.5" fill="#8b949e" text-anchor="middle">typed source</text>
+  <text x="212" y="70" font-size="10.5" fill="#8b949e" text-anchor="middle">many platforms</text>
+
+  <rect x="374" y="18" width="188" height="62" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="468" y="40" font-size="13" font-weight="700" fill="#c9d1d9" text-anchor="middle">choudoufu</text>
+  <text x="468" y="56" font-size="10.5" fill="#8b949e" text-anchor="middle">OpenTofu fork</text>
+  <text x="468" y="70" font-size="10.5" fill="#8b949e" text-anchor="middle">AWS</text>
+
+  <text x="340" y="54" font-size="10.5" fill="#57606a" text-anchor="middle">or both</text>
+
+  <!-- converge -->
+  <path d="M212,80 L212,96 L340,96" fill="none" stroke="#57606a" stroke-width="1.5"/>
+  <path d="M468,80 L468,96 L340,96" fill="none" stroke="#57606a" stroke-width="1.5"/>
+  <line x1="340" y1="96" x2="340" y2="114" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- forge -->
+  <rect x="216" y="120" width="248" height="76" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="340" y="141" font-size="13" font-weight="700" fill="#c9d1d9" text-anchor="middle">your git forge</text>
+  <use href="#gh" transform="translate(292 151) scale(0.79)"/>
+  <use href="#gl" transform="translate(330 151) scale(0.79)"/>
+  <use href="#fj" transform="translate(368 151) scale(0.79)"/>
+  <text x="340" y="188" font-size="10" fill="#8b949e" text-anchor="middle">GitHub · GitLab · Forgejo</text>
+
+  <rect x="250" y="202" width="180" height="19" rx="9.5" fill="#161b22" stroke="#7ee787"/>
+  <text x="340" y="215" font-size="10" fill="#7ee787" text-anchor="middle">generated pipeline · gate in git</text>
+
+  <line x1="340" y1="221" x2="340" y2="238" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- the estate -->
+  <rect x="206" y="242" width="268" height="80" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="218" y="258" font-size="10.5" fill="#8b949e">your cloud</text>
+  <rect x="218" y="264" width="244" height="16" rx="4" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="228" cy="272" r="3.5" fill="#7ee787"/>
+  <text x="239" y="276" font-size="10" fill="#c9d1d9">resource</text>
+  <text x="454" y="276" font-size="9.5" fill="#7ee787" text-anchor="end">owner tag</text>
+
+  <rect x="218" y="284" width="244" height="16" rx="4" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="228" cy="292" r="3.5" fill="#7ee787"/>
+  <text x="239" y="296" font-size="10" fill="#c9d1d9">resource</text>
+  <text x="454" y="296" font-size="9.5" fill="#7ee787" text-anchor="end">owner tag</text>
+
+  <rect x="218" y="304" width="244" height="16" rx="4" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="228" cy="312" r="3.5" fill="#7ee787"/>
+  <text x="239" y="316" font-size="10" fill="#c9d1d9">resource</text>
+  <text x="454" y="316" font-size="9.5" fill="#7ee787" text-anchor="end">owner tag</text>
+
+  <!-- the boundary -->
+  <line x1="340" y1="322" x2="340" y2="336" stroke="#30363d" stroke-width="1"/>
+  <text x="340" y="351" font-size="11.5" fill="#c9d1d9" text-anchor="middle">your IAM gates on the tag</text>
+  <text x="340" y="367" font-size="10" fill="#8b949e" text-anchor="middle">the CLI and console too</text>
+
+  <!-- behold -->
+  <rect x="18" y="230" width="150" height="76" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="34" y="252" font-size="12.5" font-weight="700" fill="#c9d1d9">behold</text>
+  <text x="34" y="268" font-size="10" fill="#8b949e">read-only graph</text>
+  <g stroke="#57606a" stroke-width="1.2">
+    <line x1="48" y1="294" x2="76" y2="285"/>
+    <line x1="76" y1="285" x2="104" y2="295"/>
+    <line x1="76" y1="285" x2="130" y2="284"/>
+  </g>
+  <circle cx="48" cy="294" r="4.5" fill="#7ee787"/>
+  <circle cx="76" cy="285" r="4.5" fill="#79c0ff"/>
+  <circle cx="104" cy="295" r="4.5" fill="#79c0ff"/>
+  <circle cx="130" cy="284" r="4.5" fill="#f0883e"/>
+
+  <path d="M168,274 C186,274 190,284 204,286" fill="none" stroke="#57606a" stroke-width="1.5"
+        stroke-dasharray="4 3" marker-end="url(#a)"/>
+  <text x="186" y="264" font-size="10" fill="#8b949e" text-anchor="middle">reads</text>
+</svg>
