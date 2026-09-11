@@ -6,10 +6,6 @@ docs:
 docs-serve:
     hugo server -D
 
-# Copy the latest resume PDF from the resume_2026 repo into static/
-sync:
-    python3 scripts/sync_resume.py
-
 # Re-render the social share card from scripts/og-card.html (macOS Chrome)
 og-card:
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \

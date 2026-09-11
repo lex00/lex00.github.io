@@ -1012,3 +1012,8 @@ main a:focus-visible {
   .dnp-stage.is-firing .bolt,
   .dnp-stage.is-firing .dnp { animation: none; }
 }
+
+/* home: two buttons, centred, nothing else */
+.hero-gate { display: flex; justify-content: center; padding: 6rem 0 8rem; border: 0; }
+.hero-gate .hero-links { gap: 1rem; }
+.hero-gate .hero-link { padding: 0.7rem 1.6rem; font-size: 1rem; }

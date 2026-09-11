@@ -43,6 +43,8 @@ LIGHT = {
     "#c8d0d8": "#f3f6f9",  # cylinder metal, lit band
     "#7d868f": "#b7bfc8",  # cylinder cap
     "#1f6feb": "#0969da",  # marker tag, darker on white
+    "#7cc2ff": "#ffffff",  # chant's stamp label, white on the dark mount
+    "#7fe888": "#ffffff",  # choudoufu's, likewise - the mount stays dark
 }
 
 PAIRS = [("expectations-hero", "hero"),

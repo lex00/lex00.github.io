@@ -39,12 +39,12 @@
   <!-- the two that write them -->
   <g transform="translate(292 150) rotate(-11) scale(1.15)">
     <use href="#stamp"/>
-    <text x="0" y="-21" font-size="12.5" font-weight="700" fill="#7ee787" text-anchor="middle">choudoufu</text>
+    <text x="0" y="-21" font-size="12.5" font-weight="700" fill="#7fe888" stroke="#0b0e12" stroke-width="2.6" paint-order="stroke" text-anchor="middle">choudoufu</text>
   </g>
 
   <g transform="translate(444 150) rotate(11) scale(1.15)">
     <use href="#stamp"/>
-    <text x="0" y="-21" font-size="12.5" font-weight="700" fill="#79c0ff" text-anchor="middle">chant</text>
+    <text x="0" y="-21" font-size="12.5" font-weight="700" fill="#7cc2ff" stroke="#0b0e12" stroke-width="2.6" paint-order="stroke" text-anchor="middle">chant</text>
   </g>
 
   <text x="340" y="316" font-size="11.5" fill="#8b949e" text-anchor="middle">ownership rides on the resource, not in a state file</text>
