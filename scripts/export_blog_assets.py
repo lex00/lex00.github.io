@@ -59,6 +59,32 @@ def to_light(svg: str) -> str:
     return pat.sub(lambda m: LIGHT[m.group(0).lower()], svg)
 
 
+#: LinkedIn crops a feed image to 1.91:1. The heroes are wider than that, so
+#: fit each one whole inside the frame with a margin rather than let the sides
+#: get cut. 600x314 rendered at 2x is the 1200x628 LinkedIn actually wants.
+LI_W, LI_H, LI_PAD = 600, 314, 20
+
+
+def linkedin(svg: str) -> str:
+    """Letterbox a hero into the LinkedIn frame, nothing cropped."""
+    w, h = viewbox(svg)
+    bg = re.search(r'<rect[^>]*fill="(#[0-9a-fA-F]{6})"', svg).group(1)
+    box_w, box_h = LI_W - 2 * LI_PAD, LI_H - 2 * LI_PAD
+    scale = min(box_w / w, box_h / h)
+    fit_w, fit_h = w * scale, h * scale
+    root = re.search(r"<svg[^>]*>", svg, re.S).group(0)
+    # font-family is set on the root element, so it has to ride along to the
+    # nested one or every label falls back to the default serif.
+    font = re.search(r'font-family="([^"]*)"', root)
+    font = f' font-family="{font.group(1)}"' if font else ""
+    inner = re.sub(r"^.*?<svg[^>]*>", "", svg, count=1, flags=re.S).rsplit("</svg>", 1)[0]
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {LI_W} {LI_H}"{font}>'
+            f'<rect width="{LI_W}" height="{LI_H}" fill="{bg}"/>'
+            f'<svg x="{(LI_W - fit_w) / 2:.1f}" y="{(LI_H - fit_h) / 2:.1f}"'
+            f' width="{fit_w:.1f}" height="{fit_h:.1f}" viewBox="0 0 {w} {h}"{font}>'
+            f'{inner}</svg></svg>\n')
+
+
 def viewbox(svg: str) -> tuple[int, int]:
     m = re.search(r'viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"', svg)
     return (round(float(m.group(1))), round(float(m.group(2))))
@@ -94,6 +120,13 @@ def main(argv: list[str]) -> None:
             w, h = viewbox(svg)
             png(out_dir / f"{out}.svg", out_dir / f"{out}.png", w, h)
             print(f"  {out}.svg  {out}.png  ({w}x{h} at 2x)")
+
+            if name == "hero":
+                li = out_dir / f"{out}-linkedin.svg"
+                li.write_text(linkedin(svg))
+                png(li, out_dir / f"{out}-linkedin.png", LI_W, LI_H)
+                li.unlink()
+                print(f"  {out}-linkedin.png  ({LI_W}x{LI_H} at 2x, letterboxed)")
 
 
 if __name__ == "__main__":
