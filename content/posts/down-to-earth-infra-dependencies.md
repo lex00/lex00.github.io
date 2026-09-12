@@ -7,27 +7,25 @@ featured_image: "img/down-to-earth-hero.svg"
 
 Choudoufu gives you a model where dependencies come for free. One team's stack reads what another team's stack owns, straight from the cloud, and nobody has to bind the two together.
 
-The orchestrators sell that binding as the product. Stack dependencies get a diagram and a pricing tier. Underneath, one stack's output is copied into a variable for the next, and the next stack only runs when that copy changes, which is where the toggles and workarounds come from.
+The orchestrators sell that binding as the product, with a diagram and a pricing tier. Underneath, one stack's output is copied into a variable for the next, and the next stack only runs when the copy changes. That is where the toggles and workarounds come from.
 
 The binding lives in their platform, and nobody reading your repository can see it.
 
 ## The old stack reach pattern
 
-Say Terraform builds some servers and Ansible configures them. When your ops model cannot express that dependency, the Ansible job reaches into the Terraform stack for the addresses. For one team on one project that is fine, and nobody would call it crazy.
+Say Terraform builds some servers and Ansible configures them. With no way to declare that dependency, the Ansible job reaches into the Terraform stack for the addresses. Nobody would call that crazy. The reach is standing in for a model that does not exist, so the dependency lives in a job step, or in an orchestrator that does the same reach for you and charges for it.
 
-It stops being fine at two teams. The second team needs read access to the first team's state, a promise that the output names will not change, and a run order nobody wrote down. Every new pair of projects adds another reach, and nothing can list them. An orchestrator does the same reach on your behalf and charges for it.
-
-The reach pattern is the problem, whether free or paid.
+The missing model is the problem, whether you script it or pay for it.
 
 ## The tags drive the lookups
 
-In choudoufu every resource carries two tags: the estate that owns it and the address it was declared at. They are derived from source and enforced, so a lookup can trust them. Plain default tags never gave you that.
+In choudoufu every resource carries two tags: the estate that owns it and its declared address. They are derived from source and enforced, so a lookup can trust them. Plain default tags never gave you that.
 
 Ansible finds the servers by those tags, live, on every run. There is no copy, so nothing but you decides when Ansible runs.
 
 ## Dependencies do not need new machinery
 
-Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it. The dependency is declared once, as data in a chant component in your repository. The graph works out the order and checks the wiring before anything runs, and the tag is how the value resolves when it does.
+Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it. Declare it once, as data in a chant component in your repository, and the graph works out the order and checks the wiring before anything runs. The tag is how the value resolves when it does.
 
 Choudoufu: dependencies without the middleman.
 
