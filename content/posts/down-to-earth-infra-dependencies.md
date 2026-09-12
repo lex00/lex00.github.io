@@ -19,7 +19,7 @@ The missing model is the problem, whether you script it or pay for it.
 
 ## The tags drive the lookups
 
-In choudoufu every resource carries two tags: the estate that owns it and its declared address. They are derived from source and enforced, so a lookup can trust them. You could always add tags by hand, but nothing checked them. Every estate is visible to the whole org the moment it creates a resource, with nothing to register.
+In choudoufu every resource carries two tags: the estate that owns it and its declared address. They are derived from source and enforced, so a lookup can trust them. Every estate is visible to the whole org the moment it creates a resource, with nothing to register.
 
 Ansible finds the servers by those tags, live, on every run. There is no copy, so nothing but you decides when Ansible runs.
 
