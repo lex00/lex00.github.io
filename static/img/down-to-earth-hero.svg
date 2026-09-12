@@ -14,7 +14,7 @@
   </defs>
 
   <!-- ===================== LEFT: bolt-on stack binding ===================== -->
-  <text x="172" y="30" font-size="13" font-weight="700" fill="#f0883e" text-anchor="middle">bolt-on stack binding</text>
+  <text x="172" y="30" font-size="13" font-weight="700" fill="#f0883e" text-anchor="middle">what they sell you</text>
 
   <!-- their orchestrator holds a copy -->
   <rect x="18" y="44" width="308" height="146" rx="8" fill="#10161f" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="5 3"/>
