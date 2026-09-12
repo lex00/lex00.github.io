@@ -21,11 +21,11 @@ The reach pattern is the problem, whether free or paid.
 
 In choudoufu every resource carries two tags: the estate that owns it and the address it was declared at. They are derived from source and enforced, so a lookup can trust them. Plain default tags never gave you that.
 
-Ansible finds the servers by those tags, live, on every run. There is no copy to keep fresh and nothing to trigger.
+Ansible finds the servers by those tags, live, on every run. There is no copy to keep fresh.
 
 ## Dependencies do not need new machinery
 
-Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it.
+Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it. The jobs are chant ops, generated into the pipeline you already run, so the order lives in your repository too.
 
 Choudoufu: dependencies without the middleman.
 
