@@ -7,7 +7,7 @@ featured_image: "img/down-to-earth-hero.svg"
 
 Choudoufu gives you a model where dependencies come for free. One team's stack reads what another team's stack owns, straight from the cloud, and nobody has to bind the two together.
 
-The orchestrators sell that binding as the product. Stack dependencies get a diagram and a pricing tier. Underneath, one stack's output is copied into a variable for the next, and keeping that copy fresh is where the toggles and workarounds come from.
+The orchestrators sell that binding as the product. Stack dependencies get a diagram and a pricing tier. Underneath, one stack's output is copied into a variable for the next, and the next stack only runs when that copy changes, which is where the toggles and workarounds come from.
 
 The binding lives in their platform, and nobody reading your repository can see it.
 
@@ -21,11 +21,11 @@ The reach pattern is the problem, whether free or paid.
 
 In choudoufu every resource carries two tags: the estate that owns it and the address it was declared at. They are derived from source and enforced, so a lookup can trust them. Plain default tags never gave you that.
 
-Ansible finds the servers by those tags, live, on every run. There is no copy to keep fresh.
+Ansible finds the servers by those tags, live, on every run. There is no copy, so nothing but you decides when Ansible runs.
 
 ## Dependencies do not need new machinery
 
-Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it. The jobs are chant ops, generated into the pipeline you already run, so the order lives in your repository too.
+Ownership already expresses the dependency. Put it on the resource and your jobs read from the thing itself instead of a platform hovering above it. The dependency is declared once, as data in a chant component in your repository. The graph works out the order and checks the wiring before anything runs, and the tag is how the value resolves when it does.
 
 Choudoufu: dependencies without the middleman.
 
