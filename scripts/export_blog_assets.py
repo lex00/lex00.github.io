@@ -2,6 +2,9 @@
 """Export this post's figures to ~/Documents/blogs/<slug>/, dark and light, SVG and PNG.
 
     python3 scripts/export_blog_assets.py
+    python3 scripts/export_blog_assets.py <slug> <svg-stem>:<out-name> ...
+
+With no arguments it exports the expectations post, as it always has.
 
 The table pairs already come out of gen_expectations_tables.py in both themes.
 The hero is hand-drawn in the dark palette only, so its light twin is derived
@@ -16,12 +19,15 @@ from __future__ import annotations
 import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 IMG = ROOT / "static" / "img"
-SLUG = "infra-tooling-expectations-in-2026"
-OUT = Path.home() / "Documents" / "blogs" / SLUG
+DEFAULT_SLUG = "infra-tooling-expectations-in-2026"
+DEFAULT_PAIRS = [("expectations-hero", "hero"),
+                 ("expectations-claims", "claims"),
+                 ("expectations-ops", "ops")]
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
@@ -47,10 +53,6 @@ LIGHT = {
     "#7fe888": "#ffffff",  # choudoufu's, likewise - the mount stays dark
 }
 
-PAIRS = [("expectations-hero", "hero"),
-         ("expectations-claims", "claims"),
-         ("expectations-ops", "ops")]
-
 
 def to_light(svg: str) -> str:
     pat = re.compile("|".join(re.escape(k) for k in LIGHT), re.IGNORECASE)
@@ -69,22 +71,30 @@ def png(src: Path, dst: Path, w: int, h: int) -> None:
                    check=True, capture_output=True)
 
 
-def main() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
+def main(argv: list[str]) -> None:
+    if argv:
+        slug, pairs = argv[0], [tuple(a.split(":", 1)) for a in argv[1:]]
+    else:
+        slug, pairs = DEFAULT_SLUG, DEFAULT_PAIRS
+    out_dir = Path.home() / "Documents" / "blogs" / slug
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    # The hero has no generated light twin; derive it beside the dark one.
-    hero = IMG / "expectations-hero.svg"
-    (IMG / "expectations-hero-light.svg").write_text(to_light(hero.read_text()))
+    # Hand-drawn figures exist in the dark palette only; derive each light
+    # twin beside its dark original rather than maintain a file that drifts.
+    for stem, _ in pairs:
+        light = IMG / f"{stem}-light.svg"
+        if not light.exists():
+            light.write_text(to_light((IMG / f"{stem}.svg").read_text()))
 
-    for stem, name in PAIRS:
+    for stem, name in pairs:
         for suffix, out in (("", name), ("-light", f"{name}-light")):
             src = IMG / f"{stem}{suffix}.svg"
             svg = src.read_text()
-            shutil.copyfile(src, OUT / f"{out}.svg")
+            shutil.copyfile(src, out_dir / f"{out}.svg")
             w, h = viewbox(svg)
-            png(OUT / f"{out}.svg", OUT / f"{out}.png", w, h)
+            png(out_dir / f"{out}.svg", out_dir / f"{out}.png", w, h)
             print(f"  {out}.svg  {out}.png  ({w}x{h} at 2x)")
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])
