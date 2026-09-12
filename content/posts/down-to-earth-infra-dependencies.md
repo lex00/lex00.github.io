@@ -13,7 +13,9 @@ The binding lives in their platform, and nobody reading your repository can see 
 
 ## The old stack reach pattern
 
-Say Terraform builds some servers and Ansible configures them. When your ops model cannot express that dependency, the Ansible job reaches into the Terraform stack for the addresses. An orchestrator does the same reach on your behalf and charges for it.
+Say Terraform builds some servers and Ansible configures them. When your ops model cannot express that dependency, the Ansible job reaches into the Terraform stack for the addresses. For one team on one project that is fine, and nobody would call it crazy.
+
+It stops being fine at two teams. The second team needs read access to the first team's state, a promise that the output names will not change, and a run order nobody wrote down. Every new pair of projects adds another reach, and nothing can list them. An orchestrator does the same reach on your behalf and charges for it.
 
 The reach pattern is the problem, whether free or paid.
 
