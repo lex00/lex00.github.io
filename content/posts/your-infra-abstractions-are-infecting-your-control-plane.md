@@ -13,7 +13,7 @@ When you invent an abstraction for infra, you are going to end up holding it som
 
 You can stick your opinions anywhere you like and at some point they have to get reconciled. If the opinion is a controller the control plane is a cluster. If it's a store, it has to query that store.
 
-{{< inline-svg src="abstraction-picks-the-venue.svg" alt="Three columns pairing what you invent at the bottom with where your control plane is left to live at the top. Invent a CRD and a controller, as Kro, Crossplane and Kratix do, and a red arrow reaches up to say your control plane lives in a cluster. Invent a store holding desired state as rows and another arrow reaches up to say it lives in a query against a store that must be right. Invent nothing and there is no arrow at all: the control plane runs anywhere, on a cluster and off one." >}}
+{{< inline-svg src="abstraction-picks-the-venue.svg" alt="Three columns pairing what you invent at the bottom with where your control plane is left to live at the top. Invent a CRD and a controller, as Kro, Crossplane and Kratix do, and a red arrow reaches up to say your control plane lives in a cluster. Invent a store holding desired state as rows and another arrow reaches up to say it lives wherever that store is, which has to be right. Invent nothing and there is no arrow at all: the control plane runs anywhere, on a cluster and off one." >}}
 
 chant invents no abstractions to begin with. A composite is assembly, a plain function returning spec-native resources. That's [configuration as data](/posts/code-as-config-config-as-data/) arrived at by compiling rather than by storing. The control plane above it can deploy anywhere.
 

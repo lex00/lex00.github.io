@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 232" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <rect x="0" y="0" width="680" height="232" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 218" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="218" fill="#ffffff"/>
 
   <defs>
     <marker id="up" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
@@ -8,15 +8,15 @@
   </defs>
 
 
-  <text x="40" y="24" font-size="9.5" fill="#57606a">where your control plane may live</text>
 
+  <g transform="translate(0,-14)">
   <!-- top row: the venue you are left with -->
   <rect x="40" y="34" width="186" height="50" rx="6" fill="#ffffff" stroke="#d0d7de"/>
   <text x="133" y="64" font-size="12" font-weight="700" fill="#1c2128" text-anchor="middle">in a cluster</text>
 
   <rect x="247" y="34" width="186" height="50" rx="6" fill="#ffffff" stroke="#d0d7de"/>
-  <text x="340" y="58" font-size="12" font-weight="700" fill="#1c2128" text-anchor="middle">in a query</text>
-  <text x="340" y="73" font-size="9" fill="#57606a" text-anchor="middle">against a store that must be right</text>
+  <text x="340" y="58" font-size="12" font-weight="700" fill="#1c2128" text-anchor="middle">wherever the store is</text>
+  <text x="340" y="73" font-size="9" fill="#57606a" text-anchor="middle">which has to be right</text>
 
   <rect x="454" y="34" width="186" height="50" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
   <text x="547" y="58" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle">anywhere</text>
@@ -25,8 +25,6 @@
   <!-- the reach upward: two infections, one gap -->
   <line x1="133" y1="142" x2="133" y2="92" stroke="#cf222e" stroke-width="1.6" marker-end="url(#up)"/>
   <line x1="340" y1="142" x2="340" y2="92" stroke="#cf222e" stroke-width="1.6" marker-end="url(#up)"/>
-  <text x="237" y="122" font-size="9" fill="#cf222e" text-anchor="middle">it reaches up</text>
-  <text x="547" y="122" font-size="9" fill="#57606a" text-anchor="middle">nothing reaches up</text>
 
   <!-- bottom row: what you invented -->
   <rect x="40" y="150" width="186" height="62" rx="6" fill="#f5f0ff" stroke="#8250df" stroke-width="1.5"/>
@@ -42,6 +40,5 @@
   <rect x="454" y="150" width="186" height="62" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
   <text x="547" y="174" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle">nothing</text>
   <text x="547" y="192" font-size="9" fill="#57606a" text-anchor="middle">spec-native resources</text>
-
-
+  </g>
 </svg>
