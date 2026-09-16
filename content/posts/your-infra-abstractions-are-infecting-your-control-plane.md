@@ -25,7 +25,7 @@ Stores answer for ownership. Using a provider-native tag at create time means tr
 
 The best control plane requires no special configuration with your resources. The read access you already have is all you should need to get started.
 
-[behold](https://intentius.io/behold/) is the abstraction free control plane. Cloud drift on AWS sits directly beside supply-chain drift on GitHub Actions. It stores nothing and caches no live result. Nothing about it assumes a cluster.
+[behold](https://intentius.io/behold/) is the abstraction free control plane. Cloud drift on AWS sits directly beside supply-chain drift on GitHub Actions. It keeps no copy of your estate, and completed live results are not cached. What it does write down is derived. Nothing about it assumes a cluster.
 
 behold is still in development but available for you to try. The graph and the drift overlay work today, the delegated actions are still in progress.
 
