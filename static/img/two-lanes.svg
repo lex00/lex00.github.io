@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <rect x="0" y="0" width="680" height="372" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="320" fill="#0d1117"/>
 
   <defs>
     <g id="bucket" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round">
@@ -21,8 +21,8 @@
     </marker>
   </defs>
 
-  <text x="340" y="28" font-size="13" font-weight="700" fill="#7ee787" text-anchor="middle">the same resources</text>
 
+  <g transform="translate(0,-28)">
   <!-- lane one: an invented abstraction in the middle of the road -->
   <rect x="40" y="48" width="600" height="130" rx="8" fill="#10161f" stroke="#bc8cff" stroke-width="1.5"/>
   <text x="54" y="66" font-size="10.5" fill="#bc8cff">abstraction</text>
@@ -65,6 +65,6 @@
   <g color="#7ee787"><use href="#bucket" x="470" y="240" transform="rotate(-11 484 254)"/></g>
   <g color="#7ee787"><use href="#server" x="522" y="256" transform="rotate(9 536 270)"/></g>
   <g color="#7ee787"><use href="#fn" x="574" y="242" transform="rotate(-6 588 256)"/></g>
-
-  <text x="340" y="356" font-size="11.5" fill="#c9d1d9" text-anchor="middle">one lane hands you rows, the other hands back what you declared</text>
+  <text x="546" y="312" font-size="9" fill="#8b949e" text-anchor="middle">your resources as declared</text>
+  </g>
 </svg>
