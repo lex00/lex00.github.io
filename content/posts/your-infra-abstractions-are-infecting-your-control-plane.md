@@ -11,7 +11,7 @@ When you invent an abstraction for infra, you are going to end up holding it som
 
 ## Where does the abstraction live?
 
-You can stick your opinions anywhere you like and at some point they have to get reconciled. If the opinion is a controller the control plane is a cluster. If it's a store, it has to query that store.
+You can stick your opinions anywhere you like and at some point they have to get reconciled. Put them in a controller and your control plane needs a cluster to run it. Put them in a store and it becomes a query against that store.
 
 {{< inline-svg src="abstraction-picks-the-venue.svg" alt="Three columns pairing what you invent at the bottom with where your control plane is left to live at the top. Invent a CRD and a controller, as Kro, Crossplane and Kratix do, and a red arrow reaches up to say your control plane lives in a cluster. Invent a store holding desired state as rows and another arrow reaches up to say it lives wherever that store is, which has to be right. Invent nothing and there is no arrow at all: the control plane runs anywhere, on a cluster and off one." >}}
 
