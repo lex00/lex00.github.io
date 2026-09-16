@@ -184,7 +184,10 @@ def render(title: str, subtitle: str, cols: list[int], header: list[str],
                for row in rows]
     heights = [max(len(c) for c in row) * LINE + ROW_PAD * 2 for row in wrapped]
 
-    top = 74 if not subtitle else 104
+    # A table with no title starts at the margin instead of reserving a band
+    # for one. Passing title="" is how a caller says the rows speak for
+    # themselves.
+    top = (74 if not subtitle else 104) if title else 24
     head_y = top + 24
     body_top = top + 48
     height = int(body_top + sum(heights) + 20)
@@ -193,8 +196,10 @@ def render(title: str, subtitle: str, cols: list[int], header: list[str],
         p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} '
              f'{height}" font-family="{SANS}">\n',
              f'<rect width="{WIDTH}" height="{height}" fill="{t["bg"]}"/>\n',
-             f'<text x="{MARGIN}" y="48" font-size="{TITLE}" font-weight="800" '
-             f'fill="{t["fg"]}">{esc(title)}</text>\n']
+             ]
+        if title:
+            p.append(f'<text x="{MARGIN}" y="48" font-size="{TITLE}" '
+                     f'font-weight="800" fill="{t["fg"]}">{esc(title)}</text>\n')
         if subtitle:
             p.append(f'<text x="{MARGIN}" y="78" font-size="19" '
                      f'fill="{t["dim"]}">{esc(subtitle)}</text>\n')

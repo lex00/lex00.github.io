@@ -30,23 +30,15 @@ from gen_expectations_tables import render  # noqa: E402
 
 TABLE = dict(
     stem="what-each-answer-leaves",
-    title="What each answer leaves behind",
-    subtitle="and what you are left operating because of it",
-    cols=[290, 396, 350],
-    header=["Where the opinions live", "What it invents", "What you operate"],
+    title="",
+    subtitle="",
+    cols=[290, 336, 410],
+    header=["Where opinions live", "What it invents", "What you operate"],
     rows=[
-        ["Kro, Crossplane, Kratix",
-         "a CRD with a controller behind it",
-         "a cluster, and the abstraction inside it"],
-        ["Helm, Timoni, Score",
-         "a values format, and in Score's case state",
-         "a format to learn, a file to keep correct"],
-        ["ConfigHub",
-         "a store holding desired state as rows",
-         "a store that has to be right"],
-        ["chant",
-         "nothing new. A composite assembles spec-native resources",
-         "the spec your platform already defines"],
+        ["Kro · Crossplane · Kratix", "a CRD and a controller", "a cluster"],
+        ["Helm · Timoni · Score", "a values format", "a format and a state file"],
+        ["ConfigHub", "desired state as rows", "a store kept correct"],
+        ["chant", "nothing", "the platform's own spec"],
     ],
 )
 
