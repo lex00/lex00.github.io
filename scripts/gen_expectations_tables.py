@@ -136,16 +136,31 @@ def line_svg(runs: list[tuple[str, bool, bool]], x: float, y: float,
              size: float, fill: str, mono_fill: str, weight: int = 400) -> str:
     if not runs:
         return ""
-    spans = []
+    # Consecutive words in the same face go in ONE tspan, with their spaces
+    # interior. A tspan that *starts* with a space loses it to HTML
+    # minification: `hugo --minify` strips leading whitespace and drops
+    # xml:space="preserve" outright, which renders "a CRD with a" as
+    # "aCRDwitha" once a table is inlined by the inline-svg shortcode. Only a
+    # backtick can change face mid-line, and the space before that switch has
+    # nowhere interior to live, so it becomes U+00A0 — same width, and not
+    # whitespace, so nothing can strip it.
+    groups: list[list] = []
     for i, (w, mono, sp) in enumerate(runs):
         lead = " " if (sp and i) else ""
+        if groups and groups[-1][0] == mono:
+            groups[-1][1] += lead + w
+        else:
+            groups.append([mono, ("\u00a0" if lead else "") + w])
+
+    spans = []
+    for mono, text in groups:
         if mono:
             spans.append(
                 f'<tspan font-family="{MONO}" font-size="{size * 0.93:.1f}" '
-                f'fill="{mono_fill}">{esc(lead + w)}</tspan>'
+                f'fill="{mono_fill}">{esc(text)}</tspan>'
             )
         else:
-            spans.append(f"<tspan>{esc(lead + w)}</tspan>")
+            spans.append(f"<tspan>{esc(text)}</tspan>")
     wt = f' font-weight="{weight}"' if weight != 400 else ""
     return (f'<text x="{x:.0f}" y="{y:.0f}" font-size="{size}" fill="{fill}"'
             f'{wt} xml:space="preserve">' + "".join(spans) + "</text>\n")
