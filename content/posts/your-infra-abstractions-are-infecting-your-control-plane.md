@@ -19,7 +19,7 @@ chant invents no abstractions to begin with. A composite is assembly, a plain fu
 
 Stores answer for ownership. Using a provider-native tag at create time means truth stays on the resource itself.
 
-{{< inline-svg src="what-each-answer-leaves.svg" alt="Four rows naming where a platform team's opinions live, what that invents, and what you are left operating. Kro, Crossplane and Kratix invent a CRD and a controller, so you operate a cluster. Helm, Timoni and Score invent a values format, so you operate a format and a state file. ConfigHub invents desired state as rows, so you operate a store kept correct. chant invents nothing, so you operate the platform's own spec." >}}
+{{< inline-svg src="what-each-answer-leaves.svg" alt="Four rows naming where a platform team's opinions live, what that invents, and what you are left operating. Kro, Crossplane and Kratix invent a CRD and a controller, so you operate a cluster. Helm, Timoni and Score invent a values format, so you operate a format to keep in step. ConfigHub invents desired state as rows, so you operate a store kept correct. chant invents nothing, so you operate the platform's own spec." >}}
 
 ## Nothing to stand up
 

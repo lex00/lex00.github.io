@@ -36,7 +36,7 @@ TABLE = dict(
     header=["Where opinions live", "What it invents", "What you operate"],
     rows=[
         ["Kro · Crossplane · Kratix", "a CRD and a controller", "a cluster"],
-        ["Helm · Timoni · Score", "a values format", "a format and a state file"],
+        ["Helm · Timoni · Score", "a values format", "a format to keep in step"],
         ["ConfigHub", "desired state as rows", "a store kept correct"],
         ["chant", "nothing", "the platform's own spec"],
     ],

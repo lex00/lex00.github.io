@@ -10,7 +10,7 @@
 <line x1="32" y1="137" x2="1068" y2="137" stroke="#d0d7de" stroke-width="1"/>
 <text x="32" y="176" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Helm · Timoni · Score</tspan></text>
 <text x="322" y="176" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a values format</tspan></text>
-<text x="658" y="176" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a format and a state file</tspan></text>
+<text x="658" y="176" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a format to keep in step</tspan></text>
 <line x1="32" y1="202" x2="1068" y2="202" stroke="#d0d7de" stroke-width="1"/>
 <text x="32" y="242" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>ConfigHub</tspan></text>
 <text x="322" y="242" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>desired state as rows</tspan></text>
