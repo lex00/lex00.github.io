@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 525" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1100" height="525" fill="#ffffff"/>
+<text x="32" y="48" font-size="27" font-weight="800" fill="#1c2128">What each answer leaves behind</text>
+<text x="32" y="78" font-size="19" fill="#57606a">and what you are left operating because of it</text>
+<text x="32" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>Where</tspan><tspan> the</tspan><tspan> opinions</tspan><tspan> live</tspan></text>
+<text x="322" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>What</tspan><tspan> it</tspan><tspan> invents</tspan></text>
+<text x="718" y="128" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>What</tspan><tspan> you</tspan><tspan> operate</tspan></text>
+<line x1="32" y1="140" x2="1068" y2="140" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Kro,</tspan><tspan> Crossplane,</tspan><tspan> Kratix</tspan></text>
+<text x="322" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> CRD</tspan><tspan> with</tspan><tspan> a</tspan><tspan> controller</tspan><tspan> behind</tspan><tspan> it</tspan></text>
+<text x="718" y="192" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> cluster,</tspan><tspan> and</tspan><tspan> the</tspan><tspan> abstraction</tspan></text>
+<text x="718" y="222" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>inside</tspan><tspan> it</tspan></text>
+<line x1="32" y1="248" x2="1068" y2="248" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Helm,</tspan><tspan> Timoni,</tspan><tspan> Score</tspan></text>
+<text x="322" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> values</tspan><tspan> format,</tspan><tspan> and</tspan><tspan> in</tspan><tspan> Score's</tspan><tspan> case</tspan></text>
+<text x="322" y="318" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>state</tspan></text>
+<text x="718" y="288" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> format</tspan><tspan> to</tspan><tspan> learn,</tspan><tspan> a</tspan><tspan> file</tspan><tspan> to</tspan><tspan> keep</tspan></text>
+<text x="718" y="318" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>correct</tspan></text>
+<line x1="32" y1="344" x2="1068" y2="344" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>ConfigHub</tspan></text>
+<text x="322" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> store</tspan><tspan> holding</tspan><tspan> desired</tspan><tspan> state</tspan><tspan> as</tspan><tspan> rows</tspan></text>
+<text x="718" y="384" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a</tspan><tspan> store</tspan><tspan> that</tspan><tspan> has</tspan><tspan> to</tspan><tspan> be</tspan><tspan> right</tspan></text>
+<line x1="32" y1="409" x2="1068" y2="409" stroke="#d0d7de" stroke-width="1"/>
+<text x="32" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>chant</tspan></text>
+<text x="322" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>nothing</tspan><tspan> new.</tspan><tspan> A</tspan><tspan> composite</tspan><tspan> assembles</tspan></text>
+<text x="322" y="480" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>spec-native</tspan><tspan> resources</tspan></text>
+<text x="718" y="448" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>the</tspan><tspan> spec</tspan><tspan> your</tspan><tspan> platform</tspan><tspan> already</tspan></text>
+<text x="718" y="480" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>defines</tspan></text>
+</svg>

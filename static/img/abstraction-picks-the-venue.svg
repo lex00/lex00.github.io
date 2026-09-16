@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="330" fill="#0d1117"/>
+
+  <defs>
+    <marker id="up" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#ff7b72"/>
+    </marker>
+  </defs>
+
+  <text x="340" y="28" font-size="13" font-weight="700" fill="#7ee787" text-anchor="middle">what you invent decides where your control plane runs</text>
+
+  <text x="40" y="58" font-size="9.5" fill="#8b949e">your control plane may live…</text>
+
+  <!-- top row: the venue you are left with -->
+  <rect x="40" y="68" width="186" height="50" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="133" y="98" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">in a cluster</text>
+
+  <rect x="247" y="68" width="186" height="50" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="340" y="92" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">in a query</text>
+  <text x="340" y="107" font-size="9" fill="#8b949e" text-anchor="middle">against a store that must be right</text>
+
+  <rect x="454" y="68" width="186" height="50" rx="6" fill="#0f2419" stroke="#7ee787" stroke-width="1.5"/>
+  <text x="547" y="92" font-size="12" font-weight="700" fill="#7ee787" text-anchor="middle">anywhere</text>
+  <text x="547" y="107" font-size="9" fill="#8b949e" text-anchor="middle">on a cluster and off one</text>
+
+  <!-- the reach upward: two infections, one gap -->
+  <line x1="133" y1="176" x2="133" y2="126" stroke="#ff7b72" stroke-width="1.6" marker-end="url(#up)"/>
+  <line x1="340" y1="176" x2="340" y2="126" stroke="#ff7b72" stroke-width="1.6" marker-end="url(#up)"/>
+  <text x="237" y="156" font-size="9" fill="#ff7b72" text-anchor="middle">it reaches up</text>
+  <text x="547" y="156" font-size="9" fill="#8b949e" text-anchor="middle">nothing reaches up</text>
+
+  <!-- bottom row: what you invented -->
+  <rect x="40" y="184" width="186" height="62" rx="6" fill="#1a1230" stroke="#bc8cff" stroke-width="1.5"/>
+  <text x="133" y="208" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">a CRD and a controller</text>
+  <text x="133" y="226" font-size="9" fill="#bc8cff" text-anchor="middle">Kro · Crossplane · Kratix</text>
+  <text x="133" y="240" font-size="9" fill="#8b949e" text-anchor="middle">you operate the abstraction</text>
+
+  <rect x="247" y="184" width="186" height="62" rx="6" fill="#1a1230" stroke="#bc8cff" stroke-width="1.5"/>
+  <text x="340" y="208" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">a store</text>
+  <text x="340" y="226" font-size="9" fill="#bc8cff" text-anchor="middle">desired state as rows</text>
+  <text x="340" y="240" font-size="9" fill="#8b949e" text-anchor="middle">you keep it correct</text>
+
+  <rect x="454" y="184" width="186" height="62" rx="6" fill="#161b22" stroke="#7ee787" stroke-width="1.5"/>
+  <text x="547" y="208" font-size="12" font-weight="700" fill="#7ee787" text-anchor="middle">nothing</text>
+  <text x="547" y="226" font-size="9" fill="#8b949e" text-anchor="middle">a composite assembles</text>
+  <text x="547" y="240" font-size="9" fill="#8b949e" text-anchor="middle">spec-native resources</text>
+
+  <text x="40" y="268" font-size="9.5" fill="#8b949e">…because of what you invented here</text>
+
+  <text x="340" y="306" font-size="11.5" fill="#c9d1d9" text-anchor="middle">every answer but the last one leaves something running</text>
+</svg>

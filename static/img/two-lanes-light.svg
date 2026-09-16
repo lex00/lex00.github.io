@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="372" fill="#ffffff"/>
+
+  <defs>
+    <g id="bucket" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round">
+      <path d="M4,7 L8,25 L20,25 L24,7 Z"/>
+      <ellipse cx="14" cy="7" rx="10" ry="3.2"/>
+    </g>
+    <g id="server" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round">
+      <rect x="3" y="5" width="22" height="18" rx="2.5"/>
+      <rect x="8.5" y="10" width="11" height="8" rx="1.2"/>
+      <path d="M8,5 L8,2 M20,5 L20,2 M8,23 L8,26 M20,23 L20,26"/>
+    </g>
+    <g id="fn" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round">
+      <rect x="3" y="4" width="22" height="20" rx="3"/>
+      <path d="M8.5,8.5 L11,8.5 L18.5,20" stroke-linecap="round"/>
+      <path d="M15,13.5 L9.5,20" stroke-linecap="round"/>
+    </g>
+    <marker id="ln" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="340" y="28" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">the same resources, through two lanes</text>
+
+  <!-- lane one: an invented abstraction in the middle of the road -->
+  <rect x="40" y="48" width="600" height="130" rx="8" fill="#f6f8fa" stroke="#8250df" stroke-width="1.5"/>
+  <text x="54" y="66" font-size="10.5" fill="#8250df">abstraction</text>
+
+  <g color="#1c2128"><use href="#bucket" x="66" y="99"/></g>
+  <g color="#1c2128"><use href="#server" x="106" y="99"/></g>
+  <g color="#1c2128"><use href="#fn" x="146" y="99"/></g>
+  <line x1="186" y1="113" x2="236" y2="113" stroke="#57606a" stroke-width="1.2" marker-end="url(#ln)"/>
+
+  <path d="M256,88 C270,68 296,74 314,64 C338,52 364,72 356,92 C350,107 370,116 360,132 C350,149 320,142 302,152 C280,164 252,150 249,130 C246,113 243,102 256,88 Z"
+        fill="#ede4ff" stroke="#8250df" stroke-width="1.6"/>
+  <text x="305" y="117" font-size="10" fill="#8250df" text-anchor="middle">a new type</text>
+
+  <line x1="376" y1="113" x2="398" y2="113" stroke="#57606a" stroke-width="1.2" marker-end="url(#ln)"/>
+
+  <rect x="404" y="106" width="26" height="12" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <rect x="440" y="96" width="26" height="12" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <rect x="440" y="120" width="26" height="12" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <rect x="478" y="104" width="26" height="12" rx="6" fill="#ffffff" stroke="#57606a" opacity="0.75"/>
+  <rect x="512" y="98" width="24" height="11" rx="5.5" fill="#ffffff" stroke="#57606a" opacity="0.45"/>
+
+  <ellipse cx="578" cy="88" rx="34" ry="9" fill="#ffffff" stroke="#57606a"/>
+  <path d="M544,88 L544,140 A34,9 0 0 0 612,140 L612,88" fill="#ffffff" stroke="#57606a" stroke-width="1"/>
+  <path d="M544,110 A34,9 0 0 0 612,110 M544,126 A34,9 0 0 0 612,126" fill="none" stroke="#d0d7de"/>
+  <text x="578" y="162" font-size="9" fill="#57606a" text-anchor="middle">rows in a store</text>
+
+  <!-- lane two: nothing in the middle, so what went in comes out -->
+  <rect x="40" y="198" width="600" height="130" rx="8" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="54" y="216" font-size="10.5" fill="#1a7f37">typed spec, 1:1</text>
+
+  <g color="#1c2128"><use href="#bucket" x="66" y="249"/></g>
+  <g color="#1c2128"><use href="#server" x="106" y="249"/></g>
+  <g color="#1c2128"><use href="#fn" x="146" y="249"/></g>
+
+  <path d="M196,240 L420,240 M196,286 L420,286" stroke="#1a7f37" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="308" y="268" font-size="10" fill="#1a7f37" text-anchor="middle">nothing in the way</text>
+
+  <line x1="424" y1="263" x2="452" y2="263" stroke="#57606a" stroke-width="1.2" marker-end="url(#ln)"/>
+
+  <g color="#1a7f37"><use href="#bucket" x="470" y="240" transform="rotate(-11 484 254)"/></g>
+  <g color="#1a7f37"><use href="#server" x="522" y="256" transform="rotate(9 536 270)"/></g>
+  <g color="#1a7f37"><use href="#fn" x="574" y="242" transform="rotate(-6 588 256)"/></g>
+  <text x="546" y="312" font-size="9" fill="#57606a" text-anchor="middle">the same resources, still themselves</text>
+
+  <text x="340" y="356" font-size="11.5" fill="#1c2128" text-anchor="middle">one lane hands you rows, the other hands back what you declared</text>
+</svg>
