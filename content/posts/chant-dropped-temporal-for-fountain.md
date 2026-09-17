@@ -1,6 +1,7 @@
 ---
 title: "chant dropped Temporal for fountain"
 date: 2026-09-17
+featured_image: "img/same-ball.svg"
 draft: false
 ---
 
