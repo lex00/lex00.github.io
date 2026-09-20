@@ -9,17 +9,17 @@ A state file does three jobs.
 
 It says which live resource an address refers to. It holds values the cloud has nowhere to put. And it records that an effect happened.
 
-Those got bundled because one file happened to do all of them. Bundling is what turns persistence into a permission boundary and a secret and a thing to lock.
+Those got bundled because one file happened to do all of them. Bundling is what turns persistence into one permission boundary and a thing to lock.
 
-Take them apart and each goes somewhere AWS already has. Identity becomes two tags on the resource. Values go in a record store. Effects get a receipt you declare, so the plan shows the migration coming before anything fires.
+Take them apart and each goes somewhere AWS already has. Identity becomes two tags on the resource. Values go in a record store, which holds secrets and is guarded like one. Effects get a receipt you declare, so the plan shows the migration coming before anything fires.
 
 That is [choudoufu](https://intentius.io/choudoufu/), an OpenTofu fork I have been building.
 
 ## No lock to manage
 
-No state file means no lock table to provision, permission, or force open.
+The state file is now a cache on the machine that ran, so there is no lock table to provision, permission, or force open.
 
-Concurrent runs settle at the API instead. Two creates of the same named resource resolve on the cloud's uniqueness constraint, and the loser re-plans clean.
+Concurrent runs settle elsewhere. Two creates of the same named resource resolve on the cloud's uniqueness constraint, a record write only lands if nobody changed that record first, and the loser re-plans clean.
 
 ## One ABAC policy for every team
 
@@ -36,6 +36,8 @@ Ownership is a tag derived from the configuration address, so IAM can read it.
 One policy covers every team, and onboarding is a session tag rather than a new policy. The same shape takes `aws:CurrentTime` for a change window, or `aws:MultiFactorAuthPresent` to touch production.
 
 You could always write conditions like that. What you could not do is trust the tag. `default_tags` misses types that take none and modules that override them. Nothing checks it and stock OpenTofu never reads tags back anyway.
+
+Because a plan reads the markers live, handing an estate to another team is a policy change, and a rename is a tag rewrite.
 
 ---
 

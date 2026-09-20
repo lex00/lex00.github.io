@@ -1,5 +1,5 @@
 ---
-title: "Tofu tastes better with identity hooks"
+title: "Tofu tastes better with live markers"
 date: 2026-08-23
 draft: false
 ---
@@ -15,15 +15,15 @@ tofu-estate  = prod-networking
 tofu-address = aws_vpc.main
 ```
 
-choudoufu treats these tags as hooks at plan time.
+choudoufu reads these tags at plan time.
 
 ## What makes a tag a live marker?
 
-Moving identity off a private ledger and onto the resource is the first step. choudoufu also handles this at create time, leaving a newly created resource properly marked. That behavior on create and on plan time together makes a tag into an authoritative marker.
+Moving identity off a private ledger and onto the resource is the first step. choudoufu also handles this at create time, leaving a newly created resource properly marked. Writing on create and reading on plan together make a tag into a marker the plan can trust.
 
 ## Migration
 
-A central policy where resources can be migrated with a simple tag change requires cooperation from the tool you use as well. Because choudoufu plans read the hooks live, you pick up the latest ownership markers.
+A central policy where resources can be migrated with a simple tag change requires cooperation from the tool you use as well. Because choudoufu plans read the markers live, you pick up the latest ownership.
 
 This allows both migration and renaming to be handled with a tag, instead of a ledger edit. Handing a whole estate to another team becomes a simple change in a central IAM policy.
 

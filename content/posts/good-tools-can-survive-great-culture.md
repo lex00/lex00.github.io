@@ -35,7 +35,7 @@ Tools that give us maximum leverage over identity and ownership are a good start
 
 ## Read more
 
-- [Tofu tastes better with identity hooks](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
+- [Tofu tastes better with live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
 - [An entire industry exists to fix Terraform](https://lex00.github.io/posts/fix-terraform/)
 - [The revolving door of authoritative state](https://lex00.github.io/posts/the-revolving-door-of-authoritative-state/)
 - [Your infra database is a road to hell](https://lex00.github.io/posts/your-infra-database-is-a-road-to-hell/)

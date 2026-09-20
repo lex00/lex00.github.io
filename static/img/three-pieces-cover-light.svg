@@ -44,7 +44,7 @@
 <rect x="644" y="345" width="572" height="108" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
 <circle cx="682" cy="399" r="7" fill="#5b7fe8"/>
 <text x="708" y="391" font-size="25" font-weight="700" fill="#24292f">A record store</text>
-<text x="708" y="423" font-size="19" fill="#57606a">Parameter Store, S3, or a directory</text>
+<text x="708" y="423" font-size="19" fill="#57606a">a directory, S3, or cluster Secrets</text>
 
 <rect x="644" y="494" width="572" height="108" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
 <circle cx="682" cy="548" r="7" fill="#5b7fe8"/>

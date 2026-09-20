@@ -5,13 +5,13 @@ featured_image: "img/this-is-choudoufu.jpg"
 draft: false
 ---
 
-[choudoufu](https://intentius.io/choudoufu/docs/) is a fork of OpenTofu with [identity hooks](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/).
+[choudoufu](https://intentius.io/choudoufu/docs/) is a fork of OpenTofu with [live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/).
 
 This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, and how it could have gone differently if it wasn't held back by state.
 
 ## choudoufu writes ownership on the resource itself
 
-choudoufu adopts by stamping while Terraform adopts by fixing resolution in state. Two tags on the resource, read live at plan time. That's the whole trick of [identity hooks](/posts/tofu-tastes-better-with-identity-hooks/).
+choudoufu adopts by stamping while Terraform adopts by fixing resolution in state. Two tags on the resource, read live at plan time. That's the whole trick of [live markers](/posts/tofu-tastes-better-with-identity-hooks/).
 
 ![The state world translated to the tag world](/img/cursor-migration/translation.svg)
 
@@ -61,7 +61,7 @@ The estate was generated, so it says nothing about real world HCL. The timeline 
 
 ## Read more
 
-- [Tofu tastes better with identity hooks](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
+- [Tofu tastes better with live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
 - [Terraform state has three pieces](https://lex00.github.io/posts/terraform-state-has-three-pieces/)
 - [Take a whiff of choudoufu](https://lex00.github.io/posts/take-a-whiff-of-choudoufu/)
 - [The revolving door of authoritative state](https://lex00.github.io/posts/the-revolving-door-of-authoritative-state/)
