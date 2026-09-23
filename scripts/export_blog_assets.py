@@ -51,6 +51,9 @@ LIGHT = {
     "#1f6feb": "#0969da",  # marker tag, darker on white
     "#7cc2ff": "#ffffff",  # chant's stamp label, white on the dark mount
     "#7fe888": "#ffffff",  # choudoufu's, likewise - the mount stays dark
+    "#ffa657": "#bc4c00",  # AWS orange pills
+    "#bc8cff": "#6639ba",  # schema purple
+    "#ff7b72": "#cf222e",  # reconciler red
 }
 
 

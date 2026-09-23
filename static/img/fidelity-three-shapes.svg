@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="330" fill="#0d1117"/>
+
+  <defs>
+    <path id="cloud" d="M9,21 H30 A6,6 0 0 0 30,9 A8.5,8.5 0 0 0 14,6.5 A7.5,7.5 0 0 0 9,21 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    <g id="doc" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M3,2 H15 L21,8 V26 H3 Z"/><path d="M15,2 V8 H21"/>
+      <path d="M7,13 H17 M7,17 H17 M7,21 H13" stroke-width="1.2"/>
+    </g>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#8b949e"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#ff7b72"/>
+    </marker>
+  </defs>
+
+  <!-- row 1: CDK L1, AWS only -->
+  <g transform="translate(0,22)">
+    <rect x="24" y="14" width="104" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
+    <text x="76" y="31" font-size="11" fill="#c9d1d9" text-anchor="middle">CDK L1</text>
+
+    <g transform="translate(160,8)" color="#ffa657"><use href="#cloud"/></g>
+    <text x="180" y="52" font-size="9" fill="#ffa657" text-anchor="middle">AWS</text>
+
+    <path d="M206,27 H236" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+
+    <rect x="246" y="14" width="150" height="26" rx="13" fill="#ffa657"/>
+    <text x="321" y="31" font-size="11" fill="#0d1117" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace">AWS::EC2::Subnet</text>
+
+    <path d="M406,27 H436" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <g transform="translate(446,13)" color="#ffa657"><use href="#doc"/></g>
+    <text x="478" y="31" font-size="10" fill="#8b949e">template</text>
+
+    <text x="640" y="31" font-size="10" fill="#8b949e" text-anchor="end">one cloud</text>
+  </g>
+
+  <line x1="24" y1="92" x2="656" y2="92" stroke="#30363d"/>
+
+  <!-- row 2: typed config languages, three clouds flattened into one schema through a reconciler -->
+  <g transform="translate(0,108)">
+    <rect x="14" y="30" width="124" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
+    <text x="76" y="47" font-size="10.5" fill="#c9d1d9" text-anchor="middle">Typed config language</text>
+
+    <g transform="translate(160,-4)" color="#ffa657"><use href="#cloud"/></g>
+    <g transform="translate(160,30)" color="#79c0ff"><use href="#cloud"/></g>
+    <g transform="translate(160,64)" color="#7ee787"><use href="#cloud"/></g>
+
+    <path d="M206,10 C226,10 226,43 240,43" stroke="#ffa657" stroke-width="1.4" fill="none"/>
+    <path d="M206,43 H240" stroke="#79c0ff" stroke-width="1.4" fill="none"/>
+    <path d="M206,76 C226,76 226,43 240,43" stroke="#7ee787" stroke-width="1.4" fill="none"/>
+
+    <!-- the flat shape: every cloud pressed into one bar -->
+    <rect x="246" y="38" width="150" height="10" rx="2" fill="#bc8cff"/>
+    <text x="321" y="30" font-size="10" fill="#bc8cff" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace">subnet.schema</text>
+
+    <path d="M406,43 H436" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+
+    <!-- reconciler ring -->
+    <g transform="translate(470,43)">
+      <circle r="22" fill="#161b22" stroke="#ff7b72" stroke-width="1.6"/>
+      <path d="M-13,-8 A15,15 0 0 1 13,-8" fill="none" stroke="#ff7b72" stroke-width="2" marker-end="url(#arr-red)"/>
+      <path d="M13,8 A15,15 0 0 1 -13,8" fill="none" stroke="#ff7b72" stroke-width="2" marker-end="url(#arr-red)"/>
+    </g>
+    <text x="470" y="82" font-size="10" fill="#ff7b72" text-anchor="middle">reconciler</text>
+
+    <path d="M502,43 H532" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <g transform="translate(542,29)" color="#8b949e"><use href="#cloud"/></g>
+
+    <!-- and back again -->
+    <path d="M562,60 V92 H321 V54" stroke="#ff7b72" stroke-width="1.2" stroke-dasharray="3 3" fill="none" marker-end="url(#arr-red)"/>
+
+    <text x="640" y="47" font-size="10" fill="#8b949e" text-anchor="end">one shape</text>
+  </g>
+
+  <line x1="24" y1="214" x2="656" y2="214" stroke="#30363d"/>
+
+  <!-- row 3: TaD, three clouds, three shapes, straight through -->
+  <g transform="translate(0,230)">
+    <rect x="14" y="30" width="124" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
+    <text x="76" y="47" font-size="10.5" fill="#c9d1d9" text-anchor="middle">TypeScript as Data</text>
+
+    <g transform="translate(160,-4)" color="#ffa657"><use href="#cloud"/></g>
+    <g transform="translate(160,30)" color="#79c0ff"><use href="#cloud"/></g>
+    <g transform="translate(160,64)" color="#7ee787"><use href="#cloud"/></g>
+
+    <path d="M206,10 H236" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <path d="M206,43 H236" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <path d="M206,76 H236" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+
+    <rect x="246" y="-1" width="190" height="22" rx="11" fill="#ffa657"/>
+    <text x="341" y="14" font-size="10.5" fill="#0d1117" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace">AWS::EC2::Subnet</text>
+    <rect x="246" y="32" width="190" height="22" rx="11" fill="#79c0ff"/>
+    <text x="341" y="47" font-size="10.5" fill="#0d1117" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace">Microsoft.Network/subnets</text>
+    <rect x="246" y="65" width="190" height="22" rx="11" fill="#7ee787"/>
+    <text x="341" y="80" font-size="10.5" fill="#0d1117" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace">compute.v1.subnetwork</text>
+
+    <path d="M446,10 H476" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <path d="M446,43 H476" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+    <path d="M446,76 H476" stroke="#8b949e" stroke-width="1.4" marker-end="url(#arr)"/>
+
+    <g transform="translate(486,-4)" color="#ffa657"><use href="#doc"/></g>
+    <g transform="translate(486,29)" color="#79c0ff"><use href="#doc"/></g>
+    <g transform="translate(486,62)" color="#7ee787"><use href="#doc"/></g>
+
+    <text x="640" y="47" font-size="10" fill="#8b949e" text-anchor="end">every shape</text>
+  </g>
+</svg>
