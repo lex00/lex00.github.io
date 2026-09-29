@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" style="max-width:660px;display:block;margin:0 auto" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="680" height="340" fill="#ffffff"/>
+
+  <defs>
+    <g id="doc" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M3,2 H15 L21,8 V26 H3 Z"/><path d="M15,2 V8 H21"/>
+      <path d="M7,13 H17 M7,17 H17 M7,21 H13" stroke-width="1.2"/>
+    </g>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="28" font-size="11" fill="#1a7f37">provenance as files in git</text>
+
+  <!-- the repo, carrying its own why -->
+  <rect x="40" y="40" width="600" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="56" y="60" font-size="10" fill="#57606a">your repo</text>
+
+  <text x="60" y="89" font-size="11" fill="#1c2128" font-family="SFMono-Regular, Menlo, Consolas, monospace">src/</text>
+  <g transform="translate(200,70) scale(0.8)" color="#57606a"><use href="#doc"/></g>
+  <g transform="translate(290,70) scale(0.8)" color="#57606a"><use href="#doc"/></g>
+  <g transform="translate(380,70) scale(0.8)" color="#57606a"><use href="#doc"/></g>
+  <g transform="translate(470,70) scale(0.8)" color="#57606a"><use href="#doc"/></g>
+  <g transform="translate(560,70) scale(0.8)" color="#57606a"><use href="#doc"/></g>
+
+  <text x="60" y="125" font-size="11" fill="#1c2128" font-family="SFMono-Regular, Menlo, Consolas, monospace">work/</text>
+  <g transform="translate(290,106) scale(0.8)" color="#6639ba"><use href="#doc"/></g>
+  <g transform="translate(470,106) scale(0.8)" color="#6639ba"><use href="#doc"/></g>
+
+  <text x="60" y="161" font-size="11" fill="#1c2128" font-family="SFMono-Regular, Menlo, Consolas, monospace">decisions/</text>
+  <g transform="translate(200,142) scale(0.8)" color="#0550ae"><use href="#doc"/></g>
+  <g transform="translate(380,142) scale(0.8)" color="#0550ae"><use href="#doc"/></g>
+  <g transform="translate(560,142) scale(0.8)" color="#0550ae"><use href="#doc"/></g>
+
+  <!-- history, each commit naming the record it carries out -->
+  <text x="40" y="244" font-size="10" fill="#57606a" font-family="SFMono-Regular, Menlo, Consolas, monospace">main</text>
+  <line x1="72" y1="240" x2="640" y2="240" stroke="#d0d7de" stroke-width="2"/>
+  <path d="M210,232 V166" stroke="#0550ae" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <path d="M390,232 V166" stroke="#0550ae" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <path d="M570,232 V166" stroke="#0550ae" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="120" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="210" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="300" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="390" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="480" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="570" cy="240" r="7" fill="#1a7f37"/>
+  <circle cx="620" cy="240" r="7" fill="#1a7f37"/>
+
+  <!-- the same commits before a rebase moved them; the link held -->
+  <circle cx="360" cy="280" r="7" fill="none" stroke="#8c959f" stroke-dasharray="2 2"/>
+  <circle cx="540" cy="280" r="7" fill="none" stroke="#8c959f" stroke-dasharray="2 2"/>
+  <path d="M365,273 Q378,258 386,249" fill="none" stroke="#57606a" stroke-width="1.2" marker-end="url(#arr)"/>
+  <path d="M545,273 Q558,258 566,249" fill="none" stroke="#57606a" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="584" y="284" font-size="10" fill="#57606a">rebased</text>
+
+  <!-- the workflow you already have -->
+  <rect x="190" y="304" width="62" height="22" rx="11" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="221" y="319" font-size="10.5" fill="#1a7f37" text-anchor="middle">review</text>
+  <rect x="260" y="304" width="40" height="22" rx="11" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="280" y="319" font-size="10.5" fill="#1a7f37" text-anchor="middle">CI</text>
+  <rect x="308" y="304" width="56" height="22" rx="11" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="336" y="319" font-size="10.5" fill="#1a7f37" text-anchor="middle">forks</text>
+  <rect x="372" y="304" width="118" height="22" rx="11" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="431" y="319" font-size="10.5" fill="#1a7f37" text-anchor="middle">branch protection</text>
+</svg>
