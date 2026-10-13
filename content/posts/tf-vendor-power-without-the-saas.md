@@ -13,22 +13,11 @@ Terraform vendors sell plan and apply on pull requests, approvals, policy, drift
 
 ![What you'd pay a Terraform SaaS for, and the terragucci page that does each one in your own CI](/img/tf-vendor-power-saas-table.png)
 
-- Plans on pull requests, applies after approval: [One grouped plan note, then applies in waves](https://intentius.io/terragucci/getting-started/)
-- Policy: [Rego checks in the plan note, and recorded overrides](https://intentius.io/terragucci/guides/write-a-policy/)
-- Drift detection: [Every root planned on a schedule, one grouped report](https://intentius.io/terragucci/guides/turn-on-drift-checks/)
-- Cost estimates: [Infracost in the plan note, on your own key](https://intentius.io/terragucci/guides/estimate-cost/)
-- An audit trail: [Every approval, apply and override as JSON lines in your bucket](https://intentius.io/terragucci/reference/audit-trail/)
-- One view of every project: [A page in your bucket with every project's latest plan and drift](https://intentius.io/terragucci/guides/see-every-project/)
-- Approvals in Slack or Teams: [Through a relay you run in your own cloud](https://intentius.io/terragucci/guides/approve-from-chat/)
-- Holding your credentials: [Nobody else does: separate plan and apply roles over OIDC, in your CI](https://intentius.io/terragucci/reference/threat-model/)
-- Scale: [1,361 roots and 10,069 resources across 12 repos](https://intentius.io/terragucci/reference/scale/)
-- Moving off it: [HCP Terraform, Scalr and OTF](https://intentius.io/terragucci/guides/coming-from-hcp-terraform-scalr-or-otf/), [Spacelift and env zero](https://intentius.io/terragucci/guides/coming-from-spacelift-or-env-zero/), [Atlantis and OpenTaco](https://intentius.io/terragucci/guides/coming-from-atlantis-or-opentaco/)
-
 ## State and locking
 
 ![State and locking, terragucci with stock Terraform or OpenTofu against terragucci with choudoufu](/img/tf-vendor-power-state-table.png)
 
-[The detail](#the-detail) below links every cell to its doc.
+[Sources](#sources) at the end links every cell to its doc.
 
 ## Kill an apply
 
@@ -42,29 +31,16 @@ Terraform vendors sell plan and apply on pull requests, approvals, policy, drift
 
 ![Each state and locking claim in full, for stock Terraform or OpenTofu and for choudoufu](/img/tf-vendor-power-detail-table.png)
 
-- Resource-level locking: [applies kept apart per root](https://intentius.io/terragucci/concepts/locking-and-staleness/#terragucci-layers), [a wave holds each resource its plan changes](https://intentius.io/terragucci/concepts/locking-and-staleness/#two-applies-of-one-estate)
-- Disjoint changes apply in parallel: [Different roots side by side](https://intentius.io/terragucci/reference/pipeline/#applies-side-by-side), [Inside one estate too](https://intentius.io/terragucci/concepts/locking-and-staleness/#two-applies-of-one-estate)
-- Plans take no lock: [Pull request plans and drift runs](https://intentius.io/terragucci/concepts/locking-and-staleness/#lock-waits), [Every plan](https://intentius.io/choudoufu/docs/claims/no-self-managed-locks/)
-- A conflicting apply is refused, naming the other: [A held root is refused with the holder named](https://intentius.io/terragucci/concepts/locking-and-staleness/#pull-request-locks), [a stale plan is refused](https://intentius.io/terragucci/concepts/locking-and-staleness/#stale-plans), [only when one of its own changes moved](https://intentius.io/choudoufu/docs/claims/apply-what-was-approved/)
-- One saved plan to review: [One grouped note for N plans](https://intentius.io/terragucci/concepts/why-plans-are-grouped/), [the approval bound to their digest](https://intentius.io/terragucci/concepts/waves-and-approvals/#approval-binding)
-- Multi-state transaction: [a wave whose approved plans moved applies nothing](https://intentius.io/terragucci/concepts/locking-and-staleness/#stale-plans)
-- A killed apply: [The state lock stays held until `terragucci unlock-state` frees it after an approval](https://intentius.io/terragucci/guides/release-a-state-lock/), [a resource created after the last state write gets created twice](https://intentius.io/choudoufu/docs/claims/recovery-is-a-rerun/), [Nothing to release](https://intentius.io/choudoufu/docs/claims/no-self-managed-locks/), [the wave resumes under the same approval](https://intentius.io/terragucci/reference/pipeline/#stopped-applies)
-- Applies from outside the pipeline: [The state lock still serializes them](https://intentius.io/terragucci/concepts/locking-and-staleness/#stock-and-choudoufu), [Different resources both land; on one record, one lands and the other fails naming it](https://intentius.io/choudoufu/docs/model/concurrency/#the-record-store-is-not-locked-either)
-- Scoped permissions: [Per state file and role](https://intentius.io/terragucci/guides/scope-state-access/), [A role scoped by the estate tag](https://intentius.io/choudoufu/docs/use/governance/scope-a-role/)
-- Query your infrastructure: [SQL over every run's reports](https://intentius.io/terragucci/guides/query-with-sql/), [a read-only MCP server](https://intentius.io/terragucci/guides/agent-read-over-mcp/), [any cloud tool can list an estate by its tag](https://intentius.io/choudoufu/docs/claims/identity-is-a-tag/)
-- Nothing mocked: [a plan that reads `mock_outputs` fails its wave](https://intentius.io/terragucci/guides/use-terragrunt/#later-layers), [pull requests plan on the upstream's planned outputs](https://intentius.io/terragucci/concepts/waves-and-approvals/#linked-roots), [an output only known after apply is refused](https://intentius.io/choudoufu/docs/use/cross-estate/)
-- A plan walks only what the change touches: [only the roots a change reaches are planned](https://intentius.io/terragucci/concepts/how-it-works/)
-
 Most rows are backed by a smoke claim named on the [locking page](https://intentius.io/terragucci/concepts/locking-and-staleness/). The [glossary](https://intentius.io/terragucci/concepts/glossary/) defines wave, root and forge.
 
 ## Prove it to yourself with your own agent
 
 {{< agent-prompt >}}
-For each row of "What you'd pay a SaaS for", open the linked page and say whether it does what the row says.
+For each row of "What you'd pay a SaaS for", open the page listed for it under Sources and say whether it does what the row says.
 
 For each row of "The detail", give three verdicts, each with a source link:
 
-- terragucci: does the linked doc section support the cell as written? Find the smoke claim behind it in https://github.com/INTENTIUS/terragucci (stack/smoke.sh, docs-site/src/data/smoke.json) and say whether its latest result passes.
+- terragucci: does the doc listed for it under Sources support the cell as written? Find the smoke claim behind it in https://github.com/INTENTIUS/terragucci (stack/smoke.sh, docs-site/src/data/smoke.json) and say whether its latest result passes.
 - choudoufu: the same, in https://github.com/INTENTIUS/choudoufu (live/smoke/claims/).
 - The industry, as of today: which Terraform state backends, TACOs and hosted Terraform platforms document the same capability? Quote their current docs and give the date you read them.
 
@@ -81,3 +57,33 @@ Then run the post's "Kill an apply" test if you have Docker: against a local AWS
 - [choudoufu: concurrency](https://intentius.io/choudoufu/docs/model/concurrency/)
 - [Tofu tastes better with live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
 - [choudoufu cuts terralith optimization time in half](https://lex00.github.io/posts/choudoufu-cuts-terralith-optimization-time-in-half/)
+
+## Sources
+
+What you'd pay a SaaS for:
+
+- Plans on pull requests, applies after approval: [One grouped plan note, then applies in waves](https://intentius.io/terragucci/getting-started/)
+- Policy: [Rego checks in the plan note, and recorded overrides](https://intentius.io/terragucci/guides/write-a-policy/)
+- Drift detection: [Every root planned on a schedule, one grouped report](https://intentius.io/terragucci/guides/turn-on-drift-checks/)
+- Cost estimates: [Infracost in the plan note, on your own key](https://intentius.io/terragucci/guides/estimate-cost/)
+- An audit trail: [Every approval, apply and override as JSON lines in your bucket](https://intentius.io/terragucci/reference/audit-trail/)
+- One view of every project: [A page in your bucket with every project's latest plan and drift](https://intentius.io/terragucci/guides/see-every-project/)
+- Approvals in Slack or Teams: [Through a relay you run in your own cloud](https://intentius.io/terragucci/guides/approve-from-chat/)
+- Holding your credentials: [Nobody else does: separate plan and apply roles over OIDC, in your CI](https://intentius.io/terragucci/reference/threat-model/)
+- Scale: [1,361 roots and 10,069 resources across 12 repos](https://intentius.io/terragucci/reference/scale/)
+- Moving off it: [HCP Terraform, Scalr and OTF](https://intentius.io/terragucci/guides/coming-from-hcp-terraform-scalr-or-otf/), [Spacelift and env zero](https://intentius.io/terragucci/guides/coming-from-spacelift-or-env-zero/), [Atlantis and OpenTaco](https://intentius.io/terragucci/guides/coming-from-atlantis-or-opentaco/)
+
+State and locking, and the detail:
+
+- Resource-level locking: [applies kept apart per root](https://intentius.io/terragucci/concepts/locking-and-staleness/#terragucci-layers), [a wave holds each resource its plan changes](https://intentius.io/terragucci/concepts/locking-and-staleness/#two-applies-of-one-estate)
+- Disjoint changes apply in parallel: [Different roots side by side](https://intentius.io/terragucci/reference/pipeline/#applies-side-by-side), [Inside one estate too](https://intentius.io/terragucci/concepts/locking-and-staleness/#two-applies-of-one-estate)
+- Plans take no lock: [Pull request plans and drift runs](https://intentius.io/terragucci/concepts/locking-and-staleness/#lock-waits), [Every plan](https://intentius.io/choudoufu/docs/claims/no-self-managed-locks/)
+- A conflicting apply is refused, naming the other: [A held root is refused with the holder named](https://intentius.io/terragucci/concepts/locking-and-staleness/#pull-request-locks), [a stale plan is refused](https://intentius.io/terragucci/concepts/locking-and-staleness/#stale-plans), [only when one of its own changes moved](https://intentius.io/choudoufu/docs/claims/apply-what-was-approved/)
+- One saved plan to review: [One grouped note for N plans](https://intentius.io/terragucci/concepts/why-plans-are-grouped/), [the approval bound to their digest](https://intentius.io/terragucci/concepts/waves-and-approvals/#approval-binding)
+- Multi-state transaction: [a wave whose approved plans moved applies nothing](https://intentius.io/terragucci/concepts/locking-and-staleness/#stale-plans)
+- A killed apply: [The state lock stays held until `terragucci unlock-state` frees it after an approval](https://intentius.io/terragucci/guides/release-a-state-lock/), [a resource created after the last state write gets created twice](https://intentius.io/choudoufu/docs/claims/recovery-is-a-rerun/), [Nothing to release](https://intentius.io/choudoufu/docs/claims/no-self-managed-locks/), [the wave resumes under the same approval](https://intentius.io/terragucci/reference/pipeline/#stopped-applies)
+- Applies from outside the pipeline: [The state lock still serializes them](https://intentius.io/terragucci/concepts/locking-and-staleness/#stock-and-choudoufu), [Different resources both land; on one record, one lands and the other fails naming it](https://intentius.io/choudoufu/docs/model/concurrency/#the-record-store-is-not-locked-either)
+- Scoped permissions: [Per state file and role](https://intentius.io/terragucci/guides/scope-state-access/), [A role scoped by the estate tag](https://intentius.io/choudoufu/docs/use/governance/scope-a-role/)
+- Query your infrastructure: [SQL over every run's reports](https://intentius.io/terragucci/guides/query-with-sql/), [a read-only MCP server](https://intentius.io/terragucci/guides/agent-read-over-mcp/), [any cloud tool can list an estate by its tag](https://intentius.io/choudoufu/docs/claims/identity-is-a-tag/)
+- Nothing mocked: [a plan that reads `mock_outputs` fails its wave](https://intentius.io/terragucci/guides/use-terragrunt/#later-layers), [pull requests plan on the upstream's planned outputs](https://intentius.io/terragucci/concepts/waves-and-approvals/#linked-roots), [an output only known after apply is refused](https://intentius.io/choudoufu/docs/use/cross-estate/)
+- A plan walks only what the change touches: [only the roots a change reaches are planned](https://intentius.io/terragucci/concepts/how-it-works/)
