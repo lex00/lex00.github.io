@@ -546,39 +546,147 @@ header nav {
   color: #8b949e;
 }
 
-/* Tables */
+/* Tables
+   Prose-heavy comparison tables. The first column names the row; the
+   rest share the remaining width. Tables stay inside the prose column;
+   narrow screens stack each row into a card. */
+.table-wrap {
+  /* As wide as the content needs, never past the prose column */
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.75rem 0;
+  border: 1px solid #30363d;
+  border-radius: var(--radius);
+  background: #0f141a;
+  overflow: clip; /* not hidden: hidden would break the sticky header */
+}
+
 .post-content table {
   border-collapse: collapse;
-  margin: 1.5rem 0;
-  width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.55;
 }
 
-.post-content th,
-.post-content td {
-  padding: 0.5rem 1.25rem;
-  border-bottom: 1px solid #30363d;
-  text-align: left;
-}
-
-.post-content th {
+.post-content thead th {
+  position: sticky;
+  top: 0;
+  background: #161b22;
   color: #8b949e;
+  font-size: 0.7rem;
   font-weight: 600;
-  white-space: nowrap;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #30363d;
 }
 
-/* Score columns: keep the two tool columns apart and centred */
-.post-content th:nth-child(n+3),
-.post-content td:nth-child(n+3) {
-  padding-left: 2.25rem;
-  text-align: center;
-  white-space: nowrap;
+.post-content thead th:first-child {
+  min-width: 11rem;
 }
 
-/* Roman numeral column stays tight */
-.post-content th:first-child,
-.post-content td:first-child {
-  padding-right: 0.5rem;
-  color: #8b949e;
+.post-content tbody th,
+.post-content tbody td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #21262d;
+}
+
+.post-content tbody tr:last-child th,
+.post-content tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.post-content tbody th {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.post-content tbody td {
+  color: #c9d1d9;
+}
+
+/* The last column is the one the post is arguing for */
+.post-content tbody td:last-child {
+  background: rgba(162, 228, 54, 0.04);
+  border-left: 1px solid #21262d;
+}
+
+.post-content thead th:last-child {
+  color: var(--primary);
+  border-left: 1px solid #21262d;
+}
+
+.post-content tbody tr:hover th,
+.post-content tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.post-content table code {
+  font-size: 0.75rem;
+  padding: 0.05rem 0.3rem;
+  border-radius: 0.25rem;
+  background: #21262d;
+}
+
+@media (max-width: 720px) {
+  .table-wrap {
+    width: auto;
+    margin: 1.5rem 0;
+    border: 0;
+    background: none;
+  }
+
+  .post-content table,
+  .post-content tbody,
+  .post-content tbody tr,
+  .post-content tbody th,
+  .post-content tbody td {
+    display: block;
+    width: 100%;
+  }
+
+  .post-content thead {
+    display: none;
+  }
+
+  .post-content tbody tr {
+    margin-bottom: 0.9rem;
+    border: 1px solid #30363d;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .post-content tbody th {
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .post-content tbody td,
+  .post-content tbody td:last-child {
+    border-left: 0;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .post-content tbody tr td:last-child {
+    border-bottom: 0;
+  }
+
+  .post-content tbody td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #8b949e;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .post-content tbody td:last-child::before {
+    color: var(--primary);
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -764,6 +872,55 @@ a.card:hover {
   color: #8b949e;
   font-size: 0.78rem;
   line-height: 1.6;
+}
+
+/* A prompt for the reader's agent */
+.agent-prompt {
+  margin: 1.5rem 0;
+  border: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.agent-prompt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0.6rem 0.45rem 1rem;
+  border-bottom: var(--border);
+  background: #161b22;
+}
+
+.agent-prompt-meta { color: #8b949e; font-size: 0.75rem; }
+
+.agent-prompt-copy {
+  font: inherit;
+  font-size: 0.75rem;
+  color: var(--dark);
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: var(--radius);
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+}
+
+.agent-prompt-copy:hover { border-color: var(--primary); color: var(--primary); }
+
+.post-content .agent-prompt-body {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem;
+  background: none;
+}
+
+.agent-prompt-body code {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #c9d1d9;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 520px) {

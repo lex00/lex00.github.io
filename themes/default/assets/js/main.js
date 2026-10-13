@@ -43,3 +43,19 @@
     if (e.target === btn) stage.classList.remove('is-firing');
   });
 })();
+
+// Copy buttons on agent prompts. Reads the text from the block it sits in,
+// so the prompt is written once, in the post.
+(function () {
+  document.querySelectorAll('[data-copy-target]').forEach(function (btn) {
+    var block = btn.closest('.agent-prompt');
+    var code = block && block.querySelector('code');
+    if (!code || !navigator.clipboard) { btn.hidden = true; return; }
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(code.textContent).then(function () {
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+      }, function () {});
+    });
+  });
+})();

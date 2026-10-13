@@ -6,7 +6,7 @@ draft: false
 
 This is what an industry of coping mechanisms looks like. One attempt to leave Terraform's model outright was [Winglang](https://www.winglang.io/) which compiled a new language down to Terraform and shut down in 2025. When Terraform's own license changed, the community forked the whole thing rather than let it go. The tool is too entrenched to abandon, so the market lines up to patch it.
 
-{{< inline-svg src="industry-matrix.svg" alt="A matrix of the tools built around Terraform with a column for whether each keeps its own state store. In the fix industry Terragrunt wraps it while TerraConstructs puts a typed object model over it. Atlantis and Spacelift and env0 run it for you. Terraform Cloud hosts it for you and gives you apply. Stategraph keeps state as a dependency graph and compliance.tf adds rules on the modules. Every one keeps its own store. chant sits apart because it drives no raw API and reads the substrate so it keeps no store of its own." >}}
+{{< inline-svg src="industry-matrix.svg" alt="A matrix of the tools built around Terraform with a column for whether each keeps its own state store. In the fix industry Terragrunt wraps it while TerraConstructs puts a typed object model over it. Atlantis and Spacelift and env0 run it for you. Terraform Cloud hosts it for you and gives you apply. compliance.tf adds rules on the modules. Every one keeps its own store. chant sits apart because it drives no raw API and reads the substrate so it keeps no store of its own." >}}
 
 The last column is the point. State's real job is to bind the name you wrote, `MyResource`, to the opaque id the provider hands back, so the next run knows the two are the same thing. Terraform drives a raw API and catches that id and makes you hold on to it. chant drives no raw API. It compiles to the platform's own spec, which keeps the binding itself, so there is no pair at all.
 
@@ -45,4 +45,4 @@ The cheapest state store is the one you never have to keep.
 - [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
 - [chant](https://intentius.io/chant/)
 
-This post mentioned [Terragrunt](https://terragrunt.gruntwork.io/) · [TerraConstructs](https://terraconstructs.dev/) · [Atlantis](https://www.runatlantis.io/) · [Spacelift](https://spacelift.io/) · [env0](https://www.env0.com/) · [Terraform Cloud](https://www.hashicorp.com/products/terraform) · [Stategraph](https://stategraph.com/) · [compliance.tf](https://compliance.tf/) · [Winglang](https://www.winglang.io/)
+This post mentioned [Terragrunt](https://terragrunt.gruntwork.io/) · [TerraConstructs](https://terraconstructs.dev/) · [Atlantis](https://www.runatlantis.io/) · [Spacelift](https://spacelift.io/) · [env0](https://www.env0.com/) · [Terraform Cloud](https://www.hashicorp.com/products/terraform) · [compliance.tf](https://compliance.tf/) · [Winglang](https://www.winglang.io/)

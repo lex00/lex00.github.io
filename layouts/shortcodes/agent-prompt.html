@@ -1,0 +1,18 @@
+{{- /*
+A prompt for the reader's coding agent, to check the post's claims. The
+first line points the agent at this page, so the slug can change freely.
+The copy button is wired in assets/js/main.js.
+
+@example:
+  {{< agent-prompt >}}
+  For each row of its table, ...
+  {{< /agent-prompt >}}
+*/ -}}
+{{- $prompt := printf "Read %s\n\n%s" .Page.Permalink (trim .Inner "\n") -}}
+<div class="agent-prompt">
+  <div class="agent-prompt-head">
+    <span class="agent-prompt-meta">Paste into a coding agent &middot; read only &middot; emulator only</span>
+    <button type="button" class="agent-prompt-copy" data-copy-target>Copy</button>
+  </div>
+  <pre class="agent-prompt-body"><code>{{ $prompt }}</code></pre>
+</div>
