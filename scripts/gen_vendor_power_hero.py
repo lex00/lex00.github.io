@@ -2,8 +2,10 @@
 """Draw the hero for tf-vendor-power-without-the-saas.
 
     python3 scripts/gen_vendor_power_hero.py
+    python3 scripts/gen_vendor_power_hero.py --light OUT.svg
 
-Writes static/img/tf-vendor-power-cover.svg: the TF state industry as a few
+Writes static/img/tf-vendor-power-cover.svg, or with --light a white version
+for LinkedIn to the path given: the TF state industry as a few
 pixel dinosaurs on the left, the terragucci taco on the right. The taco is
 the brand asset copied in, so it stays the real one; the dinosaurs are drawn
 on the same pixel grid so the two halves match.
@@ -12,6 +14,7 @@ on the same pixel grid so the two halves match.
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -22,8 +25,14 @@ W, H = 1280, 400
 GROUND = 344
 PX = 9  # one dinosaur pixel
 
-BG = "#0d1117"
-RULE = "#30363d"
+THEMES = {
+    "dark": dict(bg="#0d1117", rule="#30363d", left="#8b949e", right="#e6edf3",
+                 trex="#56634f", trex_s="#3f4a3a", bronto="#5b5f6a", bronto_s="#42454e",
+                 stego="#6a5a4a", stego_s="#4d4136", plates="#8a5a3c", eye="#c9d1d9"),
+    "light": dict(bg="#ffffff", rule="#d0d7de", left="#6e7781", right="#1f2328",
+                  trex="#6f8466", trex_s="#56684f", bronto="#7a808c", bronto_s="#5f6470",
+                  stego="#8c7560", stego_s="#6e5a48", plates="#b06f45", eye="#ffffff"),
+}
 
 # X body, S shade, P plates, O eye. Every sprite faces right, toward the taco.
 TREX = """
@@ -73,12 +82,14 @@ XX.XXXXXXXXXXXXXXXXX
 ....XX.XX..XX.XX....
 """
 
+
 # Muted, a little fossilised next to the taco.
-DINOS = [
-    (TREX, {"X": "#56634f", "S": "#3f4a3a", "O": "#c9d1d9"}),
-    (BRONTO, {"X": "#5b5f6a", "S": "#42454e", "O": "#c9d1d9"}),
-    (STEGO, {"X": "#6a5a4a", "S": "#4d4136", "P": "#8a5a3c", "O": "#c9d1d9"}),
-]
+def dinos(t: dict[str, str]) -> list[tuple[str, dict[str, str]]]:
+    return [
+        (TREX, {"X": t["trex"], "S": t["trex_s"], "O": t["eye"]}),
+        (BRONTO, {"X": t["bronto"], "S": t["bronto_s"], "O": t["eye"]}),
+        (STEGO, {"X": t["stego"], "S": t["stego_s"], "P": t["plates"], "O": t["eye"]}),
+    ]
 
 
 def sprite(art: str, palette: dict[str, str], x0: int) -> tuple[str, int]:
@@ -103,7 +114,8 @@ def taco(cx: int, scale: int) -> str:
     return f'<g transform="translate({x} {y}) scale({scale})" shape-rendering="crispEdges">{inner}</g>'
 
 
-def main() -> None:
+def render(t: dict[str, str]) -> str:
+    DINOS = dinos(t)
     gap = 28
     widths = [len(a.strip().splitlines()[0]) * PX for a, _ in DINOS]
     x = (W // 2 - (sum(widths) + gap * (len(DINOS) - 1))) // 2
@@ -113,14 +125,14 @@ def main() -> None:
         herd.append(rects)
         x += w + gap
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-  <rect width="{W}" height="{H}" fill="{BG}"/>
-  <line x1="{W // 2}" y1="40" x2="{W // 2}" y2="{H - 40}" stroke="{RULE}" stroke-width="2" stroke-dasharray="6 8"/>
-  <line x1="40" y1="{GROUND}" x2="{W // 2 - 40}" y2="{GROUND}" stroke="{RULE}" stroke-width="2"/>
-  <line x1="{W // 2 + 40}" y1="{GROUND}" x2="{W - 40}" y2="{GROUND}" stroke="{RULE}" stroke-width="2"/>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="{W}" height="{H}" fill="{t['bg']}"/>
+  <line x1="{W // 2}" y1="40" x2="{W // 2}" y2="{H - 40}" stroke="{t['rule']}" stroke-width="2" stroke-dasharray="6 8"/>
+  <line x1="40" y1="{GROUND}" x2="{W // 2 - 40}" y2="{GROUND}" stroke="{t['rule']}" stroke-width="2"/>
+  <line x1="{W // 2 + 40}" y1="{GROUND}" x2="{W - 40}" y2="{GROUND}" stroke="{t['rule']}" stroke-width="2"/>
 
-  <text x="{W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="#8b949e">The TF state industry</text>
-  <text x="{3 * W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="#e6edf3">Terragucci</text>
+  <text x="{W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="{t['left']}">The TF state industry</text>
+  <text x="{3 * W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="{t['right']}">Terragucci</text>
 
   <g shape-rendering="crispEdges">
     {chr(10).join("    " + h for h in herd)}
@@ -128,8 +140,16 @@ def main() -> None:
   {taco(3 * W // 4, 7)}
 </svg>
 '''
-    OUT.write_text(svg)
-    print(f"wrote {OUT.relative_to(ROOT)}")
+
+
+def main() -> None:
+    if sys.argv[1:2] == ["--light"]:
+        out = Path(sys.argv[2]).expanduser()
+        out.write_text(render(THEMES["light"]))
+    else:
+        out = OUT
+        out.write_text(render(THEMES["dark"]))
+    print(f"wrote {out}")
 
 
 if __name__ == "__main__":
