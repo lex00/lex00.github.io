@@ -2,10 +2,11 @@
 """Draw the hero for tf-vendor-power-without-the-saas.
 
     python3 scripts/gen_vendor_power_hero.py
-    python3 scripts/gen_vendor_power_hero.py --light OUT.svg
 
-Writes static/img/tf-vendor-power-cover.svg, or with --light a white version
-for LinkedIn to the path given: the TF state industry as a few
+Writes the post's banner, static/img/tf-vendor-power-cover.svg; its link
+preview at 1200x630, static/img/tf-vendor-power-share.png; and a white
+1200x630 version at 2x for a LinkedIn image post, cover-light.png in
+~/Documents/blogs/tf-vendor-power-without-the-saas/. The scene is the TF state industry as a few
 pixel dinosaurs on the left, the terragucci taco on the right. The taco is
 the brand asset copied in, so it stays the real one; the dinosaurs are drawn
 on the same pixel grid so the two halves match.
@@ -14,16 +15,24 @@ on the same pixel grid so the two halves match.
 from __future__ import annotations
 
 import re
-import sys
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TACO = Path.home() / "Documents/checkouts/intentius/terragucci/docs-site/public/brand/taco.svg"
 OUT = ROOT / "static/img/tf-vendor-power-cover.svg"
+SHARE = ROOT / "static/img/tf-vendor-power-share.png"
+BLOG = Path.home() / "Documents/blogs/tf-vendor-power-without-the-saas"
+CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-W, H = 1280, 400
-GROUND = 344
-PX = 9  # one dinosaur pixel
+#: Canvas, ground line, headline baseline and size, dinosaur pixel, taco scale.
+#: "hero" is the post's banner; "share" is 1200x630, the 1.91:1 that link
+#: previews and LinkedIn image posts crop to, so nothing gets cut.
+SIZES = {
+    "hero": dict(w=1280, h=400, ground=344, head_y=92, head=40, px=9, taco=7),
+    "share": dict(w=1200, h=630, ground=500, head_y=200, head=52, px=8, taco=8),
+}
+W, H, GROUND, PX = 1280, 400, 344, 9
 
 THEMES = {
     "dark": dict(bg="#0d1117", rule="#30363d", left="#8b949e", right="#e6edf3",
@@ -114,7 +123,10 @@ def taco(cx: int, scale: int) -> str:
     return f'<g transform="translate({x} {y}) scale({scale})" shape-rendering="crispEdges">{inner}</g>'
 
 
-def render(t: dict[str, str]) -> str:
+def render(t: dict[str, str], size: str = "hero") -> str:
+    global W, H, GROUND, PX
+    z = SIZES[size]
+    W, H, GROUND, PX = z["w"], z["h"], z["ground"], z["px"]
     DINOS = dinos(t)
     gap = 28
     widths = [len(a.strip().splitlines()[0]) * PX for a, _ in DINOS]
@@ -131,25 +143,41 @@ def render(t: dict[str, str]) -> str:
   <line x1="40" y1="{GROUND}" x2="{W // 2 - 40}" y2="{GROUND}" stroke="{t['rule']}" stroke-width="2"/>
   <line x1="{W // 2 + 40}" y1="{GROUND}" x2="{W - 40}" y2="{GROUND}" stroke="{t['rule']}" stroke-width="2"/>
 
-  <text x="{W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="{t['left']}">The TF state industry</text>
-  <text x="{3 * W // 4}" y="92" text-anchor="middle" font-size="40" font-weight="700" fill="{t['right']}">Terragucci</text>
+  <text x="{W // 4}" y="{z['head_y']}" text-anchor="middle" font-size="{z['head']}" font-weight="700" fill="{t['left']}">The TF state industry</text>
+  <text x="{3 * W // 4}" y="{z['head_y']}" text-anchor="middle" font-size="{z['head']}" font-weight="700" fill="{t['right']}">Terragucci</text>
 
   <g shape-rendering="crispEdges">
     {chr(10).join("    " + h for h in herd)}
   </g>
-  {taco(3 * W // 4, 7)}
+  {taco(3 * W // 4, z['taco'])}
 </svg>
 '''
 
 
+def png(svg: Path, dest: Path, w: int, h: int, scale: int) -> None:
+    subprocess.run([CHROME, "--headless", "--disable-gpu", "--hide-scrollbars",
+                    f"--force-device-scale-factor={scale}", f"--window-size={w},{h}",
+                    f"--screenshot={dest}", f"file://{svg}"],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
 def main() -> None:
-    if sys.argv[1:2] == ["--light"]:
-        out = Path(sys.argv[2]).expanduser()
-        out.write_text(render(THEMES["light"]))
-    else:
-        out = OUT
-        out.write_text(render(THEMES["dark"]))
-    print(f"wrote {out}")
+    OUT.write_text(render(THEMES["dark"]))
+    print(f"wrote {OUT}")
+
+    # The link preview: og:image wants a raster at exactly 1200x630.
+    z = SIZES["share"]
+    svg = BLOG / "share.svg"
+    BLOG.mkdir(parents=True, exist_ok=True)
+    svg.write_text(render(THEMES["dark"], "share"))
+    png(svg, SHARE, z["w"], z["h"], 1)
+    print(f"wrote {SHARE}")
+
+    # A LinkedIn image post, light, at 2x so it survives recompression.
+    svg = BLOG / "cover-light.svg"
+    svg.write_text(render(THEMES["light"], "share"))
+    png(svg, BLOG / "cover-light.png", z["w"], z["h"], 2)
+    print(f"wrote {BLOG / 'cover-light.png'}")
 
 
 if __name__ == "__main__":

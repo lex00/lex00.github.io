@@ -10,10 +10,14 @@
 {{- if not $desc }}{{ $desc = hugo.Data.home.hero.pitch }}{{ end }}
 {{- $desc = $desc | plainify | chomp }}
 
-{{- /* Share image: a post's featured_image when it has one, else the card.
-       Open Graph needs absolute URLs, so both go through absURL. */}}
+{{- /* Share image: a post's share_image (a 1200x630 raster) when it has
+       one, else its featured_image, else the card. LinkedIn and most
+       previews skip SVG and crop to 1.91:1, so a wide SVG hero needs a
+       share_image beside it. Open Graph needs absolute URLs, so all go
+       through absURL. */}}
 {{- $img := "img/og-card.png" }}
 {{- with .Params.featured_image }}{{ $img = . }}{{ end }}
+{{- with .Params.share_image }}{{ $img = . }}{{ end }}
 {{- $img = $img | absURL }}
 
 <title>{{ $title }}</title>
