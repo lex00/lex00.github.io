@@ -2,6 +2,7 @@
 title: "TF vendor power - without the SaaS"
 date: 2026-10-13
 draft: false
+featured_image: "img/tf-vendor-power-cover.svg"
 ---
 
 Terraform vendors sell plan and apply on pull requests, approvals, policy, drift checks and an audit trail, run on their servers with your cloud credentials. [terragucci](https://intentius.io/terragucci/) does that work in your own CI on GitHub, GitLab or Forgejo, with state and reports in your own bucket. There's no account to create and no platform to log into, and it's Apache-2.0.
