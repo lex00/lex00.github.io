@@ -32,7 +32,7 @@ Terraform vendors sell plan and apply on pull requests, approvals, policy, drift
 
 A root that reads another root's state plans on that root's [planned outputs](https://intentius.io/terragucci/concepts/waves-and-approvals/#linked-roots), so it's checked against what the merge will build. This covers `terraform_remote_state` and Terragrunt `dependency` blocks. Between [choudoufu estates](https://intentius.io/choudoufu/docs/use/cross-estate/#a-value-the-producer-has-not-applied-yet) it works the same way.
 
-A value only known after the upstream applies, like a new network's ID, can't be planned. terragucci plans the reader again behind its own approval once its upstream has applied. choudoufu refuses to plan on it. A failed wave leaves the earlier waves applied and [plans again](https://intentius.io/terragucci/reference/pipeline/#stopped-applies) on what's there.
+A value only known after the upstream applies, like a new network's ID, can't be planned. terragucci plans the reader again once its upstream has applied. choudoufu refuses to plan on it. A failed wave leaves the earlier waves applied and [plans again](https://intentius.io/terragucci/reference/pipeline/#stopped-applies) on what's there.
 
 ## The detail
 
