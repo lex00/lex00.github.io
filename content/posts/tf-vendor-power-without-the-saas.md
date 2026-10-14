@@ -30,11 +30,9 @@ Terraform vendors sell plan and apply on pull requests, approvals, policy, drift
 
 ## A plan across state files
 
-When a pull request changes a root and the roots that read its state, the readers plan on its [planned outputs](https://intentius.io/terragucci/concepts/waves-and-approvals/#linked-roots), so what's downstream is checked against the infrastructure as it will be after the merge. That works with stock Terraform and OpenTofu through `terraform_remote_state`, with Terragrunt `dependency` blocks, and between [choudoufu estates](https://intentius.io/choudoufu/docs/use/cross-estate/#a-value-the-producer-has-not-applied-yet).
+A root that reads another root's state plans on that root's [planned outputs](https://intentius.io/terragucci/concepts/waves-and-approvals/#linked-roots), so it's checked against what the merge will build. This covers `terraform_remote_state` and Terragrunt `dependency` blocks. Between [choudoufu estates](https://intentius.io/choudoufu/docs/use/cross-estate/#a-value-the-producer-has-not-applied-yet) it works the same way.
 
-Some values don't exist until the upstream applies, like the ID of a network the same change creates. No plan can show those. terragucci writes `(known after apply)` and names them in the plan note, and the wave that reads one plans again on the real value once its upstream has applied, then waits for its own approval. choudoufu won't plan on such a value at all, and it won't apply a reader until its upstream has applied the values the reader was planned on.
-
-The applies go in waves, in dependency order. A wave that fails leaves the waves before it applied, since the cloud has already made those changes, and [plans again](https://intentius.io/terragucci/reference/pipeline/#stopped-applies) on what's actually there when it next runs.
+A value only known after the upstream applies, like a new network's ID, can't be planned. terragucci plans the reader again behind its own approval once its upstream has applied. choudoufu refuses to plan on it. A failed wave leaves the earlier waves applied and [plans again](https://intentius.io/terragucci/reference/pipeline/#stopped-applies) on what's there.
 
 ## The detail
 
