@@ -6,12 +6,6 @@ featured_image: "img/concurrency-hero.svg"
 share_image: "img/concurrency-share.png"
 ---
 
-<!-- DRAFT. Open items before publishing:
-  - Terragrunt + choudoufu row: today's demo generates its backend. The stock `remote_state` block with Terragrunt 1.2's default of reading dependency outputs from state is being made to work (choudoufu epic #2213). Keep the row only once that lands, or add a footnote.
-  - Atmos + choudoufu: `!terraform.state` under choudoufu is unverified. The row is about `!terraform.output`.
-  - "TF vendor power - without the SaaS" (2026-10-13) says choudoufu refuses to plan on a value known only after apply. That is no longer true; update that post or link this one from it.
--->
-
 Terraform needs a lock around applies because it lacks resource-level concurrency. The apply boundary is at the state file, so everything in it gets locked together.
 
 [choudoufu](https://intentius.io/choudoufu/) moves the boundary to each resource. This change prevents state corruption without a lock.
@@ -28,7 +22,7 @@ Teams split state into roots to shrink what one lock covers. Across roots, a cha
 
 ![Two changes across network and app. On a stock backend the pull request shows app with no change or a mocked subnet ID, and the apply does something else. On the choudoufu live backend the pull request shows the real change and that plan applies](/img/concurrency-review-flow.png)
 
-Keep Terragrunt, Atmos or terragucci. On the live backend, the plan you review is the plan that applies.
+Keep Terragrunt, Atmos or terragucci. On the live backend, the saved plan you review is the plan that applies.
 
 ## The demos
 
