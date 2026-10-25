@@ -6,8 +6,8 @@
 A padlock split by a hammer with "choudoufu" on the handle, on the same
 pixel grid as the tf-vendor-power hero. Writes the post's banner,
 static/img/concurrency-hero.svg; its link preview at 1200x630,
-static/img/concurrency-share.png; and a white 1200x630 copy at 2x for a
-LinkedIn image post, cover-light.png in
+static/img/concurrency-share.png; and a white 1200x627 copy at 2x, without
+the title, for a LinkedIn image post, cover-light.png in
 ~/Documents/blogs/resource-level-concurrency-for-terraform/.
 """
 
@@ -139,6 +139,14 @@ def render(t: dict[str, str], size: str = "hero") -> str:
     if size == "hero":
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" {font}>\n'
                 f'  <rect width="{W}" height="{H}" fill="{t["bg"]}"/>\n  {scene(t)}\n</svg>\n')
+    if size == "linkedin":
+        # LinkedIn's landscape image, 1200x627; the post carries the title.
+        # Scaled up and centred on the lock and hammer, not the full ground line.
+        sw, sh, s = 1200, 627, 1.25
+        x, y = sw / 2 - 680 * s, sh / 2 - 195 * s
+        return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {sw} {sh}" {font}>\n'
+                f'  <rect width="{sw}" height="{sh}" fill="{t["bg"]}"/>\n'
+                f'  <g transform="translate({x:.0f} {y:.0f}) scale({s})">\n  {scene(t)}\n  </g>\n</svg>\n')
     sw, sh, s = 1200, 630, 0.9
     x = (sw - W * s) / 2
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {sw} {sh}" {font}>\n'
@@ -157,8 +165,8 @@ def main() -> None:
     png(svg, SHARE, 1200, 630, 1)
     print(f"wrote {SHARE}")
     svg = BLOG / "cover-light.svg"
-    svg.write_text(render(THEMES["light"], "share"))
-    png(svg, BLOG / "cover-light.png", 1200, 630, 2)
+    svg.write_text(render(THEMES["light"], "linkedin"))
+    png(svg, BLOG / "cover-light.png", 1200, 627, 2)
     print(f"wrote {BLOG / 'cover-light.png'}")
 
 
