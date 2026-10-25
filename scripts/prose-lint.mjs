@@ -30,7 +30,8 @@ for (const file of process.argv.slice(2)) {
   // reported offsets still line up with the file.
   const text = raw
     .replace(/^---\n[\s\S]*?\n---\n/, (m) => m.replace(/[^\n]/g, " "))
-    .replace(/\{\{<[\s\S]*?>\}\}/g, (m) => m.replace(/[^\n]/g, " "));
+    .replace(/\{\{<[\s\S]*?>\}\}/g, (m) => m.replace(/[^\n]/g, " "))
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, (m) => m.replace(/[^\n]/g, " "));
   const prose = extractProse(text);
   const doc = buildDocAnalysis(prose);
   const { findings, errors } = runRules(RULES, doc);
