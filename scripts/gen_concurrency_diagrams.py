@@ -116,7 +116,7 @@ def lock_scope(t, e, title="") -> tuple[str, int]:
         ey = top + 100 + row * 98
         p.append(f'<rect x="{rx}" y="{ey}" width="{box_w}" height="88" rx="10" fill="none" '
                  f'stroke="{t["dim"]}" stroke-width="1.5" stroke-dasharray="6 5"/>\n')
-        p.append(text(rx + 14, ey + 22, f"estate {estate}", 15, t["dim"]))
+        p.append(text(rx + 14, ey + 22, f"estate: {estate}", 15, t["dim"]))
         for i, r in enumerate(RESOURCES[row * 3:row * 3 + 3]):
             p.append(chip(rx + 16 + i * 112, ey + 32, r, t, e, TOUCHED.get(r, "")))
     p.append(bullet(rx, y, e["a"], "Apply A changes db and lands", t))
