@@ -6,7 +6,7 @@ featured_image: "img/tf-vendor-power-cover.svg"
 share_image: "img/tf-vendor-power-share.png"
 ---
 
-Terraform vendors sell plan and apply on pull requests, approvals, policy, drift checks and an audit trail, run on their servers with your cloud credentials. [terragucci](https://intentius.io/terragucci/) is those pipelines, ready to run in your own CI on GitHub, GitLab or Forgejo, with state and reports in your own bucket. There's no account to create and no platform to log into, and it's Apache-2.0.
+Terraform vendors sell plan and apply on pull requests, approvals, policy, drift checks and an audit trail, all driven by their control plane. [terragucci](https://intentius.io/terragucci/) is those pipelines, ready to run in your own CI on GitHub, GitLab or Forgejo, with state and reports in your own bucket. There's no account to create and no platform to log into, and it's Apache-2.0.
 
 [choudoufu](https://intentius.io/choudoufu/docs/) is optional. It's OpenTofu that tags each resource with its owner, so the state file becomes a cache and locking goes per resource. It runs on AWS and Kubernetes under MPL-2.0, and since the cache is a stock state file, [going back to stock](https://intentius.io/choudoufu/docs/model/cache/#the-cache-is-also-the-exit) is a copy.
 
