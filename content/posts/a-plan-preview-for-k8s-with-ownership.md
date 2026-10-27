@@ -44,4 +44,4 @@ kubectl has no opinion on either question. Alignment is something you reconstruc
 
 - [chant](https://intentius.io/chant/), the tool this post is about
 - [chant's k8s API client](https://intentius.io/chant/lexicons/k8s/api-client/), the read/write layer `kube` runs on
-- [Which infrastructure tool actually keeps the spec?](/posts/which-tool-keeps-the-spec/), on chant's observational, non-authoritative state
+- [Keeping the spec](/posts/which-tool-keeps-the-spec/), on chant's observational, non-authoritative state

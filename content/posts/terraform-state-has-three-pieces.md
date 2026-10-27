@@ -15,6 +15,8 @@ Take them apart and each goes somewhere AWS already has. Identity becomes two ta
 
 That is [choudoufu](https://intentius.io/choudoufu/), an OpenTofu fork I have been building.
 
+Choudoufu is stinky tofu. It's famous for a strong flavor that is an acquired taste. It's fermented, and I think it's a great name for an OpenTofu fork that lets your state go stale.
+
 ## No lock to manage
 
 The state file is now a cache on the machine that ran, so there is no lock table to provision, permission, or force open.
@@ -44,7 +46,4 @@ Because a plan reads the markers live, handing an estate to another team is a po
 ## Read more
 
 - [choudoufu](https://intentius.io/choudoufu/)
-- [The revolving door of authoritative state](https://lex00.github.io/posts/the-revolving-door-of-authoritative-state/)
 - [Queryable infrastructure](https://lex00.github.io/posts/queryable-infrastructure/)
-- [Governance is load-bearing](https://lex00.github.io/posts/governance-is-load-bearing/)
-- [Fix Terraform](https://lex00.github.io/posts/fix-terraform/)

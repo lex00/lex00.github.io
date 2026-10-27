@@ -17,7 +17,7 @@ tofu-address = aws_vpc.main
 
 choudoufu reads these tags at plan time.
 
-## What makes a tag a live marker?
+## Tags become live markers
 
 Moving identity off a private ledger and onto the resource is the first step. choudoufu also handles this at create time, leaving a newly created resource properly marked. Writing on create and reading on plan together make a tag into a marker the plan can trust.
 
@@ -27,16 +27,13 @@ A central policy where resources can be migrated with a simple tag change requir
 
 This allows both migration and renaming to be handled with a tag, instead of a ledger edit. Handing a whole estate to another team becomes a simple change in a central IAM policy.
 
-## An industry of solutions
+## Pipelines and enforcement
 
-[An entire industry](https://lex00.github.io/posts/fix-terraform/) exists to deal with the issue of ownership in a localized ledger. These paid control planes offer a workaround that lives in their layer. What you want is to have this control right in your cloud-native IAM.
-
-If you want to see a tool that takes this even further than [choudoufu](https://intentius.io/choudoufu/), look at [chant](https://intentius.io/chant/concepts/overview/).
+[terragucci](https://intentius.io/terragucci/) runs the pipelines for choudoufu and OpenTofu roots in your own forge. The markers are tags, so [IAM ABAC](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) can gate on them.
 
 ---
 
 ## Read more
 
 - [Terraform state has three pieces](https://lex00.github.io/posts/terraform-state-has-three-pieces/)
-- [Take a whiff of choudoufu](https://lex00.github.io/posts/take-a-whiff-of-choudoufu/)
 - [choudoufu](https://intentius.io/choudoufu/)

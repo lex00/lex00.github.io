@@ -24,7 +24,7 @@ Synthesis stays side-effect-free, so the authoring layer becomes legible. The sa
 Typed configuration is not new. Dhall and CUE and KCL and Pkl bring types and validation to YAML. cdk8s, CDK, and Pulumi synthesize manifests from code. chant's unique approach is a combination of three properties the others tend to split between them.
 
 - The language is mainstream instead of a new DSL. CUE and Dhall and KCL and Pkl are languages a team adopts and tools from scratch. chant is TypeScript with the editor and autocomplete and go-to-definition and review workflow already in place.
-- The model is synthesis instead of execution. cdk8s and CDK and Pulumi run code to produce config, so the same source can yield different output in a different environment. Restricting to synthesis works because a lint pass keeps source to static data, and the same input always produces the same YAML.
+- The model is synthesis instead of execution. cdk8s, CDK and Pulumi run a program to produce config. chant reads the source as data, so the same input always gives the same YAML. A lint pass keeps the source to static data.
 - The output is true to the spec. Generation comes from the actual target resource model rather than an L2 or L3 abstraction layered above. The Kubernetes API and the CloudFormation spec map to chant objects 1:1 and stay typed.
 
 chant is not the first tool to compile configuration. It is the one that compiles a mainstream language while executing nothing and staying true to the real spec. Its semantic rules check whether a declaration is coherent rather than merely well-typed.

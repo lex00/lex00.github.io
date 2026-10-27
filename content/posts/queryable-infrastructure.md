@@ -24,7 +24,6 @@ Agents benefit from queryable infrastructure, and the spec [covers most of it](/
 
 - [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
 - [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/)
-- [Your infra database is a road to hell](/posts/your-infra-database-is-a-road-to-hell/)
 - [Honor the lower layer](/posts/honor-the-lower-layer/)
 - [The long tail is a tail](/posts/the-long-tail-is-a-tail/)
 - [TypeScript as data](https://intentius.io/chant/concepts/typescript-as-data/)

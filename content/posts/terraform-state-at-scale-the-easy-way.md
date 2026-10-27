@@ -27,4 +27,3 @@ Just imagine operating the left column vs the right.
 
 - [choudoufu claims, each with a runnable smoke scenario](https://intentius.io/choudoufu/docs/claims/)
 - [Terraform state has three pieces](/posts/terraform-state-has-three-pieces/)
-- [Your infra database is a road to hell](/posts/your-infra-database-is-a-road-to-hell/)

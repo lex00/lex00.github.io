@@ -15,7 +15,7 @@ AWS did this right with CDK L1. The L1 TypeScript classes are instantly recogniz
 
 [chant](https://intentius.io/chant) gives you that CDK L1 experience across the big cloud vendors and K8s. I did not pick a typed config language for chant. I did what CDK L1 does, for every platform.
 
-Reaching for a typed config language is [the intoxicating mix of synthesis and execution](https://lex00.github.io/posts/the-intoxicating-mix-of-synthesis-and-execution/) again.
+Reaching for a typed config language mixes synthesis and execution again. [TypeScript is the right choice for infra](/posts/typescript-is-the-right-choice-for-infra/) makes the longer case.
 
 ## Can you ship what you write?
 
@@ -67,6 +67,5 @@ The answer for IaC is [TypeScript as Data](https://intentius.io/typescript-as-da
 
 - [Honor the lower layer](/posts/honor-the-lower-layer/)
 - [Configuration as code, and as data](/posts/code-as-config-config-as-data/)
-- [TypeScript vs Pkl for IaC](/posts/typescript-vs-pkl-for-iac/)
 - [TypeScript as Data](https://intentius.io/typescript-as-data/)
 - [Accessible Ops](https://accessibleops.net/)

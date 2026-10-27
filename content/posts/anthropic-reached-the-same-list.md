@@ -22,7 +22,6 @@ This is no endorsement. Anthropic is describing its own internal tooling and is 
 ## Read more
 
 - [TypeScript is the right choice for infra](https://lex00.github.io/posts/typescript-is-the-right-choice-for-infra/)
-- [Governance is what IaC depends on](https://lex00.github.io/posts/governance-is-load-bearing/)
 - [Policy belongs left of the platform](https://lex00.github.io/posts/policy-belongs-left-of-the-platform/)
 - [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
 - [Accessible Ops](https://accessibleops.net)

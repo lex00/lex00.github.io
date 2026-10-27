@@ -24,7 +24,7 @@ Compiling specs is the whole job, and chant does it across the platforms that ru
 ## Read more
 
 - [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
-- [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
+- [chant keeps the spec](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
 - [A TypeScript compiler for Kubernetes manifests](https://lex00.github.io/posts/a-typescript-compiler-for-kubernetes-manifests/)
 - [The far-left IaC tool](https://lex00.github.io/posts/the-far-left-iac-tool/)
 - [chant](https://intentius.io/chant/)

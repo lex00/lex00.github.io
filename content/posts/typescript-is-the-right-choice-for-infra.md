@@ -92,9 +92,7 @@ aws-bench scenario 1 put this argument on the record. Same model on every side, 
 
 - [aws-bench: scenario 1 wrap](/posts/aws-bench-scenario-1-wrap/)
 - [Scenario 1 results on chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/)
-- [TypeScript vs Pkl for IaC](https://lex00.github.io/posts/typescript-vs-pkl-for-iac/)
 - [Configuration as code, and as data](https://lex00.github.io/posts/code-as-config-config-as-data/)
-- [Infrastructure deserves a compiler](https://lex00.github.io/posts/infrastructure-deserves-a-compiler/)
 - [A TypeScript compiler for Kubernetes manifests](https://lex00.github.io/posts/a-typescript-compiler-for-kubernetes-manifests/)
 - [chant TypeScript as Data](https://intentius.io/chant/concepts/typescript-as-data/)
 - [chant](https://intentius.io/chant/)

@@ -9,23 +9,17 @@ You just inherited a Terraform estate. The state file is the only thing telling 
 
 [choudoufu](https://intentius.io/choudoufu/) fixes that in place. It stamps every resource with the estate that owns it. Your IAM enforces the stamp from then on, and the state file demotes to a cache you can safely delete.
 
-## You are being sold a process
+## Identity on the resource
 
-An orchestrator's marketing page says the "real blocker is ownership not the tooling." It adds that "multiple teams share responsibility, none own the outcome," and asks "who decides which team takes ownership."
+Identity is a record of which estate created a resource and under what name. In stock Terraform that record is the state file. choudoufu puts it on the resource too.
 
-The ownership in those quotes is accountability. Who gets paged, who takes the blame. Every vendor leaves that to you, theirs included.
+## Adoption writes it on the resource
 
-Identity is the other kind, and the one you can buy. It is a record on the resource of which estate created it and under what name. Terraform has no place to keep it. Inherit an estate and you inherit a state file and a prayer.
-
-Their pitch skips identity entirely. I don't think they know it is a separate thing.
-
-## Import hands it to them, adoption hands it to you
-
-What the orchestrator calls importing, choudoufu calls adoption. Import copies your resources into a record the vendor holds. Adoption writes two tags onto the resources themselves, behind an approval gate you control. choudoufu reads those tags on every run. So does your IAM.
+Terraform import records your resources in state. choudoufu adoption writes two tags onto the resources themselves, behind an approval gate you control. choudoufu reads those tags on every run. So does your IAM.
 
 Your resources sit in your account under your own policies. The tags stay on them whether you keep choudoufu or not.
 
-## What you get on Monday
+## On Monday
 
 "Who owns this" becomes a tag query. A tag carries exactly one owner, so the answer is always a single name.
 
@@ -40,7 +34,5 @@ Adoption is one gate and two tags. [Try it on a live estate](https://intentius.i
 ## Read more
 
 - [Adopt infrastructure without re-homing it](/posts/adopt-without-rehoming/)
-- [Invisible ownership is ridiculous](/posts/invisible-ownership-is-ridiculous/)
-- [Good tools can survive great "culture"](/posts/good-tools-can-survive-great-culture/)
 - [Down to earth infra dependencies](/posts/down-to-earth-infra-dependencies/)
 - [choudoufu](https://intentius.io/choudoufu/) · [chant](https://intentius.io/chant/)
