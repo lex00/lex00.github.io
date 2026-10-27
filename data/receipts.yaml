@@ -19,5 +19,5 @@ receipts:
   - claim: "3 years in regulated production"
     context: "FINRA's Graph-as-a-Service platform on Neo4j, with the security review and compliance weight."
 
-  - claim: "39 posts"
-    context: "A year of working out in public why infrastructure state belongs somewhere else."
+  - claim: "31 posts"
+    context: "Notes on chant, choudoufu, terragucci and behold."

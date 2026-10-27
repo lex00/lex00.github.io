@@ -6,9 +6,7 @@ featured_image: "img/concurrency-hero.svg"
 share_image: "img/concurrency-share.png"
 ---
 
-Terraform needs a lock around applies because it lacks resource-level concurrency. The apply boundary is at the state file, so everything in it gets locked together.
-
-[choudoufu](https://intentius.io/choudoufu/) moves the boundary to each resource. This change prevents state corruption without a lock.
+Terraform and OpenTofu lock the whole state file for an apply. [choudoufu](https://intentius.io/choudoufu/) moves that lock down to each resource, and two applies that touch different resources both land.
 
 ![Apply A changes db and apply B changes subnet. Under Terraform B waits for A's lock on the whole state file; under choudoufu, with the resources in two estates, both land and a stale saved plan on db is refused](/img/concurrency-lock-scope.png)
 

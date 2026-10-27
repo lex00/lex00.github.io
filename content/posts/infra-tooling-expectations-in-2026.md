@@ -8,13 +8,9 @@ draft: false
 
 Infra tooling should ship with CI/CD and a control plane. It should work with the git forge you already have and run on your own infra.
 
-Paid offerings reduce to glorified gates that rely on a third-party permission structure. Anything with IAM credentials goes right around them.
+Your IAM can already gate on a tag. So [choudoufu](https://intentius.io/choudoufu/) writes ownership as tags IAM can read, and [chant](https://intentius.io/chant/) keeps ownership on the resource too.
 
-Your IAM can already gate on a tag. It cannot gate on a Terraform state file.
-
-So [chant](https://intentius.io/chant/) and [choudoufu](https://intentius.io/choudoufu/) keep ownership on the resource, where your IAM enforces it.
-
-## What shipping with CI/CD looks like
+## Shipping with CI/CD
 
 choudoufu ships five Ops over one live root. GitHub, Forgejo and GitLab pipelines are generated from them and checked in.
 
@@ -22,11 +18,13 @@ choudoufu ships five Ops over one live root. GitHub, Forgejo and GitLab pipeline
 
 Three are read-only. The two that write sit on a push trigger and stop at a gate first. The Op names are the job names, so branch protection can require them.
 
-None of it is hosted by me. The gates are facts in git, so an outage cannot lose them. Neither can walking away.
+None of it is hosted by me. The gates are facts in git, so an outage cannot lose them.
 
 A local smoke proves all five, gate included. End-to-end runs exist for GitLab only.
 
-## What to expect from a control plane
+The same goes for the CI around your existing roots and stacks. [terragucci](https://intentius.io/terragucci/) runs Terraform and OpenTofu pipelines in your own forge, and [plywood](https://github.com/INTENTIUS/plywood) does the same for Pulumi and plunge stacks. Both run on chant's runtime.
+
+## A control plane
 
 You should get to look at the estate. The question is where it runs.
 
@@ -46,16 +44,12 @@ Cost is worth pressing on, though not as a feature anyone should ship. Most orgs
 
 ## The question to ask
 
-Ask a vendor what stops someone using the CLI.
-
-Then ask where ownership is written, and whether IAM can read it there.
+Ask where ownership is written, and whether IAM can read it there.
 
 ---
 
 ## Read more
 
-- [The intoxicating mix of synthesis and execution](/posts/the-intoxicating-mix-of-synthesis-and-execution/)
-- [Invisible ownership is ridiculous](/posts/invisible-ownership-is-ridiculous/)
 - [Honor the lower layer](/posts/honor-the-lower-layer/)
 - [Governance for GitHub, GitLab and Forgejo](/posts/governance-for-github-gitlab-and-forgejo/)
 - [choudoufu](https://intentius.io/choudoufu/) · [chant](https://intentius.io/chant/) · [behold](https://github.com/INTENTIUS/behold)

@@ -4,7 +4,7 @@ date: 2026-07-20
 featured_image: "img/code-as-config-cover.svg"
 ---
 
-[Brian Grant](https://medium.com/@bgrant0607) coined the [Kubernetes Resource Model](https://kube.fm/krm-brian) and argues that configuration should be data, not a program you run to find out what it is. chant agrees, and most of the industry is still catching up to him.
+[Brian Grant](https://medium.com/@bgrant0607) coined the [Kubernetes Resource Model](https://kube.fm/krm-brian) and argues that configuration should be data, not a program you run to find out what it is. chant agrees.
 
 His argument is that declarative configuration is data. It is separated from the code that transforms it. This is a huge part of what makes Kubernetes manageable.
 
@@ -39,8 +39,7 @@ For the language side of this, and why TypeScript lets a tool be both at once, s
 ## Read more
 
 - [TypeScript is the right choice for infra](https://lex00.github.io/posts/typescript-is-the-right-choice-for-infra/)
-- [Your infra database is a road to hell](https://lex00.github.io/posts/your-infra-database-is-a-road-to-hell/)
 - [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
-- [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
-- [chant how it compares](https://intentius.io/chant/concepts/comparison/)
+- [chant keeps the spec](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
+- [chant with Terraform, Pulumi and CDK](https://intentius.io/chant/concepts/comparison/)
 - [chant](https://intentius.io/chant/)

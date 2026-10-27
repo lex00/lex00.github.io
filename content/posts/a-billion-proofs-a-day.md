@@ -25,8 +25,7 @@ To see a visual of this, check out my blog about [flame graphing the leftness of
 
 ## Read more
 
-- [Infrastructure deserves a compiler](https://lex00.github.io/posts/infrastructure-deserves-a-compiler/)
 - [Flame graphing the leftness of infra tooling](https://lex00.github.io/posts/flame-graphing-the-leftness-of-infra-tooling/)
 - [Honor the lower layer](https://lex00.github.io/posts/honor-the-lower-layer/)
-- [Which infrastructure tool actually keeps the spec?](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
+- [chant keeps the spec](https://lex00.github.io/posts/which-tool-keeps-the-spec/)
 - [chant](https://intentius.io/chant/)

@@ -53,4 +53,3 @@ All you need is an API token and about ten minutes to see a dry-run in your forg
 - [gitlab-warden](https://intentius.io/gitlab-warden/)
 - [forgejo-warden](https://intentius.io/forgejo-warden/)
 - [chant](https://intentius.io/chant/)
-- [Invisible ownership is ridiculous](https://lex00.github.io/posts/invisible-ownership-is-ridiculous/)

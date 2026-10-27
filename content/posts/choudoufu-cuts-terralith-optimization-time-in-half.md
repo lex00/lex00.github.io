@@ -7,7 +7,7 @@ draft: false
 
 [choudoufu](https://intentius.io/choudoufu/docs/) is a fork of OpenTofu with [live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/).
 
-This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, and how it could have gone differently if it wasn't held back by state.
+This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, and how it could have gone differently with ownership on the resources.
 
 ## choudoufu writes ownership on the resource itself
 
@@ -17,9 +17,9 @@ choudoufu adopts by stamping while Terraform adopts by fixing resolution in stat
 
 ![One monolith split with a state file vs with identity hooks](/img/cursor-migration/split-mechanics.svg)
 
-## What takes less time
+## Less time on ownership
 
-To keep track of resources and ownership, OpenTofu requires a giant miserable ball of JSON that must be protected and backed up. Resources get adopted by tagging instead, thanks to identity hooks. An existing OpenTofu codebase imports directly. Adoption asks for no rewrite, though the compatibility reference lists HCL that is still refused.
+OpenTofu keeps ownership in the state file, which has to be protected and backed up. In choudoufu, resources get adopted by tagging, thanks to identity hooks. An existing OpenTofu codebase imports directly. Adoption asks for no rewrite, though the compatibility reference lists HCL that is still refused.
 
 ![Moving one workspace to a new state backend vs to choudoufu](/img/cursor-migration/workspace-move.svg)
 
@@ -37,7 +37,7 @@ The top track is Cursor's timeline. The bottom two are the same estate on identi
 
 ![OpenTofu actual vs choudoufu replay vs chant projection](/img/cursor-migration/timeline.svg)
 
-Either of the bottom tracks offers you a migration path taking half the time. People problems stay at full price in my math and the months I subtract are all about Terraform's state model.
+Either of the bottom tracks offers you a migration path taking half the time. People problems stay at full price in my math and the months I subtract all come from the state work.
 
 ![Waterfall from 7 months to roughly 3.9](/img/cursor-migration/waterfall.svg)
 
@@ -63,7 +63,5 @@ The estate was generated, so it says nothing about real world HCL. The timeline 
 
 - [Tofu tastes better with live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
 - [Terraform state has three pieces](https://lex00.github.io/posts/terraform-state-has-three-pieces/)
-- [Take a whiff of choudoufu](https://lex00.github.io/posts/take-a-whiff-of-choudoufu/)
-- [The revolving door of authoritative state](https://lex00.github.io/posts/the-revolving-door-of-authoritative-state/)
 - [choudoufu docs](https://intentius.io/choudoufu/docs/)
 - [chant](https://intentius.io/chant/)

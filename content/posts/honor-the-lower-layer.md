@@ -12,7 +12,7 @@ Two people in two fields describe that same failure and the same fix. [Gregor Ho
 
 <p style="text-align: center; font-size: 1.3em; font-weight: 700;"><a href="https://intentius.io/chant/">chant</a> is what the fix looks like for infrastructure: what you write is what you ship.</p>
 
-The deployed spec is fixed by your source alone, readable before anything runs. That is the part people do not believe at first, and the part you can check. I can show where it lands and where other tools fall short. None of it rests on personal taste.
+The deployed spec is fixed by your source alone, readable before anything runs. That is the part people do not believe at first, and the part you can check. I can show where it lands. None of it rests on personal taste.
 
 {{< inline-svg src="honor-the-lower-layer.svg" alt="A Venn of Hohpe and Chlipala, whose overlap is one shared rule: an abstraction is good only while it honors the layer below" >}}
 
@@ -38,11 +38,11 @@ Set them beside each other and the field is the only difference. Hohpe's illusio
 
 The rule sorts infrastructure tools cleanly, and almost none clear both lines.
 
-{{< inline-svg src="where-the-tools-land.svg" alt="The two criteria as circles. CDK clears the real-language line but not the checkable-without-running line. Raw YAML clears the second but not the first. Terraform clears neither. chant is the overlap." >}}
+{{< inline-svg src="where-the-tools-land.svg" alt="The two criteria as circles. CDK clears the real-language line but not the checkable-without-running line. Raw YAML clears the second but not the first. Terraform and OpenTofu take a different route, one language for every cloud with providers doing the translation. chant is the overlap." >}}
 
 Two ways an infra tool can honor its lower layer: it is a real language compiled to the spec, and its result is fixed enough that a machine can check it without running it.
 
-Terraform and raw YAML both miss the first. The former reimplements the cloud as HCL plus a state file which is a layer you cannot hand back and a road to hell of its own. Raw YAML is just data that is fixed and readable but not a language you compile. Neither compiles a real language into the native spec, so no amount of care gets them to the first line. It is a limit built into their design.
+Terraform and OpenTofu took a different route: one language across every cloud, with providers doing the translation. [choudoufu](https://intentius.io/choudoufu/) keeps that route and adds live markers. Raw YAML misses the first line. It is data that is fixed and readable but not a language you compile.
 
 Executing tools clear the first and miss the second. CDK is a real language compiled to a spec, which is why Hohpe points at it. But it synthesizes by running your program so the output is known only after the run. A lookup or an environment value or a tree-rewriting aspect can change it. You cannot check it without running it. The faithfulness is real, earned by careful code rather than guaranteed by design.
 
@@ -70,7 +70,7 @@ That openness is why agents work so well with chant. Because its lint rules are 
 
 Neither Hohpe nor Chlipala is endorsing chant. Chlipala is not writing about infrastructure at all. Hohpe is, and the tool he holds up as his own example is AWS CDK, not chant. So this is not an appeal to their authority.
 
-The claim is only this: two people working apart in different fields reached the same rule and chant is the one infrastructure tool that keeps it. Whether that puts it ahead of CDK for your work is yours to decide. That it honors the lower layer is not.
+The claim is only this: two people working apart in different fields reached the same rule and chant is built around it. Whether that puts it ahead of CDK for your work is yours to decide. That it honors the lower layer is not.
 
 ## Sources
 

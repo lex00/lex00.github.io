@@ -33,11 +33,11 @@ chant is the only configuration that comes in under an agent holding nothing.
 
 I want to be careful about what that does and does not say. Accuracy is the thing you are actually buying, and over every run on record the baseline answers 72% of trials correctly. The best of the field is Terraform at 81% with Pulumi at 77%. CDK is at 70% and Alchemy 67%, which puts both below an agent with no infrastructure tooling at all while costing two to three times as much.
 
-The finding is not that the tools fail. Terraform buys you nine points of accuracy over the baseline, and on a real estate that is worth paying for. It is that the premium is large, it varies by a factor of three across tools that look interchangeable from the outside, and nobody has been measuring it.
+Terraform buys you nine points of accuracy over the baseline, and on a real estate that is worth paying for. The premium is large, though, it varies by a factor of three across tools that look interchangeable from the outside, and nobody has been measuring it.
 
 ## Where a tool actually earns it
 
-One question separates the baseline from everything else. Asked which instances are reachable on port 22 from the internet, the bare agent has now scored 0 out of 18. Not low. Zero, every time it has been asked.
+One question separates the baseline from everything else. Asked which instances are reachable on port 22 from the internet, the bare agent has now scored 0 out of 18.
 
 Pulumi gets it 96% of the time, Terraform 95%, chant 85%, CDK 71%. Alchemy manages 19%.
 
@@ -49,19 +49,20 @@ That is one question out of eight, and it is the clearest thing a toolchain buys
 
 The eighth question is unused security groups, and it is the one place the board turns over.
 
-Pulumi, Terraform and CDK have never answered it. Not once, across 66 attempts between them. Alchemy has managed it once in 21. The bare agent gets it 28% of the time, and chant 51%.
+Pulumi, Terraform and CDK have not answered it in 66 attempts between them. Alchemy has managed it once in 21. The bare agent gets it 28% of the time, and chant 51%.
 
 The two configurations that do best here are the one with a query engine and the one with no tooling at all. Every arm that keeps a state file is at zero.
 
-The reason is that the answer is a negative, and it is a negative about things the state file does not contain. Four groups are attached to nothing, so they are not referenced by any instance a state file knows about. Reading your own state tells you what you built, and the question asks what nothing points at. An agent with the raw API at least has the option of sweeping every group in every region and checking each one; it is expensive and it works about a quarter of the time. An agent reading Terraform state is looking in a place the answer cannot be.
+The reason is that the answer is a negative, and it is a negative about things the state file does not contain. Four groups are attached to nothing, so they are not referenced by any instance a state file knows about. Reading your own state tells you what you built, and the question asks what nothing points at. An agent with the raw API at least has the option of sweeping every group in every region and checking each one; it is expensive and it works about a quarter of the time. The answer lives in the cloud and not in any record of the things you built. Tags that every tool can read close that gap, and [choudoufu](https://intentius.io/choudoufu/) adds them to OpenTofu.
 
 That is worth more than the two points of accuracy it costs on the scoreboard, because it is the shape of a whole class of real questions. What is unattached, what is unreferenced, what is safe to delete.
 
 ## chant is not perfect
 
 The three runs in the table are 22 and 24 and 22 and the middle one is what ranks. Across 26 runs it averages 88% and has scored anywhere from 15 to 24. On the unused security groups question it is right about half the time, which is the best on the board and still a coin flip. A benchmark I always win is a benchmark I built wrong, so the site publishes every replicate including the ones that undercut this post.
-
 What holds steady across every replicate is the cost. chant answers a question in under 3 commands against Pulumi's 7 and Alchemy's 14, for roughly a third of the tokens the average toolchain spends, and it does it without reading the account at all.
+
+The cost column is the part I would pay attention to. Accuracy converges as the models get better. Token cost does not.
 
 ## The benchmark is not mine
 
@@ -69,19 +70,9 @@ What holds steady across every replicate is the cost. chant answers a question i
 
 Everything runs against the [Floci](https://github.com/floci-io/floci) emulator, so a full pass costs nothing in real AWS.
 
-## Losing to chant is no shame
-
-chant is an infra compiler, and it was built to be at the top of this benchmark. With a typed graph and folded joins and scoped queries it answers in one query what the others assemble by hand. That is the whole design, aimed directly at this.
-
-The cost column is the part I would pay attention to. Accuracy converges as the models get better. Token cost does not.
-
 ## How chant was born
 
-Have you ever lost a chunk of your humanity untangling a state hairball that got handed down to you from a previous owner? Found yourself asking why opaque layers of infra tooling seem to pop up everywhere?
-
-I have...
-
-I started chant as a Python prototype in December 2025 because I knew this result was mine for the taking if I could finish it fast enough. A Go rewrite came next, then TypeScript, where it has stayed because it's the most 1:1 for cloud specs. chant's first commit is February 18, 2026, five months before this run.
+I started chant as a Python prototype in December 2025. A Go rewrite came next, then TypeScript, where it has stayed because it's the most 1:1 for cloud specs. chant's first commit is February 18, 2026, five months before this run.
 
 chant is 100% prompted. It's a scope of work I simply could not have delivered alone without AI.
 

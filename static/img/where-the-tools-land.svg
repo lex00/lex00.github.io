@@ -31,9 +31,9 @@
   <text x="473" y="327" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">chant</text>
   <text x="473" y="357" font-size="10.5" fill="#7ee787" text-anchor="middle">both, by construction</text>
 
-  <!-- neither -->
-  <text x="473" y="556" font-size="13" font-weight="700" fill="#adbac7" text-anchor="middle">Terraform &#183; neither</text>
-  <text x="473" y="576" font-size="10.5" fill="#8b949e" text-anchor="middle">a document language, run against state to learn the result</text>
+  <!-- different route -->
+  <text x="473" y="556" font-size="13" font-weight="700" fill="#adbac7" text-anchor="middle">Terraform and OpenTofu &#183; a different route</text>
+  <text x="473" y="576" font-size="10.5" fill="#8b949e" text-anchor="middle">one language for every cloud, with providers doing the translation</text>
 
   <text x="40" y="596" font-size="11" fill="#6e7681">CDK proved it on AWS. chant reaches the same place, carries it to more clouds, and fixes the result without a run.</text>
 </svg>

@@ -5,13 +5,13 @@ date: 2026-06-03
 
 Everyone is shifting left. It's the safest opinion in infrastructure, and most tools honor it by shifting left exactly one notch and calling it a platform.
 
-Terraform shifted left with `plan`, Bicep with `what-if`. Same idea, see the change before you apply it. Both are real improvements, and both still wait until you're talking to the cloud to tell you something is wrong. That's the centrist position. It's good, but it isn't the leftmost spot on the line.
+Terraform shifted left with `plan`, Bicep with `what-if`. Same idea, see the change before you apply it. Both are real improvements, and both still wait until you're talking to the cloud to tell you something is wrong. chant adds a check before those, in the editor.
 
 {{< figure src="/img/iac-shift-left.svg" alt="The infrastructure pipeline left to right, with chant catching mistakes at the keystroke and Terraform and Bicep catching them at preview" >}}
 
 Picture the pipeline running left to right, idea to code to apply to incident. The cloud is on the right, and `plan` and `what-if` sit just to its left because both need an API to mean anything. The leftmost seat is the red squiggle in your editor, the type checker, the lint rule that fires before you save. No network, no credentials, no deploy. That's the spot [chant](https://intentius.io/chant/) took.
 
-You write infrastructure as constrained deterministic TypeScript rather than the arbitrary kind CDK lets phone home and do anything. Get a property wrong and the type checker stops you. Violate a naming rule and lint stops you. Reference a resource that can't exist and synthesis stops you, all with zero connection to any cloud. The bad deploy was never assembled in the first place.
+You write infrastructure as constrained deterministic TypeScript with no lookups at synth. Get a property wrong and the type checker stops you. Violate a naming rule and lint stops you. Reference a resource that can't exist and synthesis stops you, all with zero connection to any cloud. The bad deploy was never assembled in the first place.
 
 Then it compiles to plain ARM JSON or CloudFormation or Kubernetes YAML so you still get `what-if` and `plan` exactly as before. We didn't replace the safety nets, we moved most of the catching to the left of them. Centrist IaC catches your mistake at apply. Far-left IaC catches it at the keystroke.
 
