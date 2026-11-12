@@ -44,10 +44,6 @@ choudoufu can already refuse to keep secrets at all. Now there's a second option
 
 choudoufu tracks OpenTofu's main branch and syncs every two weeks while the new runtime is under construction. Where choudoufu has had to fill a gap itself, the patch is marked with the upstream issue that will replace it, and it gets deleted once OpenTofu ships its own version. The goal is a fork that gets smaller over time. [How choudoufu differs from upstream](https://intentius.io/choudoufu/how-it-works/upstream/) lists every difference.
 
-## One known issue
-
-On the new runtime, a `moved` block that renames a whole module crashes the apply. A fix is in progress. The old engine isn't affected, so leave the variable unset for that change until the fix ships.
-
 ## Read more
 
 - [A live demo](https://demo.intentius.io): terragucci running choudoufu across three estates
