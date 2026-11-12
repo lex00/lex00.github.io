@@ -5,11 +5,11 @@ draft: false
 featured_image: "img/choudoufu-new-engine-toggle-hero.svg"
 ---
 
-[choudoufu](https://intentius.io/choudoufu/) v0.34.0 is out, and it can run on OpenTofu's new runtime.
+[choudoufu](https://intentius.io/choudoufu/) now runs on OpenTofu's new runtime.
 
 OpenTofu is rebuilding the engine that plans and applies your infrastructure. Laurence Bordowitz, one of OpenTofu's maintainers, opened OpenTofu Day North America on November 9 with [a talk about the rewrite](https://cncf-hosted-co-located-events-north-america-2026.sessionize.com/session/1266401). The project calls it the new runtime, and it's still being built.
 
-choudoufu is a fork of OpenTofu, and from this release it runs on that new engine too. You can try it on your own configurations today, with choudoufu's estate boundaries working on top of it.
+choudoufu is a fork of OpenTofu, and it now runs on that new engine too. You can try it on your own configurations today, with choudoufu's estate boundaries working on top of it.
 
 ## Trying it
 
@@ -36,9 +36,9 @@ All of that now works on the new runtime as well as the old one.
 
 ![Apply A changes db and apply B changes subnet. Under Terraform B waits for A's lock on the whole state file. Under choudoufu the resources sit in two estates, so both applies land. A stale saved plan on db is refused](/img/concurrency-lock-scope.png)
 
-## Also in this release: secrets in SSM
+## Also new: secrets in SSM
 
-choudoufu can already refuse to keep secrets at all. v0.34.0 adds a second option: secret values go to AWS SSM Parameter Store, encrypted under your own KMS key, and choudoufu's records keep only a pointer to them. We tested it against a real AWS account, not just an emulator.
+choudoufu can already refuse to keep secrets at all. Now there's a second option: secret values go to AWS SSM Parameter Store, encrypted under your own KMS key, and choudoufu's records keep only a pointer to them. We tested it against a real AWS account, not just an emulator.
 
 ## Staying close to OpenTofu
 
@@ -51,6 +51,6 @@ On the new runtime, a `moved` block that renames a whole module crashes the appl
 ## Read more
 
 - [A live demo](https://demo.intentius.io): terragucci running choudoufu across three estates
-- [The v0.34.0 release notes](https://github.com/INTENTIUS/choudoufu/releases/tag/v0.34.0)
+- [Release notes](https://github.com/INTENTIUS/choudoufu/blob/main/CHANGELOG.md)
 - [Resource-level concurrency for Terraform](https://lex00.github.io/posts/resource-level-concurrency-for-terraform/)
 - [Tofu tastes better with live markers](https://lex00.github.io/posts/tofu-tastes-better-with-identity-hooks/)
