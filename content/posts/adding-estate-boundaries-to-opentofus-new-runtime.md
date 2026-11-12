@@ -38,7 +38,7 @@ All of that now works on the new runtime as well as the old one.
 
 ## Also new: secrets in SSM
 
-choudoufu can already refuse to keep secrets at all. Now there's a second option: secret values go to AWS SSM Parameter Store, encrypted under your own KMS key, and choudoufu's records keep only a pointer to them. We tested it against a real AWS account, not just an emulator.
+choudoufu can already refuse to keep secrets at all. Now there's a second option: secret values go to AWS SSM Parameter Store, encrypted under your own KMS key, and choudoufu's records keep only a pointer to them.
 
 ## Staying close to OpenTofu
 
