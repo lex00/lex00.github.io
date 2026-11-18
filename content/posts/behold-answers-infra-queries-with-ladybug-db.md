@@ -1,5 +1,5 @@
 ---
-title: "Behold answers infra queries with Ladybug DB"
+title: "Behold answers infra queries with LadybugDB"
 date: 2026-11-18
 draft: false
 featured_image: "img/behold-answers-infra-queries-with-ladybug-db-hero.svg"
