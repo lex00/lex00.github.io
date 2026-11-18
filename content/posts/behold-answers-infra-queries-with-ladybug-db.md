@@ -5,41 +5,44 @@ draft: false
 featured_image: "img/behold-answers-infra-queries-with-ladybug-db-hero.svg"
 ---
 
-[behold](https://intentius.io/behold/) now loads an estate into [LadybugDB](https://ladybugdb.com/), an embedded graph database, and answers Cypher queries over it.
+The picture above is a small cloud setup drawn as a graph. Boxes are pieces of infrastructure like DNS records and load balancers. Each line means one piece depends on another. The lit path shows which web addresses go down when Google Cloud does.
 
-An estate has more in it than its source. behold reads each member's resources from chant, the graph documents engines like choudoufu write for OpenTofu roots, and the cloud listings `behold index` takes from an AWS account or a Kubernetes cluster. All of it goes into one read-only database. A resource is a node, a reference between resources is an edge, and resources that carry the same cloud id are joined through that id.
+[behold](https://intentius.io/behold/) is free and open source. It builds this graph from a team's own projects and answers Cypher over it. Its graph engine is [LadybugDB](https://ladybugdb.com/).
 
-An agent asks through `behold mcp`. Its `ask` tool takes a Cypher query with parameters, or a resource and a template from chant's catalog. A person asks in the graph pane at `/graph` on a served estate. Every query is checked as read-only before it runs and capped at 2,000 rows.
+## Infrastructure is a graph
+
+Code declares infrastructure and cloud accounts run it. Clusters build on top. Each piece points at others. A DNS record points at a load balancer, which points at a proxy. A Kubernetes service account points at an AWS role.
+
+The questions engineers ask before a change follow those links. What depends on this? What can reach that? What runs beyond the code? behold loads every source into one LadybugDB database, with resources as nodes and references as edges, so each question fits in a few lines of Cypher.
 
 ## One question
 
-Asked "If GCP has an outage, which of our domains go with it?", the agent reads it as the DNS records that depend on GCP resources, and sends this with `{"record": "AWS::Route53::RecordSet"}`:
+Here is that question, which domains a GCP outage takes with it, in Cypher.
 
 ```cypher
-MATCH (rec:Resource {kind: $record})-[:REF*1..4]->(dep:Resource {source: 'chant'})
+MATCH (rec:Resource {kind: 'AWS::Route53::RecordSet'})-[:REF*1..4]->(dep:Resource {source: 'chant'})
 WHERE dep.scopeKey <> rec.scopeKey
-RETURN DISTINCT rec.key AS key, rec.name AS record, dep.key AS reaches, dep.kind AS kind
-ORDER BY record, reaches
+RETURN DISTINCT rec.name AS record, dep.key AS reaches
 ```
 
-On the three-cloud example it returns 7 rows. Two Route 53 records reach into the GCP member and depend on four resources there: the forwarding rule and the address, proxy and URL map it uses.
+On the sample setup, two domain names depend on four Google Cloud resources behind its load balancer.
 
-![The ask demo after the agent's reply: the question and the agent's reading of it in the terminal, the Cypher query and its parameters in the pane, and the rows it returned](/img/behold-answers-infra-queries-with-ladybug-db-1.png)
+![The ask demo after the agent's reply](/img/behold-answers-infra-queries-with-ladybug-db-1.png)
 
-The same estate answers questions that cross what any one tool declares: what breaks if the forwarding rule goes, what in the AWS account nothing in the workspace owns, and which IAM roles the cluster's pods can use through their ServiceAccounts. One question, whether SSH is open to the internet anywhere in the account, reads a real AWS account's ingress rules, indexed once with the account id redacted.
+Coding agents ask through behold's MCP server, whose `ask` tool takes Cypher. People ask in a pane in the browser. Everything is read-only.
 
 ## In the browser
 
-LadybugDB also ships a WebAssembly build. `behold export --graphdb` writes the loaded rows into the bundle with that build, so an exported graph pane answers Cypher with no server behind it.
+LadybugDB also ships a WebAssembly build. A behold export carries the database inside a static page, which answers on its own.
 
-The [ask demo](https://behold-ask-demo.intentius.workers.dev/) is one of those bundles. It plays a coding agent loading the three-cloud example into behold and asking it a question. The answers are a recording of a real run on emulators, plus that one read of a real account. After each answer the query box is yours, and what you type runs in the page over the same rows.
+The [ask demo](https://behold-ask-demo.intentius.workers.dev/) is one of those pages. It replays a coding agent asking behold about a sample setup, recorded from a real run. After each answer the box is yours, and what you type runs in your browser on LadybugDB.
 
-![The visitor's turn: the conversation has closed, the Cypher box and Ask button are lit, and the answer's rows and drawing show beside the estate graph](/img/behold-answers-infra-queries-with-ladybug-db-2.png)
+![The visitor's turn in the ask demo](/img/behold-answers-infra-queries-with-ladybug-db-2.png)
 
 ## Read more
 
-- [The graph database](https://intentius.io/behold/using/graph-database/): what behold loads, the model, and the ways to query it
-- [The ask demo](https://intentius.io/behold/using/ask-demo/): how it's recorded, and how to run the same loop on your own estate
+- [The ask demo](https://behold-ask-demo.intentius.workers.dev/)
+- [The graph database](https://intentius.io/behold/using/graph-database/)
+- [The same loop on your own projects](https://intentius.io/behold/using/ask-demo/#the-same-loop-on-your-estate)
 - [Queryable Infrastructure](/posts/queryable-infrastructure/)
-- [behold](https://intentius.io/behold/)
 - [LadybugDB](https://ladybugdb.com/)
