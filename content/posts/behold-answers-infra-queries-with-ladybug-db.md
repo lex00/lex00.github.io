@@ -15,7 +15,7 @@ Infrastructure tools already keep a graph of your resources and the links betwee
 
 ## One question
 
-Here is that question, which domains a GCP outage takes with it, in Cypher.
+This Cypher query finds the domains that depend on resources in another cloud.
 
 ```cypher
 MATCH (rec:Resource {kind: 'AWS::Route53::RecordSet'})-[:REF*1..4]->(dep:Resource {source: 'chant'})
