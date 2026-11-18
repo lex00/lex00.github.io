@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
 <rect width="1280" height="720" fill="#0d1117"/>
-<!-- Behold answers infra queries with Ladybug DB: an estate graph with one answer lit (left), LadybugDB's logo embedded unaltered from its repository (centre), the Cypher query that answered it (right). -->
+<!-- Behold answers infra queries with LadybugDB: an estate graph with one answer lit (left), LadybugDB's logo embedded unaltered from its repository (centre), the Cypher query that answered it (right). -->
 <rect x="70" y="120" width="230" height="150" rx="18" fill="#21262d" stroke="#30363d" stroke-width="2"/>
 <text x="86" y="148" font-size="18" font-weight="600" fill="#8b949e">dns</text>
 <rect x="70" y="300" width="470" height="300" rx="18" fill="#21262d" stroke="#30363d" stroke-width="2"/>
