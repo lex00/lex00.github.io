@@ -32,7 +32,13 @@ On a sample three-cloud setup, two domain names depend on four Google Cloud reso
 
 ## In the browser
 
-LadybugDB also ships a WebAssembly build. `behold export --graphdb` writes a static page that carries the database. Anyone who opens it can run Cypher in their own browser.
+LadybugDB also ships a WebAssembly build. This command writes a static page that carries the database.
+
+```sh
+npx behold export . --out ./behold-export --graphdb
+```
+
+Anyone who opens the page can run Cypher in their own browser.
 
 ## Read more
 
