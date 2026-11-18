@@ -15,17 +15,20 @@ Infrastructure tools already keep a graph of your resources and the links betwee
 
 ## One question
 
-A person asks their agent which of their domains depend on another cloud. The agent writes this query and sends it to behold.
+A person types a question to their coding agent in plain words.
 
-```cypher
-MATCH (rec:Resource {kind: 'AWS::Route53::RecordSet'})-[:REF*1..4]->(dep:Resource {source: 'chant'})
-WHERE dep.scopeKey <> rec.scopeKey
-RETURN DISTINCT rec.name AS record, dep.key AS reaches
+```text
+> Which of our domains depend on another cloud?
 ```
 
-On a sample three-cloud setup, two domain names depend on four Google Cloud resources behind its load balancer.
+The agent writes the Cypher for them and sends it to behold.
 
-The agent reaches behold through its MCP server. Its `ask` tool takes Cypher and answers with the rows, and every query is read-only.
+```cypher
+MATCH (rec:Resource {kind: 'AWS::Route53::RecordSet'})-[:REF*1..4]->(dep:Resource)
+...
+```
+
+On a sample three-cloud setup, two domain names depend on four Google Cloud resources behind its load balancer. The agent reaches behold through its MCP server, and every query is read-only.
 
 ## In the browser
 
