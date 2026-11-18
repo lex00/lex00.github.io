@@ -23,20 +23,17 @@ WHERE dep.scopeKey <> rec.scopeKey
 RETURN DISTINCT rec.name AS record, dep.key AS reaches
 ```
 
-On the sample setup, two domain names depend on four Google Cloud resources behind its load balancer.
+On a sample three-cloud setup, two domain names depend on four Google Cloud resources behind its load balancer.
 
 Coding agents ask through behold's MCP server, whose `ask` tool takes Cypher. People ask in a pane in the browser. Everything is read-only.
 
 ## In the browser
 
-LadybugDB also ships a WebAssembly build. A behold export carries the database inside a static page, which answers on its own.
-
-The [ask demo](https://behold-ask-demo.intentius.workers.dev/) is one of those pages. It replays a coding agent asking behold about a sample setup, recorded from a real run. After each answer the box is yours, and what you type runs in your browser on LadybugDB.
+LadybugDB also ships a WebAssembly build. `behold export --graphdb` writes a static page that carries the database. Anyone who opens it can run Cypher in their own browser.
 
 ## Read more
 
-- [The ask demo](https://behold-ask-demo.intentius.workers.dev/)
-- [The graph database](https://intentius.io/behold/using/graph-database/)
-- [The same loop on your own projects](https://intentius.io/behold/using/ask-demo/#the-same-loop-on-your-estate)
+- [The graph database](https://intentius.io/behold/using/graph-database/): what behold loads, and how to query it
+- [Exporting a static page](https://intentius.io/behold/using/export/)
 - [Queryable Infrastructure](/posts/queryable-infrastructure/)
 - [LadybugDB](https://ladybugdb.com/)
