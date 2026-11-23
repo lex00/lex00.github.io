@@ -15,7 +15,7 @@ They are free and open source under Apache 2.0. There is no server or database t
 
 ## Read more
 
-- [terragucci](https://intentius.io/terragucci/): plans and approvals from pull requests for Terraform, OpenTofu and Terragrunt, in your own CI
+- [terragucci](https://intentius.io/terragucci/): plans and approvals from pull requests for Terraform, OpenTofu and Terragrunt
 - [plywood](https://intentius.io/plywood/): the same for Pulumi
 - [Waves and approvals in terragucci](https://intentius.io/terragucci/concepts/waves-and-approvals/)
 - [Apply before merge with terragucci](https://intentius.io/terragucci/guides/apply-before-merge/)
