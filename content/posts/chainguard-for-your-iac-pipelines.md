@@ -5,9 +5,9 @@ draft: false
 featured_image: "img/chainguard-for-your-iac-pipelines-header.jpg"
 ---
 
-The jobs that plan and apply your infrastructure hold your cloud credentials. They can now run on Chainguard Images™, a minimal base that runs as a non-root user, pinned by digest.
+terragucci, plywood and SQL Yodeler can now run your plan and apply jobs on Chainguard Images™, with one line of config. Those jobs hold your cloud credentials, and the Chainguard images give them a minimal base that runs as a non-root user, pinned by digest.
 
-Each product publishes a Chainguard set of its CI images next to the Debian one, and one line of config switches a repo over:
+Each product publishes a Chainguard set of its CI images next to the Debian one:
 
 - <a href="https://intentius.io/terragucci/"><img src="/img/terragucci-icon.svg" alt="" style="display:inline;height:1.2em;width:1.2em;vertical-align:-0.25em;margin:0 0.3em 0 0;">terragucci</a> 0.4.65 and later: Terraform, OpenTofu and Terragrunt, with `image.base: chainguard`
 - <a href="https://intentius.io/plywood/"><img src="/img/plywood-icon.png" alt="" style="display:inline;height:1.2em;width:1.2em;vertical-align:-0.25em;margin:0 0.3em 0 0;">plywood</a> 0.4.2 and later: Pulumi, with `image_base: chainguard`
