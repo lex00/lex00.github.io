@@ -16,7 +16,7 @@ Configuration languages have their answer. Place one of us in front of your YAML
 
 chant rejects this conclusion for infrastructure.
 
-## What a config language buys, and what it costs
+## The benefits and costs of a config language
 
 Configuration languages offer guarantees that TypeScript alone does not. Pkl cannot execute code, because the capability is absent from the language. 
 

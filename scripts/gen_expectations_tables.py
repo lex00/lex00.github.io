@@ -237,7 +237,7 @@ TABLES = [
         title="The CI a choudoufu estate needs, as five Ops",
         subtitle="Generated for GitHub, Forgejo and GitLab from one project that builds",
         cols=[200, 180, 656],
-        header=["Op and job name", "Trigger", "What it may do"],
+        header=["Op and job name", "Trigger", "Allowed actions"],
         rows=[
             ["`live-check`", "pull request",
              "Nothing. No cloud call, no state, no credential"],
@@ -277,7 +277,7 @@ TABLES = [
              "The marker is written on create",
              "Nothing"],
             ["One place to see the whole estate",
-             "What behold reads",
+             "The source behold reads",
              "The graph behold renders"],
         ],
     ),

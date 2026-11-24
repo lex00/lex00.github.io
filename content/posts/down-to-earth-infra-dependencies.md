@@ -7,7 +7,7 @@ featured_image: "img/down-to-earth-hero.svg"
 
 Choudoufu gives you a model where dependencies come for free. One team's stack reads what another team's stack owns, straight from the cloud, and nobody has to bind the two together.
 
-The usual binding copies one stack's output into a variable for the next, and the next stack only runs when the copy changes. That is where the toggles and workarounds come from.
+The usual binding copies one stack's output into a variable for the next, and the next stack only runs when the copy changes. The toggles and workarounds come from that copy.
 
 The binding lives outside your repository, and nobody reading the repository can see it.
 

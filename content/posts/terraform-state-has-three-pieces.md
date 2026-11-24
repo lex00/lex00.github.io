@@ -5,23 +5,17 @@ featured_image: "img/three-pieces-cover.svg"
 draft: false
 ---
 
-A state file does three jobs.
+Terraform's state file does three jobs: it says which live resource an address refers to, it holds values the cloud has nowhere to put, and it records that an effect happened. One file ended up doing all three, so everything it persists sits behind a single permission boundary and a single lock.
 
-It says which live resource an address refers to. It holds values the cloud has nowhere to put. And it records that an effect happened.
+Separated, each job fits somewhere AWS already provides. Identity is two tags on the resource. Values go in a record store, which holds secrets and is guarded like one. An effect gets a receipt you declare, so the plan shows a migration coming before anything fires.
 
-Those got bundled because one file happened to do all of them. Bundling is what turns persistence into one permission boundary and a thing to lock.
-
-Take them apart and each goes somewhere AWS already has. Identity becomes two tags on the resource. Values go in a record store, which holds secrets and is guarded like one. Effects get a receipt you declare, so the plan shows the migration coming before anything fires.
-
-That is [choudoufu](https://intentius.io/choudoufu/), an OpenTofu fork I have been building.
+I have been building this as [choudoufu](https://intentius.io/choudoufu/), an OpenTofu fork.
 
 Choudoufu is stinky tofu. It's famous for a strong flavor that is an acquired taste. It's fermented, and I think it's a great name for an OpenTofu fork that lets your state go stale.
 
 ## No lock to manage
 
-The state file is now a cache on the machine that ran, so there is no lock table to provision, permission, or force open.
-
-Concurrent runs settle elsewhere. Two creates of the same named resource resolve on the cloud's uniqueness constraint, a record write only lands if nobody changed that record first, and the loser re-plans clean.
+The state file is now a cache on the machine that ran, so there is no lock table to provision or force open. Concurrent runs are settled by the cloud and the record store. Two creates of the same named resource resolve on the cloud's uniqueness constraint. A record write lands only if nobody changed that record first, and the loser re-plans clean.
 
 ## One ABAC policy for every team
 
@@ -35,9 +29,9 @@ Ownership is a tag derived from the configuration address, so IAM can read it.
 }
 ```
 
-One policy covers every team, and onboarding is a session tag rather than a new policy. The same shape takes `aws:CurrentTime` for a change window, or `aws:MultiFactorAuthPresent` to touch production.
+One policy covers every team, and onboarding a team means adding a session tag. The same shape takes `aws:CurrentTime` for a change window, or `aws:MultiFactorAuthPresent` to touch production.
 
-You could always write conditions like that. What you could not do is trust the tag. `default_tags` misses types that take none and modules that override them. Nothing checks it and stock OpenTofu never reads tags back anyway.
+IAM conditions like that have always been possible, but the tag could not be trusted. `default_tags` misses types that take none and modules that override them, nothing checks it, and stock OpenTofu never reads tags back.
 
 Because a plan reads the markers live, handing an estate to another team is a policy change, and a rename is a tag rewrite.
 

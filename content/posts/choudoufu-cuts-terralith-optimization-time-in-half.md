@@ -11,7 +11,7 @@ This blog takes a look at Cursor's recent migration from Terraform to OpenTofu, 
 
 ## choudoufu writes ownership on the resource itself
 
-choudoufu adopts by stamping while Terraform adopts by fixing resolution in state. Two tags on the resource, read live at plan time. That's the whole trick of [live markers](/posts/tofu-tastes-better-with-identity-hooks/).
+choudoufu adopts by stamping while Terraform adopts by fixing resolution in state. [Live markers](/posts/tofu-tastes-better-with-identity-hooks/) are two tags on the resource, read live at plan time.
 
 ![The state world translated to the tag world](/img/cursor-migration/translation.svg)
 
@@ -43,17 +43,17 @@ Either of the bottom tracks offers you a migration path taking half the time. Pe
 
 My claim is the same migration to choudoufu would be 3.5 to 4 months against the actual 7, with error margin about a month either way. Every before-and-after figure comes from the migration's public case study. The step sizes are mine. So are the 38% split and the timeline.
 
-## What has been measured since
+## Measured since
 
 Some of this has since been run.
 
 A generated terralith migrated cleanly through 4005 resources with nothing walling. Against real AWS the sweep held at 200 to 226 seconds at both the smallest size and 4x, so finding what you own scales with resource types. Reading it still scales with resources, same as stock.
 
-With count, for_each and nested modules in play, no resource needed a hand written marker. That was the step I expected to cost most.
+With count, for_each and nested modules in play, no resource needed a hand written marker. I expected that step to cost most.
 
 The estate was generated, so it says nothing about real world HCL. The timeline above is still an estimate.
 
-## What is chant?
+## About chant
 
 [chant](https://intentius.io/chant/) is the reason choudoufu exists. It also works with live markers, among other useful changes from our favorite infra tools. [choudoufu](https://intentius.io/choudoufu/docs/) is experimental and AWS only, for now...
 

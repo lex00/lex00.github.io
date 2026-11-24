@@ -15,7 +15,7 @@ Six configurations ran it on the same model Haiku 4.5. Those were chant and Pulu
 
 ## The results live on chant-bench
 
-I used to keep a post per matchup. That stopped working the first time I re-ran the benchmark and half the numbers moved, so the results now live where they are generated.
+I used to keep a post per matchup. It stopped working the first time I re-ran the benchmark and half the numbers moved, so the results now live where they are generated.
 
 [chant-bench](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/) publishes every run. Each one carries the score and per-question breakdown along with what the agent ran and what it cost and the logs. A run whose tooling broke is published as invalid rather than as a low score.
 
@@ -43,7 +43,7 @@ Pulumi gets it 96% of the time, Terraform 95%, chant 85%, CDK 71%. Alchemy manag
 
 The answer is two instances, and one of them is only reachable through a security group attached via its launch template. An agent walking describe calls by hand does not find that hop, and eighteen attempts have not found it once. A tool that keeps a model of the estate does whether that model is a state file or a typed graph.
 
-That is one question out of eight, and it is the clearest thing a toolchain buys anyone here.
+Only one question out of eight needs the hop, and it is the clearest thing a toolchain buys anyone here.
 
 ## The question nobody answers
 
@@ -55,18 +55,18 @@ The two configurations that do best here are the one with a query engine and the
 
 The reason is that the answer is a negative, and it is a negative about things the state file does not contain. Four groups are attached to nothing, so they are not referenced by any instance a state file knows about. Reading your own state tells you what you built, and the question asks what nothing points at. An agent with the raw API at least has the option of sweeping every group in every region and checking each one; it is expensive and it works about a quarter of the time. The answer lives in the cloud and not in any record of the things you built. Tags that every tool can read close that gap, and [choudoufu](https://intentius.io/choudoufu/) adds them to OpenTofu.
 
-That is worth more than the two points of accuracy it costs on the scoreboard, because it is the shape of a whole class of real questions. What is unattached, what is unreferenced, what is safe to delete.
+The question is worth more than the two points of accuracy it costs on the scoreboard, because a whole class of real questions has the same shape: is this unattached, is it unreferenced, is it safe to delete?
 
 ## chant is not perfect
 
 The three runs in the table are 22 and 24 and 22 and the middle one is what ranks. Across 26 runs it averages 88% and has scored anywhere from 15 to 24. On the unused security groups question it is right about half the time, which is the best on the board and still a coin flip. A benchmark I always win is a benchmark I built wrong, so the site publishes every replicate including the ones that undercut this post.
-What holds steady across every replicate is the cost. chant answers a question in under 3 commands against Pulumi's 7 and Alchemy's 14, for roughly a third of the tokens the average toolchain spends, and it does it without reading the account at all.
+The cost holds steady across every replicate. chant answers a question in under 3 commands against Pulumi's 7 and Alchemy's 14, for roughly a third of the tokens the average toolchain spends, and it does it without reading the account at all.
 
 The cost column is the part I would pay attention to. Accuracy converges as the models get better. Token cost does not.
 
 ## The benchmark is not mine
 
-[aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness and the estate and the questions and the reference answers. What is mine is a fork that runs it against an emulator with one deployment per toolchain and the gates that decide whether a run counts at all.
+[aws-bench](https://github.com/aws-bench/aws-bench) open sourced the harness and the estate and the questions and the reference answers. My part is a fork that runs it against an emulator with one deployment per toolchain and the gates that decide whether a run counts at all.
 
 Everything runs against the [Floci](https://github.com/floci-io/floci) emulator, so a full pass costs nothing in real AWS.
 
@@ -80,7 +80,7 @@ chant is 100% prompted. It's a scope of work I simply could not have delivered a
 
 Alchemy v2 (the Effect line) has since run and is [on the results page](https://intentius.io/chant-bench/aws-bench/ec2-multiregion/results/). I have left it off the board above because this post was written around six configurations and I would rather add it properly than bolt a row on. Formae and ConfigHub next.
 
-Then the harder scenarios, compute-and-data and serverless, where multi-hop joins are the norm rather than one question out of eight. That is where the baseline should fall away, and where I expect the cost gap to widen.
+Then the harder scenarios, compute-and-data and serverless, where multi-hop joins are the norm rather than one question out of eight. I expect the baseline to fall away there and the cost gap to widen.
 
 ---
 

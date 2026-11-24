@@ -19,13 +19,13 @@ Set one environment variable:
 TOFU_X_EXPERIMENTAL_RUNTIME=1 choudoufu plan
 ```
 
-That's the same variable upstream OpenTofu uses, so nothing choudoufu-specific to learn. Leave it unset and choudoufu behaves exactly as it did before.
+Upstream OpenTofu uses the same variable, so there is nothing choudoufu-specific to learn. Leave it unset and choudoufu behaves exactly as it did before.
 
 If your configuration uses something the new runtime can't do yet, choudoufu runs that plan on the old engine and tells you so in the output. You don't get a half-working plan, and you don't have to work out which features are supported before you try.
 
-## What estate boundaries give you
+## Estate boundaries
 
-choudoufu's live backend puts a small ownership tag on every cloud resource it manages and reads it back on the next plan. That tag is what lets one team's infrastructure sit next to another's without a shared state file in the middle:
+choudoufu's live backend puts a small ownership tag on every cloud resource it manages and reads it back on the next plan. With the tag in place, one team's infrastructure can sit next to another's without a shared state file in the middle:
 
 - IAM decides which estate can touch which resources, using the tag ([how that works](https://intentius.io/choudoufu/how-it-works/across-estates/)).
 - Two teams can apply at the same time without waiting on each other's lock ([more on that](https://lex00.github.io/posts/resource-level-concurrency-for-terraform/)).

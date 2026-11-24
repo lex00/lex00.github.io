@@ -21,7 +21,7 @@ Anything you don't declare is never read, diffed or touched, and nothing gets de
 
 ## A collection of pipelines
 
-That one policy drives every pipeline. 
+The same policy drives every pipeline. 
 
 A pull request gets the plan, a merge gets the apply, and the audit runs overnight.
 

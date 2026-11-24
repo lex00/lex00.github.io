@@ -9,7 +9,7 @@ Terraform shifted left with `plan`, Bicep with `what-if`. Same idea, see the cha
 
 {{< figure src="/img/iac-shift-left.svg" alt="The infrastructure pipeline left to right, with chant catching mistakes at the keystroke and Terraform and Bicep catching them at preview" >}}
 
-Picture the pipeline running left to right, idea to code to apply to incident. The cloud is on the right, and `plan` and `what-if` sit just to its left because both need an API to mean anything. The leftmost seat is the red squiggle in your editor, the type checker, the lint rule that fires before you save. No network, no credentials, no deploy. That's the spot [chant](https://intentius.io/chant/) took.
+Picture the pipeline running left to right, idea to code to apply to incident. The cloud is on the right, and `plan` and `what-if` sit just to its left because both need an API to mean anything. The leftmost seat is the red squiggle in your editor, the type checker, the lint rule that fires before you save. No network, no credentials, no deploy. [chant](https://intentius.io/chant/) took that spot.
 
 You write infrastructure as constrained deterministic TypeScript with no lookups at synth. Get a property wrong and the type checker stops you. Violate a naming rule and lint stops you. Reference a resource that can't exist and synthesis stops you, all with zero connection to any cloud. The bad deploy was never assembled in the first place.
 
@@ -17,7 +17,7 @@ Then it compiles to plain ARM JSON or CloudFormation or Kubernetes YAML so you s
 
 A preview still matters since people change resources by hand and drift is real. Chant doesn't pretend the cloud sits still. It just makes sure the type errors and policy violations and impossible resources are already gone by the time the output meets the API.
 
-Newer tools like formae go the other way. It drops the state file too, but it's agentic and reconciles against live infrastructure, so its real checking happens at the cloud, not the keystroke. That's a lifecycle rather than a competitor to far-left synthesis. You plug it in beside chant.
+Newer tools like formae go the other way. It drops the state file too, but it's agentic and reconciles against live infrastructure, so its real checking happens at the cloud, not the keystroke. It is a lifecycle rather than a competitor to far-left synthesis, and you plug it in beside chant.
 
 Bring your own lifecycle. We'll see you on the left.
 

@@ -40,7 +40,7 @@ Meeting that bar costs nothing. All of it is open source and runs on a laptop. W
 
 {{< figure src="/img/expectations-claims.svg" alt="The 2026 pitch answered for choudoufu and chant. One governed run across Terraform, Ansible and Helm is out of scope for choudoufu, and chant's Ops span seventeen lexicons. On approving every change first, choudoufu re-plans and exits 3 on drift, and chant's gate is a fact in git. On nothing running off-plan, choudoufu holds against drift and chant does not hold against an edited root. On scale, choudoufu has 745 resources against real AWS at call parity and chant only a synthetic bench to 200. On brownfield adoption, choudoufu uses live-adopt behind a gate and chant uses carve one resource at a time. On cost allocation, choudoufu writes the marker on create and chant does nothing. On seeing the whole estate, choudoufu is what behold reads and chant is the graph behold renders." >}}
 
-Cost is worth pressing on, though not as a feature anyone should ship. Most orgs solved this years ago with allocation tags. What breaks it is unreliable tags.
+Cost is worth pressing on, though not as a feature anyone should ship. Most orgs solved this years ago with allocation tags, and unreliable tags break it.
 
 ## The question to ask
 

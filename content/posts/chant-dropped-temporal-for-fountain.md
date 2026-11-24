@@ -9,7 +9,7 @@ draft: false
 
 Until this month the durable half of chant ops ran on Temporal. It now runs on [fountain](https://github.com/managoat/fountain) and the Temporal lexicon is deleted.
 
-## What chant used Temporal for
+## How chant used Temporal
 
 Each item is about an apply surviving something.
 

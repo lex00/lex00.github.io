@@ -36,7 +36,7 @@ Migrate at your own pace. Keep the GitHub workflows as the source of truth for t
 
 There's a [github-warden](https://intentius.io/github-warden/) version too, if you want to run it from the other direction.
 
-## What maps in the migration
+## Mapping gaps in the migration
 
 Not everything translates, and the warden never guesses. Anything lossy lands as a finding in the job log and in a SARIF report your reviewers can open.
 

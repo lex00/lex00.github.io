@@ -12,7 +12,7 @@ Two people in two fields describe that same failure and the same fix. [Gregor Ho
 
 <p style="text-align: center; font-size: 1.3em; font-weight: 700;"><a href="https://intentius.io/chant/">chant</a> is what the fix looks like for infrastructure: what you write is what you ship.</p>
 
-The deployed spec is fixed by your source alone, readable before anything runs. That is the part people do not believe at first, and the part you can check. I can show where it lands. None of it rests on personal taste.
+The deployed spec is fixed by your source alone, readable before anything runs. People do not believe this part at first, and it is the part you can check. I can show where it lands. None of it rests on personal taste.
 
 {{< inline-svg src="honor-the-lower-layer.svg" alt="A Venn of Hohpe and Chlipala, whose overlap is one shared rule: an abstraction is good only while it honors the layer below" >}}
 
@@ -46,7 +46,7 @@ Terraform and OpenTofu took a different route: one language across every cloud, 
 
 Executing tools clear the first and miss the second. CDK is a real language compiled to a spec, which is why Hohpe points at it. But it synthesizes by running your program so the output is known only after the run. A lookup or an environment value or a tree-rewriting aspect can change it. You cannot check it without running it. The faithfulness is real, earned by careful code rather than guaranteed by design.
 
-## What CDK proved
+## CDK got closest
 
 CDK is not the villain here. It is the closest any widely used tool with real success has come to both lines, which is why Hohpe cites it. It proved a real language compiled to a spec can carry production infrastructure.
 
@@ -56,13 +56,13 @@ chant reaches the same place and carries it two steps further. It compiles the s
 
 ## Why chant is the overlap
 
-chant honors the spec completely, and that is the only reason it can make this claim. You write a constrained subset of TypeScript and it compiles straight to the native spec. The evaluability rules forbid a function call or a runtime branch or a reach outside the source, so the same source always compiles to the same spec, checkable against the live system without a run. That is compilation, not execution: like a compiler folding constants, chant reduces your source and nothing else, so the output can depend on nothing but the text you wrote. Those are the two lines, and chant clears both by construction, not by hand.
+chant honors the spec completely, and that is the only reason it can make this claim. You write a constrained subset of TypeScript and it compiles straight to the native spec. The evaluability rules forbid a function call or a runtime branch or a reach outside the source, so the same source always compiles to the same spec, checkable against the live system without a run. It is compilation, not execution: like a compiler folding constants, chant reduces your source and nothing else, so the output can depend on nothing but the text you wrote. Those are the two lines, and chant clears both by construction, not by hand.
 
-The spec is never wrapped or reimplemented. It is the output, handed back exactly as the platform defines it. The reverse works too. chant imports an existing template, or a live cloud, into typed source, with roundtrip tests keeping the two faithful, so the native format is an input as much as an output. That output is data, the native spec itself, so chant reaches configuration as data by compiling a real language, where raw YAML gets there by making you write the data by hand. You author in code and ship data.
+The spec is never wrapped or reimplemented. It is the output, handed back exactly as the platform defines it. The reverse works too. chant imports an existing template, or a live cloud, into typed source, with roundtrip tests keeping the two faithful, so the native format is an input as much as an output. The output is data, the native spec itself, so chant reaches configuration as data by compiling a real language, where raw YAML gets there by making you write the data by hand. You author in code and ship data.
 
-Hohpe wants that spec to read like machine code you never have to open and chant gives you that. But nothing is opaque at either end. What you author is plain TypeScript you can read, type-check, and lint; what ships is the platform's own format. You never have to look down, and nothing is hidden when you do.
+Hohpe wants that spec to read like machine code you never have to open and chant gives you that. But nothing is opaque at either end. You author plain TypeScript you can read, type-check, and lint, and the platform's own format ships. You never have to look down, and nothing is hidden when you do.
 
-That openness is why agents work so well with chant. Because its lint rules are a static pass over the TypeScript AST, chant's language server runs them in your editor, so a bad change surfaces at the keystroke. Its MCP server then puts each change up for approval before it applies, so infrastructure becomes conversational: the agent proposes, the lint and the diff answer, you approve. The candidate is always checkable before it runs, Chlipala's fitness function arriving in infrastructure just as agents started writing it.
+Agents work so well with chant because of this openness. Because its lint rules are a static pass over the TypeScript AST, chant's language server runs them in your editor, so a bad change surfaces at the keystroke. Its MCP server then puts each change up for approval before it applies, so infrastructure becomes conversational: the agent proposes, the lint and the diff answer, you approve. The candidate is always checkable before it runs, Chlipala's fitness function arriving in infrastructure just as agents started writing it.
 
 {{< inline-svg src="chant-compile-path.svg" alt="chant's path from source to native spec: TypeScript source, then parse and lint over the AST with the EVL rules in your editor, then a static compile, then the native spec. No stage executes your program." >}}
 
@@ -70,7 +70,7 @@ That openness is why agents work so well with chant. Because its lint rules are 
 
 Neither Hohpe nor Chlipala is endorsing chant. Chlipala is not writing about infrastructure at all. Hohpe is, and the tool he holds up as his own example is AWS CDK, not chant. So this is not an appeal to their authority.
 
-The claim is only this: two people working apart in different fields reached the same rule and chant is built around it. Whether that puts it ahead of CDK for your work is yours to decide. That it honors the lower layer is not.
+The claim is only this: two people working apart in different fields reached the same rule and chant is built around it. Whether that puts it ahead of CDK for your work is yours to decide. It honors the lower layer either way.
 
 ## Sources
 

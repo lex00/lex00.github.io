@@ -29,4 +29,4 @@ Drift is observed rather than owned. `chant lifecycle diff --live` compares your
 
 If you run Terraform or OpenTofu, [choudoufu](https://intentius.io/choudoufu/) brings the same live ownership to your HCL. If you run Pulumi, [plunge](https://intentius.io/plunge/) does it for your programs.
 
-Generated types keep the model from drifting. Native output leaves nothing to walk away from. That is the whole design.
+Generated types keep the model from drifting. Native output leaves nothing to walk away from. The whole design is these two choices.

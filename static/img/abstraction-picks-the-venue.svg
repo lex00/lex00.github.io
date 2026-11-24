@@ -16,7 +16,7 @@
 
   <rect x="247" y="34" width="186" height="50" rx="6" fill="#161b22" stroke="#30363d"/>
   <text x="340" y="58" font-size="12" font-weight="700" fill="#c9d1d9" text-anchor="middle">wherever the store is</text>
-  <text x="340" y="73" font-size="9" fill="#8b949e" text-anchor="middle">which has to be right</text>
+  <text x="340" y="73" font-size="9" fill="#8b949e" text-anchor="middle">and it has to be right</text>
 
   <rect x="454" y="34" width="186" height="50" rx="6" fill="#0f2419" stroke="#7ee787" stroke-width="1.5"/>
   <text x="547" y="58" font-size="12" font-weight="700" fill="#7ee787" text-anchor="middle">anywhere</text>

@@ -24,14 +24,14 @@ The top strip is CDK. The yellow line near the left edge is your program startin
 
 This is CDK's design. There is no way to know what a CDK app builds without running it, which means whatever your program does happens *before* the tool knows what it's looking at.
 
-The bottom strip is chant, and it's just as busy, but nothing lights up. That's not a lucky sample from a profiler that happened to look away: the build refuses to finish unless it can account for every file without running it.
+The bottom strip is chant, and it's just as busy, but nothing lights up. It isn't a lucky sample from a profiler that happened to look away: the build refuses to finish unless it can account for every file without running it.
 
 Don't take the pictures' word for it. Both recordings are live in [spicypath](https://github.com/INTENTIUS/spicypath), my profile viewer. Nothing to install and no login:
 
 - [The CDK recording](https://spicypath.intentius.workers.dev/leftness-cdk), with a marker on the moment your app starts.
 - [The chant recording](https://spicypath.intentius.workers.dev/leftness-chant) answers the same search with 0 matches because nothing qualifies.
 
-One caveat, this works for files written in chant's supported style. Files that are deliberately programs still run, in a sandbox, with intention. What sits left of the execution line is exactly the part of your repo that describes infrastructure rather than computes it.
+One caveat, this works for files written in chant's supported style. Files that are deliberately programs still run, in a sandbox, with intention. The part of your repo left of the execution line is exactly the part that describes infrastructure rather than computes it.
 
 Everything regenerates from committed inputs and the procedure lives in [the harness](https://github.com/INTENTIUS/chant/tree/main/test/leftness). No timing numbers anywhere in it, on purpose. This is not a benchmark.
 

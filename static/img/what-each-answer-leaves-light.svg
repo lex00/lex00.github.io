@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 352" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
 <rect width="1100" height="352" fill="#ffffff"/>
 <text x="32" y="48" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>Where opinions live</tspan></text>
-<text x="322" y="48" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>What it invents</tspan></text>
-<text x="658" y="48" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>What you operate</tspan></text>
+<text x="322" y="48" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>It invents</tspan></text>
+<text x="658" y="48" font-size="20.0" fill="#57606a" font-weight="700" xml:space="preserve"><tspan>You operate</tspan></text>
 <line x1="32" y1="60" x2="1068" y2="60" stroke="#d0d7de" stroke-width="1"/>
 <text x="32" y="112" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>Kro · Crossplane · Kratix</tspan></text>
 <text x="322" y="112" font-size="22.5" fill="#1c2128" xml:space="preserve"><tspan>a CRD and a controller</tspan></text>

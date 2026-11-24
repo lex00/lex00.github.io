@@ -31,7 +31,7 @@ chant is not the first tool to compile configuration. It is the one that compile
 
 ## Structural determinism
 
-Kubernetes teams already fight non-determinism. Helm can call `now()` and `randAlphaNum()` and `lookup` against the live cluster so the same chart renders differently depending on when and where the render runs. The common defense reaches for Kustomize with no templating and no runtime functions and deterministic output. That defense works as determinism by avoidance, a discipline maintained by hand forever.
+Kubernetes teams already fight non-determinism. Helm can call `now()` and `randAlphaNum()` and `lookup` against the live cluster so the same chart renders differently depending on when and where the render runs. The common defense reaches for Kustomize with no templating and no runtime functions and deterministic output. It works as determinism by avoidance, a discipline maintained by hand forever.
 
 chant makes determinism a property of the build. A lint pass restricts source to literals and constants and cross-resource references with no function calls in props and no control flow around resources. Anything that makes output depend on wall-clock time or live state becomes a build error that cannot merge. Running the file then equals reading static data, so the PR diff is the deploy delta. Apply time holds no surprises.
 

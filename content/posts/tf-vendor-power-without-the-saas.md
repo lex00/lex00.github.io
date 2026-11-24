@@ -10,9 +10,9 @@ Terraform vendors sell plan and apply on pull requests, approvals, policy, drift
 
 [choudoufu](https://intentius.io/choudoufu/docs/) is optional. It's OpenTofu that tags each resource with its owner, so the state file becomes a cache and locking goes per resource. It runs on AWS and Kubernetes under MPL-2.0, and since the cache is a stock state file, [going back to stock](https://intentius.io/choudoufu/docs/model/cache/#the-cache-is-also-the-exit) is a copy.
 
-## What you'd pay a SaaS for
+## The features you'd pay a SaaS for
 
-![What you'd pay a Terraform SaaS for, and the terragucci page that does each one in your own CI](/img/tf-vendor-power-saas-table.png)
+![The features you'd pay a Terraform SaaS for, and the terragucci page that does each one in your own CI](/img/tf-vendor-power-saas-table.png)
 
 ## State and locking
 
@@ -67,7 +67,7 @@ Then run the post's "Kill an apply" test if you have Docker: against a local AWS
 
 ## Sources
 
-What you'd pay a SaaS for:
+The features you'd pay a SaaS for:
 
 - Plans on pull requests, applies after approval: [One grouped plan note, then applies in waves](https://intentius.io/terragucci/getting-started/)
 - Policy: [Rego checks in the plan note, and recorded overrides](https://intentius.io/terragucci/guides/write-a-policy/)

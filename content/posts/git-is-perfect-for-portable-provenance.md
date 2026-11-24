@@ -11,7 +11,7 @@ Provenance is the record of why a change exists and who stands behind it. It bel
 
 ## Does the reason travel with the change?
 
-History gets rewritten and commits move with it. chant gives each decision a permanent id. Every commit names the decision it carries out and keeps that name through each rebase. That is the property [The reason travels with the change](https://accessibleops.net/the-reason-travels-with-the-change/) describes.
+History gets rewritten and commits move with it. chant gives each decision a permanent id. Every commit names the decision it carries out and keeps that name through each rebase. [The reason travels with the change](https://accessibleops.net/the-reason-travels-with-the-change/) describes this property.
 
 ## Who stands behind it?
 

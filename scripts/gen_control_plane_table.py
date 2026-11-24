@@ -33,7 +33,7 @@ TABLE = dict(
     title="",
     subtitle="",
     cols=[290, 336, 410],
-    header=["Where opinions live", "What it invents", "What you operate"],
+    header=["Where opinions live", "It invents", "You operate"],
     rows=[
         ["Kro · Crossplane · Kratix", "a CRD and a controller", "a cluster"],
         ["Helm · Timoni · Score", "a values format", "a format to keep in step"],
