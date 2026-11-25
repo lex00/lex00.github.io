@@ -12,4 +12,4 @@ Wherever the config lives, something declares it, something converges it, and th
 
 A real improvement to IaC can be sold on its own merit. "We don't do IaC" is aimed at buyers who think IaC means Terraform.
 
-When it comes to real improvements to IaC, check out [how Intentius compares to other popular alternatives](https://intentius.io/compare/terraform-platforms/).
+In chant, deploy steps import the infrastructure they act on. Change the infrastructure, and a stale step fails the build. [See how Intentius compares](https://intentius.io/compare/terraform-platforms/).
